@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useEffect, useState } from "react";
+import { ContentContext } from "./ContentContext";
 const DeltaContext = React.createContext();
 
 function DeltaProvider(props) {
-  // const [navBarVisible, setNavBarVisible] = useState(false);
-  const [showFullMenu, setShowFullMenu] = useState(false)
+  const {homeHeroContent} = useContext(ContentContext)
+
+
+  const [showFullMenu, setShowFullMenu] = useState(false);
+  const [screenSize, setScreenSize] = useState(getCurrentDimension());
+  const [heroPosition, setHeroPosition] = useState(0);
+
+// Funcion para responder desde el render a cambios en el viewport
   function getCurrentDimension() {
     return {
       width: window.innerWidth,
       height: window.innerHeight,
     };
   }
-  const [screenSize, setScreenSize] = useState(getCurrentDimension());
   useEffect(() => {
     const updateDimension = () => {
       setScreenSize(getCurrentDimension());
@@ -21,6 +27,22 @@ function DeltaProvider(props) {
       window.removeEventListener("resize", updateDimension);
     };
   }, [screenSize]);
+// ----------------------------------------------------------
+
+//Funcion para el manejo del hero en el home
+  function forwardHero(){
+    const next = (heroPosition + 1) % homeHeroContent.length;
+    setHeroPosition(next);
+  }
+  function rewindHero(){
+    const next = heroPosition === 0 ? homeHeroContent.length-1 : heroPosition-1;
+    setHeroPosition(next)
+  }
+  useEffect(()=>{
+    const next = (heroPosition + 1) % homeHeroContent.length;
+    const move = setTimeout(()=>setHeroPosition(next), 6000);
+    return () => clearTimeout(move);
+  },[heroPosition, homeHeroContent]);
 
   return (
     <DeltaContext.Provider
@@ -28,6 +50,9 @@ function DeltaProvider(props) {
         showFullMenu,
         setShowFullMenu,
         screenSize,
+        heroPosition,
+        forwardHero,
+        rewindHero,
       }}
     >
       {props.children}

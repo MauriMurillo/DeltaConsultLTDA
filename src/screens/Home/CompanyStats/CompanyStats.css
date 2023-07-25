@@ -1,0 +1,105 @@
+.statsContainer {
+  width: 100vw;
+  margin-top: 185px;
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.blueContainer {
+  width: 90%;
+  border-radius: 140px;
+  display: grid;
+  grid-template-columns: auto 145px;
+  align-items: center;
+  background-color: #235eb6;
+}
+.whiteContainer {
+  position: relative;
+  left: -10vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 120px;
+  justify-content: space-evenly;
+  background-color: white;
+  box-shadow: 0px 10px 20px 0px rgba(41, 41, 42, 0.07);
+}
+.whiteContainer .stat {
+  width: 170px;
+  height: 170px;
+  margin: 20px;
+  background-color: brown;
+}
+.logo {
+  position: relative;
+  left: -5vw;
+  justify-self: center;
+  width: 115px;
+  height: 115px;
+  /* background-color: aliceblue; */
+  background-image: url("../../../Assets/Images/ISOTIPO\ DELTA\ BLANCO.png");
+  background-size: contain;
+}
+
+@media only screen and (max-width: 1150px) {
+  .whiteContainer .stat {
+    width: 130px;
+    height: 130px;
+  }
+  .logo {
+    width: 95px;
+    height: 95px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .whiteContainer .stat {
+    width: 150px;
+    height: 150px;
+  }
+  .blueContainer {
+    grid-template-columns: auto 125px;
+  }
+  .logo {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .statsContainer {
+    justify-content: center;
+  }
+  .blueContainer {
+    width: 90%;
+    border-radius: 120px;
+    grid-template-rows: 80px auto;
+    grid-template-columns: auto;
+    justify-items: center;
+  }
+  .whiteContainer {
+    width: 70%;
+    left: 0vw;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    flex-direction: column;
+    border-radius: 90px;
+    background-color: white;
+    box-shadow: 0px 10px 20px 0px rgba(41, 41, 42, 0.07);
+    bottom: -70px;
+
+  }
+  .whiteContainer .stat {
+    width: 120px;
+    height: 120px;
+    margin: 15px;
+  }
+  .logo {
+    grid-row-start: 1;
+    left: 0;
+    bottom: -30px;
+    width: 80px;
+    height: 80px;
+  }
+}

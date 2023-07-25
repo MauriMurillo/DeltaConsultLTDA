@@ -1,0 +1,51 @@
+.heroContainer {
+  height: calc(100vh - 85px);
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+
+.textContainer p{
+  font-size: 120px;
+}
+.heroContainer .imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 50%;
+  width: 696px;
+  height: 629px;
+  background-color: #235eb6;
+}
+.imageHero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+}
+
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px black;
+  border-radius: 50%;
+  position: absolute;
+}
+.forward {
+  right: 10px;
+  top: 50%;
+}
+.rewind {
+  left: 10px;
+  top: 50%;
+}

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
-import { DeltaContext } from "../Contexts/DeltaContext";
+import { DeltaContext } from "../../Contexts/DeltaContext";
 
 function MenuList(props) {
   const { orientation } = props;
@@ -15,7 +15,6 @@ function MenuList(props) {
             </NavLink>
           </li>
         ) : null}
-
         <li>
           <NavLink to={"/services"} onClick={() => setShowFullMenu(false)}>
             SERVICIOS
@@ -28,7 +27,7 @@ function MenuList(props) {
         </li>
         <li>
           <NavLink to={"/aboutUs"} onClick={() => setShowFullMenu(false)}>
-            SOBRE NOSOTROS
+            NOSOTROS
           </NavLink>
         </li>
         <li>
@@ -39,13 +38,7 @@ function MenuList(props) {
         </li>
         <li>
           <NavLink to={"/SMS"} onClick={() => setShowFullMenu(false)}>
-            RED SMS
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to={"/IFAC"} onClick={() => setShowFullMenu(false)}>
-            {" "}
-            IFAC
+            ALIADOS
           </NavLink>
         </li>
       </ul>

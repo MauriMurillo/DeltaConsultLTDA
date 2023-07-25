@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 
 import "./Header.css";
-import { DeltaContext } from "../Contexts/DeltaContext";
-import { MenuScreen } from "./MenuScreen";
+import { DeltaContext } from "../../Contexts/DeltaContext";
+import { MenuScreen } from "../MenuScreen/MenuScreen";
 import { MenuList } from "./MenuList";
 
 function Header() {
@@ -15,7 +15,7 @@ function Header() {
     return (
       <nav className="navBar">
         <div className="imageContainer">
-          <NavLink to={"/"} style={{ border: "2px solid black" }}></NavLink>
+          <NavLink to={"/"}/>
         </div>
         {showFullMenu ? (
           <MenuScreen>
@@ -23,7 +23,7 @@ function Header() {
           </MenuScreen>
         ) : null}
         <div className="showMenuButton">
-          <FaBars size={24} color="white" onClick={() => setShowFullMenu(true)}>
+          <FaBars size={32} color="white" onClick={() => setShowFullMenu(true)}>
             {" "}
             Menu{" "}
           </FaBars>
@@ -34,9 +34,7 @@ function Header() {
     return (
       <nav className="navBar">
         <div className="imageContainer">
-          <NavLink to={"/"} style={{ border: "2px solid black" }}>
-            <img alt="Logo de la empresa" />
-          </NavLink>
+          <NavLink to={"/"}/>
         </div>
         <MenuList orientation="Horizontal"></MenuList>
       </nav>
