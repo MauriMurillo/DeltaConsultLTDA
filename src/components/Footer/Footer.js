@@ -10,10 +10,13 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footerContainer">
+        <Contact />
         {offices.map(function (officeItem) {
           return <Office content={officeItem} />;
         })}
-        <Contact />
+      </div>
+      <div className="divider">
+        <div className="logoRigth"/>
       </div>
       <Rights />
     </div>

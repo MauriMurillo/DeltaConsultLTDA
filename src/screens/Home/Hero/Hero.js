@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import "animate.css";
 
 import { DeltaContext } from "../../../Contexts/DeltaContext";
 import "./hero.css";
@@ -8,20 +9,21 @@ function Hero() {
   const { heroPosition, forwardHero, rewindHero } = useContext(DeltaContext);
   const { homeHeroContent } = useContext(ContentContext);
   return (
-    <div className="heroContainer">
+    <div
+      className="heroContainer"
+      style={{
+        backgroundImage: `url(${homeHeroContent[heroPosition].imageURL})`,
+      }}
+    >
       <div className="textContainer">
-        <p className="title">{homeHeroContent[heroPosition].titulo}</p>
-        <p className="text">{homeHeroContent[heroPosition].texto}</p>
+        <p id="heroTitle" className="title animate__animated animate__fast">
+          {homeHeroContent[heroPosition].titulo}
+        </p>
+        <p id="heroText" className="text animate__animated animate__fast">
+          {homeHeroContent[heroPosition].texto}
+        </p>
       </div>
-      <div className="imageContainer">
-        <div
-          className="imageHero"
-          style={{
-            backgroundImage: `url(${homeHeroContent[heroPosition].imageURL})`,
-          }}
-        ></div>
-      </div>
-
+      <div className="imageContainer"></div>
       <div className="arrow forward" onClick={forwardHero}>
         <IoIosArrowForward size={24} />
       </div>

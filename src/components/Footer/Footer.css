@@ -1,41 +1,102 @@
 .footer {
   display: flex;
   flex-direction: column;
-  place-items: space-between;
+  align-items: center;
   justify-content: center;
-  background-color: #0d2a61;
+  background-color: #090909;
   width: 100vw;
   overflow: hidden;
   padding-left: 40px;
   padding-right: 40px;
+  margin-top: 100px;
 }
-
 .footerContainer {
+  margin-top: 30px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding-top: 20px;
+  margin-bottom: 40px;
 }
-
 .footerContainer > * {
-  background-color: white;
   margin-top: 20px;
   margin-bottom: 20px;
-  height: 100px;
+  /* height: 255px; */
   width: 200px;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
 }
-.footerContainer p {
-  font-size: 2rem;
-  text-align: center;
+.footerContainer .imageContainer {
+  width: 200px;
+  height: 40px;
+  background-image: url('../../Assets/Images/ISOLOGO\ DELTA\ BLANCO.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
+.contactDescription {
+  color: var(--text-gray-300, #d9dbe1);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+}
+
+.footerContainer .city {
+  color: var(--default-white, #fff);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+}
+.cn .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  align-self: flex-start;
+}
+.cn a{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+}
+.footer p {
+  color: var(--text-gray-300, #d9dbe1);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+.divider {
+  width: 90%;
+  height: 1px;
+  border-bottom: 1px solid #3a3a3a;
+  display: flex;
+  justify-content: center;
+}
+.divider .logoRigth {
+  height: 50px;
+  width: 150px;
+  background-image: url("../../Assets/Images/ISOTIPO\ DELTA\ BLANCO.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #090909;
+  position: relative;
+  top: -25px;
+}
 .derechos {
   color: white;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
   padding: 30px;
 }
-.derechos p {
+.footerContainer .derechos p {
   font-size: 1.8rem;
 }
 @media only screen and (max-width: 800px) {

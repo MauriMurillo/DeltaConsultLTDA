@@ -1,7 +1,7 @@
 .statsContainer {
   width: 100vw;
-  margin-top: 185px;
-  margin-bottom: 120px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -28,11 +28,47 @@
   box-shadow: 0px 10px 20px 0px rgba(41, 41, 42, 0.07);
 }
 .whiteContainer .stat {
-  width: 170px;
+  width: 245px;
   height: 170px;
   margin: 20px;
-  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
+
+.stat .logoContainer {
+  width: 56px;
+  height: 56px;
+  background-color: #235eb6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stat .logoContainer .iconStat {
+  width: 45px;
+  height: 45px;
+}
+.titleStat {
+  color: #235eb6;
+  text-align: center;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 64px; /* 133.333% */
+}
+.textStat {
+  color: var(--text-gray-900, #18191f);
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+}
+
 .logo {
   position: relative;
   left: -5vw;
@@ -53,11 +89,38 @@
     width: 95px;
     height: 95px;
   }
+
+  .stat .logoContainer {
+    width: 40px;
+    height: 40px;
+  }
+  .stat .logoContainer .iconStat {
+    width: 30px;
+    height: 30px;
+  }
+  .titleStat {
+    font-size: 32px;
+    line-height: 48px; /* 133.333% */
+  }
+  .textStat {
+    font-size: 12px;
+    line-height: 18px; /* 177.778% */
+  }
 }
 @media only screen and (max-width: 800px) {
+  .whiteContainer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
   .whiteContainer .stat {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
+    margin-top: 7px;
+    margin-bottom: 7px;
   }
   .blueContainer {
     grid-template-columns: auto 125px;
@@ -88,7 +151,6 @@
     background-color: white;
     box-shadow: 0px 10px 20px 0px rgba(41, 41, 42, 0.07);
     bottom: -70px;
-
   }
   .whiteContainer .stat {
     width: 120px;

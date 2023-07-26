@@ -9,7 +9,7 @@ function Home() {
   return (
     <div className="homeScreen">
       <Header />
-      {/* <Hero/> */}
+      <Hero/>
       <CompanyStats/>
       <Awards/>
       <Footer />
