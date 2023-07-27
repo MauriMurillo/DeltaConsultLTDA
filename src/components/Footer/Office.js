@@ -9,19 +9,19 @@ function Office(props) {
     <div className="officeContainer">
       <p className="city">{content.ciudad}</p>
       <div className="cn">
-        <a href={"mailto:" + content.mail}>
+        <a target="_blank" rel="noreferrer" href={"mailto:" + content.mail}>
           <img src={emailIcon} className="icon" alt="email" />
           <p> {content.mail}</p>
         </a>
       </div>
       <div className="cn">
-        <a href={"tel:" + content.telefono}>
+        <a target="_blank" rel="noreferrer" href={"tel:" + content.telefono}>
           <ReactSVG src={phoneIcon} className="icon" alt="phone" />
           <p> {content.telefono}</p>
         </a>
       </div>
       <div className="cn">
-        <a href={content.mapLink}>
+        <a target="_blank" rel="noreferrer" href={content.mapLink}>
           <ReactSVG src={locationIcon} className="icon" alt="location" />
           <p> {content.direccion}</p>
         </a>

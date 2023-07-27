@@ -1,5 +1,6 @@
 .heroContainer {
   height: calc(100vh - 120px);
+  max-height: 800px;
   width: 100vw;
   margin-top: 120px;
   display: flex;
@@ -9,8 +10,9 @@
   overflow: hidden;
 }
 
-.textContainer {
+.heroContainer .textContainer {
   height: calc(100vh - 125px);
+  max-height: 800px;
   width: 950px;
   padding: 70px;
 }

@@ -1,8 +1,28 @@
-import React from 'react'
-
+import React, { useContext } from "react";
+import { ClientsContentContext } from "../../../Contexts/ClientsContentContext";
+import "./ClientInfo.css";
 function ClientInfo() {
+  const { clients } = useContext(ClientsContentContext);
   return (
-    <div>ClientInfo</div>
-  )
+    <div className="clientSection">
+      <div className="textContainer">
+        <p className="clientTitle"> NUESTROS CLIENTES</p>
+        <p className="clientText">
+          Mas de 100 clientes confian en nuestros servicios
+        </p>
+      </div>
+      <div className="clientsContainer">
+        {clients.map((item) => {
+          return (
+            <div className="clientItem">
+              <div className="imageContainer">
+                <img src={item.logo} alt={item.name} />
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
 }
-export {ClientInfo}
+export { ClientInfo };

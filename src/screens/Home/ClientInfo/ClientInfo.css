@@ -1,0 +1,58 @@
+.clientSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--text-gray-100, #f4f5f7);
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+.clientSection .textContainer {
+  width: 80vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 78px;
+}
+.clientTitle {
+  color: #235eb6;
+  text-align: center;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 116.364% */
+  margin-bottom: 8px;
+}
+.clientText {
+  color: var(--text-gray-900, #18191f);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+}
+
+.clientsContainer {
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 80px;
+  row-gap: 36px;
+}
+.clientItem {
+  width: 170px;
+  height: 96px;
+  flex-shrink: 0;
+}
+.clientItem .imageContainer {
+  height: 100%;
+  width: 100%;
+}
+.clientItem .imageContainer img {
+  height: 100%;
+  width: 100%;
+}
