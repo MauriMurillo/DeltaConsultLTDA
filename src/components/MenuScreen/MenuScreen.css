@@ -1,22 +1,17 @@
 .menuScreen{
   position: fixed;
-  top: -10px;
+  top: 120px;
   left: -10px;
   right: -10px;
   bottom: -10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #4072d0;
-  opacity: 0.95;
+  background: #ACC3F8;
+
 }
 .closeMenu{
   position: fixed;
   bottom: 10px;
   right: 10px;
-  /* border: solid 2px black; */
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }

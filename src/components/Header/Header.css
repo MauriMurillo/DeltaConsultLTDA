@@ -30,11 +30,6 @@
   display: flex;
   place-items: center;
 }
-.listContainerVertical {
-  display: flex;
-  justify-content: center;
-  place-items: center;
-}
 .listScreensHorizontal {
   width: 860px;
   height: 47px;
@@ -43,14 +38,32 @@
   align-items: center;
   justify-content: flex-end;
 }
-.listScreensVertical {
-  list-style-type: none;
+.listContainerVertical {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  place-items: center;
+  align-items: center;
 }
-.screens li a {
+.listScreensVertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 285px;
+}
+.listScreensVertical div {
+  height: 32px;
+  margin-top: 65px;
+}
+.listScreensVertical div a {
+  display: inline-block;
+  color: #fffefe;
+  text-align: center;
+  font-family: Encode Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+}
+.listScreensHorizontal div a {
   font-size: 20px;
   text-decoration: none;
   color: #fffefe;
@@ -58,7 +71,7 @@
   font-weight: 500;
   line-height: 20px;
 }
-.screens li {
+.listScreensHorizontal div {
   margin-left: 70px;
 }
 @media only screen and (max-width: 1150px) {
@@ -78,12 +91,12 @@
     width: 559px;
     height: 39px;
   }
-  .screens li a {
+  .listScreensHorizontal div a {
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
   }
-  .screens li {
+  .listScreensHorizontal div {
     margin-left: 50px;
   }
 }
@@ -118,6 +131,25 @@
   .imageContainer {
     width: 282px;
     height: 49px;
+  }
+  .listScreensVertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 192px;
+  }
+  .listScreensVertical div {
+    height: 32px;
+    margin-top: 65px;
+  }
+  .listScreensVertical div a {
+    display: inline-block;
+    color: #fffefe;
+    text-align: center;
+    text-decoration: none;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
   }
 }
 @media only screen and (max-width: 400px) {
