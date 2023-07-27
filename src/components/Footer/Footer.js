@@ -4,9 +4,12 @@ import { Office } from "./Office";
 import { Contact } from "./Contact";
 import { Rights } from "./Rights";
 import { ContentContext } from "../../Contexts/ContentContext";
-
+import logo from "../../Assets/Images/ISOTIPO DELTA BLANCO.png";
+import { Socials } from "./Socials";
+import { DeltaContext } from "../../Contexts/DeltaContext";
 function Footer() {
   const { offices } = useContext(ContentContext);
+  const { screenSize } = useContext(DeltaContext);
   return (
     <div className="footer">
       <div className="footerContainer">
@@ -16,7 +19,10 @@ function Footer() {
         })}
       </div>
       <div className="divider">
-        <div className="logoRigth"/>
+        {screenSize.width >= 1000 ? <Socials /> : null}
+        <div className="logoRight">
+          <img src={logo} alt="logo" />
+        </div>
       </div>
       <Rights />
     </div>

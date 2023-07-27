@@ -7,41 +7,41 @@ function MenuList(props) {
   const { setShowFullMenu } = useContext(DeltaContext);
   return (
     <div className={`listContainer${orientation}`}>
-      <ul className={`listScreens${orientation} screens`}>
+      <div className={`listScreens${orientation} screens`}>
         {orientation === "Vertical" ? (
-          <li>
+          <div>
             <NavLink to={"/"} onClick={() => setShowFullMenu(false)}>
               INICIO
             </NavLink>
-          </li>
+          </div>
         ) : null}
-        <li>
+        <div>
           <NavLink to={"/services"} onClick={() => setShowFullMenu(false)}>
             SERVICIOS
           </NavLink>
-        </li>
-        <li>
+        </div>
+        <div>
           <NavLink to={"/team"} onClick={() => setShowFullMenu(false)}>
             EQUIPO
           </NavLink>
-        </li>
-        <li>
+        </div>
+        <div>
           <NavLink to={"/aboutUs"} onClick={() => setShowFullMenu(false)}>
             NOSOTROS
           </NavLink>
-        </li>
-        <li>
+        </div>
+        <div>
           <NavLink to={"/contact"} onClick={() => setShowFullMenu(false)}>
             {" "}
             CONTACTO
           </NavLink>
-        </li>
-        <li>
+        </div>
+        <div>
           <NavLink to={"/SMS"} onClick={() => setShowFullMenu(false)}>
             ALIADOS
           </NavLink>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   );
 }

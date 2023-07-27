@@ -15,15 +15,15 @@ function Office(props) {
         </a>
       </div>
       <div className="cn">
-        <a href={content.mapLink}>
-          <ReactSVG src={locationIcon} className="icon" alt="location" />
-          <p> {content.direccion}</p>
-        </a>
-      </div>
-      <div className="cn">
         <a href={"tel:" + content.telefono}>
           <ReactSVG src={phoneIcon} className="icon" alt="phone" />
           <p> {content.telefono}</p>
+        </a>
+      </div>
+      <div className="cn">
+        <a href={content.mapLink}>
+          <ReactSVG src={locationIcon} className="icon" alt="location" />
+          <p> {content.direccion}</p>
         </a>
       </div>
     </div>
