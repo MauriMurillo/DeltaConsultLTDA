@@ -10,7 +10,7 @@ function Header() {
   const { screenSize, showFullMenu, setShowFullMenu } =
     useContext(DeltaContext);
 
-  if (screenSize.width <= 700) {
+  if (screenSize.width <= 800) {
     return (
       <nav className="navBar">
         <div className="imageContainer">

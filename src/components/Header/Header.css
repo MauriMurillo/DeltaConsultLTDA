@@ -1,19 +1,20 @@
 .navBar {
   display: flex;
   place-items: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
   background-color: #235eb6;
   width: 100vw;
   height: 120px;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 65px;
+  padding-right: 65px;
   z-index: 999;
 }
 .imageContainer {
-  width: 471px;
-  height: 76px;
+  width: 442px;
+  height: 71px;
 }
 .imageContainer a {
   display: block;
@@ -25,9 +26,9 @@
 }
 .listContainerHorizontal {
   width: 860px;
+  height: 47px;
   display: flex;
   place-items: center;
-  height: 45px;
 }
 .listContainerVertical {
   display: flex;
@@ -60,39 +61,75 @@
 .screens li {
   margin-left: 70px;
 }
-.screens li a.active {
-  font-weight: bold;
-}
-
-@media only screen and (max-width: 800px) {
-}
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1150px) {
   .navBar {
-    padding-left: 20px;
-    padding-right: 20px;
-    z-index: 999;
-    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
   }
-  .showMenuButton{
-    height: 50px;
-    width: 50px;
+  .imageContainer {
+    width: 330px;
+    height: 47px;
   }
-  .showMenuButton img{
+  .listContainerHorizontal {
+    width: 559px;
+    height: 39px;
+  }
+  .listScreensHorizontal {
+    width: 559px;
+    height: 39px;
+  }
+  .screens li a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .screens li {
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .navBar {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .imageContainer {
+    width: 351px;
+    height: 57px;
+  }
+  .showMenuButton {
+    height: 65px;
+    width: 64px;
+  }
+  .showMenuButton img {
     height: 100%;
     width: 100%;
   }
+}
+@media only screen and (max-width: 600px) {
+  .navBar {
+    padding-left: 32px;
+    padding-right: 32px;
+    z-index: 999;
+  }
+  .showMenuButton {
+    height: 58px;
+    width: 57px;
+  }
   .imageContainer {
-    width: 294px;
-    height: 51px;
+    width: 282px;
+    height: 49px;
   }
 }
 @media only screen and (max-width: 400px) {
-  .showMenuButton{
-    height: 40px;
-    width: 40px;
+  .navBar {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .showMenuButton {
+    height: 45px;
+    width: 45px;
   }
   .imageContainer {
-    width: 294px;
     height: 40px;
   }
 }
