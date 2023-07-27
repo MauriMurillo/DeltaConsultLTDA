@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
-
+import menu from "../../Assets/Icons/menu-sharp.svg"
 import "./Header.css";
 import { DeltaContext } from "../../Contexts/DeltaContext";
 import { MenuScreen } from "../MenuScreen/MenuScreen";
@@ -11,7 +10,7 @@ function Header() {
   const { screenSize, showFullMenu, setShowFullMenu } =
     useContext(DeltaContext);
 
-  if (screenSize.width <= 800) {
+  if (screenSize.width <= 700) {
     return (
       <nav className="navBar">
         <div className="imageContainer">
@@ -23,10 +22,8 @@ function Header() {
           </MenuScreen>
         ) : null}
         <div className="showMenuButton">
-          <FaBars size={32} color="white" onClick={() => setShowFullMenu(true)}>
-            {" "}
-            Menu{" "}
-          </FaBars>
+          <img src={menu} alt="show menu" onClick={() => setShowFullMenu(true)}>
+          </img>
         </div>
       </nav>
     );

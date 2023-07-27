@@ -23,7 +23,6 @@ function Hero() {
           {homeHeroContent[heroPosition].texto}
         </p>
       </div>
-      <div className="imageContainer"></div>
       <div className="arrow forward" onClick={forwardHero}>
         <IoIosArrowForward size={24} />
       </div>
