@@ -1,9 +1,9 @@
 import React from "react";
 import "./CompanyStats.css";
 import { Stat } from "./Stat";
-import thumbUp from "../../../Assets/Icons/stats/thumbs-up-sharp.svg"
+import thumbUp from "../../../Assets/Icons/stats/thumbs up.svg"
 import clients from "../../../Assets/Icons/stats/people.svg"
-import check from "../../../Assets/Icons/stats/checkmark-circle-sharp.svg"
+import check from "../../../Assets/Icons/stats/checkmark.svg"
 import calendar from "../../../Assets/Icons/stats/calendar.svg"
 
 function CompanyStats() {
@@ -40,7 +40,6 @@ function CompanyStats() {
             }}
           />
         </div>
-        <div className="logo"></div>
       </div>
     </div>
   );

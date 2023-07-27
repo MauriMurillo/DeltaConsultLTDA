@@ -9,34 +9,36 @@
 .blueContainer {
   width: 90%;
   border-radius: 140px;
-  display: grid;
-  grid-template-columns: auto 145px;
+  display: flex;
+  justify-content: center;
   align-items: center;
   background-color: #235eb6;
 }
 .whiteContainer {
+  width: 100%;
   position: relative;
   left: -10vw;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  border-radius: 120px;
   justify-content: space-evenly;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  border-radius: 100px;
   background-color: white;
   box-shadow: 0px 10px 20px 0px rgba(41, 41, 42, 0.07);
 }
+
 .whiteContainer .stat {
-  width: 245px;
-  height: 170px;
-  margin: 20px;
+  width: 239px;
+  height: 167px;
+  margin-bottom: 32px;
+  margin-top: 32px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
 }
-
 .stat .logoContainer {
   width: 56px;
   height: 56px;
@@ -47,8 +49,8 @@
   align-items: center;
 }
 .stat .logoContainer .iconStat {
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
 }
 .titleStat {
   color: #235eb6;
@@ -68,35 +70,18 @@
   font-weight: 400;
   line-height: 32px; /* 177.778% */
 }
-
-.logo {
-  position: relative;
-  left: -5vw;
-  justify-self: center;
-  width: 115px;
-  height: 115px;
-  /* background-color: aliceblue; */
-  background-image: url("../../../Assets/Images/ISOTIPO\ DELTA\ BLANCO.png");
-  background-size: contain;
-}
-
 @media only screen and (max-width: 1150px) {
   .whiteContainer .stat {
-    width: 130px;
+    width: 160px;
     height: 130px;
   }
-  .logo {
-    width: 95px;
-    height: 95px;
-  }
-
   .stat .logoContainer {
     width: 40px;
     height: 40px;
   }
   .stat .logoContainer .iconStat {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
   }
   .titleStat {
     font-size: 32px;
@@ -108,60 +93,42 @@
   }
 }
 @media only screen and (max-width: 800px) {
-  .whiteContainer {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
   .whiteContainer .stat {
     width: 130px;
-    height: 130px;
-    margin-top: 7px;
-    margin-bottom: 7px;
+    height: 100px;
   }
-  .blueContainer {
-    grid-template-columns: auto 125px;
+  .titleStat {
+    font-size: 28px;
+    line-height: 42px; /* 133.333% */
   }
-  .logo {
-    width: 90px;
-    height: 90px;
+  .textStat {
+    font-size: 10px;
+    line-height: 14px; /* 177.778% */
   }
 }
 @media only screen and (max-width: 600px) {
   .statsContainer {
     justify-content: center;
+    margin-bottom: 110px;
   }
   .blueContainer {
     width: 90%;
     border-radius: 120px;
-    grid-template-rows: 80px auto;
-    grid-template-columns: auto;
-    justify-items: center;
   }
   .whiteContainer {
     width: 70%;
     left: 0vw;
     margin-top: 0px;
     margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     flex-direction: column;
     border-radius: 90px;
-    background-color: white;
-    box-shadow: 0px 10px 20px 0px rgba(41, 41, 42, 0.07);
-    bottom: -70px;
+    bottom: -90px;
   }
   .whiteContainer .stat {
-    width: 120px;
+    width: 140px;
     height: 120px;
     margin: 15px;
-  }
-  .logo {
-    grid-row-start: 1;
-    left: 0;
-    bottom: -30px;
-    width: 80px;
-    height: 80px;
   }
 }
