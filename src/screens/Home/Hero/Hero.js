@@ -13,6 +13,7 @@ function Hero() {
       className="heroContainer"
       style={{
         backgroundImage: `url(${homeHeroContent[heroPosition].imageURL})`,
+        backgroundColor:"red",
       }}
     >
       <div className="textContainer">

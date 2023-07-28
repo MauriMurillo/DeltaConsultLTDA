@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./screens/Home/Home";
 import { Team } from "./screens/Team/Team";
 import { Services } from "./screens/Services";
@@ -14,7 +14,7 @@ function App() {
   return (
     <ContentProvider>
       <DeltaProvider>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/team" element={<Team />} />
@@ -24,7 +24,7 @@ function App() {
             <Route path="/Contact" element={<Contact />} />
             <Route path="/aboutUs" element={<AboutUs />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </DeltaProvider>
     </ContentProvider>
   );

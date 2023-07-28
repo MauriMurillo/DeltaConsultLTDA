@@ -14,7 +14,7 @@ function Home() {
       <Header />
       <Hero />
       <CompanyStats />
-      <Awards />
+      {/* <Awards /> */}
       <ClientsContentProvider>
         <ClientInfo />
       </ClientsContentProvider>

@@ -3,7 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #090909;
+  /* background-color: #090909; */
+  background-color: #364660;
   width: 100vw;
   overflow: hidden;
   padding-left: 65px;
@@ -90,6 +91,7 @@
   position: relative;
   top: -25px;
   background-color: #090909;
+  background-color: #364660;
   padding-right: 60px;
 }
 .divider .logoLeft img {
@@ -103,6 +105,7 @@
   position: relative;
   top: -25px;
   background-color: #090909;
+  background-color: #364660;
 }
 .divider .logoLeft a {
   height: 50px;
@@ -224,6 +227,7 @@
     justify-content: flex-start;
     position: relative;
     background-color: #090909;
+  background-color: #364660;
     padding-right: 0px;
   }
   .contactContainer .logoLeft img {
@@ -283,6 +287,8 @@
     position: relative;
     top: -25px;
     background-color: #090909;
+  background-color: #364660;
+
   }
   .divider .logoRight img {
     width: 50px;
