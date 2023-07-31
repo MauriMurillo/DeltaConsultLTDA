@@ -3,12 +3,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: #090909; */
   background-color: #364660;
   width: 100vw;
   overflow: hidden;
-  padding-left: 65px;
-  padding-right: 65px;
+  padding-left: 70px;
+  padding-right: 70px;
   padding-top: 70px;
 }
 .footerContainer {
@@ -16,21 +15,23 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 75px;
+  margin-bottom: 85px;
 }
 .contactContainer {
-  width: 330px;
-  margin-right: 120px;
+  width: 290px;
+  margin-right: 80px;
 }
 .officeContainer {
   width: 255px;
+  flex-shrink: 0;
   margin-top: 10px;
 }
 
 .footerContainer .imageContainer {
-  width: 330px;
-  height: 54px;
-  margin-bottom: 40px;
+  width: 281px;
+  height: 44px;
+  flex-shrink: 0;
+  margin-bottom: 42px;
 }
 .footerContainer .imageContainer img {
   width: 100%;
@@ -42,20 +43,27 @@
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
-  line-height: 38px; /* 223.529% */
+  line-height: 30px; /* 176.471% */
 }
 
 .officeContainer .city {
   height: 42px;
   color: var(--default-white, #fff);
-  font-size: 20px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px; /* 150% */
+  margin-bottom: 35px;
+}
+.cn {
+  margin-bottom: 50px;
+}
+.cn:last-child {
+  margin-bottom: 0px;
 }
 .cn a .icon {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   margin-right: 8px;
   align-self: flex-start;
 }
@@ -64,24 +72,22 @@
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
-  margin-top: 41px;
 }
 .footer p {
   color: var(--text-gray-300, #d9dbe1);
   font-family: Inter;
-  font-size: 14px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
 }
-
 .divider {
-  width: calc(100vw - 144px);
+  width: calc(100vw - 140px);
   height: 1px;
   border-bottom: 1px solid #3a3a3a;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 55px;
+  margin-bottom: 60px;
 }
 .divider .logoLeft {
   width: 330px;
@@ -90,28 +96,26 @@
   justify-content: space-between;
   position: relative;
   top: -25px;
-  background-color: #090909;
   background-color: #364660;
-  padding-right: 60px;
+  padding-right: 45px;
 }
 .divider .logoLeft img {
   width: 30px;
   height: 30px;
 }
 .divider .logoRight {
-  width: 90px;
+  width: 100px;
   height: 50px;
   padding-left: 50px;
   position: relative;
   top: -25px;
-  background-color: #090909;
   background-color: #364660;
 }
 .divider .logoLeft a {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: #222222;
+  background-color: #4a5970;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,9 +124,8 @@
   width: 50px;
   height: 50px;
 }
-
 .derechos {
-  margin-bottom: 65px;
+  margin-bottom: 75px;
 }
 .footer .derechos p {
   color: var(--text-gray-300, #d9dbe1);
@@ -134,7 +137,7 @@
   line-height: 24px; /* 171.429% */
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1100px) {
+@media only screen and (min-width: 1000px) and (max-width: 1350px) {
   .footer {
     padding-left: 40px;
     padding-right: 40px;
@@ -202,7 +205,7 @@
     height: 35px;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .footer {
     padding-left: 45px;
     padding-right: 45px;
@@ -226,27 +229,25 @@
     display: flex;
     justify-content: flex-start;
     position: relative;
-    background-color: #090909;
-  background-color: #364660;
+    background-color: #364660;
     padding-right: 0px;
   }
   .contactContainer .logoLeft img {
     width: 30px;
     height: 30px;
   }
-  
   .contactContainer .logoLeft a {
     height: 50px;
     width: 50px;
     margin-right: 25px;
     border-radius: 50%;
-    background-color: #222222;
+    background-color: #4a5970;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 756px) {
   .footer {
     padding-left: 32px;
     padding-right: 32px;
@@ -260,6 +261,8 @@
   }
   .footerContainer .imageContainer {
     width: 100%;
+    max-width: 450px;
+    height: auto;
     margin-bottom: 40px;
   }
   .footer .contactDescription {
@@ -286,9 +289,7 @@
     padding-left: 0px;
     position: relative;
     top: -25px;
-    background-color: #090909;
-  background-color: #364660;
-
+    background-color: #364660;
   }
   .divider .logoRight img {
     width: 50px;

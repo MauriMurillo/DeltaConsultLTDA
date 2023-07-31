@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { DeltaContext } from "../../Contexts/DeltaContext";
 import { Socials } from "./Socials";
-import logo from "../../Assets/Images/ISOLOGO DELTA BLANCO.png"
+import logo from "../../Assets/Images/ISOLOGO DELTA BLANCO 2 (1).png"
 function Contact() {
   const { screenSize } = useContext(DeltaContext);
   return (
