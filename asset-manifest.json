@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/DeltaConsultLTDA/static/css/main.e26226fc.css",
+    "main.css": "/DeltaConsultLTDA/static/css/main.c92b5595.css",
     "main.js": "/DeltaConsultLTDA/static/js/main.a44dd621.js",
     "static/media/hero1.png": "/DeltaConsultLTDA/static/media/hero1.f60a8cbdf86a97d73f76.png",
     "static/media/ISOLOGO DELTA BLANCO.png": "/DeltaConsultLTDA/static/media/ISOLOGO DELTA BLANCO.aa4e2ade52f35f254441.png",
@@ -25,11 +25,11 @@
     "static/media/logo-facebook.svg": "/DeltaConsultLTDA/static/media/logo-facebook.802b893bf23c3576d9a63d1fa084a66d.svg",
     "static/media/checkmark.svg": "/DeltaConsultLTDA/static/media/checkmark.4441aac1425be3f2eb3e1c4ea634c555.svg",
     "static/media/menu-sharp.svg": "/DeltaConsultLTDA/static/media/menu-sharp.32b47a7fa29e5a904071d3927ed27090.svg",
-    "main.e26226fc.css.map": "/DeltaConsultLTDA/static/css/main.e26226fc.css.map",
+    "main.c92b5595.css.map": "/DeltaConsultLTDA/static/css/main.c92b5595.css.map",
     "main.a44dd621.js.map": "/DeltaConsultLTDA/static/js/main.a44dd621.js.map"
   },
   "entrypoints": [
-    "static/css/main.e26226fc.css",
+    "static/css/main.c92b5595.css",
     "static/js/main.a44dd621.js"
   ]
 }
