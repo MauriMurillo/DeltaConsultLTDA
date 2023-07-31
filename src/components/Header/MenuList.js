@@ -8,21 +8,9 @@ function MenuList(props) {
   return (
     <div className={`listContainer${orientation}`}>
       <div className={`listScreens${orientation} screens`}>
-        {orientation === "Vertical" ? (
-          <div>
-            <NavLink to={"/"} onClick={() => setShowFullMenu(false)}>
-              INICIO
-            </NavLink>
-          </div>
-        ) : null}
         <div>
           <NavLink to={"/services"} onClick={() => setShowFullMenu(false)}>
             SERVICIOS
-          </NavLink>
-        </div>
-        <div>
-          <NavLink to={"/team"} onClick={() => setShowFullMenu(false)}>
-            EQUIPO
           </NavLink>
         </div>
         <div>
@@ -31,14 +19,18 @@ function MenuList(props) {
           </NavLink>
         </div>
         <div>
+          <NavLink to={"/SMS"} onClick={() => setShowFullMenu(false)}>
+            SMS LATAM
+          </NavLink>
+        </div>
+        <div>
           <NavLink to={"/contact"} onClick={() => setShowFullMenu(false)}>
-            {" "}
             CONTACTO
           </NavLink>
         </div>
         <div>
-          <NavLink to={"/SMS"} onClick={() => setShowFullMenu(false)}>
-            ALIADOS
+          <NavLink to={"/MiDelta"} onClick={() => setShowFullMenu(false)}>
+            MiDELTA
           </NavLink>
         </div>
       </div>

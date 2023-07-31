@@ -4,14 +4,6 @@
   left: -10px;
   right: -10px;
   bottom: -10px;
-  background: #ACC3F8;
+  background: #9CA8BB;
 
-}
-.closeMenu{
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
 }
