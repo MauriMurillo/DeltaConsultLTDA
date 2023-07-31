@@ -63,14 +63,16 @@ function DeltaProvider(props) {
     const animatedTitle = document.getElementById("heroTitle");
     const animatedText = document.getElementById("heroText");
 
-    setTimeout(() => {
-      animatedTitle.classList.remove(animationClassOut);
-      animatedText.classList.remove(animationClassOut);
-      animatedTitle.classList.remove(animationClass);
-      animatedText.classList.remove(animationClass);
-      animatedTitle.classList.add(animationClass);
-      animatedText.classList.add(animationClass);
-    }, 50);
+    if (animatedText && animatedTitle) {
+      setTimeout(() => {
+        animatedTitle.classList.remove(animationClassOut);
+        animatedText.classList.remove(animationClassOut);
+        animatedTitle.classList.remove(animationClass);
+        animatedText.classList.remove(animationClass);
+        animatedTitle.classList.add(animationClass);
+        animatedText.classList.add(animationClass);
+      }, 50);
+    }
 
     const next = (heroPosition + 1) % homeHeroContent.length;
     const move = setTimeout(() => {
@@ -81,17 +83,13 @@ function DeltaProvider(props) {
         animatedText.classList.remove(animationClassOut);
         animatedTitle.classList.add(animationClassOut);
         animatedText.classList.add(animationClassOut);
+        setTimeout(() => {
+          setHeroPosition(next);
+        }, 801);
       }
-      setTimeout(() => {
-        setHeroPosition(next);
-      }, 801);
     }, 6000);
     return () => clearTimeout(move);
   }, [heroPosition, homeHeroContent]);
-
-  // useEffect(() => {
-
-  // }, [heroPosition]);
 
   return (
     <DeltaContext.Provider
