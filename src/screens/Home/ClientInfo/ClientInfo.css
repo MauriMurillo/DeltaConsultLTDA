@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--text-gray-100, #f4f5f7);
   margin-bottom: 25vh;
 }
 .clientSection .textContainer {
@@ -16,7 +15,7 @@
   margin-bottom: 78px;
 }
 .clientTitle {
-  color: #235eb6;
+  color: #1D619D;
   text-align: center;
   font-size: 55px;
   font-style: normal;

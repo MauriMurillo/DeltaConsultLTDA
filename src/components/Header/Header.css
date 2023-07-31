@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #235eb6;
+  background-color: #1D619D;
   width: 100vw;
   height: 120px;
   padding-left: 60px;
@@ -78,6 +78,9 @@
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
+}
+.screens a:active{
+  color: #ACC3F8;
 }
 @media only screen and (max-width: 1250px) {
   .navBar {
