@@ -10,6 +10,7 @@ import clients from "../../Assets/Icons/stats/people.svg";
 import check from "../../Assets/Icons/stats/checkmark.svg";
 import calendar from "../../Assets/Icons/stats/calendar.svg";
 import { ClientInfo } from "./ClientInfo/ClientInfo.js";
+import { Trust } from "./Trust/Trust";
 function Home() {
   return (
     <div className="homeScreen">
@@ -43,6 +44,7 @@ function Home() {
       <ClientsContentProvider>
         <ClientInfo />
       </ClientsContentProvider>
+      <Trust/>
       <Footer />
     </div>
   );
