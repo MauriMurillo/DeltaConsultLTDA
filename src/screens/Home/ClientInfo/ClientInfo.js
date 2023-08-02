@@ -2,13 +2,15 @@ import React, { useContext } from "react";
 import { ClientsContentContext } from "../../../Contexts/ClientsContentContext";
 import "./ClientInfo.css";
 import { CompanyStats } from "../CompanyStats/CompanyStats";
+import { ContentContext } from "../../../Contexts/ContentContext";
 function ClientInfo() {
   const { clients } = useContext(ClientsContentContext);
+  const { clientStatistics } = useContext(ContentContext);
   return (
     <div className="clientSection">
       <div className="clientLogos">
         <div className="textContainer">
-          <p className="clientTitle"> NUESTROS CLIENTES</p>
+          <p className="clientTitle">NUESTROS CLIENTES</p>
           <p className="clientText">
             Mas de 100 clientes confian en nuestros servicios
           </p>
@@ -25,27 +27,7 @@ function ClientInfo() {
           })}
         </div>
       </div>
-      <CompanyStats
-        direccion={"left"}
-        estadisticas={[
-          {
-            title: "250+",
-            text: "Clientes Satisfechos",
-          },
-          {
-            title: "50+",
-            text: "Profesionales",
-          },
-          {
-            title: "85+",
-            text: "Consultorias realizadas",
-          },
-          {
-            title: "47",
-            text: "Años de experiencia",
-          },
-        ]}
-      />
+      <CompanyStats direccion={"left"} estadisticas={clientStatistics} />
     </div>
   );
 }

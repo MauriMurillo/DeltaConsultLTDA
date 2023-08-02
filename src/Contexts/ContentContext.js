@@ -1,5 +1,9 @@
-import hero from "../Assets/Images/hero1.png";
 import React from "react";
+import hero from "../Assets/Images/hero1.png";
+import thumbUp from "../Assets/Icons/stats/thumbs up.svg";
+import clients from "../Assets/Icons/stats/people.svg";
+import check from "../Assets/Icons/stats/checkmark.svg";
+import calendar from "../Assets/Icons/stats/calendar.svg";
 const ContentContext = React.createContext();
 
 function ContentProvider(props) {
@@ -49,11 +53,59 @@ function ContentProvider(props) {
     },
   ];
 
+  const generalStatistics = [
+    {
+      icon: thumbUp,
+      title: "250+",
+      text: "Clientes Satisfechos",
+    },
+    {
+      icon: clients,
+      title: "50+",
+      text: "Profesionales",
+    },
+    {
+      icon: check,
+      title: "85+",
+      text: "Consultorias realizadas",
+    },
+    {
+      icon: calendar,
+      title: "47",
+      text: "Años de experiencia",
+    },
+  ];
+
+  const clientStatistics = [
+    {
+      icon: thumbUp,
+      title: "250+",
+      text: "Clientes Satisfechos",
+    },
+    {
+      icon: clients,
+      title: "50+",
+      text: "Profesionales",
+    },
+    {
+      icon: check,
+      title: "85+",
+      text: "Consultorias realizadas",
+    },
+    {
+      icon: calendar,
+      title: "47",
+      text: "Años de experiencia",
+    },
+  ];
+
   return (
     <ContentContext.Provider
       value={{
         offices,
         homeHeroContent,
+        generalStatistics,
+        clientStatistics
       }}
     >
       {props.children}
