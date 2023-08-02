@@ -17,11 +17,11 @@
 .clientTitle {
   color: #1D619D;
   text-align: center;
-  font-size: 55px;
+  font-size: 64px;
   font-style: normal;
   font-weight: 700;
   line-height: 64px; /* 116.364% */
-  margin-bottom: 8px;
+  margin-bottom: 30px;
 }
 .clientText {
   color: var(--text-gray-900, #18191f);
@@ -29,7 +29,6 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 133.333% */
 }
 
 .clientsContainer {
