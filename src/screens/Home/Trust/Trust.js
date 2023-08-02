@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Trust.css";
 import confiar from "../../../Assets/Images/Person Image.png";
+import confiarSmall from "../../../Assets/Images/Person Image (1).png"
+import { DeltaContext } from "../../../Contexts/DeltaContext";
 function Trust() {
+  const {screenSize} = useContext(DeltaContext);
   return (
     <div className="trustContainer">
       <div className="imageContainer">
-        <img alt="personal de Delta" src={confiar} />
+        <img alt="personal de Delta" src={screenSize.width > 950 ? confiar : confiarSmall} />
       </div>
       <div className="textContainer">
         <div className="confiarTitle">
