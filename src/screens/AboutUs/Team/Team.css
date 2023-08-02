@@ -50,6 +50,7 @@
   border-radius: 20px;
   background-color: #1d619d;
 }
+
 .teamContainer .membersContainer .card .imageContainer {
   width: 256px;
   height: 192px;
@@ -96,7 +97,7 @@
   font-weight: 700;
   line-height: normal;
 }
-@media only screen and (max-width: 1020px){
+@media only screen and (max-width: 1020px) {
   .teamContainer {
     padding-left: 45px;
     padding-right: 45px;
@@ -104,5 +105,43 @@
   .teamContainer .membersContainer {
     gap: 32px;
     row-gap: 64px;
+  }
+}
+@media only screen and (min-width: 1336px){
+  .teamContainer .membersContainer .card:nth-child(8n-3) {
+    background-color: #364660;
+  }
+  .teamContainer .membersContainer .card:nth-child(8n-2) {
+    background-color: #364660;
+  }
+  .teamContainer .membersContainer .card:nth-child(8n-1) {
+    background-color: #364660;
+  }
+  .teamContainer .membersContainer .card:nth-child(8n) {
+    background-color: #364660;
+  }
+}
+@media only screen and (min-width: 922px) and (max-width: 1335px) {
+  .teamContainer .membersContainer .card:nth-child(6n-2) {
+    background-color: #364660;
+  }
+  .teamContainer .membersContainer .card:nth-child(6n-1) {
+    background-color: #364660;
+  }
+  .teamContainer .membersContainer .card:nth-child(6n) {
+    background-color: #364660;
+  }
+}
+@media only screen and (min-width: 634px) and (max-width: 921px) {
+  .teamContainer .membersContainer .card:nth-child(4n-1) {
+    background-color: #364660;
+  }
+  .teamContainer .membersContainer .card:nth-child(4n) {
+    background-color: #364660;
+  }
+}
+@media only screen and (max-width: 633px) {
+  .teamContainer .membersContainer .card:nth-child(2n) {
+    background-color: #364660;
   }
 }
