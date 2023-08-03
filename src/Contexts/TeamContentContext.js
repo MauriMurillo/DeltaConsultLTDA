@@ -114,10 +114,33 @@ function TeamContentProvider(props) {
     },
   ];
 
+  const coreValuesInfo = {
+    mision: {
+      title: "MISION",
+      description:
+        "Respeto total en el compromiso con el cliente: El cumplimiento del “commitment” o compromiso con el cliente es nuestro principal valor, siempre debemos cumplir con el servicio prometido y en las fechas comprometidas. ",
+    },
+    vision: {
+      title: "VISION",
+      description:
+        "Respeto total en el compromiso con el cliente: El cumplimiento del “commitment” o compromiso con el cliente es nuestro principal valor, siempre debemos cumplir con el servicio prometido y en las fechas comprometidas. ",
+    },
+    etica: {
+      title: "ETICA",
+      description:
+        "Basar la actividad en un firme respeto hacia el individuo, fundamento esencial de toda organización.* Liderar el trabajo profesional en la región que hemos definido como de nuestra incumbencia* Prestar el servicio profesional con los mejores estándares de calidad.* ",
+    },
+    valores: {
+      title: "VALORES",
+      description:
+        "Basar la actividad en un firme respeto hacia el individuo, fundamento esencial de toda organización.* Liderar el trabajo profesional en la región que hemos definido como de nuestra incumbencia* Prestar el servicio profesional con los mejores estándares de calidad.* ",
+    },
+  };
   return (
     <TeamContentContext.Provider
       value={{
         teamMembers,
+        coreValuesInfo
       }}
     >
       {props.children}

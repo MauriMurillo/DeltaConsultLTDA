@@ -10,8 +10,8 @@ function AboutUs() {
   return (
     <div className="aboutUsScreen">
       <Header />
-      <CoreValues />
       <TeamContentProvider>
+        <CoreValues />
         <Team />
       </TeamContentProvider>
       <History />

@@ -15,27 +15,27 @@ function Services() {
           </p>
         </div>
         <div className="serviceGrid">
-          <div className="serviceA">
+          <div className="serviceA animate__animated animate__slideInLeft">
             <div>
               <p>AUDITORIA EXTERNA</p>
             </div>
           </div>
-          <div className="serviceB">
+          <div className="serviceB animate__animated animate__slideInDown">
             <div>
               <p>CONSULTORIA IMPOSITIVA</p>
             </div>
           </div>
-          <div className="serviceC">
+          <div className="serviceC animate__animated animate__slideInUp">
             <div>
               <p>CONSULTORIA ESTRATEGICA</p>
             </div>
           </div>
-          <div className="serviceD">
+          <div className="serviceD animate__animated animate__zoomIn">
             <div>
               <p>CONSULTORIA FINANCIERA</p>
             </div>
           </div>
-          <div className="serviceE">
+          <div className="serviceE animate__animated animate__slideInRight">
             <div>
               <p>CONSULTORIA DE SOSTENIBILIDAD</p>
             </div>

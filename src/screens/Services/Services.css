@@ -3,8 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-bottom: 25vh;
   margin-top: 150px;
 }
@@ -26,10 +26,10 @@
   line-height: normal;
   margin-bottom: 50px;
 }
-
 .serviceGrid {
   height: 640px;
-  width: 1220px;
+  width: 85vw;
+  min-width: 960px;
   display: grid;
   grid-template-columns: 224px 1fr 1fr 224px;
   grid-template-rows: repeat(3, 192px);
@@ -42,6 +42,7 @@
 .serviceGrid > div {
   position: relative;
   background-size: cover;
+  animation-duration: 2s;
 }
 .serviceGrid > div > div {
   width: 224px;
@@ -60,7 +61,6 @@
   font-weight: 700;
   line-height: 22px;
 }
-
 .serviceGrid .serviceA {
   grid-area: a;
   background-image: url("../../Assets/Images/serviceImage/Rectangle\ 609.png");
@@ -81,7 +81,6 @@
   grid-area: e;
   background-image: url("../../Assets/Images/serviceImage/Rectangle\ 610.png");
 }
-
 .serviceGrid .serviceB div {
   position: absolute;
   bottom: 0px;
