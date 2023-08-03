@@ -1,0 +1,97 @@
+.servicesSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-bottom: 25vh;
+  margin-top: 150px;
+}
+.servicesSection .textContainer .titleServices {
+  color: #1d619d;
+  text-align: center;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  margin-bottom: 25px;
+}
+.servicesSection .textContainer .textServices {
+  color: #090909;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 50px;
+}
+
+.serviceGrid {
+  height: 640px;
+  width: 1220px;
+  display: grid;
+  grid-template-columns: 224px 1fr 1fr 224px;
+  grid-template-rows: repeat(3, 192px);
+  grid-gap: 32px;
+  grid-template-areas:
+    "a a a b"
+    "c d d b"
+    "c e e e";
+}
+.serviceGrid > div {
+  position: relative;
+  background-size: cover;
+}
+.serviceGrid > div > div {
+  width: 224px;
+  height: 64px;
+  background: #364660;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+}
+.serviceGrid > div > div > p {
+  color: #f5f5f5;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.serviceGrid .serviceA {
+  grid-area: a;
+  background-image: url("../../Assets/Images/serviceImage/Rectangle\ 609.png");
+}
+.serviceGrid .serviceB {
+  grid-area: b;
+  background-image: url("../../Assets/Images/serviceImage/Rectangle\ 611.png");
+}
+.serviceGrid .serviceC {
+  grid-area: c;
+  background-image: url("../../Assets/Images/serviceImage/Rectangle\ 612.png");
+}
+.serviceGrid .serviceD {
+  grid-area: d;
+  background-image: url("../../Assets/Images/serviceImage/Rectangle\ 613.png");
+}
+.serviceGrid .serviceE {
+  grid-area: e;
+  background-image: url("../../Assets/Images/serviceImage/Rectangle\ 610.png");
+}
+
+.serviceGrid .serviceB div {
+  position: absolute;
+  bottom: 0px;
+}
+.serviceGrid .serviceD div {
+  position: absolute;
+  right: 0px;
+}
+.serviceGrid .serviceE div {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
