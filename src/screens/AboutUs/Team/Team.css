@@ -39,10 +39,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 64px;
-  row-gap: 85px;
+  row-gap: 32px;
 }
-.teamContainer .membersContainer .card {
+.cardFrame {
+  width: 320px;
+  height: 448px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.teamContainer .membersContainer .cardFrame .card {
   width: 256px;
   height: 384px;
   flex-shrink: 0;
@@ -64,22 +71,50 @@
   flex-direction: column;
   gap: 20px;
 }
-.teamContainer .membersContainer .card .cardInfo .name {
+.teamContainer .membersContainer .front .card .cardInfo .name {
   color: #f5f5f5;
   margin-top: 25px;
   text-align: center;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 22px; /* 137.5% */
+  line-height: 22px;
 }
-.teamContainer .membersContainer .card .cardInfo .job {
+.teamContainer .membersContainer .front .card .cardInfo .job {
   color: #f5f5f5;
   text-align: center;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.teamContainer .membersContainer .reverse .card .cardInfo .name {
+  color: #f5f5f5;
+  margin-top: 0px;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+.teamContainer .membersContainer .reverse .card .cardInfo .job {
+  color: #f5f5f5;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.teamContainer .membersContainer .card .resume {
+  width: 226px;
+  height: 348px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 214.286% */
+  margin: 0 auto;
 }
 .teamContainer .membersContainer .card .cardInfo .mail {
   color: #f5f5f5;
@@ -107,7 +142,7 @@
     row-gap: 64px;
   }
 }
-@media only screen and (min-width: 1336px){
+@media only screen and (min-width: 1336px) {
   .teamContainer .membersContainer .card:nth-child(8n-3) {
     background-color: #364660;
   }

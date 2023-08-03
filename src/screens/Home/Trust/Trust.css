@@ -170,8 +170,8 @@
     width: 100%;
     height: auto;
     margin-top: 0px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
   .trustContainer .textContainer .confiarTitle {
     width: 100%;
@@ -180,7 +180,8 @@
     font-size: 26px;
     font-style: normal;
     font-weight: 800;
-    line-height: 54px; /* 207.692% */
+    line-height: 40px; /* 207.692% */
+    padding-left: 32px;
   }
   .trustContainer .textContainer .confiarList div {
     margin-bottom: 18px;

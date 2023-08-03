@@ -12,7 +12,7 @@ function Trust() {
       </div>
       <div className="textContainer">
         <div className="confiarTitle">
-          <p>Por qué confiar en nosotros?</p>
+          <p>¿Por qué confiar en nosotros?</p>
         </div>
         <div className="confiarList">
           <div>
