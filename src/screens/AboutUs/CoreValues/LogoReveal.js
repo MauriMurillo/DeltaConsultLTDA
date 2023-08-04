@@ -1,36 +1,36 @@
-import React, { useEffect, useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import React from "react";
+import { easeOut, motion } from "framer-motion";
 function LogoReveal(props) {
-  const { principal, secondary, id } = props;
-  const logoContainer = useRef(null);
-  const islogoVisible = useInView(logoContainer);
-  useEffect(() => {
-    if (islogoVisible) {
-      const logoviewR = document.getElementById("revealRight" + id);
-      const logoviewL = document.getElementById("revealLeft" + id);
-      logoviewR.classList.add("animate__slideOutRight");
-      logoviewL.classList.add("animate__slideOutLeft");
-    }
-  }, [islogoVisible, id]);
+  const { principal, secondary } = props;
   return (
-    <motion.div ref={logoContainer} className="logoRevealContainer">
-      <div
-        className="halfLogoRight animate__animated"
-        id={"revealRight" + id}
-      ></div>
-      <div className="card first">
+    <div className="logoRevealContainer">
+      <motion.div
+        whileInView={{ x: 292 }}
+        transition={{ ease: easeOut, duration: 1 }}
+        className="halfLogoRight"
+      ></motion.div>
+      <motion.div
+        whileInView={{ opacity: [0,1] }}
+        transition={{ duration: 1 }}
+        className="card first"
+      >
         <div className="cardTitle">{principal.title}</div>
         <div className="cardDescription">{principal.description}</div>
-      </div>
-      <div
-        className="halfLogoLeft animate__animated"
-        id={"revealLeft" + id}
-      ></div>
-      <div className="card second">
+      </motion.div>
+      <motion.div
+        whileInView={{ x: -292 }}
+        transition={{ ease: easeOut, duration: 1 }}
+        className="halfLogoLeft"
+      ></motion.div>
+      <motion.div
+        className="card second"
+        whileInView={{ opacity: [0,1] }}
+        transition={{ duration: 1 }}
+      >
         <div className="cardTitle">{secondary.title}</div>
         <div className="cardDescription">{secondary.description}</div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 }
 

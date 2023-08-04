@@ -6,7 +6,7 @@
   margin-bottom: 25vh;
 }
 .valuesContainer .textContainer {
-  margin-bottom: 100px;
+  margin-bottom: 44px;
 }
 .valuesContainer .textContainer .titleValues {
   color: #1d619d;
@@ -15,7 +15,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 64px;
-  margin-bottom: 25px;
+  margin-bottom: 32px;
 }
 .valuesContainer .textContainer .textValues {
   color: #090909;
@@ -27,61 +27,69 @@
 }
 .logoRevealContainer {
   width: 100vw;
-  padding-left: 100px;
-  padding-right: 100px;
-  margin-bottom: 150px;
+  height: 768px;
+  padding-left: 65px;
+  padding-right: 65px;
   position: relative;
   display: grid;
+  align-content: center;
+  gap: 30px;
+  margin-bottom: 128px;
 }
 .valuesContainer .card {
-  width: 480px;
-  height: 300px;
-  border-radius: 60px;
+  width: 592px;
+  height: 228px;
+  border-radius: 40px;
   background-color: #acc3f8;
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding-top: 28px;
+  padding-bottom: 28px;
   padding-left: 32px;
   padding-right: 32px;
 }
-.first {
+.valuesContainer .first {
   justify-self: flex-end;
-  position: relative;
+  margin-right: 208px;
+  padding-right: 60px;
 }
-.second {
-  position: relative;
+.valuesContainer .second {
+  margin-left: 208px;
+  padding-left: 60px;
 }
 .card .cardTitle {
   color: #f5f5f5;
   text-align: center;
+  margin-bottom: 30px;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  margin-bottom: 15px;
+  line-height: 22px;
 }
 .card .cardDescription {
   color: #fff;
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 20px;
 }
 .halfLogoRight {
-  height: 420px;
-  width: 400px;
-  background-color: blue;
+  width: 440px;
+  height: 512px;
+  background-image: url("../../../Assets/Images/valuesImage/der.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
-  left: 800px;
-  top: -60px;
+  right: 356px;
+  top: 0px;
   z-index: 100;
-  animation-duration: 3s;
 }
 .halfLogoLeft {
-  height: 420px;
-  width: 400px;
-  background-color: red;
+  width: 440px;
+  height: 512px;
+  background-image: url("../../../Assets/Images/valuesImage/isq.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
-  right: 800px;
-  bottom: -60px;
+  left: 356px;
+  bottom: 0px;
   z-index: 100;
-  animation-duration: 3s;
 }

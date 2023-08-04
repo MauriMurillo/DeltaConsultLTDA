@@ -12,7 +12,7 @@ function AboutUs() {
       <Header />
       <TeamContentProvider>
         <CoreValues />
-        <Team />
+        {/* <Team /> */}
         <History />
       </TeamContentProvider>
       <Footer />
