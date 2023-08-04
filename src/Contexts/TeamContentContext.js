@@ -143,9 +143,17 @@ function TeamContentProvider(props) {
 
   const historia = [
     { content: "Delta se funda en la paz", year: "1890", image: historia1 },
-    { content: "Delta se funda en la paz", year: "1890", image: historia2 },
-    { content: "Delta se funda en la paz", year: "1890", image: historia3 },
+    { content: "Delta se funda en cochabamba", year: "1890", image: historia2 },
+    { content: "Delta se funda en santa cruz", year: "1890", image: historia3 },
+    { content: "Delta obtiene nueva pagina web de rusty software", year: "1890", image: historia1 },
     { content: "Delta se funda en la paz", year: "1890", image: historia1 },
+    { content: "Delta se funda en cochabamba", year: "1890", image: historia2 },
+    { content: "Delta se funda en santa cruz", year: "1890", image: historia3 },
+    { content: "Delta obtiene nueva pagina web de rusty software", year: "1890", image: historia1 },
+    { content: "Delta se funda en la paz", year: "1890", image: historia1 },
+    { content: "Delta se funda en cochabamba", year: "1890", image: historia2 },
+    { content: "Delta se funda en santa cruz", year: "1890", image: historia3 },
+    { content: "Delta obtiene nueva pagina web de rusty software", year: "1890", image: historia1 },
   ];
   return (
     <TeamContentContext.Provider

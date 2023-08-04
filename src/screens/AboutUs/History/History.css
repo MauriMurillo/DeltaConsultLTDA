@@ -1,0 +1,106 @@
+.aboutUsScreen {
+  overflow: hidden;
+}
+.historyContainer {
+  margin: 0 auto;
+  width: calc(100vw - 200px);
+  overflow-x: auto;
+  margin-bottom: 25vh;
+}
+.timelineContainer {
+  width: fit-content;
+  height: 760px;
+  display: flex;
+  align-items: center;
+
+}
+.timeline {
+  width: fit-content;
+  height: 5px;
+  background-color: #c5cad1;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.timelineContainer .card {
+  width: 300px;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.timelineContainer .up {
+  flex-direction: column;
+  top: -20px;
+}
+.timelineContainer .down {
+  flex-direction: column-reverse;
+  top: -360px;
+}
+
+.card .dataPoint {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #364660;
+}
+
+.card .connector {
+  width: 8px;
+  height: 70px;
+  position: relative;
+  background-color: #364660;
+}
+.up .connector {
+  top: -5px;
+}
+.down .connector {
+  bottom: -5px;
+}
+
+.card .cardContent {
+  position: relative;
+  width: 288px;
+  height: 192px;
+  background-color: #364660;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  padding: 32px;
+}
+.up .cardContent {
+  top: -5px;
+  margin-bottom: 30px;
+}
+.down .cardContent {
+  bottom: -5px;
+  margin-top: 30px;
+}
+
+.card .cardContent p {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+.card .year {
+  width: 96px;
+  height: 32px;
+  border-radius: 90px;
+  background: #364660;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .year p {
+  color: #f5f5f5;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 22px;
+}

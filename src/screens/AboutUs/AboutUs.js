@@ -13,8 +13,8 @@ function AboutUs() {
       <TeamContentProvider>
         <CoreValues />
         <Team />
+        <History />
       </TeamContentProvider>
-      <History />
       <Footer />
     </div>
   );
