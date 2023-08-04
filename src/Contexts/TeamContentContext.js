@@ -152,6 +152,7 @@ function TeamContentProvider(props) {
       value={{
         teamMembers,
         coreValuesInfo,
+        historia,
       }}
     >
       {props.children}

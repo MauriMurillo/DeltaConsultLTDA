@@ -1,15 +1,20 @@
-import React, { useContext } from "react";
-import { motion } from "framer-motion";
+import React, { useContext, useEffect, useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import { DeltaContext } from "../../../Contexts/DeltaContext.js";
 function LogoReveal(props) {
   const { principal, secondary, id } = props;
-  const { logoContainer1, logoContainer2 } = useContext(DeltaContext);
-
+  const logoContainer = useRef(null);
+  const islogoVisible = useInView(logoContainer);
+  useEffect(() => {
+    if (islogoVisible) {
+      const logoviewR = document.getElementById("revealRight" + id);
+      const logoviewL = document.getElementById("revealLeft" + id);
+      logoviewR.classList.add("animate__slideOutRight");
+      logoviewL.classList.add("animate__slideOutLeft");
+    }
+  }, [islogoVisible]);
   return (
-    <motion.div
-      ref={id === "1" ? logoContainer1 : logoContainer2}
-      className="logoRevealContainer"
-    >
+    <motion.div ref={logoContainer} className="logoRevealContainer">
       <div
         className="halfLogoRight animate__animated"
         id={"revealRight" + id}
@@ -18,7 +23,10 @@ function LogoReveal(props) {
         <div className="cardTitle">{principal.title}</div>
         <div className="cardDescription">{principal.description}</div>
       </div>
-      <div className="halfLogoLeft animate__animated" id={"revealLeft" + id}></div>
+      <div
+        className="halfLogoLeft animate__animated"
+        id={"revealLeft" + id}
+      ></div>
       <div className="card second">
         <div className="cardTitle">{secondary.title}</div>
         <div className="cardDescription">{secondary.description}</div>
