@@ -1,7 +1,6 @@
-import React, { useContext, useRef } from "react";
+import React, { useContext } from "react";
 import { useEffect, useState } from "react";
 import { ContentContext } from "./ContentContext";
-import { useInView } from "framer-motion";
 const DeltaContext = React.createContext();
 
 function DeltaProvider(props) {

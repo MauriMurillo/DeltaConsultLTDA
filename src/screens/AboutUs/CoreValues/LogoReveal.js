@@ -1,6 +1,5 @@
-import React, { useContext, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { DeltaContext } from "../../../Contexts/DeltaContext.js";
 function LogoReveal(props) {
   const { principal, secondary, id } = props;
   const logoContainer = useRef(null);
@@ -12,7 +11,7 @@ function LogoReveal(props) {
       logoviewR.classList.add("animate__slideOutRight");
       logoviewL.classList.add("animate__slideOutLeft");
     }
-  }, [islogoVisible]);
+  }, [islogoVisible, id]);
   return (
     <motion.div ref={logoContainer} className="logoRevealContainer">
       <div
