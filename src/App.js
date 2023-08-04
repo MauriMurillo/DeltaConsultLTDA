@@ -7,12 +7,14 @@ import { Contact } from "./screens/Contact/Contact";
 import { AboutUs } from "./screens/AboutUs/AboutUs";
 import { DeltaProvider } from "./Contexts/DeltaContext";
 import { ContentProvider } from "./Contexts/ContentContext";
+import { ScrollToTop } from "./ScrollToTop";
 
 function App() {
   return (
     <ContentProvider>
       <DeltaProvider>
         <HashRouter>
+          <ScrollToTop/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
