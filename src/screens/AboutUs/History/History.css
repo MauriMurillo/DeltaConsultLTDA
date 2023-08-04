@@ -3,7 +3,7 @@
 }
 .historyContainer {
   margin: 0 auto;
-  width: calc(100vw - 200px);
+  width: calc(100vw - 100px);
   overflow-x: auto;
   margin-bottom: 25vh;
 }
@@ -24,7 +24,7 @@
 }
 
 .timelineContainer .card {
-  width: 300px;
+  width: 288px;
   height: 380px;
   display: flex;
   align-items: center;
