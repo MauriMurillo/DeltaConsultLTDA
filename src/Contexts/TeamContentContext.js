@@ -1,5 +1,9 @@
 import React from "react";
 import picture from "../Assets/Images/Rectangle 594.png";
+import historia1 from "../Assets/Images/historyImage/Rectangle 600.png";
+import historia2 from "../Assets/Images/historyImage/Rectangle 601.png";
+import historia3 from "../Assets/Images/historyImage/Rectangle 603.png";
+
 const TeamContentContext = React.createContext();
 
 function TeamContentProvider(props) {
@@ -136,11 +140,18 @@ function TeamContentProvider(props) {
         "Basar la actividad en un firme respeto hacia el individuo, fundamento esencial de toda organización.* Liderar el trabajo profesional en la región que hemos definido como de nuestra incumbencia* Prestar el servicio profesional con los mejores estándares de calidad.* ",
     },
   };
+
+  const historia = [
+    { content: "Delta se funda en la paz", year: "1890", image: historia1 },
+    { content: "Delta se funda en la paz", year: "1890", image: historia2 },
+    { content: "Delta se funda en la paz", year: "1890", image: historia3 },
+    { content: "Delta se funda en la paz", year: "1890", image: historia1 },
+  ];
   return (
     <TeamContentContext.Provider
       value={{
         teamMembers,
-        coreValuesInfo
+        coreValuesInfo,
       }}
     >
       {props.children}
