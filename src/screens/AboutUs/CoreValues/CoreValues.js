@@ -15,10 +15,12 @@ function CoreValues() {
       <LogoReveal
         principal={coreValuesInfo.mision}
         secondary={coreValuesInfo.vision}
+        id="1"
       />
       <LogoReveal
         principal={coreValuesInfo.valores}
         secondary={coreValuesInfo.etica}
+        id="2"
       />
     </div>
   );

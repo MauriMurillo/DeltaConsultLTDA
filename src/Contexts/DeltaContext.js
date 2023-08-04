@@ -1,6 +1,7 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import { useEffect, useState } from "react";
 import { ContentContext } from "./ContentContext";
+import { useInView } from "framer-motion";
 const DeltaContext = React.createContext();
 
 function DeltaProvider(props) {
@@ -28,6 +29,28 @@ function DeltaProvider(props) {
   }, [screenSize]);
   // ----------------------------------------------------------
 
+  const logoContainer1 = useRef(null);
+  const logoContainer2 = useRef(null);
+
+  const islogoVisible1 = useInView(logoContainer1);
+  const islogoVisible2 = useInView(logoContainer2);
+
+  useEffect(() => {
+    if (islogoVisible1) {
+      const logoviewR = document.getElementById("revealRight1");
+      const logoviewL = document.getElementById("revealLeft1");
+      logoviewR.classList.add("animate__slideOutRight");
+      logoviewL.classList.add("animate__slideOutLeft");
+    }
+  }, [islogoVisible1]);
+  useEffect(() => {
+    if (islogoVisible2) {
+      const logoviewR = document.getElementById("revealRight2");
+      const logoviewL = document.getElementById("revealLeft2");
+      logoviewR.classList.add("animate__slideOutRight");
+      logoviewL.classList.add("animate__slideOutLeft");
+    }
+  }, [islogoVisible2]);
   //Funcion para el manejo del hero en el home
 
   const animationClassOut = "animate__fadeOutRightBig";
@@ -100,6 +123,8 @@ function DeltaProvider(props) {
         heroPosition,
         forwardHero,
         rewindHero,
+        logoContainer1,
+        logoContainer2,
       }}
     >
       {props.children}

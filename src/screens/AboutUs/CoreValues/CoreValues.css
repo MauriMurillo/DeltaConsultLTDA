@@ -67,19 +67,21 @@
 }
 .halfLogoRight {
   height: 420px;
-  width: 100px;
+  width: 400px;
   background-color: blue;
   position: absolute;
   left: 800px;
   top: -60px;
   z-index: 100;
+  animation-duration: 3s;
 }
 .halfLogoLeft {
   height: 420px;
-  width: 100px;
+  width: 400px;
   background-color: red;
   position: absolute;
   right: 800px;
   bottom: -60px;
   z-index: 100;
+  animation-duration: 3s;
 }

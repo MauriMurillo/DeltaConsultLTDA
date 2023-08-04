@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import picture from "../Assets/Images/Rectangle 594.png";
 const TeamContentContext = React.createContext();
 
