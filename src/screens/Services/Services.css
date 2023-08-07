@@ -33,7 +33,6 @@
   display: grid;
   grid-template-columns: 224px 1fr 1fr 224px;
   grid-template-rows: repeat(3, 148px);
-  /* grid-template-rows: 127px 192px 127px; */
   grid-gap: 32px;
   grid-template-areas:
     "a a a b"
@@ -64,23 +63,28 @@
 }
 .serviceGrid .serviceA {
   grid-area: a;
-  background-image: url("../../Assets/Images/serviceImage/Rectangle\ 609.png");
+  background-image: url("../../Assets/Images/serviceImage/service1.png");
+  background-position: center;
 }
 .serviceGrid .serviceB {
   grid-area: b;
-  background-image: url("../../Assets/Images/serviceImage/Rectangle\ 611.png");
+  background-image: url("../../Assets/Images/serviceImage/service2.png");
+  background-position: center;
 }
 .serviceGrid .serviceC {
   grid-area: c;
-  background-image: url("../../Assets/Images/serviceImage/Rectangle\ 612.png");
+  background-image: url("../../Assets/Images/serviceImage/service3.png");
+  background-position: center;
 }
 .serviceGrid .serviceD {
   grid-area: d;
-  background-image: url("../../Assets/Images/serviceImage/Rectangle\ 613.png");
+  background-image: url("../../Assets/Images/serviceImage/service4.png");
+  background-position: center;
 }
 .serviceGrid .serviceE {
   grid-area: e;
-  background-image: url("../../Assets/Images/serviceImage/Rectangle\ 610.png");
+  background-image: url("../../Assets/Images/serviceImage/service5.png");
+  background-position: center;
 }
 .serviceGrid .serviceB div {
   position: absolute;
@@ -94,4 +98,85 @@
   position: absolute;
   right: 0px;
   bottom: 0px;
+}
+@media only screen and (max-width: 700px) {
+  .servicesSection {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 25vh;
+    margin-top: 150px;
+  }
+  .servicesSection .textContainer .titleServices {
+    margin-bottom: 11px;
+    color: #235eb6;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .servicesSection .textContainer .textServices {
+    margin-bottom: 30px;
+    color: var(--text-gray-900, #18191f);
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .serviceGrid {
+    height: 768px;
+    min-width: 0px;
+    width: calc(100vw - 20px);
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    grid-template-rows: repeat(5, 128px);
+    grid-row-gap: 32px;
+    grid-column-gap: 0px;
+    grid-template-areas:
+      "a a ."
+      ". b b"
+      "c c ."
+      ". d d"
+      "e e .";
+  }
+  .serviceGrid > div {
+    position: relative;
+    background-size: cover;
+    animation-duration: 2s;
+  }
+  .serviceGrid > div > div {
+    width: 110px;
+    height: 26px;
+    padding: 3px;
+  }
+  .serviceGrid > div > div > p {
+    color: #f5f5f5;
+    text-align: center;
+    font-family: Encode Sans;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px;
+  }
+  .serviceGrid .serviceB div {
+    position: absolute;
+    bottom: auto;
+    right: 0px;
+  }
+  .serviceGrid .serviceD div {
+    position: absolute;
+    right: 0px;
+  }
+  .serviceGrid .serviceE div {
+    position: absolute;
+    right: auto;
+    bottom: auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .serviceGrid {
+    grid-template-columns: 0px 1fr 0px;
+  }
 }
