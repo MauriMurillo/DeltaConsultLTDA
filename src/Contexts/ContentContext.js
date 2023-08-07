@@ -99,13 +99,21 @@ function ContentProvider(props) {
     },
   ];
 
+  const trustStatement = [
+    "Contamos con el registro y vigencia en principales entes de fiscalización y control que avalan nuestra calidad",
+    "Somos una firma nacional, con profesionales bolivianos con un enfoque de práctica internacional",
+    "Nuestra metodología nos permite un exigente control de calidad en los productos entregados y sobre la ejecución del servicio al cliente",
+    "La eficiente estructura de costos que manejamos nos permiten administrar honorarios competitivos debido a la minimización de costos ociosos e improductivos",
+  ];
+
   return (
     <ContentContext.Provider
       value={{
         offices,
         homeHeroContent,
         generalStatistics,
-        clientStatistics
+        clientStatistics,
+        trustStatement
       }}
     >
       {props.children}
