@@ -42,7 +42,7 @@
 .serviceGrid > div {
   position: relative;
   background-size: cover;
-  animation-duration: 2s;
+  background-position: center;
 }
 .serviceGrid > div > div {
   width: 224px;
@@ -64,27 +64,32 @@
 .serviceGrid .serviceA {
   grid-area: a;
   background-image: url("../../Assets/Images/serviceImage/service1.png");
-  background-position: center;
+  animation: slideInLeft;
+  animation-duration: 2s;
 }
 .serviceGrid .serviceB {
   grid-area: b;
   background-image: url("../../Assets/Images/serviceImage/service2.png");
-  background-position: center;
+  animation: slideInDown;
+  animation-duration: 2s;
 }
 .serviceGrid .serviceC {
   grid-area: c;
   background-image: url("../../Assets/Images/serviceImage/service3.png");
-  background-position: center;
+  animation: slideInUp;
+  animation-duration: 2s;
 }
 .serviceGrid .serviceD {
   grid-area: d;
   background-image: url("../../Assets/Images/serviceImage/service4.png");
-  background-position: center;
+  animation: zoomIn;
+  animation-duration: 2s;
 }
 .serviceGrid .serviceE {
   grid-area: e;
   background-image: url("../../Assets/Images/serviceImage/service5.png");
-  background-position: center;
+  animation: slideInRight;
+  animation-duration: 2s;
 }
 .serviceGrid .serviceB div {
   position: absolute;
@@ -172,6 +177,27 @@
     position: absolute;
     right: auto;
     bottom: auto;
+  }
+
+  .serviceGrid .serviceA {
+    animation: slideInRight;
+    animation-duration: 2s;
+  }
+  .serviceGrid .serviceB {
+    animation: slideInLeft;
+    animation-duration: 2s;
+  }
+  .serviceGrid .serviceC {
+    animation: slideInRight;
+    animation-duration: 2s;
+  }
+  .serviceGrid .serviceD {
+    animation: slideInLeft;
+    animation-duration: 2s;
+  }
+  .serviceGrid .serviceE {
+    animation: slideInRight;
+    animation-duration: 2s;
   }
 }
 

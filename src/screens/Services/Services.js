@@ -15,7 +15,7 @@ function Services() {
           </p>
         </div>
         <div className="serviceGrid">
-          <div className="serviceA animate__animated animate__slideInLeft">
+          <div className="serviceA animate__animated">
             <div>
               <p>AUDITORIA EXTERNA</p>
             </div>
