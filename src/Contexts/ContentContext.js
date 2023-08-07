@@ -1,5 +1,5 @@
 import React from "react";
-import hero from "../Assets/Images/hero1.png";
+import hero from "../Assets/Images/HomeImages/hero1.png";
 import thumbUp from "../Assets/Icons/stats/thumbs up.svg";
 import clients from "../Assets/Icons/stats/people.svg";
 import check from "../Assets/Icons/stats/checkmark.svg";

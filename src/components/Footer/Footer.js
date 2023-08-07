@@ -4,7 +4,7 @@ import { Office } from "./Office";
 import { Contact } from "./Contact";
 import { Rights } from "./Rights";
 import { ContentContext } from "../../Contexts/ContentContext";
-import logo from "../../Assets/Images/ISOTIPO DELTA BLANCO.png";
+import logo from "../../Assets/Images/Logos/ISOTIPO DELTA BLANCO.png";
 import { Socials } from "./Socials";
 import { DeltaContext } from "../../Contexts/DeltaContext";
 function Footer() {

@@ -1,5 +1,5 @@
 import React from "react";
-import picture from "../Assets/Images/Rectangle 594.png";
+import picture from "../Assets/Images/TeamPictures/Rectangle 594.png";
 import historia1 from "../Assets/Images/historyImage/Rectangle 600.png";
 import historia2 from "../Assets/Images/historyImage/Rectangle 601.png";
 import historia3 from "../Assets/Images/historyImage/Rectangle 603.png";

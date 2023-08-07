@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Card } from "./Card";
 import { easeInOut, motion } from "framer-motion";
-import menuDown from "../../../Assets/Icons/Vector.svg";
+import menuDown from "../../../Assets/Icons/utilIcons/Vector.svg";
 function Department(props) {
   const { content } = props;
   const [showDepartment, setShowDepartment] = useState(false);

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
-import menu from "../../Assets/Icons/menu-sharp.svg";
-import logoDelta from "../../Assets/Images/ISOLOGO DELTA BLANCO.png";
+import menu from "../../Assets/Icons/utilIcons/menu-sharp.svg";
+import logoDelta from "../../Assets/Images/Logos/ISOLOGO DELTA BLANCO.png";
 import "./Header.css";
 import { DeltaContext } from "../../Contexts/DeltaContext";
 import { MenuScreen } from "../MenuScreen/MenuScreen";

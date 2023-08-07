@@ -138,12 +138,12 @@
   .card .cardContent {
     width: 193px;
     height: 127px;
-    border-radius: 20px;
+    border-radius: 40px;
     padding: 16px;
   }
   .card .cardContent img{
-    width: 193px;
-    height: 127px;
+    width: 195px;
+    height: 128px;
   }
   .up .cardContent {
     top: -5px;
