@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import "./Team.css"
+import "./Team.css";
 import { TeamContentContext } from "../../../Contexts/TeamContentContext";
-import { Card } from "./Card";
+import { Department } from "./Department";
 
 function Team() {
-  const { teamMembers } = useContext(TeamContentContext);
+  const { team } = useContext(TeamContentContext);
   return (
     <div className="teamContainer">
       <div className="textContainer">
@@ -15,9 +15,9 @@ function Team() {
           su objetivo.
         </div>
       </div>
-      <div className="membersContainer">{teamMembers.map((item)=>{
-        return(<Card cardData={item}/>)
-      })}</div>
+      {team.map((item) => (
+        <Department content={item} />
+      ))}
     </div>
   );
 }

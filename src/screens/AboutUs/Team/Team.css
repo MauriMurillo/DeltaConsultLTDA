@@ -4,14 +4,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 60px;
-  padding-right: 60px;
   margin-bottom: 25vh;
 }
 .teamContainer .textContainer {
   width: 100%;
   max-width: 768px;
-  margin-bottom: 85px;
+  margin-bottom: 125px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,7 +33,35 @@
   line-height: normal;
 }
 /* Cards Section Start */
+.teamContainer .departmentContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.teamContainer .departmentContainer .drawer {
+  width: 100%;
+  height: 86px;
+  padding-left: 64px;
+  padding-right: 64px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 14px #1d619d;
+}
+.teamContainer .departmentContainer .drawer .departmentTitle {
+  color: #1d619d;
+  text-align: center;
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 700;
+}
+
 .teamContainer .membersContainer {
+  margin-top: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -132,18 +158,21 @@
   font-weight: 700;
   line-height: normal;
 }
-@media only screen and (max-width: 1250px) {
-  .teamContainer {
-    padding-left: 30px;
-    padding-right: 30px;
+@media only screen and (max-width: 800px){
+  .teamContainer .departmentContainer .drawer {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .teamContainer .membersContainer {
+    padding-left: 45px;
+    padding-right: 45px;
   }
 }
 @media only screen and (max-width: 600px) {
-
   .teamContainer .textContainer {
     margin-bottom: 35px;
   }
-  .teamContainer .textContainer .titleTeam{
+  .teamContainer .textContainer .titleTeam {
     color: #235eb6;
     text-align: center;
     font-size: 32px;
@@ -160,42 +189,13 @@
     font-weight: 400;
     line-height: 32px; /* 213.333% */
   }
-}
-@media only screen and (min-width: 1336px) {
-  .teamContainer .membersContainer .card:nth-child(8n-3) {
-    background-color: #364660;
+  .teamContainer .departmentContainer .drawer {
+    padding-left: 16px;
+    padding-right: 16px;
   }
-  .teamContainer .membersContainer .card:nth-child(8n-2) {
-    background-color: #364660;
-  }
-  .teamContainer .membersContainer .card:nth-child(8n-1) {
-    background-color: #364660;
-  }
-  .teamContainer .membersContainer .card:nth-child(8n) {
-    background-color: #364660;
-  }
-}
-@media only screen and (min-width: 922px) and (max-width: 1335px) {
-  .teamContainer .membersContainer .card:nth-child(6n-2) {
-    background-color: #364660;
-  }
-  .teamContainer .membersContainer .card:nth-child(6n-1) {
-    background-color: #364660;
-  }
-  .teamContainer .membersContainer .card:nth-child(6n) {
-    background-color: #364660;
-  }
-}
-@media only screen and (min-width: 634px) and (max-width: 921px) {
-  .teamContainer .membersContainer .card:nth-child(4n-1) {
-    background-color: #364660;
-  }
-  .teamContainer .membersContainer .card:nth-child(4n) {
-    background-color: #364660;
-  }
-}
-@media only screen and (max-width: 633px) {
-  .teamContainer .membersContainer .card:nth-child(2n) {
-    background-color: #364660;
+  .teamContainer .membersContainer{
+    justify-content: center;
+      padding-left: 0px;
+      padding-right: 0px;
   }
 }
