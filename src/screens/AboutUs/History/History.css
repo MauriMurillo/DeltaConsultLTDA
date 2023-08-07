@@ -32,11 +32,11 @@
 }
 .timelineContainer .up {
   flex-direction: column;
-  top: -20px;
+  top: -17.5px;
 }
 .timelineContainer .down {
   flex-direction: column-reverse;
-  top: -360px;
+  top: -357.5px;
 }
 
 .card .dataPoint {
@@ -103,4 +103,79 @@
   font-style: normal;
   font-weight: 800;
   line-height: 22px;
+}
+@media only screen and (max-width: 800px){
+  .historyContainer {
+    width: calc(100vw - 50px);
+  }
+  .timelineContainer {
+    height: 570px;
+  }
+  .timeline {
+    width: fit-content;
+    height: 10px;
+    background-color: #c5cad1;
+    gap: 0px;
+  }
+  .timelineContainer .card:first-child{
+    margin-left: 12px;
+  }
+  .timelineContainer .card {
+    width: 173px;
+    height: 280px;
+  }
+  .timelineContainer .up {
+    flex-direction: column;
+    top: -15px;
+  }
+  .timelineContainer .down {
+    flex-direction: column-reverse;
+    top: -255px;
+  }
+  .card .connector {
+    height: 60px;
+  }
+  .card .cardContent {
+    width: 193px;
+    height: 127px;
+    border-radius: 20px;
+    padding: 16px;
+  }
+  .card .cardContent img{
+    width: 193px;
+    height: 127px;
+  }
+  .up .cardContent {
+    top: -5px;
+    margin-bottom: 20px;
+  }
+  .down .cardContent {
+    bottom: -5px;
+    margin-top: 20px;
+  }
+  .card .cardContent p {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+  }
+  .card .year {
+    width: 96px;
+    height: 32px;
+    border-radius: 90px;
+    background: #364660;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card .year p {
+    color: #f5f5f5;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 22px;
+  }
 }
