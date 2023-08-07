@@ -7,17 +7,19 @@ function Department(props) {
   const [showDepartment, setShowDepartment] = useState(false);
   return (
     <div className="departmentContainer">
-      <div className="drawer">
+      <div
+        className="drawer"
+        onClick={() => {
+          showDepartment ? setShowDepartment(false) : setShowDepartment(true);
+        }}
+      >
         <div className="departmentTitle">{content.department}</div>
         <motion.img
           src={menuDown}
           animate={showDepartment ? { rotate: 180 } : { rotate: 0 }}
-          transition={{ease: easeInOut}}
+          transition={{ ease: easeInOut }}
           alt="show"
           className="icon"
-          onClick={() => {
-            showDepartment ? setShowDepartment(false) : setShowDepartment(true);
-          }}
         />
       </div>
       {showDepartment ? (
