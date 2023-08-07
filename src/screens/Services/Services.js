@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Services.css";
 import { Header } from "../../components/Header/Header.js";
 import { Footer } from "../../components/Footer/Footer.js";
+import { Downloadable } from "./Downloadable/Downloadable";
+import { ServicesContext } from "../../Contexts/ServicesContext";
 
 function Services() {
+  const { documents } = useContext(ServicesContext);
   return (
     <div className="servicesScreen">
       <Header />
@@ -42,6 +45,8 @@ function Services() {
           </div>
         </div>
       </div>
+      <Downloadable content={documents.brochure} />;
+      <Downloadable content={documents.business} modify={true}/>;
       <Footer />
     </div>
   );

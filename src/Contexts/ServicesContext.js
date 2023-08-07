@@ -4,7 +4,7 @@ import service2 from "../Assets/Images/serviceImage/service2.png";
 import service3 from "../Assets/Images/serviceImage/service3.png";
 import service4 from "../Assets/Images/serviceImage/service4.png";
 import service5 from "../Assets/Images/serviceImage/service5.png";
-
+import linkImage1 from "../Assets/DocumentsD/imageLink.png";
 import doingBusiness from "../Assets/DocumentsD/Doing Bussines Bolivia 2022.pdf";
 import brochure from "../Assets/DocumentsD/Broshure Delta.pdf";
 
@@ -47,16 +47,18 @@ function ServicesProvider(props) {
 
   const documents = {
     brochure: {
+      title: "Brochure Delta",
       pdf: brochure,
       descripcion:
         "Doing Business Bolivia ofrece un interesante panorama lleno de oportunidades y desafíos. Su ubicación geográfica central en América del Sur brinda acceso a mercados vecinos, mientras que su rica diversidad cultural y recursos naturales presentan posibilidades en sectores como la minería, agricultura y turismo. Sin embargo, es fundamental comprender el entorno empresarial, que puede ser influenciado por factores como la burocracia, la infraestructura en desarrollo y la volatilidad política.",
-      imagen: "",
+      imagen: linkImage1,
     },
     business: {
+      title: "Boing Business Bolivia",
       pdf: doingBusiness,
       descripcion:
         "Doing Business Bolivia ofrece un interesante panorama lleno de oportunidades y desafíos. Su ubicación geográfica central en América del Sur brinda acceso a mercados vecinos, mientras que su rica diversidad cultural y recursos naturales presentan posibilidades en sectores como la minería, agricultura y turismo. Sin embargo, es fundamental comprender el entorno empresarial, que puede ser influenciado por factores como la burocracia, la infraestructura en desarrollo y la volatilidad política.",
-      imagen: "",
+      imagen: linkImage1,
     },
   };
   return (

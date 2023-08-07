@@ -1,0 +1,151 @@
+.downloadContainer {
+  width: 90vw;
+  height: auto;
+  background-color: #364660;
+  border-radius: 60px;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  grid-row-gap: 57px;
+  grid-column-gap: 64px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 64px 1fr 64px;
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  grid-template-areas:
+    "a a"
+    "b c"
+    "d c";
+}
+.last {
+  margin-bottom: calc(25vh - 200px);
+}
+.downloadContainer .titleDownload {
+  color: #fff;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  grid-area: a;
+}
+.downloadContainer .descriptionDownload {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  grid-area: c;
+}
+.downloadContainer .imageContainer {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.downloadContainer .imageContainer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  object-fit: cover;
+}
+.downloadContainer .iconContainer {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1150px) {
+  .downloadContainer .descriptionDownload {
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    grid-area: c;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .downloadContainer {
+    grid-row-gap: 24px;
+    grid-column-gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 45px clamp(200px, 40% ,300px) 240px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    grid-template-areas:
+      "a a"
+      "b d"
+      "c c";
+  }
+  .downloadContainer .titleDownload {
+    font-size: 36px;
+    line-height: 32px;
+  }
+  .downloadContainer .descriptionDownload {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .downloadContainer .imageContainer {
+    overflow: hidden;
+  }
+  .downloadContainer .imageContainer img {
+    width: 100%;
+    border-radius: 60px;
+  }
+  .downloadContainer .iconContainer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .downloadContainer {
+    grid-row-gap: 24px;
+    grid-column-gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 45px clamp(200px, 40% ,300px) 240px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    grid-template-areas:
+      "a a"
+      "b d"
+      "c c";
+  }
+  .downloadContainer .titleDownload {
+    font-size: 36px;
+    line-height: 32px;
+  }
+  .downloadContainer .descriptionDownload {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .downloadContainer {
+    width: 320px;
+    grid-row-gap: 30px;
+    grid-template-columns: 100%;
+    grid-template-rows: 60px 180px 300px 56px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 35px;
+    padding-bottom: 34px;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d";
+  }
+  .downloadContainer .titleDownload {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .downloadContainer .descriptionDownload {
+    font-size: 13px;
+    line-height: 25px;
+  }
+}
