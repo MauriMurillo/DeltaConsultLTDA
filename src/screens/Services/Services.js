@@ -12,8 +12,8 @@ function Services() {
       <Header />
       <div className="servicesSection">
         <div className="textContainer">
-          <p className="titleServices">SERVICIOS</p>
-          <p className="textServices">
+          <p className="Title">SERVICIOS</p>
+          <p className="Text">
             Ofrecemos siempre las mejores soluciones
           </p>
         </div>

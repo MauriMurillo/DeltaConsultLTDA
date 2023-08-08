@@ -8,26 +8,11 @@
   margin-bottom: 25vh;
   margin-top: 150px;
 }
-.servicesSection .textContainer .titleServices {
-  color: #1d619d;
-  text-align: center;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 64px;
-  margin-bottom: 25px;
-}
-.servicesSection .textContainer .textServices {
-  color: #090909;
-  text-align: center;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-bottom: 50px;
+.servicesSection .textContainer{
+  margin-bottom: 40px;
 }
 .serviceGrid {
-  height: 640px;
+  height: auto;
   width: 85vw;
   min-width: 960px;
   display: grid;
@@ -111,23 +96,6 @@
     margin-bottom: 25vh;
     margin-top: 150px;
   }
-  .servicesSection .textContainer .titleServices {
-    margin-bottom: 11px;
-    color: #235eb6;
-    text-align: center;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-  }
-  .servicesSection .textContainer .textServices {
-    margin-bottom: 30px;
-    color: var(--text-gray-900, #18191f);
-    text-align: center;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
   .serviceGrid {
     height: 768px;
     min-width: 0px;
@@ -178,7 +146,6 @@
     right: auto;
     bottom: auto;
   }
-
   .serviceGrid .serviceA {
     animation: slideInRight;
     animation-duration: 2s;

@@ -1,7 +1,7 @@
 .aboutUsScreen {
   overflow: hidden;
 }
-.textContainer{
+.aboutUsScreen .textContainer{
   margin-bottom: 130px;
 }
 .historyContainer {
