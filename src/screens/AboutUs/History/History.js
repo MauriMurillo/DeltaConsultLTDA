@@ -6,7 +6,7 @@ function History() {
   const { historia } = useContext(TeamContentContext);
   let counter = 0;
   return (
-    <div>
+    <div className="history">
       <div className="textContainer">
         <div className="Title">NUESTRA HISTORIA</div>
         <div className="Text">Una base firme para el presente y futuro</div>
