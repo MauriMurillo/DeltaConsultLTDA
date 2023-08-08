@@ -7,7 +7,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .officeHeading p {
   color: #f5f5f5;
   text-align: center;
@@ -16,7 +15,6 @@
   font-weight: 700;
   line-height: 64px; /* 100% */
 }
-
 .contentFlex {
   display: flex;
   justify-content: space-between;
@@ -26,7 +24,6 @@
   padding-top: 95px;
   gap: 86px;
 }
-
 .officeDataContainer {
   height: 405px;
   display: flex;
@@ -58,21 +55,16 @@
   line-height: 24px; /* 100% */
   text-decoration: none;
 }
-.icon {
+.cnb a .icon {
+  width: 20px;
+  height: 20px;
   margin-right: 18px;
   align-self: flex-start;
 }
-#ph {
-  position: relative;
-  left: -5px;
-}
-#ph p {
-  position: relative;
-  left: -5px;
-}
 .embedMap {
-  width: 800px;
+  width: 50%;
   height: 384px;
+  flex-shrink: 0;
 }
 .embedMap iframe {
   width: 100%;
@@ -83,5 +75,76 @@
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 60px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .officeHeading {
+    height: 64px;
+    margin-top: 55px;
+  }
+  .officeHeading p {
+    color: #f5f5f5;
+    text-align: center;
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .contentFlex {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 60px;
+    gap: 15px;
+  }
+  .officeDataContainer {
+    height: 405px;
+    display: flex;
+    flex-direction: column;
+  }
+  .cityBig {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .cnb a p {
+    font-size: 15px;
+    line-height: 24px; /* 160% */
+  }
+  .cnb a .icon {
+    margin-right: 18px;
+    align-self: flex-start;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .officeHeading {
+    margin-top: 65px;
+  }
+  .officeHeading p {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .contentFlex {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    gap: 36px;
+  }
+  .officeDataContainer {
+    width: 320px;
+    height: auto;
+    gap: 40px;
+  }
+  .cityBig {
+    color: #364660;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  .cnb a p {
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .embedMap{
+    width: 100%;
   }
 }

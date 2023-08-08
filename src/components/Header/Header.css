@@ -22,7 +22,6 @@
   width: 100%;
 }
 .imageContainer a {
-  display: block;
   width: 100%;
   height: 100%;
 }
@@ -61,7 +60,6 @@
   display: inline-block;
   color: #fffefe;
   text-align: center;
-  font-family: Encode Sans;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -108,7 +106,7 @@
     padding-left: 45px;
     padding-right: 45px;
   }
-  .navbar .imageContainer {
+  .navBar .imageContainer {
     width: 351px;
     height: 57px;
     margin-right: 45px;
