@@ -10,8 +10,8 @@ function ClientInfo() {
     <div className="clientSection">
       <div className="clientLogos">
         <div className="textContainer">
-          <p className="clientTitle">NUESTROS CLIENTES</p>
-          <p className="clientText">
+          <p className="Title">NUESTROS CLIENTES</p>
+          <p className="Text">
             Mas de 100 clientes confian en nuestros servicios
           </p>
         </div>

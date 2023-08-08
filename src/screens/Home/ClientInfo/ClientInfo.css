@@ -14,23 +14,6 @@
   align-items: center;
   margin-bottom: 78px;
 }
-.clientTitle {
-  color: #1d619d;
-  text-align: center;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 64px; /* 116.364% */
-  margin-bottom: 30px;
-}
-.clientText {
-  color: var(--text-gray-900, #18191f);
-  text-align: center;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-}
-
 .clientsContainer {
   width: 80vw;
   display: flex;
@@ -54,25 +37,7 @@
   width: 100%;
 }
 @media only screen and (max-width: 600px) {
-
   .clientSection .textContainer {
     margin-bottom: 35px;
-  }
-  .clientTitle {
-    color: #235eb6;
-    text-align: center;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 46px;
-    margin-bottom: 15px;
-  }
-  .clientText {
-    color: var(--text-gray-900, #18191f);
-    text-align: center;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px; /* 213.333% */
   }
 }

@@ -16,13 +16,13 @@ function Trust() {
         />
       </div>
       <div className="textContainer">
-        <div className="confiarTitle">
+        <div className="Title">
           <p>¿Por qué confiar en nosotros?</p>
         </div>
         <div className="confiarList">
           {trustStatement.map((item) => {
             return (
-              <div>
+              <div className="Text" style={{textAlign: "start"}}>
                 <span></span>
                 {item}
               </div>
