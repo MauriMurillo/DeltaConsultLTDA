@@ -1,19 +1,26 @@
 {
   "files": {
-    "main.css": "/DeltaConsultLTDA/static/css/main.9b50e306.css",
-    "main.js": "/DeltaConsultLTDA/static/js/main.94f0ffdc.js",
+    "main.css": "/DeltaConsultLTDA/static/css/main.e6a8687a.css",
+    "main.js": "/DeltaConsultLTDA/static/js/main.42b3d089.js",
+    "static/media/Broshure Delta.pdf": "/DeltaConsultLTDA/static/media/Broshure Delta.6c08e8b719268a3bfd8e.pdf",
     "static/media/service3.png": "/DeltaConsultLTDA/static/media/service3.1805b1869376bd976433.png",
     "static/media/service2.png": "/DeltaConsultLTDA/static/media/service2.a99fdef64a0ab35332ab.png",
     "static/media/service5.png": "/DeltaConsultLTDA/static/media/service5.f93a7a1002bad4428469.png",
+    "static/media/smsCountry.png": "/DeltaConsultLTDA/static/media/smsCountry.b998131e022d9eb1a917.png",
+    "static/media/Doing Bussines Bolivia 2022.pdf": "/DeltaConsultLTDA/static/media/Doing Bussines Bolivia 2022.e06f582bc0e50d46f415.pdf",
     "static/media/hero1.png": "/DeltaConsultLTDA/static/media/hero1.f60a8cbdf86a97d73f76.png",
     "static/media/service1.png": "/DeltaConsultLTDA/static/media/service1.830d93e7af28d01414a0.png",
     "static/media/service4.png": "/DeltaConsultLTDA/static/media/service4.223869336429f308ea5e.png",
+    "static/media/smsInBolivia.png": "/DeltaConsultLTDA/static/media/smsInBolivia.2532e9412f43ca0ab1a9.png",
+    "static/media/imageLink2.png": "/DeltaConsultLTDA/static/media/imageLink2.e57c5161dc16de6c0a3c.png",
     "static/media/Person Image.png": "/DeltaConsultLTDA/static/media/Person Image.06d5d945981022d41355.png",
     "static/media/Person Image (1).png": "/DeltaConsultLTDA/static/media/Person Image (1).f0c72aa65ec4be8613da.png",
     "static/media/Rectangle 601.png": "/DeltaConsultLTDA/static/media/Rectangle 601.3e063f7d2a3f97d31bae.png",
+    "static/media/imageLink.png": "/DeltaConsultLTDA/static/media/imageLink.e1e5a62dc6c98bd5e16a.png",
     "static/media/Rectangle 603.png": "/DeltaConsultLTDA/static/media/Rectangle 603.b1845be09f726b656e5f.png",
     "static/media/Rectangle 594.png": "/DeltaConsultLTDA/static/media/Rectangle 594.0ecf17b1af1d86617aac.png",
     "static/media/Rectangle 600.png": "/DeltaConsultLTDA/static/media/Rectangle 600.d6c45beb475d2ad95ed4.png",
+    "static/media/SMSLogo.png": "/DeltaConsultLTDA/static/media/SMSLogo.7d2f939e1409639cc7ea.png",
     "static/media/ISOLOGO DELTA BLANCO.png": "/DeltaConsultLTDA/static/media/ISOLOGO DELTA BLANCO.57cbef5c38d2dc2b2d4b.png",
     "static/media/ISOLOGO DELTA BLANCO 2 (1).png": "/DeltaConsultLTDA/static/media/ISOLOGO DELTA BLANCO 2 (1).c804135af22dbd5afc3b.png",
     "static/media/ISOTIPO DELTA BLANCO.png": "/DeltaConsultLTDA/static/media/ISOTIPO DELTA BLANCO.3ec79bac6627a8017842.png",
@@ -36,15 +43,16 @@
     "index.html": "/DeltaConsultLTDA/index.html",
     "static/media/email-icon.svg": "/DeltaConsultLTDA/static/media/email-icon.8d6081a70bb49b7165fe31605d56cb3a.svg",
     "static/media/location-icon.svg": "/DeltaConsultLTDA/static/media/location-icon.e9bcc610c6d70a0aaf987a46057de6c4.svg",
+    "static/media/Vector (1).svg": "/DeltaConsultLTDA/static/media/Vector (1).6f5e01f122d1376a1109edb970044830.svg",
     "static/media/logo-facebook.svg": "/DeltaConsultLTDA/static/media/logo-facebook.802b893bf23c3576d9a63d1fa084a66d.svg",
     "static/media/checkmark.svg": "/DeltaConsultLTDA/static/media/checkmark.4441aac1425be3f2eb3e1c4ea634c555.svg",
     "static/media/menu-sharp.svg": "/DeltaConsultLTDA/static/media/menu-sharp.32b47a7fa29e5a904071d3927ed27090.svg",
     "static/media/Vector.svg": "/DeltaConsultLTDA/static/media/Vector.3b7506e8af2e46430f2482fe242f48d5.svg",
-    "main.9b50e306.css.map": "/DeltaConsultLTDA/static/css/main.9b50e306.css.map",
-    "main.94f0ffdc.js.map": "/DeltaConsultLTDA/static/js/main.94f0ffdc.js.map"
+    "main.e6a8687a.css.map": "/DeltaConsultLTDA/static/css/main.e6a8687a.css.map",
+    "main.42b3d089.js.map": "/DeltaConsultLTDA/static/js/main.42b3d089.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b50e306.css",
-    "static/js/main.94f0ffdc.js"
+    "static/css/main.e6a8687a.css",
+    "static/js/main.42b3d089.js"
   ]
 }
