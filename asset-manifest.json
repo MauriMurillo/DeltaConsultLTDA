@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/DeltaConsultLTDA/static/css/main.e6a8687a.css",
+    "main.css": "/DeltaConsultLTDA/static/css/main.f04e5342.css",
     "main.js": "/DeltaConsultLTDA/static/js/main.42b3d089.js",
     "static/media/Broshure Delta.pdf": "/DeltaConsultLTDA/static/media/Broshure Delta.6c08e8b719268a3bfd8e.pdf",
     "static/media/service3.png": "/DeltaConsultLTDA/static/media/service3.1805b1869376bd976433.png",
@@ -48,11 +48,11 @@
     "static/media/checkmark.svg": "/DeltaConsultLTDA/static/media/checkmark.4441aac1425be3f2eb3e1c4ea634c555.svg",
     "static/media/menu-sharp.svg": "/DeltaConsultLTDA/static/media/menu-sharp.32b47a7fa29e5a904071d3927ed27090.svg",
     "static/media/Vector.svg": "/DeltaConsultLTDA/static/media/Vector.3b7506e8af2e46430f2482fe242f48d5.svg",
-    "main.e6a8687a.css.map": "/DeltaConsultLTDA/static/css/main.e6a8687a.css.map",
+    "main.f04e5342.css.map": "/DeltaConsultLTDA/static/css/main.f04e5342.css.map",
     "main.42b3d089.js.map": "/DeltaConsultLTDA/static/js/main.42b3d089.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6a8687a.css",
+    "static/css/main.f04e5342.css",
     "static/js/main.42b3d089.js"
   ]
 }
