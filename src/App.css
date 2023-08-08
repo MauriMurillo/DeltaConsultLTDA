@@ -18,6 +18,8 @@ html {
   font-weight: 700;
   line-height: 64px;
   margin-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .Text {
   color: var(--text-gray-900, #18191f);

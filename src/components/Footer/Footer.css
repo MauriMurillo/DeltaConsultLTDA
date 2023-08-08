@@ -75,7 +75,6 @@
 }
 .footer p {
   color: var(--text-gray-300, #d9dbe1);
-  font-family: Inter;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -130,7 +129,6 @@
 .footer .derechos p {
   color: var(--text-gray-300, #d9dbe1);
   text-align: center;
-  font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -304,7 +302,6 @@
   .footer .derechos p {
     color: var(--text-gray-300, #d9dbe1);
     text-align: center;
-    font-family: Inter;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
