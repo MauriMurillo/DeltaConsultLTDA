@@ -8,8 +8,8 @@ function Team() {
   return (
     <div className="teamContainer">
       <div className="textContainer">
-        <div className="titleTeam">NUESTRO EQUIPO</div>
-        <div className="textTeam">
+        <div className="Title">NUESTRO EQUIPO</div>
+        <div className="Text">
           Nuestros profesionales se encuentran a su disposición para guiarlo en
           el desarrollo, control y asesoramiento de su proyecto cualquiera sea
           su objetivo.

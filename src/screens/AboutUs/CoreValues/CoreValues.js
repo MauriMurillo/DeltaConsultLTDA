@@ -7,10 +7,8 @@ function CoreValues() {
   return (
     <div className="valuesContainer" style={{ marginTop: "170px" }}>
       <div className="textContainer">
-        <div className="titleValues">UN CONCEPTO DIFERENTE</div>
-        <div className="textValues">
-          Una base firme para el presente y futuro
-        </div>
+        <div className="Title">UN CONCEPTO DIFERENTE</div>
+        <div className="Text">Una base firme para el presente y futuro</div>
       </div>
       <LogoReveal
         principal={coreValuesInfo.mision}
