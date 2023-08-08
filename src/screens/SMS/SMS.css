@@ -1,0 +1,84 @@
+.smsDivider {
+  width: 100vw;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  background: #d9d9d9;
+}
+.smsDivider img {
+  width: 426px;
+  height: 132px;
+  flex-shrink: 0;
+}
+.smsDivider a {
+  color: #a63939;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.content {
+  margin-top: 65px;
+  margin-bottom: 88px;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.content img {
+  width: 100%;
+  max-height: 570px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 63px;
+}
+.tsms{
+  line-height: 50px;
+}
+@media only screen and (max-width: 900px) {
+  .smsDivider img {
+    width: 198px;
+    height: 61px;
+    flex-shrink: 0;
+  }
+  .smsDivider a {
+    font-size: 20px;
+  }
+  .tsms{
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .smsDivider {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .smsDivider img {
+    width: 150px;
+    height: auto;
+    flex-shrink: 0;
+  }
+  .smsDivider a {
+    font-size: 16px;
+  }
+  .tsms{
+    line-height: 22px;
+  }
+  .content {
+    margin-top: 65px;
+    margin-bottom: 88px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}
