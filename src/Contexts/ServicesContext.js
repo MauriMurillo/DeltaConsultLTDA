@@ -12,39 +12,43 @@ import brochure from "../Assets/DocumentsD/Broshure Delta.pdf";
 const ServicesContext = React.createContext();
 
 function ServicesProvider(props) {
-  const services = {
-    AuditoriaExterna: {
-      title: "AuditoriaExterna",
+  const services = [
+    {
+      title: "Auditoria Externa",
       descripcion:
         "Realizamos auditorías para empresas de todos los sectores empresariales, identificando problemas y ofreciendo soluciones efectivas.",
       imagen: service1,
+      area: "serviceA",
     },
-
-    ConsultoríaFinanciera: {
-      title: "ConsultoríaFinanciera",
-      descripcion:
-        "Brindamos soluciones enfocadas en ayudar a las empresas a mejorar su toma de decisiones en las gestiones financieras. También contamos con experiencia en servicios de análisis de estados financieros, valoración de empresas, asesoramiento en fusiones y adquisiciones, y gestión de riesgos financieros.",
-      imagen: service2,
-    },
-
-    ConsultoríaEstratégica: {
-      descripcion:
-        "Colaboramos a las empresas a desarrollar e implementar planes estratégicos para alcanzar sus objetivos a largo plazo. Trabajamos con la alta dirección de la empresa para analizar el mercado, identificar oportunidades y amenazas, y definir una estrategia clara y coherente.",
-      imagen: service3,
-    },
-
-    ConsultoríaImpositiva: {
+    {
+      title: "Consultoria Impositiva",
       descripcion:
         "Ofrecemos soluciones impositivas para empresas de todos los tamaños, ayudándoles a cumplir con sus obligaciones, normas y políticas fiscales de manera eficiente.",
       imagen: service4,
+      area: "serviceB",
     },
-
-    ConsultoríaSsostenibilidad: {
+    {
+      title: "Consultoria Estrategica",
+      descripcion:
+        "Colaboramos a las empresas a desarrollar e implementar planes estratégicos para alcanzar sus objetivos a largo plazo. Trabajamos con la alta dirección de la empresa para analizar el mercado, identificar oportunidades y amenazas, y definir una estrategia clara y coherente.",
+      imagen: service3,
+      area: "serviceC",
+    },
+    {
+      title: "Consultoría Financiera",
+      descripcion:
+        "Brindamos soluciones enfocadas en ayudar a las empresas a mejorar su toma de decisiones en las gestiones financieras. También contamos con experiencia en servicios de análisis de estados financieros, valoración de empresas, asesoramiento en fusiones y adquisiciones, y gestión de riesgos financieros.",
+      imagen: service2,
+      area: "serviceD",
+    },
+    {
+      title: "Consultoria de Sostenibilidad",
       descripcion:
         "Ayudamos a las empresas a desarrollar planes de sostenibilidad y responsabilidad social, asegurándonos de que cumplan con las normas y regulaciones ambientales y sociales. Estas consultorías ayudan a las empresas a evaluar su desempeño ambiental, social y económico.",
       imagen: service5,
+      area: "serviceE",
     },
-  };
+  ];
 
   const documents = {
     brochure: {

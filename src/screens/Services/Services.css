@@ -8,7 +8,7 @@
   margin-bottom: 25vh;
   margin-top: 150px;
 }
-.servicesSection .textContainer{
+.servicesSection .textContainer {
   margin-bottom: 40px;
 }
 .serviceGrid {
@@ -88,6 +88,31 @@
   position: absolute;
   right: 0px;
   bottom: 0px;
+}
+.serviceDescription {
+  width: 100%;
+  height: 543px;
+  background-color: #364660;
+  padding-left: 65px;
+  padding-right: 65px;
+  padding-top: 50px;
+}
+.serviceDescription .ServiceTitle {
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  margin-bottom: 45px;
+}
+.serviceDescription .ServiceText {
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
 }
 @media only screen and (max-width: 700px) {
   .servicesSection {
