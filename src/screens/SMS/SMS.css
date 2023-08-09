@@ -26,7 +26,7 @@
   text-decoration: none;
 }
 
-.content {
+.smsScreen .content {
   margin-top: 65px;
   margin-bottom: 88px;
   padding-left: 60px;
@@ -34,7 +34,7 @@
   display: flex;
   flex-direction: column;
 }
-.content img {
+.smsScreen .content img {
   width: 100%;
   max-height: 570px;
   object-fit: cover;
@@ -73,7 +73,7 @@
   .tsms{
     line-height: 22px;
   }
-  .content {
+  .smsScreen .content {
     margin-top: 65px;
     margin-bottom: 88px;
     padding-left: 20px;

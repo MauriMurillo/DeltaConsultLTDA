@@ -1,47 +1,44 @@
 .downloadContainer {
-  width: 90vw;
+  flex-shrink: 0;
+  width: 512px;
   height: auto;
   background-color: #364660;
   border-radius: 60px;
-  margin: 0 auto;
   display: grid;
   align-items: center;
-  grid-row-gap: 57px;
-  grid-column-gap: 64px;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 64px 1fr 64px;
-  padding-left: 64px;
-  padding-right: 64px;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  grid-template-areas:
-    "a a"
-    "b c"
-    "d c";
-}
-.last {
-  margin-bottom: calc(25vh - 200px);
+  grid-template-rows: 100px auto;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 .downloadContainer .titleDownload {
-  color: #fff;
-  font-size: 64px;
+  color: #364660;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  line-height: 64px;
-  grid-area: a;
 }
+.content {
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .downloadContainer .descriptionDownload {
   color: #fff;
-  font-size: 24px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 40px;
-  grid-area: c;
+  margin-bottom: 64px;
 }
+
 .downloadContainer .imageContainer {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
+  width: 292px;
+  height: 224px;
+  flex-shrink: 0;
+  margin-bottom: 32px;
 }
 .downloadContainer .imageContainer img {
   width: 100%;
@@ -49,12 +46,35 @@
   border-radius: 60px;
   object-fit: cover;
 }
+.downloadContainer .close {
+  width: 192px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 90px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.downloadContainer .close p {
+  color: #364660;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 22px;
+}
 .downloadContainer .iconContainer {
+  height: 64px;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1200px) {
+  .downloadContainer {
+    width: 422px;
+  }
   .downloadContainer .descriptionDownload {
     color: #fff;
     font-size: 18px;
@@ -66,86 +86,32 @@
 }
 @media only screen and (max-width: 900px) {
   .downloadContainer {
-    grid-row-gap: 24px;
-    grid-column-gap: 32px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 45px clamp(200px, 40% ,300px) 240px;
-    padding-left: 32px;
-    padding-right: 32px;
     padding-top: 40px;
     padding-bottom: 40px;
-    grid-template-areas:
-      "a a"
-      "b d"
-      "c c";
   }
   .downloadContainer .titleDownload {
-    font-size: 36px;
-    line-height: 32px;
+    font-size: 30px;
   }
   .downloadContainer .descriptionDownload {
-    font-size: 16px;
-    line-height: 25px;
-  }
-  .downloadContainer .imageContainer {
-    overflow: hidden;
-  }
-  .downloadContainer .imageContainer img {
-    width: 100%;
-    border-radius: 60px;
-  }
-  .downloadContainer .iconContainer {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .downloadContainer {
-    grid-row-gap: 24px;
-    grid-column-gap: 32px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 45px clamp(200px, 40% ,300px) 240px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    grid-template-areas:
-      "a a"
-      "b d"
-      "c c";
-  }
-  .downloadContainer .titleDownload {
-    font-size: 36px;
-    line-height: 32px;
-  }
-  .downloadContainer .descriptionDownload {
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 15px;
+    line-height: 36px;
   }
 }
 @media only screen and (max-width: 600px) {
   .downloadContainer {
     width: 320px;
-    grid-row-gap: 30px;
-    grid-template-columns: 100%;
-    grid-template-rows: 60px 180px 300px 56px;
-    padding-left: 14px;
-    padding-right: 14px;
     padding-top: 35px;
     padding-bottom: 34px;
-    grid-template-areas:
-      "a"
-      "b"
-      "c"
-      "d";
   }
   .downloadContainer .titleDownload {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 26px;
   }
   .downloadContainer .descriptionDownload {
-    font-size: 13px;
-    line-height: 25px;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+  .content{
+    width: 320px;
   }
 }

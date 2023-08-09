@@ -48,14 +48,16 @@ function Services() {
                 setShowDescription(false);
               }}
             >
-              <p>Cerrar</p>
+              <p>CERRAR</p>
             </div>
           </div>
         )}
         ;
       </div>
-      <Downloadable content={documents.brochure} />;
-      <Downloadable content={documents.business} modify={true} />;
+      <div className="files">
+        <Downloadable content={documents.brochure} />
+        <Downloadable content={documents.business} />
+      </div>
       <Footer />
     </div>
   );
