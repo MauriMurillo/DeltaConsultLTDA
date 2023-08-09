@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DeltaConsultLTDA/static/css/main.c2c0d07d.css",
-    "main.js": "/DeltaConsultLTDA/static/js/main.42b3d089.js",
+    "main.css": "/DeltaConsultLTDA/static/css/main.5df195ab.css",
+    "main.js": "/DeltaConsultLTDA/static/js/main.cc7faa67.js",
     "static/media/Broshure Delta.pdf": "/DeltaConsultLTDA/static/media/Broshure Delta.6c08e8b719268a3bfd8e.pdf",
     "static/media/service3.png": "/DeltaConsultLTDA/static/media/service3.1805b1869376bd976433.png",
     "static/media/service2.png": "/DeltaConsultLTDA/static/media/service2.a99fdef64a0ab35332ab.png",
@@ -41,18 +41,20 @@
     "static/media/OYO Logo.svg": "/DeltaConsultLTDA/static/media/OYO Logo.b70c6b8afcd56992774d14141d084ca1.svg",
     "static/media/logo-linkedin.svg": "/DeltaConsultLTDA/static/media/logo-linkedin.3fa9c3f24a9fcfb2054aacc064cf70bf.svg",
     "index.html": "/DeltaConsultLTDA/index.html",
+    "static/media/Message.svg": "/DeltaConsultLTDA/static/media/Message.90e821de067bee7ed76d1b486196b304.svg",
     "static/media/email-icon.svg": "/DeltaConsultLTDA/static/media/email-icon.8d6081a70bb49b7165fe31605d56cb3a.svg",
+    "static/media/Location.svg": "/DeltaConsultLTDA/static/media/Location.5fae544f75e278990c7a1c8f1d0efec4.svg",
     "static/media/location-icon.svg": "/DeltaConsultLTDA/static/media/location-icon.e9bcc610c6d70a0aaf987a46057de6c4.svg",
     "static/media/Vector (1).svg": "/DeltaConsultLTDA/static/media/Vector (1).6f5e01f122d1376a1109edb970044830.svg",
     "static/media/logo-facebook.svg": "/DeltaConsultLTDA/static/media/logo-facebook.802b893bf23c3576d9a63d1fa084a66d.svg",
     "static/media/checkmark.svg": "/DeltaConsultLTDA/static/media/checkmark.4441aac1425be3f2eb3e1c4ea634c555.svg",
     "static/media/menu-sharp.svg": "/DeltaConsultLTDA/static/media/menu-sharp.32b47a7fa29e5a904071d3927ed27090.svg",
     "static/media/Vector.svg": "/DeltaConsultLTDA/static/media/Vector.3b7506e8af2e46430f2482fe242f48d5.svg",
-    "main.c2c0d07d.css.map": "/DeltaConsultLTDA/static/css/main.c2c0d07d.css.map",
-    "main.42b3d089.js.map": "/DeltaConsultLTDA/static/js/main.42b3d089.js.map"
+    "main.5df195ab.css.map": "/DeltaConsultLTDA/static/css/main.5df195ab.css.map",
+    "main.cc7faa67.js.map": "/DeltaConsultLTDA/static/js/main.cc7faa67.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2c0d07d.css",
-    "static/js/main.42b3d089.js"
+    "static/css/main.5df195ab.css",
+    "static/js/main.cc7faa67.js"
   ]
 }
