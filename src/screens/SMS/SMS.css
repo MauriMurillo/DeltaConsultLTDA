@@ -1,84 +1,150 @@
-.smsDivider {
-  width: 100vw;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+.smsSection {
+  padding-left: 96px;
+  padding-right: 96px;
+}
+.smsLogoMain {
+  width: 839px;
+  height: 255px;
+  flex-shrink: 0;
   margin-top: 70px;
+  margin-bottom: 44px;
+}
+.smsSection .content {
+  margin-bottom: 134px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  flex-shrink: 0;
-  background: #d9d9d9;
 }
-.smsDivider img {
-  width: 426px;
-  height: 132px;
-  flex-shrink: 0;
+.smsSection .content img {
+  width: 100%;
+  max-height: 546px;
+  object-fit: cover;
+  object-position: bottom;
+  margin-bottom: 63px;
 }
-.smsDivider a {
-  color: #a63939;
+.tsms {
+  line-height: 50px;
+  text-align: start;
+}
+.smsLink {
+  width: 735px;
+  height: 160px;
+  margin-top: 65px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.background {
+  width: 592px;
+  height: 160px;
+  background-color: #a21f4a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.smsLink p {
+  color: #e5e9f2;
   text-align: center;
-  font-size: 48px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 600;
   line-height: 40px;
   text-decoration: none;
 }
-
-.smsScreen .content {
-  margin-top: 65px;
-  margin-bottom: 88px;
-  padding-left: 60px;
-  padding-right: 60px;
+.smsSection .content .smsLink img {
+  width: 144px;
+  height: 160px;
+  margin-bottom: 0px;
+  position: relative;
+  left: -1px;
+}
+.smsDivider {
+  height: 224px;
+  flex-shrink: 0;
+  margin-top: 103px;
+  margin-bottom: 103px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.isoSMS {
+  height: 100%;
+}
+.Delta {
+  width: 896px;
+}
+.smsSection .content2 {
+  margin-bottom: 134px;
+  display: flex;
+  align-items: center;
+  gap: 160px;
+}
+.smsSection .content2 img {
+  width: 545px;
+  height: 608px;
+  flex-shrink: 0;
+}
+.ifacSection{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-bottom: min(25vh, 300px);
+
 }
-.smsScreen .content img {
+.firmasTitle {
   width: 100%;
-  max-height: 570px;
-  object-fit: cover;
-  object-position: center;
-  margin-bottom: 63px;
+  height: 157px;
+  flex-shrink: 0;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.tsms{
+.firmasTitle p {
+  color: #47b8eb;
+  text-align: center;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.ifacSection .content {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 96px;
+  padding-right: 96px;
+  margin-top: 100px;
+  margin-bottom: 64px;
+}
+.tifac {
+  width: 623px;
+  height: 197px;
+  flex-shrink: 0;
   line-height: 50px;
 }
-@media only screen and (max-width: 900px) {
-  .smsDivider img {
-    width: 198px;
-    height: 61px;
-    flex-shrink: 0;
-  }
-  .smsDivider a {
-    font-size: 20px;
-  }
-  .tsms{
-    line-height: 30px;
-  }
+.ifacSection .content img {
+  width: 490px;
+  height: 160px;
+  flex-shrink: 0;
 }
-@media only screen and (max-width: 600px) {
-  .smsDivider {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .smsDivider img {
-    width: 150px;
-    height: auto;
-    flex-shrink: 0;
-  }
-  .smsDivider a {
-    font-size: 16px;
-  }
-  .tsms{
-    line-height: 22px;
-  }
-  .smsScreen .content {
-    margin-top: 65px;
-    margin-bottom: 88px;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    flex-direction: column;
-  }
+
+.ifacLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 767px;
+  height: 160px;
+  flex-shrink: 0;
+  background: #47b8eb;
+  text-decoration: none;
+}
+.ifacLink p {
+  color: #e5e9f2;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
 }

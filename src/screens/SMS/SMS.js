@@ -2,25 +2,26 @@ import React from "react";
 import { Header } from "../../components/Header/Header.js";
 import { Footer } from "../../components/Footer/Footer.js";
 import smsLogo from "../../Assets/Images/Logos/SMSLogo.png";
-import sms1 from "../../Assets/Images/smsImages/smsCountry.png";
+import isoSMS from "../../Assets/Images/Logos/istotipoSMS.png";
+import deltaLogo from "../../Assets/Images/Logos/ISOLOGO DELTA AZUL.png";
+import firmasLogo from "../../Assets/Images/Logos/IFAC.png";
+import sms1 from "../../Assets/Images/smsImages/smsCountry2.png";
 import sms2 from "../../Assets/Images/smsImages/smsInBolivia.png";
+import smsLink from "../../Assets/Images/smsImages/smsLink.png";
 import "./SMS.css";
 
 function SMS() {
   return (
     <div className="smsScreen">
       <Header />
-      <div className="smsSection" style={{ marginTop: "150px" }}>
+      <div className="smsSection" style={{ marginTop: "170px" }}>
         <div className="textContainer">
-          <div className="Title">RED SMS</div>
+          <div className="Title" style={{ color: "#A21F4A" }}>
+            RED SMS
+          </div>
           <div className="Text">Acerca de SMS latinoamerica</div>
         </div>
-        <div className="smsDivider">
-          <img alt="SMS logo" src={smsLogo} />
-          <a href="smslatam.com" target="_blank" rel="noreferer">
-            smslatam.com
-          </a>
-        </div>
+        <img className="smsLogoMain" alt="SMS logo" src={smsLogo} />
         <div className="content">
           <img alt="whereSMS" src={sms1} />
           <div className="Text tsms">
@@ -38,19 +39,29 @@ function SMS() {
             Caribe, cubriendo las necesidades y expectativas de nuestros
             clientes.
           </div>
+          <a
+            className="smsLink"
+            href="https://smslatam.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="background">
+              <p> Haz Click para visitar SMS</p>
+            </div>
+            <img alt="smsLink" src={smsLink} />
+          </a>
         </div>
         <div className="textContainer">
-          <div className="Title">UN JUGADOR ACTIVO EN LA REGION</div>
+          <div className="Title" style={{ color: "#A21F4A" }}>
+            UN JUGADOR ACTIVO EN LA REGION
+          </div>
           <div className="Text">Acerca de SMS latinoamerica</div>
         </div>
         <div className="smsDivider">
-          <img alt="SMS logo" src={smsLogo} />
-          <a href="smslatam.com" target="_blank" rel="noreferer">
-            smslatam.com
-          </a>
+          <img className="isoSMS" alt="SMS logo" src={isoSMS} />
+          <img className="Delta" alt="Delta Logo" src={deltaLogo} />
         </div>
-        <div className="content">
-          <img alt="SMS en Bolivia" src={sms2} />
+        <div className="content2">
           <div className="Text tsms">
             Desde SMS Latinoamérica cubrimos con servicios profesionales las
             necesidades de nuestros clientes en todo el continente.
@@ -62,7 +73,31 @@ function SMS() {
             situación.Y esto se logra únicamente perteneciendo y siendo parte
             activa de la región
           </div>
+          <img alt="SMS en Bolivia" src={sms2} />
         </div>
+      </div>
+      <div className="ifacSection">
+        <div className="firmasTitle">
+          <p>FORO DE FIRMAS</p>
+        </div>
+
+        <div className="content">
+          <img alt="Foro de firmas" src={firmasLogo} />
+
+          <div className="Text tifac">
+            Somos la organización global para la profesión contable, compuesta
+            por 180 organizaciones miembros y asociadas en 135 jurisdicciones,
+            que representan a millones de contadores profesionales.
+          </div>
+        </div>
+        <a
+          className="ifacLink"
+          href="https://www.ifac.org/who-we-are/transnational-auditors-committee-forum-firms"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <p>Haz Click para visitar IFAC</p>
+        </a>
       </div>
       <Footer />
     </div>
