@@ -38,7 +38,9 @@ function Services() {
           </div>
         ) : (
           <div className="serviceDescription">
-            <div className="ServiceTitle"> {currentService.title}</div>
+            <div className="line">
+              <div className="ServiceTitle"> {currentService.title}</div>
+            </div>
             <div className="ServiceText">{currentService.descripcion}</div>
             <div
               className="close"
@@ -46,7 +48,7 @@ function Services() {
                 setShowDescription(false);
               }}
             >
-              Cerrar
+              <p>Cerrar</p>
             </div>
           </div>
         )}

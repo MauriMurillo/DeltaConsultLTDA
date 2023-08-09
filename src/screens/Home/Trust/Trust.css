@@ -1,6 +1,6 @@
 .trustContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   padding-left: 90px;
   padding-right: 90px;
