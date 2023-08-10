@@ -8,7 +8,7 @@ function Card(props) {
       <div
         className="cardFrame reverse"
         onClick={() => setShowData(1 - showData)}
-        style={{ backgroundColor: "#1d619d" }}
+        style={{ backgroundColor: "#364660" }}
       >
         <div className="card">
           <div className="cardInfo">

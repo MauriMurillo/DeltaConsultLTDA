@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Card } from "./Card";
 import { easeInOut, motion } from "framer-motion";
 import menuDown from "../../../Assets/Icons/utilIcons/Vector.svg";
+import arrow2 from "../../../Assets/Icons/utilIcons/Arrow2.svg"
 function Department(props) {
   const { content } = props;
   const [showDepartment, setShowDepartment] = useState(false);
@@ -9,13 +10,16 @@ function Department(props) {
     <div className="departmentContainer">
       <div
         className="drawer"
+        style={showDepartment ? { borderBottom: "solid 14px #ACC3F8" } : null}
         onClick={() => {
           showDepartment ? setShowDepartment(false) : setShowDepartment(true);
         }}
       >
-        <div className="departmentTitle">{content.department}</div>
+        <div className="departmentTitle" 
+        style={showDepartment ? { color: "#ACC3F8" } : null}
+        >{content.department}</div>
         <motion.img
-          src={menuDown}
+          src={showDepartment ? arrow2 : menuDown}
           animate={showDepartment ? { rotate: 180 } : { rotate: 0 }}
           transition={{ ease: easeInOut }}
           alt="show"

@@ -31,10 +31,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: solid 14px #1d619d;
+  border-bottom: solid 14px #364660;
 }
 .teamContainer .departmentContainer .drawer .departmentTitle {
-  color: #1d619d;
+  color: #364660;
   text-align: center;
   font-size: 43px;
   font-style: normal;
@@ -47,7 +47,7 @@
   padding-right: 64px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   row-gap: 32px;
 }
 .cardFrame {
@@ -64,7 +64,7 @@
   flex-shrink: 0;
   overflow: hidden;
   border-radius: 20px;
-  background-color: #1d619d;
+  background-color: #364660;
 }
 
 .teamContainer .membersContainer .card .imageContainer {
@@ -141,14 +141,14 @@
   font-weight: 700;
   line-height: normal;
 }
+.icon {
+  width: 46px;
+  height: 23px;
+}
 @media only screen and (max-width: 900px) {
-  .teamContainer .departmentContainer .drawer {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
   .teamContainer .membersContainer {
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
   .teamContainer .departmentContainer .drawer {
     padding-left: 25px;
@@ -173,11 +173,7 @@
     padding-right: 25px;
   }
   .teamContainer .departmentContainer .drawer .departmentTitle {
-    color: #1d619d;
-    text-align: center;
     font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
     line-height: 22px;
   }
   .icon {
