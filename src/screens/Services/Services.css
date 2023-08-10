@@ -48,31 +48,31 @@
 }
 .serviceGrid .serviceA {
   grid-area: a;
-  background-image: url("../../Assets/Images/serviceImage/service1.png");
+  background-image: url("../../Assets/Images/serviceImage/service1Big.png");
   animation: slideInLeft;
   animation-duration: 2s;
 }
 .serviceGrid .serviceB {
   grid-area: b;
-  background-image: url("../../Assets/Images/serviceImage/service2.png");
+  background-image: url("../../Assets/Images/serviceImage/service2Big.png");
   animation: slideInDown;
   animation-duration: 2s;
 }
 .serviceGrid .serviceC {
   grid-area: c;
-  background-image: url("../../Assets/Images/serviceImage/service3.png");
+  background-image: url("../../Assets/Images/serviceImage/service3Big.png");
   animation: slideInUp;
   animation-duration: 2s;
 }
 .serviceGrid .serviceD {
   grid-area: d;
-  background-image: url("../../Assets/Images/serviceImage/service4.png");
+  background-image: url("../../Assets/Images/serviceImage/service4Big.png");
   animation: zoomIn;
   animation-duration: 2s;
 }
 .serviceGrid .serviceE {
   grid-area: e;
-  background-image: url("../../Assets/Images/serviceImage/service5.png");
+  background-image: url("../../Assets/Images/serviceImage/service5Big.png");
   animation: slideInRight;
   animation-duration: 2s;
 }
@@ -217,22 +217,30 @@
   .serviceGrid .serviceA {
     animation: slideInRight;
     animation-duration: 2s;
+    background-image: url("../../Assets/Images/serviceImage/service1.png");
   }
   .serviceGrid .serviceB {
     animation: slideInLeft;
     animation-duration: 2s;
+    background-image: url("../../Assets/Images/serviceImage/service2.png");
+
   }
   .serviceGrid .serviceC {
     animation: slideInRight;
     animation-duration: 2s;
+    background-image: url("../../Assets/Images/serviceImage/service3.png");
+
   }
   .serviceGrid .serviceD {
     animation: slideInLeft;
     animation-duration: 2s;
+    background-image: url("../../Assets/Images/serviceImage/service4.png");
+
   }
   .serviceGrid .serviceE {
     animation: slideInRight;
     animation-duration: 2s;
+    background-image: url("../../Assets/Images/serviceImage/service5.png");
   }
   .serviceDescription .ServiceTitle {
     font-size: 26px;
