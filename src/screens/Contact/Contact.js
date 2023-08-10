@@ -3,6 +3,7 @@ import { Header } from "../../components/Header/Header.js";
 import { Footer } from "../../components/Footer/Footer.js";
 import { ContentContext } from "../../Contexts/ContentContext.js";
 import { BigOffice } from "./BigOffice.js";
+import { ContactForm } from "./ContactForm/ContactForm.js";
 
 function Contact() {
   const { offices } = useContext(ContentContext);
@@ -20,6 +21,7 @@ function Contact() {
             <BigOffice content={item} />
           ))}
         </div>
+        <ContactForm/>
       </div>
       <Footer />
     </div>

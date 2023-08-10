@@ -1,0 +1,112 @@
+.contactForm {
+  margin-bottom: 25vh;
+}
+.contactForm form {
+  width: 90vw;
+  border-radius: 60px;
+  background-color: #d9d9d9;
+  padding: 90px;
+  margin: 0 auto;
+  margin-top: 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contactForm form label {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 15px;
+  margin-left: 32px;
+}
+.contactForm form input,
+.contactForm form select,
+.contactForm form textarea {
+  width: 100%;
+  height: 96px;
+  margin-bottom: 26px;
+  padding: 30px 60px;
+  flex-shrink: 0;
+  border-radius: 60px;
+  background: rgba(54, 70, 96, 0.7);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  resize: none;
+}
+.contactForm form textarea {
+  height: 318px;
+}
+.contactForm form input:valid,
+.contactForm form select:valid,
+.contactForm form textarea:valid {
+  background: rgba(54, 70, 96, 1);
+}
+.half {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  justify-content: space-between;
+}
+.contactForm form button {
+  width: 480px;
+  height: 96px;
+  flex-shrink: 0;
+  border-radius: 60px;
+  background: #364660;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 auto;
+  margin-top: 95px;
+}
+@media only screen and (max-width: 700px) {
+  .contactForm {
+    margin-bottom: 25vh;
+  }
+  .contactForm form {
+    width: 100vw;
+    max-width: 359px;
+    padding: 32px;
+    margin-top: 44px;
+  }
+  .contactForm form label {
+    margin-bottom: 12px;
+    font-size: 10px;
+  }
+  .contactForm form input,
+  .contactForm form select,
+  .contactForm form textarea {
+    height: 64px;
+    margin-bottom: 12px;
+    padding: 25px 32px;
+    font-size: 12px;
+  }
+  .contactForm form textarea {
+    height: 288px;
+  }
+
+  .half {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contactForm form button {
+    margin-top: 50px;
+    width: 223px;
+    height: 33px;
+    font-size: 15px;
+  }
+}
