@@ -1,4 +1,5 @@
-.smsSection {
+.smsSection,
+.ifacSection {
   padding-left: 96px;
   padding-right: 96px;
 }
@@ -8,6 +9,11 @@
   flex-shrink: 0;
   margin-top: 70px;
   margin-bottom: 44px;
+}
+.foroLogoMain {
+  width: 927px;
+  height: 166px;
+  margin-bottom: 60px;
 }
 .smsSection .content {
   margin-bottom: 134px;
@@ -60,7 +66,6 @@
   left: -1px;
 }
 .smsDivider {
-  height: 224px;
   flex-shrink: 0;
   margin-top: 103px;
   margin-bottom: 103px;
@@ -69,28 +74,24 @@
   align-items: center;
 }
 .isoSMS {
-  height: 100%;
+  width: 20%;
 }
 .Delta {
-  width: 896px;
+  width: 60%;
 }
 .smsSection .content2 {
   margin-bottom: 134px;
   display: flex;
   align-items: center;
-  gap: 160px;
+  gap: 64px;
 }
 .smsSection .content2 img {
-  width: 545px;
-  height: 608px;
+  width: 50%;
+  border-radius: 50%;
   flex-shrink: 0;
 }
-.ifacSection{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.ifacSection {
   margin-bottom: min(25vh, 300px);
-
 }
 .firmasTitle {
   width: 100%;
@@ -109,30 +110,18 @@
   font-weight: 700;
   line-height: 64px;
 }
-
 .ifacSection .content {
-  display: flex;
-  justify-content: space-around;
-  padding-left: 96px;
-  padding-right: 96px;
-  margin-top: 100px;
-  margin-bottom: 64px;
+  margin-bottom: 80px;
 }
 .tifac {
-  width: 623px;
-  height: 197px;
-  flex-shrink: 0;
   line-height: 50px;
+  text-align: start;
+  margin-bottom: 10px;
 }
-.ifacSection .content img {
-  width: 490px;
-  height: 160px;
-  flex-shrink: 0;
-}
-
 .ifacLink {
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 767px;
   height: 160px;
@@ -147,4 +136,96 @@
   font-style: normal;
   font-weight: 600;
   line-height: 40px;
+}
+.ifacLink img {
+  width: 244px;
+  height: 80px;
+  flex-shrink: 0;
+}
+@media only screen and (max-width: 1300px) {
+  .smsSection .content2 {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 64px;
+  }
+  .smsSection .content2 img {
+    width: 70%;
+    border-radius: 50%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .smsLogoMain {
+    width: 100%;
+    height: auto;
+  }
+  .foroLogoMain {
+    width: 100%;
+    height: auto;
+  }
+  .smsLink {
+    width: 100%;
+  }
+  .smsLink p {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .smsDivider {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .ifacLink {
+    width: 100%;
+  }
+  .ifacLink p {
+    width: 50%;
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .ifacLink img {
+    width: 40%;
+    flex-shrink: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .smsSection,
+  .ifacSection {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .smsLink {
+    height: 80px;
+  }
+  .background {
+    height: 80px;
+  }
+  .smsLink p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .smsSection .content .smsLink img {
+    width: 72px;
+    height: 80px;
+    margin-bottom: 0px;
+    position: relative;
+    left: -1px;
+  }
+  .ifacLink {
+    height: 80px;
+  }
+  .ifacLink p {
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .ifacLink img{
+    width: auto;
+    height: 40px;
+  }
+  .tifac {
+    line-height: 30px;
+  }
+  .tsms{
+    line-height: 30px;
+  }
 }

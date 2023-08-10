@@ -4,7 +4,8 @@ import { Footer } from "../../components/Footer/Footer.js";
 import smsLogo from "../../Assets/Images/Logos/SMSLogo.png";
 import isoSMS from "../../Assets/Images/Logos/istotipoSMS.png";
 import deltaLogo from "../../Assets/Images/Logos/ISOLOGO DELTA AZUL.png";
-import firmasLogo from "../../Assets/Images/Logos/IFAC.png";
+import ifacLogo from "../../Assets/Images/Logos/IFAC.png";
+import forodefirmasLogo from "../../Assets/Images/Logos/ForodeFirmas.png";
 import sms1 from "../../Assets/Images/smsImages/smsCountry2.png";
 import sms2 from "../../Assets/Images/smsImages/smsInBolivia.png";
 import smsLink from "../../Assets/Images/smsImages/smsLink.png";
@@ -77,18 +78,31 @@ function SMS() {
         </div>
       </div>
       <div className="ifacSection">
-        <div className="firmasTitle">
-          <p>FORO DE FIRMAS</p>
-        </div>
+        <img
+          className="foroLogoMain"
+          alt="Foro de Firmas"
+          src={forodefirmasLogo}
+        />
 
         <div className="content">
-          <img alt="Foro de firmas" src={firmasLogo} />
-
-          <div className="Text tifac">
+          <p className="Text tifac">
+            El Foro de Firmas es una asociación independiente de redes
+            internacionales de firmas que realizan auditorías transnacionales.
+            El objetivo del Foro es promover estándares consistentes y de alta
+            calidad de informes financieros y prácticas de auditoría en todo el
+            mundo, reuniendo a firmas que realizan auditorías transnacionales e
+            involucrándolas más estrechamente con las actividades de IFAC en
+            auditoría y otras áreas relacionadas con el aseguramiento. Los
+            miembros del Foro deben demostrar su compromiso de adherirse y
+            promover la aplicación consistente de prácticas de auditoría de alta
+            calidad en todo el mundo, como se detalla en la Constitución, los
+            procedimientos operativos y los arreglos de gobierno del Foro.
+          </p>
+          <p className="Text tifac">
             Somos la organización global para la profesión contable, compuesta
             por 180 organizaciones miembros y asociadas en 135 jurisdicciones,
             que representan a millones de contadores profesionales.
-          </div>
+          </p>
         </div>
         <a
           className="ifacLink"
@@ -96,7 +110,8 @@ function SMS() {
           target="_blank"
           rel="noreferrer"
         >
-          <p>Haz Click para visitar IFAC</p>
+          <p>Haz Click para visitar</p>
+          <img alt="ifac logo" src={ifacLogo} />
         </a>
       </div>
       <Footer />
