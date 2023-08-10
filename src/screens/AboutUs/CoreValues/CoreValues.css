@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: calc(25vh - 128px);
+  margin-bottom: calc(25vh - 64px);
 }
 .valuesContainer .textContainer {
   margin-bottom: 44px;
@@ -19,11 +19,12 @@
   display: grid;
   align-content: center;
   gap: 30px;
-  margin-bottom: 128px;
+  margin-bottom: 64px;
 }
 .valuesContainer .card {
-  width: 592px;
-  height: 228px;
+  width: 590px;
+  height: 230px;
+  flex-shrink: 0;
   border-radius: 40px;
   background-color: #acc3f8;
   padding-top: 28px;
@@ -33,17 +34,17 @@
 }
 .valuesContainer .first {
   justify-self: flex-end;
-  margin-right: 208px;
-  padding-right: 60px;
+  margin-right: 210px;
+  padding-right: 70px;
 }
 .valuesContainer .second {
-  margin-left: 208px;
-  padding-left: 60px;
+  margin-left: 210px;
+  padding-left: 70px;
 }
 .card .cardTitle {
   color: #f5f5f5;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -51,10 +52,10 @@
 }
 .card .cardDescription {
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 30px;
 }
 .halfLogoRight {
   width: 440px;
@@ -78,58 +79,118 @@
   bottom: 0px;
   z-index: 100;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1350px) {
   .logoRevealContainer {
     width: 100vw;
-    height: 416px;
+    height: 512px;
+    padding-left: 32px;
+    padding-right: 32px;
+    gap: 64px;
+    margin-bottom: 0px;
+  }
+  .valuesContainer .card {
+    width: 480px;
+    height: 192px;
+    flex-shrink: 0;
+  }
+  .valuesContainer .first {
+    margin-right: 96px;
+    padding-right: 70px;
+  }
+  .valuesContainer .second {
+    margin-left: 96px;
+    padding-left: 70px;
+  }
+  .halfLogoRight {
+    width: 220px;
+    height: 256px;
+    flex-shrink: 0;
+    right: 324px;
+  }
+  .halfLogoLeft {
+    width: 220px;
+    height: 256px;
+    flex-shrink: 0;
+    left: 324px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .valuesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: calc(25vh - 30px);
+  }
+  .logoRevealContainer {
+    width: 100vw;
+    height: 323px;
     padding-left: 16px;
     padding-right: 16px;
-    gap: 76px;
+    gap: 84px;
     margin-bottom: 30px;
   }
   .valuesContainer .card {
-    width: calc(100% - 14px);
-    height: 148px;
+    width: 303px;
+    height: 96px;
+    flex-shrink: 0;
     padding-top: 13px;
     padding-bottom: 13px;
     padding-left: 16px;
     padding-right: 16px;
   }
   .valuesContainer .first {
-    justify-self: flex-end;
-    margin-right: 14px;
-    padding-right: 105px;
+    margin-right: 29px;
+    padding-right: 60px;
   }
   .valuesContainer .second {
-    margin-left: 14px;
-    padding-left: 105px;
+    margin-left: 29px;
+    padding-left: 60px;
   }
   .card .cardTitle {
-    margin-bottom: 10px;
-    font-size: 18px;
-    line-height: 18px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 14px;
   }
   .card .cardDescription {
-    height: 100px;
+    height: 45px;
     overflow-y: auto;
-    color: #fff;
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
     line-height: 20px;
   }
   .halfLogoRight {
-    width: 165px;
-    height: 192px;
+    width: 120px;
+    height: 140px;
     right: 228px;
     top: 0px;
     z-index: 100;
   }
   .halfLogoLeft {
-    width: 165px;
-    height: 192px;
+    width: 120px;
+    height: 140px;
     left: 228px;
     bottom: 0px;
     z-index: 100;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .logoRevealContainer {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .valuesContainer .first {
+    margin-right: 0px;
+    justify-self: flex-start;
+  }
+  .valuesContainer .second {
+    margin-left: 0px;
+  }
+  .halfLogoRight {
+    right: 212px;
+  }
+  .halfLogoLeft {
+    left: 212px;
   }
 }

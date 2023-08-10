@@ -8,7 +8,7 @@ function LogoReveal(props) {
   return (
     <div className="logoRevealContainer">
       <motion.div
-        whileInView={screenSize.width > 600 ? { x: 292 } : { x: 228 }}
+        whileInView={screenSize.width > 600 ? { x: 292 } : { x: 212 }}
         transition={{ ease: easeOut, duration: 1 }}
         className="halfLogoRight"
       ></motion.div>
@@ -21,7 +21,7 @@ function LogoReveal(props) {
         <div className="cardDescription">{principal.description}</div>
       </motion.div>
       <motion.div
-        whileInView={screenSize.width > 600 ? { x: -292 } : { x: -228 }}
+        whileInView={screenSize.width > 600 ? { x: -292 } : { x: -212 }}
         transition={{ ease: easeOut, duration: 1 }}
         className="halfLogoLeft"
       ></motion.div>
