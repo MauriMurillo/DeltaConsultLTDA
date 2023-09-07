@@ -1,6 +1,6 @@
 import React from "react";
 import hero from "../Assets/Images/HomeImages/hero1.png";
-import thumbUp from "../Assets/Icons/stats/thumbs up.svg";
+import profesional from "../Assets/Icons/stats/profesional.svg";
 import clients from "../Assets/Icons/stats/people.svg";
 import check from "../Assets/Icons/stats/checkmark.svg";
 import calendar from "../Assets/Icons/stats/calendar.svg";
@@ -71,32 +71,26 @@ function ContentProvider(props) {
   const homeHeroContent = [
     {
       imageURL: hero,
-      titulo: "!BIENVENIDOS A DCL LTDA!",
-      texto:
-        "Delta Consult es una firma nacional de servicios de auditoría y consultoría, miembros de SMS Latinoamérica.",
+      titulo: "Descubre los beneficios de ser miembro de",
     },
     {
       imageURL: hero,
-      titulo: "46 AÑOS",
-      texto:
-        "de experiencia nos hacen una firma referente a nivel nacional en asesoramiento tributario y consultoría gerencial",
+      titulo: "Nuestra representación internacional es",
     },
     {
       imageURL: hero,
-      titulo: "MAS ALLA DEL NOMBRE",
-      texto:
-        "En un mercado competitivo, creemos que nuestra mayor fortaleza reside en nuestros profesionales, capaces de enfrentar los desafíos en el negocio de nuestros clientes",
+      titulo: "Delta Consult representa a Bolivia en",
     },
   ];
 
   const generalStatistics = [
     {
-      icon: thumbUp,
+      icon: clients,
       title: "250+",
       text: "Clientes Satisfechos",
     },
     {
-      icon: clients,
+      icon: profesional,
       title: "50+",
       text: "Profesionales",
     },
@@ -114,7 +108,7 @@ function ContentProvider(props) {
 
   const clientStatistics = [
     {
-      icon: thumbUp,
+      icon: clients,
       title: "250+",
       text: "Clientes Satisfechos",
     },
