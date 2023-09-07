@@ -11,7 +11,7 @@ function Services() {
   const [currentService, setCurrentService] = useState({});
 
   return (
-    <div className="servicesScreen">
+    <div className="servicesScreen Screen">
       <Header />
       <div className="servicesSection">
         <div className="textContainer">

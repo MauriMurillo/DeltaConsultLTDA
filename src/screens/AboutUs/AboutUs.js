@@ -8,10 +8,10 @@ import { TeamContentProvider } from "../../Contexts/TeamContentContext.js";
 
 function AboutUs() {
   return (
-    <div className="aboutUsScreen">
+    <div className="aboutUsScreen Screen">
       <Header />
       <TeamContentProvider>
-        <CoreValues />
+        <CoreValues/>
         <Team />
         <History />
       </TeamContentProvider>

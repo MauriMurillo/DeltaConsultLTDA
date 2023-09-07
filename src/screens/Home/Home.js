@@ -9,9 +9,10 @@ import { Trust } from "./Trust/Trust";
 import { ContentContext } from "../../Contexts/ContentContext.js";
 
 function Home() {
-  const {generalStatistics} = useContext(ContentContext);
+  const {generalStatistics, clientStatistics} = useContext(ContentContext);
+
   return (
-    <div className="homeScreen">
+    <div className="homeScreen Screen">
       <Header />
       <Hero />
       <CompanyStats
@@ -20,6 +21,7 @@ function Home() {
       />
       <ClientsContentProvider>
         <ClientInfo />
+        <CompanyStats direccion={"left"} estadisticas={clientStatistics} />
       </ClientsContentProvider>
       <Trust/>
       <Footer />

@@ -5,21 +5,19 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #1D619D;
+  background-color: #1d619d;
   width: 100vw;
-  height: 120px;
   padding-left: 60px;
   padding-right: 60px;
   z-index: 999;
 }
 .navBar .imageContainer {
-  width: 442px;
-  height: 71px;
+  height: 52px;
   flex-shrink: 0;
   margin-right: 60px;
 }
 .navBar .imageContainer img {
-  width: 100%;
+  height: 100%;
 }
 .imageContainer a {
   width: 100%;
@@ -70,15 +68,14 @@
   color: #1d619d;
 }
 .listScreensHorizontal div a {
-  font-size: 20px;
-  text-decoration: none;
-  color: #fffefe;
+  color: #fff;
+  font-size: 15px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 20px;
 }
-.screens a:active{
-  color: #ACC3F8;
+.screens a:active {
+  color: #7ec8fe;
 }
 @media only screen and (max-width: 1250px) {
   .navBar {
@@ -86,8 +83,7 @@
     padding-right: 50px;
   }
   .navBar .imageContainer {
-    width: 330px;
-    height: 47px;
+    height: 44px;
     margin-right: 50px;
   }
   .listContainerHorizontal {
@@ -96,9 +92,8 @@
     max-width: 600px;
   }
   .listScreensHorizontal div a {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
+    font-size: 12px;
+    font-style: normal;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -107,8 +102,7 @@
     padding-right: 45px;
   }
   .navBar .imageContainer {
-    width: 351px;
-    height: 57px;
+    height: 51px;
     margin-right: 45px;
   }
   .showMenuButton {

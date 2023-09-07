@@ -1,11 +1,8 @@
 import React, { useContext } from "react";
 import { ClientsContentContext } from "../../../Contexts/ClientsContentContext";
 import "./ClientInfo.css";
-import { CompanyStats } from "../CompanyStats/CompanyStats";
-import { ContentContext } from "../../../Contexts/ContentContext";
 function ClientInfo() {
   const { clients } = useContext(ClientsContentContext);
-  const { clientStatistics } = useContext(ContentContext);
   return (
     <div className="clientSection">
       <div className="clientLogos">
@@ -27,7 +24,6 @@ function ClientInfo() {
           })}
         </div>
       </div>
-      <CompanyStats direccion={"left"} estadisticas={clientStatistics} />
     </div>
   );
 }

@@ -8,7 +8,7 @@ import { ContactForm } from "./ContactForm/ContactForm.js";
 function Contact() {
   const { offices } = useContext(ContentContext);
   return (
-    <div className="contactScreen">
+    <div className="contactScreen Screen">
       <Header />
       <div className="contactSection" style={{ marginTop: "150px" }}>
         <div className="textContainer" style={{ marginBottom: "120px" }}>

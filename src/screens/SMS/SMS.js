@@ -13,7 +13,7 @@ import "./SMS.css";
 
 function SMS() {
   return (
-    <div className="smsScreen">
+    <div className="smsScreen Screen">
       <Header />
       <div className="smsSection" style={{ marginTop: "170px" }}>
         <div className="textContainer">

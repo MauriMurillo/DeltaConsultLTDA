@@ -10,19 +10,22 @@ function Hero() {
   const { homeHeroContent } = useContext(ContentContext);
   return (
     <div
-      className="heroContainer"
+      className="heroContainer top"
       style={{
-        backgroundImage: `url(${homeHeroContent[heroPosition].imageURL})`,
-        backgroundColor:"red",
+        backgroundColor: "red",
       }}
     >
       <div className="textContainer">
         <p id="heroTitle" className="title animate__animated animate__fast">
           {homeHeroContent[heroPosition].titulo}
         </p>
-        <p id="heroText" className="text animate__animated animate__fast">
-          {homeHeroContent[heroPosition].texto}
-        </p>
+        <img alt="sms logo" className="logoHero" />
+        <a href="/#/SMS" className="buttonSMS">
+          <p>Vamos</p>
+        </a>
+      </div>
+      <div className="imageContainer">
+        <img alt="sms hero" src={homeHeroContent[heroPosition].imageURL} />
       </div>
       <div className="arrow forward" onClick={forwardHero}>
         <IoIosArrowForward size={24} />
