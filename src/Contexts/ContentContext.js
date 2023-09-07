@@ -1,5 +1,7 @@
 import React from "react";
-import hero from "../Assets/Images/HomeImages/hero1.png";
+import hero1 from "../Assets/Images/HomeImages/hero1.png";
+import hero2 from "../Assets/Images/HomeImages/hero2.png";
+import hero3 from "../Assets/Images/HomeImages/hero3.png";
 import profesional from "../Assets/Icons/stats/profesional.svg";
 import clients from "../Assets/Icons/stats/people.svg";
 import check from "../Assets/Icons/stats/checkmark.svg";
@@ -70,15 +72,15 @@ function ContentProvider(props) {
 
   const homeHeroContent = [
     {
-      imageURL: hero,
+      imageURL: hero1,
       titulo: "Descubre los beneficios de ser miembro de",
     },
     {
-      imageURL: hero,
+      imageURL: hero2,
       titulo: "Nuestra representación internacional es",
     },
     {
-      imageURL: hero,
+      imageURL: hero3,
       titulo: "Delta Consult representa a Bolivia en",
     },
   ];

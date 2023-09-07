@@ -35,54 +35,38 @@ function DeltaProvider(props) {
 
   function forwardHero() {
     const animatedTitle = document.getElementById("heroTitle");
-    const animatedText = document.getElementById("heroText");
     const next = (heroPosition + 1) % homeHeroContent.length;
     animatedTitle.classList.remove(animationClassOut);
-    animatedText.classList.remove(animationClassOut);
     animatedTitle.classList.remove(animationClass);
-    animatedText.classList.remove(animationClass);
     animatedTitle.classList.add(animationClassOut);
-    animatedText.classList.add(animationClassOut);
-    console.log("animation out");
     setTimeout(() => setHeroPosition(next), 801);
   }
   function rewindHero() {
     const animatedTitle = document.getElementById("heroTitle");
-    const animatedText = document.getElementById("heroText");
     const next =
       heroPosition === 0 ? homeHeroContent.length - 1 : heroPosition - 1;
     animatedTitle.classList.remove(animationClassOut);
-    animatedText.classList.remove(animationClassOut);
     animatedTitle.classList.remove(animationClass);
-    animatedText.classList.remove(animationClass);
     animatedTitle.classList.add(animationClassOut);
-    animatedText.classList.add(animationClassOut);
     setTimeout(() => setHeroPosition(next), 801);
   }
   useEffect(() => {
     const animatedTitle = document.getElementById("heroTitle");
-    const animatedText = document.getElementById("heroText");
 
-    if (animatedText && animatedTitle) {
+    if (animatedTitle) {
       setTimeout(() => {
         animatedTitle.classList.remove(animationClassOut);
-        animatedText.classList.remove(animationClassOut);
         animatedTitle.classList.remove(animationClass);
-        animatedText.classList.remove(animationClass);
         animatedTitle.classList.add(animationClass);
-        animatedText.classList.add(animationClass);
       }, 50);
     }
 
     const next = (heroPosition + 1) % homeHeroContent.length;
     const move = setTimeout(() => {
-      if (animatedText && animatedTitle) {
+      if (animatedTitle) {
         animatedTitle.classList.remove(animationClass);
-        animatedText.classList.remove(animationClass);
         animatedTitle.classList.remove(animationClassOut);
-        animatedText.classList.remove(animationClassOut);
         animatedTitle.classList.add(animationClassOut);
-        animatedText.classList.add(animationClassOut);
         setTimeout(() => {
           setHeroPosition(next);
         }, 801);
