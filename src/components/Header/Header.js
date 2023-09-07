@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
-import menu from "../../Assets/Icons/utilIcons/menu-sharp.svg";
+import menu from "../../Assets/Icons/utilIcons/Menu.svg";
 import logoDelta from "../../Assets/Images/Logos/ISOLOGO DELTA BLANCO.png";
 import "./Header.css";
 import { DeltaContext } from "../../Contexts/DeltaContext";
@@ -11,7 +11,7 @@ function Header() {
   const { screenSize, showFullMenu, setShowFullMenu } =
     useContext(DeltaContext);
 
-  if (screenSize.width <= 900) {
+  if (screenSize.width <= 950) {
     return (
       <nav className="navBar">
         <div className="imageContainer">

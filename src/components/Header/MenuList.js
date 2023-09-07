@@ -7,7 +7,7 @@ function MenuList(props) {
   const { setShowFullMenu } = useContext(DeltaContext);
   return (
     <div className={`listContainer${orientation}`}>
-      <div className={`listScreens${orientation} screens`}>
+      <div className={`listScreens${orientation} menuLinks`}>
         <div>
           <NavLink to={"/services"} onClick={() => setShowFullMenu(false)}>
             SERVICIOS
