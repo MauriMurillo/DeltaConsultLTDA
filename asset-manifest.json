@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DeltaConsultLTDA/static/css/main.6a9823ef.css",
-    "main.js": "/DeltaConsultLTDA/static/js/main.2d89f808.js",
+    "main.js": "/DeltaConsultLTDA/static/js/main.52842215.js",
     "static/media/Broshure Delta.pdf": "/DeltaConsultLTDA/static/media/Broshure Delta.6c08e8b719268a3bfd8e.pdf",
     "static/media/smsCountry2.png": "/DeltaConsultLTDA/static/media/smsCountry2.63551229c19204c4862a.png",
     "static/media/Doing Bussines Bolivia 2022.pdf": "/DeltaConsultLTDA/static/media/Doing Bussines Bolivia 2022.e06f582bc0e50d46f415.pdf",
@@ -60,10 +60,10 @@
     "static/media/Vector.svg": "/DeltaConsultLTDA/static/media/Vector.f6095feb0979a6fd32a1d69f3d11f0e5.svg",
     "static/media/Arrow2.svg": "/DeltaConsultLTDA/static/media/Arrow2.340ef4826fe2a69e9dff9c4f7f409256.svg",
     "main.6a9823ef.css.map": "/DeltaConsultLTDA/static/css/main.6a9823ef.css.map",
-    "main.2d89f808.js.map": "/DeltaConsultLTDA/static/js/main.2d89f808.js.map"
+    "main.52842215.js.map": "/DeltaConsultLTDA/static/js/main.52842215.js.map"
   },
   "entrypoints": [
     "static/css/main.6a9823ef.css",
-    "static/js/main.2d89f808.js"
+    "static/js/main.52842215.js"
   ]
 }
