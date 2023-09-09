@@ -1,18 +1,18 @@
-import React, { useContext } from "react";
-import { DeltaContext } from "../../Contexts/DeltaContext";
+import React from "react";
 import { Socials } from "./Socials";
-import logo from "../../Assets/Images/Logos/ISOLOGO DELTA BLANCO 2 (1).png"
+import logo from "../../Assets/Images/Logos/ISOLOGO DELTA BLANCO.png";
 function Contact() {
-  const { screenSize } = useContext(DeltaContext);
   return (
     <div className="contactContainer">
-      <div className="imageContainer"><img alt="logo" src={logo}/></div>
+      <div className="imageContainer">
+        <img alt="logo" src={logo} />
+      </div>
       <p className="contactDescription">
-        Delta Consult Ltda., firma miembro de SMS Latinoamérica, es una Firma de
-        servicios profesionales constituida en Bolivia para efectuar trabajos en
-        auditoría y consultoría.
+        Delta Consult Ltda. Somos una firma constituida en Bolivia para efectuar
+        trabajos y servicios profesionales en las areas de auditoría y
+        consultoría.
       </p>
-      {screenSize.width <= 1000 ? <Socials /> : null}
+      <Socials />
     </div>
   );
 }

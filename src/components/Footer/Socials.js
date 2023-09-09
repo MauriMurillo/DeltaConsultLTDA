@@ -4,7 +4,7 @@ import linkedin from "../../Assets/Icons/footer/logo-linkedin.svg";
 import whatsapp from "../../Assets/Icons/footer/logo-whatsapp.svg";
 function Socials() {
   return (
-    <div className="logoLeft">
+    <div className="logos">
       <a
         href="https://www.facebook.com/deltaconsult.bo"
         target="_blank"

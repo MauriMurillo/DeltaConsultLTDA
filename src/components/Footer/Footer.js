@@ -4,8 +4,6 @@ import { Office } from "./Office";
 import { Contact } from "./Contact";
 import { Rights } from "./Rights";
 import { ContentContext } from "../../Contexts/ContentContext";
-import logo from "../../Assets/Images/Logos/ISOTIPO DELTA BLANCO.png";
-import { Socials } from "./Socials";
 import { DeltaContext } from "../../Contexts/DeltaContext";
 function Footer() {
   const { offices } = useContext(ContentContext);
@@ -17,12 +15,6 @@ function Footer() {
         {offices.map(function (officeItem) {
           return <Office content={officeItem} />;
         })}
-      </div>
-      <div className="divider">
-        {screenSize.width >= 1000 ? <Socials /> : null}
-        <div className="logoRight">
-          <img src={logo} alt="logo" />
-        </div>
       </div>
       <Rights />
     </div>
