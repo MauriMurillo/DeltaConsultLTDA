@@ -17,7 +17,7 @@ function Hero() {
           {homeHeroContent[heroPosition].titulo}
         </p>
         <img alt="sms logo" className="logoHero" src={smsLogo} />
-        <a href="DeltaConsultLTDA/#/SMS" className="buttonSMS">
+        <a href="/SMS" className="buttonSMS">
           <p>¡ Vamos !</p>
         </a>
       </div>
