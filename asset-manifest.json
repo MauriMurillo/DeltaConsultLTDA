@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DeltaConsultLTDA/static/css/main.f4630126.css",
-    "main.js": "/DeltaConsultLTDA/static/js/main.28da7312.js",
+    "main.css": "/DeltaConsultLTDA/static/css/main.6a9823ef.css",
+    "main.js": "/DeltaConsultLTDA/static/js/main.2d89f808.js",
     "static/media/Broshure Delta.pdf": "/DeltaConsultLTDA/static/media/Broshure Delta.6c08e8b719268a3bfd8e.pdf",
     "static/media/smsCountry2.png": "/DeltaConsultLTDA/static/media/smsCountry2.63551229c19204c4862a.png",
     "static/media/Doing Bussines Bolivia 2022.pdf": "/DeltaConsultLTDA/static/media/Doing Bussines Bolivia 2022.e06f582bc0e50d46f415.pdf",
@@ -31,9 +31,7 @@
     "static/media/SMSLogo.png": "/DeltaConsultLTDA/static/media/SMSLogo.7d2f939e1409639cc7ea.png",
     "static/media/ISOLOGO DELTA BLANCO.png": "/DeltaConsultLTDA/static/media/ISOLOGO DELTA BLANCO.57cbef5c38d2dc2b2d4b.png",
     "static/media/IFAC.png": "/DeltaConsultLTDA/static/media/IFAC.90713079c39027c8fbc7.png",
-    "static/media/ISOLOGO DELTA BLANCO 2 (1).png": "/DeltaConsultLTDA/static/media/ISOLOGO DELTA BLANCO 2 (1).c804135af22dbd5afc3b.png",
     "static/media/ISOLOGO DELTA AZUL.png": "/DeltaConsultLTDA/static/media/ISOLOGO DELTA AZUL.2a89ecff42aa19ee1e34.png",
-    "static/media/ISOTIPO DELTA BLANCO.png": "/DeltaConsultLTDA/static/media/ISOTIPO DELTA BLANCO.3ec79bac6627a8017842.png",
     "static/media/isq.png": "/DeltaConsultLTDA/static/media/isq.17a6317dbb757c2bef28.png",
     "static/media/der.png": "/DeltaConsultLTDA/static/media/der.995a5b4f27e669f1644d.png",
     "static/media/Airbnb Logo.svg": "/DeltaConsultLTDA/static/media/Airbnb Logo.17c197226e99613a074500e15f16580f.svg",
@@ -61,11 +59,11 @@
     "static/media/Menu.svg": "/DeltaConsultLTDA/static/media/Menu.865e3edc957a3cceb4ef8bb13fbfe0a7.svg",
     "static/media/Vector.svg": "/DeltaConsultLTDA/static/media/Vector.f6095feb0979a6fd32a1d69f3d11f0e5.svg",
     "static/media/Arrow2.svg": "/DeltaConsultLTDA/static/media/Arrow2.340ef4826fe2a69e9dff9c4f7f409256.svg",
-    "main.f4630126.css.map": "/DeltaConsultLTDA/static/css/main.f4630126.css.map",
-    "main.28da7312.js.map": "/DeltaConsultLTDA/static/js/main.28da7312.js.map"
+    "main.6a9823ef.css.map": "/DeltaConsultLTDA/static/css/main.6a9823ef.css.map",
+    "main.2d89f808.js.map": "/DeltaConsultLTDA/static/js/main.2d89f808.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4630126.css",
-    "static/js/main.28da7312.js"
+    "static/css/main.6a9823ef.css",
+    "static/js/main.2d89f808.js"
   ]
 }
