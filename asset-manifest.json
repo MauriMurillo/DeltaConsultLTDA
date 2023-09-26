@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DeltaConsultLTDA/static/css/main.6a9823ef.css",
-    "main.js": "/DeltaConsultLTDA/static/js/main.52842215.js",
+    "main.css": "/DeltaConsultLTDA/static/css/main.59d3ed78.css",
+    "main.js": "/DeltaConsultLTDA/static/js/main.8e4c96b7.js",
     "static/media/Broshure Delta.pdf": "/DeltaConsultLTDA/static/media/Broshure Delta.6c08e8b719268a3bfd8e.pdf",
     "static/media/smsCountry2.png": "/DeltaConsultLTDA/static/media/smsCountry2.63551229c19204c4862a.png",
     "static/media/Doing Bussines Bolivia 2022.pdf": "/DeltaConsultLTDA/static/media/Doing Bussines Bolivia 2022.e06f582bc0e50d46f415.pdf",
@@ -14,7 +14,6 @@
     "static/media/imageLink2.png": "/DeltaConsultLTDA/static/media/imageLink2.e57c5161dc16de6c0a3c.png",
     "static/media/Person Image.png": "/DeltaConsultLTDA/static/media/Person Image.06d5d945981022d41355.png",
     "static/media/service4Big.png": "/DeltaConsultLTDA/static/media/service4Big.559cfe18a949012be1ed.png",
-    "static/media/Person Image (1).png": "/DeltaConsultLTDA/static/media/Person Image (1).f0c72aa65ec4be8613da.png",
     "static/media/service3Big.png": "/DeltaConsultLTDA/static/media/service3Big.c5b1a9117b8b67d9befb.png",
     "static/media/service2Big.png": "/DeltaConsultLTDA/static/media/service2Big.19a139afc9595f11f4f2.png",
     "static/media/Rectangle 601.png": "/DeltaConsultLTDA/static/media/Rectangle 601.3e063f7d2a3f97d31bae.png",
@@ -34,20 +33,15 @@
     "static/media/ISOLOGO DELTA AZUL.png": "/DeltaConsultLTDA/static/media/ISOLOGO DELTA AZUL.2a89ecff42aa19ee1e34.png",
     "static/media/isq.png": "/DeltaConsultLTDA/static/media/isq.17a6317dbb757c2bef28.png",
     "static/media/der.png": "/DeltaConsultLTDA/static/media/der.995a5b4f27e669f1644d.png",
-    "static/media/Airbnb Logo.svg": "/DeltaConsultLTDA/static/media/Airbnb Logo.17c197226e99613a074500e15f16580f.svg",
-    "static/media/Microsoft Logo.svg": "/DeltaConsultLTDA/static/media/Microsoft Logo.467eb67011e0995bfde70ea5c9387597.svg",
-    "static/media/Amazon Logo.svg": "/DeltaConsultLTDA/static/media/Amazon Logo.9296de2410131404ff80d436906e7eea.svg",
-    "static/media/OLA logo.svg": "/DeltaConsultLTDA/static/media/OLA logo.1985a48a949a7222a13eff451b8103c3.svg",
-    "static/media/Walmart.svg": "/DeltaConsultLTDA/static/media/Walmart.269745955a901ecef137bdc7e0bc9351.svg",
-    "static/media/calendar.svg": "/DeltaConsultLTDA/static/media/calendar.d28cececf86e809d4d05a3447a836601.svg",
-    "static/media/Google Logo.svg": "/DeltaConsultLTDA/static/media/Google Logo.18544c5b1d903f5a4663dace39fd5122.svg",
+    "static/media/World.svg": "/DeltaConsultLTDA/static/media/World.f0dcd6f9041fd5cfe7e147caf88f5c5f.svg",
+    "static/media/Tool.svg": "/DeltaConsultLTDA/static/media/Tool.d859807096b72c8a2a2b8449cf890bc3.svg",
     "static/media/logo-whatsapp.svg": "/DeltaConsultLTDA/static/media/logo-whatsapp.bbecf97ac5213f9f1c974a92fa7e5921.svg",
     "static/media/profesional.svg": "/DeltaConsultLTDA/static/media/profesional.a1e4e598d48d4e95b960739f97d32f61.svg",
     "static/media/people.svg": "/DeltaConsultLTDA/static/media/people.77a74257792593667361066e57ff0d1f.svg",
-    "static/media/FedEx Logo.svg": "/DeltaConsultLTDA/static/media/FedEx Logo.9759545b7f6cc6a169bef5021760f41f.svg",
+    "static/media/Person.svg": "/DeltaConsultLTDA/static/media/Person.2a321e6391c2e213a2a087a91879138a.svg",
+    "static/media/Up.svg": "/DeltaConsultLTDA/static/media/Up.4777c29aee42ea8beefbb999c5774e18.svg",
     "static/media/phone-icon.svg": "/DeltaConsultLTDA/static/media/phone-icon.ea40f9c73b86bae9705ceeb4f52e50a4.svg",
-    "static/media/OYO Logo.svg": "/DeltaConsultLTDA/static/media/OYO Logo.b70c6b8afcd56992774d14141d084ca1.svg",
-    "static/media/checkmark.svg": "/DeltaConsultLTDA/static/media/checkmark.acd3d253459c714c9b4382546be1b90a.svg",
+    "static/media/Stars.svg": "/DeltaConsultLTDA/static/media/Stars.7ecc1a8040688590abf4836fa204a6c0.svg",
     "static/media/logo-linkedin.svg": "/DeltaConsultLTDA/static/media/logo-linkedin.3fa9c3f24a9fcfb2054aacc064cf70bf.svg",
     "index.html": "/DeltaConsultLTDA/index.html",
     "static/media/Message.svg": "/DeltaConsultLTDA/static/media/Message.90e821de067bee7ed76d1b486196b304.svg",
@@ -56,14 +50,15 @@
     "static/media/location-icon.svg": "/DeltaConsultLTDA/static/media/location-icon.e9bcc610c6d70a0aaf987a46057de6c4.svg",
     "static/media/Vector (1).svg": "/DeltaConsultLTDA/static/media/Vector (1).6f5e01f122d1376a1109edb970044830.svg",
     "static/media/logo-facebook.svg": "/DeltaConsultLTDA/static/media/logo-facebook.802b893bf23c3576d9a63d1fa084a66d.svg",
+    "static/media/Bars.svg": "/DeltaConsultLTDA/static/media/Bars.d31d5418a06108d5d5f0766f31f798ad.svg",
     "static/media/Menu.svg": "/DeltaConsultLTDA/static/media/Menu.865e3edc957a3cceb4ef8bb13fbfe0a7.svg",
     "static/media/Vector.svg": "/DeltaConsultLTDA/static/media/Vector.f6095feb0979a6fd32a1d69f3d11f0e5.svg",
     "static/media/Arrow2.svg": "/DeltaConsultLTDA/static/media/Arrow2.340ef4826fe2a69e9dff9c4f7f409256.svg",
-    "main.6a9823ef.css.map": "/DeltaConsultLTDA/static/css/main.6a9823ef.css.map",
-    "main.52842215.js.map": "/DeltaConsultLTDA/static/js/main.52842215.js.map"
+    "main.59d3ed78.css.map": "/DeltaConsultLTDA/static/css/main.59d3ed78.css.map",
+    "main.8e4c96b7.js.map": "/DeltaConsultLTDA/static/js/main.8e4c96b7.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a9823ef.css",
-    "static/js/main.52842215.js"
+    "static/css/main.59d3ed78.css",
+    "static/js/main.8e4c96b7.js"
   ]
 }
