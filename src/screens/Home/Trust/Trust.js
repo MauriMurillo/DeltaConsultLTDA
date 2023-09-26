@@ -1,18 +1,41 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import "./Trust.css";
-import confiar from "../../../Assets/Images/HomeImages/Person Image.png";
-import confiarSmall from "../../../Assets/Images/HomeImages/Person Image (1).png";
-import { DeltaContext } from "../../../Contexts/DeltaContext";
 import { ContentContext } from "../../../Contexts/ContentContext";
 function Trust() {
-  const { screenSize } = useContext(DeltaContext);
-  const { trustStatement } = useContext(ContentContext);
+  const [trustPosition, setTrustPosition] = useState(0);
+  const { trustStatement, trustImages } = useContext(ContentContext);
+
+  const animationClassOut = "animate__fadeOut";
+  const animationClass = "animate__fadeIn";
+  useEffect(() => {
+    const imageTrust = document.getElementById("imageTrust");
+    if (imageTrust) {
+        imageTrust.classList.remove(animationClass);
+        imageTrust.classList.remove(animationClassOut);
+        imageTrust.classList.add(animationClass);
+    }
+    const next = (trustPosition + 1) % trustImages.length;
+    const move = setTimeout(() => {
+      if (imageTrust) {
+        imageTrust.classList.remove(animationClass);
+        imageTrust.classList.remove(animationClassOut);
+        imageTrust.classList.add(animationClassOut);
+        setTimeout(() => {
+          setTrustPosition(next);
+        }, 801);
+      }
+    }, 7000);
+    return () => clearTimeout(move);
+  }, [trustPosition, trustImages]);
+
   return (
     <div className="trustContainer">
       <div className="imageContainer">
         <img
+          className="animate__animated"
+          id="imageTrust"
           alt="personal de Delta"
-          src={screenSize.width > 950 ? confiar : confiarSmall}
+          src={trustImages[trustPosition]}
         />
       </div>
       <div className="textContainer">

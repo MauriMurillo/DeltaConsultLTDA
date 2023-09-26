@@ -29,7 +29,6 @@ function DeltaProvider(props) {
   // ----------------------------------------------------------
 
   //Funcion para el manejo del hero en el home
-
   const animationClassOut = "animate__fadeOutRightBig";
   const animationClass = "animate__fadeInRightBig";
 

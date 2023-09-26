@@ -1,17 +1,24 @@
 import React from "react";
+// Imagenes del hero
 import hero1 from "../Assets/Images/HomeImages/hero1.png";
 import hero2 from "../Assets/Images/HomeImages/hero2.png";
 import hero3 from "../Assets/Images/HomeImages/hero3.png";
+
+// Iconos Estadisticas Delta
 import people from "../Assets/Icons/stats/people.svg";
 import profesional from "../Assets/Icons/stats/profesional.svg";
 import bars from "../Assets/Icons/stats/Bars.svg";
 import stars from "../Assets/Icons/stats/Stars.svg";
 
+// Iconos Estadisticas SMS
 import world from "../Assets/Icons/stats/World.svg";
 import person from "../Assets/Icons/stats/Person.svg"
 import tool from "../Assets/Icons/stats/Tool.svg"
 import up from "../Assets/Icons/stats/Up.svg"
 
+//
+import trust from "../Assets/Images/HomeImages/Person Image.png"
+import trust2 from "../Assets/Images/HomeImages/trust2.jpeg"
 const ContentContext = React.createContext();
 
 function ContentProvider(props) {
@@ -144,6 +151,7 @@ function ContentProvider(props) {
     "La eficiente estructura de costos que manejamos nos permiten administrar honorarios competitivos debido a la minimización de costos ociosos e improductivos",
   ];
 
+  const trustImages = [trust, trust2];
   return (
     <ContentContext.Provider
       value={{
@@ -152,6 +160,7 @@ function ContentProvider(props) {
         generalStatistics,
         smsStatistics,
         trustStatement,
+        trustImages
       }}
     >
       {props.children}

@@ -1,29 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 html {
   background-color: #f5f5f5;
   overflow-x: hidden;
 }
-body{
+body {
   max-width: 1800px;
   margin: 0 auto;
   background-color: white;
 }
 
-.Screen > *{
+.Screen > * {
   margin-top: 25vh;
   /* border: solid blue 20px; */
 }
-.Screen > .navBar{
+.Screen > .navBar {
   margin-top: 0px;
   height: 96px;
 }
-.Screen > .top{
+.Screen > .top {
   margin-top: 96px;
 }
 
@@ -37,50 +37,32 @@ body{
   margin-bottom: 30px;
   padding-left: 10px;
   padding-right: 10px;
+  font-family: Encode Sans;
 }
 .Text {
   color: var(--text-gray-900, #18191f);
-  text-align: center;
   font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 32px;
 }
 @media only screen and (max-width: 1050px) {
   .Title {
-    color: #235eb6;
-    text-align: center;
-    font-family: Encode Sans;
     font-size: 46px;
-    font-style: normal;
-    font-weight: 700;
     line-height: 40px;
   }
   .Text {
-    color: var(--text-gray-900, #18191f);
     text-align: center;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 28px;
   }
 }
 @media only screen and (max-width: 600px) {
   .Title {
-    color: #235eb6;
-    text-align: center;
     font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
     line-height: 46px;
     margin-bottom: 15px;
   }
   .Text {
-    color: var(--text-gray-900, #18191f);
-    text-align: center;
     font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 32px; /* 213.333% */
   }
 }
