@@ -6,9 +6,13 @@
   font-family: 'Montserrat', sans-serif;
 }
 html {
-  font-size: 62.5%;
-  background-color: white;
+  background-color: #f5f5f5;
   overflow-x: hidden;
+}
+body{
+  max-width: 1800px;
+  margin: 0 auto;
+  background-color: white;
 }
 
 .Screen > *{
@@ -78,11 +82,5 @@ html {
     font-style: normal;
     font-weight: 400;
     line-height: 32px; /* 213.333% */
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  html {
-    font-size: 57.5%;
   }
 }

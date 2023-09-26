@@ -2,10 +2,16 @@ import React from "react";
 import hero1 from "../Assets/Images/HomeImages/hero1.png";
 import hero2 from "../Assets/Images/HomeImages/hero2.png";
 import hero3 from "../Assets/Images/HomeImages/hero3.png";
+import people from "../Assets/Icons/stats/people.svg";
 import profesional from "../Assets/Icons/stats/profesional.svg";
-import clients from "../Assets/Icons/stats/people.svg";
-import check from "../Assets/Icons/stats/checkmark.svg";
-import calendar from "../Assets/Icons/stats/calendar.svg";
+import bars from "../Assets/Icons/stats/Bars.svg";
+import stars from "../Assets/Icons/stats/Stars.svg";
+
+import world from "../Assets/Icons/stats/World.svg";
+import person from "../Assets/Icons/stats/Person.svg"
+import tool from "../Assets/Icons/stats/Tool.svg"
+import up from "../Assets/Icons/stats/Up.svg"
+
 const ContentContext = React.createContext();
 
 function ContentProvider(props) {
@@ -87,47 +93,47 @@ function ContentProvider(props) {
 
   const generalStatistics = [
     {
-      icon: clients,
+      icon: people,
       title: "250+",
       text: "Clientes Satisfechos",
     },
     {
       icon: profesional,
       title: "50+",
-      text: "Profesionales",
+      text: "Profesionales Expertos",
     },
     {
-      icon: check,
-      title: "85+",
-      text: "Consultorias realizadas",
+      icon: bars,
+      title: "3",
+      text: "Oficinas en Toda Bolivia",
     },
     {
-      icon: calendar,
-      title: "47",
-      text: "Años de experiencia",
+      icon: stars,
+      title: "20+",
+      text: "Premios y Reconocimientos",
     },
   ];
 
-  const clientStatistics = [
+  const smsStatistics = [
     {
-      icon: clients,
-      title: "250+",
-      text: "Clientes Satisfechos",
+      icon: world,
+      title: "120+",
+      text: "Redes Internacionales",
     },
     {
-      icon: clients,
-      title: "50+",
-      text: "Profesionales",
+      icon: person,
+      title: "1500+",
+      text: "Profesionales en Red",
     },
     {
-      icon: check,
-      title: "85+",
-      text: "Consultorias realizadas",
+      icon: tool,
+      title: "1700+",
+      text: "Clientes que Apoyamos",
     },
     {
-      icon: calendar,
-      title: "47",
-      text: "Años de experiencia",
+      icon: up,
+      title: "4+",
+      text: "Gemas del infinito",
     },
   ];
 
@@ -144,7 +150,7 @@ function ContentProvider(props) {
         offices,
         homeHeroContent,
         generalStatistics,
-        clientStatistics,
+        smsStatistics,
         trustStatement,
       }}
     >

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ClientsContentContext } from "../../../Contexts/ClientsContentContext";
+import { ClientsContentContext } from "../../Contexts/ClientsContentContext";
 import "./ClientInfo.css";
 function ClientInfo() {
   const { clients } = useContext(ClientsContentContext);

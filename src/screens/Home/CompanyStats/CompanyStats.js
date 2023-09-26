@@ -6,7 +6,7 @@ function CompanyStats(props) {
   const { estadisticas, direccion } = props;
   return (
     <div className={"statsContainer sC" + direccion}>
-      <div className={"blueContainer bC" + direccion}>
+      <div className={"outerContainer bC" + direccion}>
         <div className={"whiteContainer wC" + direccion}>
           {estadisticas.map((item) => {
             return (
