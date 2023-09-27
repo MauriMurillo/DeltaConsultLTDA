@@ -6,7 +6,7 @@ import phoneIcon from "../../Assets/Icons/footer/phone-icon.svg";
 function Office(props) {
   const content = props.content;
   return (
-    <div className="officeContainer">
+    <div className="officeContainer" style={{gridArea: content.area}}>
       <p className="city">{content.ciudad}</p>
       <div className="cn">
         <a target="_blank" rel="noreferrer" href={"mailto:" + content.mail}>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Socials } from "./Socials";
+import { Socials } from "../components/Footer/Socials";
 import logo from "../../Assets/Images/Logos/ISOLOGO DELTA BLANCO.png";
 function Contact() {
   return (

@@ -41,6 +41,7 @@ function ContentProvider(props) {
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       ),
+      area: "b",
     },
     {
       ciudad: "SANTA CRUZ",
@@ -60,6 +61,7 @@ function ContentProvider(props) {
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       ),
+      area: "c",
     },
     {
       ciudad: "COCHABAMBA",
@@ -80,6 +82,7 @@ function ContentProvider(props) {
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       ),
+      area: "d",
     },
   ];
 
