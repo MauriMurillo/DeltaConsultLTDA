@@ -39,7 +39,7 @@
   flex-shrink: 0;
   margin-top: 28px;
 }
-.textContainer .buttonSMS {
+.textContainer a{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +50,7 @@
   text-decoration: none;
   margin-top: 180px;
 }
-.textContainer .buttonSMS p {
+.textContainer a p {
   color: #fff;
   font-size: 36px;
   font-weight: 800;

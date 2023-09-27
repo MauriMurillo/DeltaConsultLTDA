@@ -1,28 +1,31 @@
 import React, { useContext } from "react";
+import { NavLink } from "react-router-dom";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import "animate.css";
 import { DeltaContext } from "../../../Contexts/DeltaContext";
 import "./hero.css";
 import { ContentContext } from "../../../Contexts/ContentContext";
-import  smsLogo  from "../../../Assets/Images/Logos/SMSLogo.png"
+import smsLogo from "../../../Assets/Images/Logos/SMSLogo.png";
 function Hero() {
   const { heroPosition, forwardHero, rewindHero } = useContext(DeltaContext);
   const { homeHeroContent } = useContext(ContentContext);
   return (
-    <div
-      className="heroContainer top"
-    >
+    <div className="heroContainer top">
       <div className="textContainer">
         <p id="heroTitle" className="title animate__animated animate__fast">
           {homeHeroContent[heroPosition].titulo}
         </p>
         <img alt="sms logo" className="logoHero" src={smsLogo} />
-        <a href="/SMS" className="buttonSMS">
+        <NavLink to={"/SMS"}>
           <p>¡ Vamos !</p>
-        </a>
+        </NavLink>
       </div>
       <div className="imageContainer">
-        <img id="heroImage" alt="sms hero" src={homeHeroContent[heroPosition].imageURL} />
+        <img
+          id="heroImage"
+          alt="sms hero"
+          src={homeHeroContent[heroPosition].imageURL}
+        />
       </div>
       <div className="arrow forward" onClick={forwardHero}>
         <IoIosArrowForward size={24} />
