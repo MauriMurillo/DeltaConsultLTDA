@@ -15,13 +15,13 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footerContainer">
-        {screenSize.width > 1150 || screenSize.width <= 950 ? (
+        {screenSize.width > 1150 || screenSize.width <= 1000 ? (
           <div className="logoFooter">
             <img alt="logo" src={logo} />
           </div>
         ) : null}
 
-        {screenSize.width > 1150 || screenSize.width <= 950 ? (
+        {screenSize.width > 1150 || screenSize.width <= 1000 ? (
           <p className="contactDescription">
             Somos una firma constituida en Bolivia para efectuar trabajos y
             servicios profesionales en las areas de auditoría y consultoría.
