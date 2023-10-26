@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DeltaConsultLTDA/static/css/main.b1cf4687.css",
-    "main.js": "/DeltaConsultLTDA/static/js/main.7210f1e2.js",
+    "main.css": "/DeltaConsultLTDA/static/css/main.d5084535.css",
+    "main.js": "/DeltaConsultLTDA/static/js/main.bdcacc58.js",
     "static/media/Broshure Delta.pdf": "/DeltaConsultLTDA/static/media/Broshure Delta.6c08e8b719268a3bfd8e.pdf",
     "static/media/smsCountry2.png": "/DeltaConsultLTDA/static/media/smsCountry2.63551229c19204c4862a.png",
     "static/media/Doing Bussines Bolivia 2022.pdf": "/DeltaConsultLTDA/static/media/Doing Bussines Bolivia 2022.e06f582bc0e50d46f415.pdf",
@@ -44,6 +44,7 @@
     "static/media/Stars.svg": "/DeltaConsultLTDA/static/media/Stars.7ecc1a8040688590abf4836fa204a6c0.svg",
     "static/media/logo-linkedin.svg": "/DeltaConsultLTDA/static/media/logo-linkedin.3fa9c3f24a9fcfb2054aacc064cf70bf.svg",
     "index.html": "/DeltaConsultLTDA/index.html",
+    "static/media/Account.svg": "/DeltaConsultLTDA/static/media/Account.a922a30472c60a8b34f4c86c3dfb30c2.svg",
     "static/media/Message.svg": "/DeltaConsultLTDA/static/media/Message.90e821de067bee7ed76d1b486196b304.svg",
     "static/media/email-icon.svg": "/DeltaConsultLTDA/static/media/email-icon.8d6081a70bb49b7165fe31605d56cb3a.svg",
     "static/media/Location.svg": "/DeltaConsultLTDA/static/media/Location.5fae544f75e278990c7a1c8f1d0efec4.svg",
@@ -54,11 +55,11 @@
     "static/media/Menu.svg": "/DeltaConsultLTDA/static/media/Menu.865e3edc957a3cceb4ef8bb13fbfe0a7.svg",
     "static/media/Vector.svg": "/DeltaConsultLTDA/static/media/Vector.f6095feb0979a6fd32a1d69f3d11f0e5.svg",
     "static/media/Arrow2.svg": "/DeltaConsultLTDA/static/media/Arrow2.340ef4826fe2a69e9dff9c4f7f409256.svg",
-    "main.b1cf4687.css.map": "/DeltaConsultLTDA/static/css/main.b1cf4687.css.map",
-    "main.7210f1e2.js.map": "/DeltaConsultLTDA/static/js/main.7210f1e2.js.map"
+    "main.d5084535.css.map": "/DeltaConsultLTDA/static/css/main.d5084535.css.map",
+    "main.bdcacc58.js.map": "/DeltaConsultLTDA/static/js/main.bdcacc58.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1cf4687.css",
-    "static/js/main.7210f1e2.js"
+    "static/css/main.d5084535.css",
+    "static/js/main.bdcacc58.js"
   ]
 }
