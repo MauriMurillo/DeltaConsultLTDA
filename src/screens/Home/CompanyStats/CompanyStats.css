@@ -42,7 +42,7 @@
   margin-bottom: 64px;
   border-radius: 100px;
   background: #f5f5f5;
-  box-shadow: 0px 10px 20px 0px rgba(41, 41, 42, 0.40);
+  box-shadow: 0px 4px 4px 8px rgba(41, 41, 42, 0.40);
 }
 .wCright {
   left: -9%;
