@@ -12,13 +12,19 @@ import stars from "../Assets/Icons/stats/Stars.svg";
 
 // Iconos Estadisticas SMS
 import world from "../Assets/Icons/stats/World.svg";
-import person from "../Assets/Icons/stats/Person.svg"
-import tool from "../Assets/Icons/stats/Tool.svg"
-import up from "../Assets/Icons/stats/Up.svg"
+import person from "../Assets/Icons/stats/Person.svg";
+import tool from "../Assets/Icons/stats/Tool.svg";
+import up from "../Assets/Icons/stats/Up.svg";
 
-//
-import trust from "../Assets/Images/HomeImages/Person Image.png"
-import trust2 from "../Assets/Images/HomeImages/trust2.jpeg"
+// Imagenes Confiar en Nosotros
+import trust from "../Assets/Images/HomeImages/Person Image.png";
+import trust2 from "../Assets/Images/HomeImages/trust2.jpeg";
+
+//Logos Empresas Aliadas
+import swiss from "../Assets/Images/alliesLogos/SwissConsult.png";
+import business from "../Assets/Images/alliesLogos/BusinessSchool.png";
+import coworking from "../Assets/Images/alliesLogos/Coworking.png";
+
 const ContentContext = React.createContext();
 
 function ContentProvider(props) {
@@ -155,6 +161,27 @@ function ContentProvider(props) {
   ];
 
   const trustImages = [trust, trust2];
+
+  const allies = [
+    {
+      logo: swiss,
+      nombre: "SWISS CONSULT",
+      descripcion: "Servicios contables de bookkeeping e impuestos.",
+      url: "",
+    },
+    {
+      logo: business,
+      nombre: "DELTA ESCUELA DE NEGOCIOS",
+      descripcion: "Capacitaciones Empresariales y formación profesional",
+      url: "",
+    },
+    {
+      logo: coworking,
+      nombre: "DELTA COWORKING",
+      descripcion: "Espacios de trabajo y recreación empresarial.",
+      url: "",
+    },
+  ];
   return (
     <ContentContext.Provider
       value={{
@@ -163,7 +190,8 @@ function ContentProvider(props) {
         generalStatistics,
         smsStatistics,
         trustStatement,
-        trustImages
+        trustImages,
+        allies,
       }}
     >
       {props.children}
