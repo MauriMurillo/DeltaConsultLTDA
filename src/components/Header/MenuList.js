@@ -7,7 +7,7 @@ function MenuList(props) {
   const { setShowFullMenu } = useContext(DeltaContext);
   return (
     <div className={`listContainer${orientation}`}>
-      <div className={`listScreens${orientation} menuLinks`}>
+      <div className={`listScreens${orientation}`}>
         <div>
           <NavLink to={"/services"} onClick={() => setShowFullMenu(false)}>
             SERVICIOS
@@ -19,6 +19,11 @@ function MenuList(props) {
           </NavLink>
         </div>
         <div>
+          <NavLink to={"/Industrias"} onClick={() => setShowFullMenu(false)}>
+            INDUSTRIAS
+          </NavLink>
+        </div>
+        <div>
           <NavLink to={"/SMS"} onClick={() => setShowFullMenu(false)}>
             SMS LATAM
           </NavLink>
@@ -26,11 +31,6 @@ function MenuList(props) {
         <div>
           <NavLink to={"/contact"} onClick={() => setShowFullMenu(false)}>
             CONTACTO
-          </NavLink>
-        </div>
-        <div>
-          <NavLink to={"/MiDelta"} onClick={() => setShowFullMenu(false)}>
-            MiDELTA
           </NavLink>
         </div>
       </div>

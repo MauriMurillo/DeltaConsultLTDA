@@ -6,6 +6,7 @@ import "./Header.css";
 import { DeltaContext } from "../../Contexts/DeltaContext";
 import { MenuScreen } from "../MenuScreen/MenuScreen";
 import { MenuList } from "./MenuList";
+import { MiDelta } from "./MiDelta";
 
 function Header() {
   const { screenSize, showFullMenu, setShowFullMenu } =
@@ -22,6 +23,7 @@ function Header() {
         {showFullMenu ? (
           <MenuScreen>
             <MenuList orientation="Vertical"></MenuList>
+            <MiDelta></MiDelta>
           </MenuScreen>
         ) : null}
         <div className="showMenuButton">
@@ -48,6 +50,7 @@ function Header() {
           </NavLink>
         </div>
         <MenuList orientation="Horizontal"></MenuList>
+        <MiDelta></MiDelta>
       </nav>
     );
   }
