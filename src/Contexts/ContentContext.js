@@ -17,8 +17,8 @@ import tool from "../Assets/Icons/stats/Tool.svg";
 import up from "../Assets/Icons/stats/Up.svg";
 
 // Imagenes Confiar en Nosotros
-import trust from "../Assets/Images/HomeImages/Person Image.png";
-import trust2 from "../Assets/Images/HomeImages/trust2.jpeg";
+import trust from "../Assets/Images/HomeImages/Trust1.png";
+import trust2 from "../Assets/Images/HomeImages/Trust2.png";
 
 //Logos Empresas Aliadas
 import swiss from "../Assets/Images/alliesLogos/SwissConsult.png";

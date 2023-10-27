@@ -1,15 +1,11 @@
 .trustContainer {
   display: flex;
-  justify-content: space-around;
   align-items: flex-start;
-  padding-left: 40px;
-  padding-right: 40px;
   width: 100%;
 }
 .trustContainer .imageContainer {
-  width: 511px;
-  height: 576px;
-  margin-top: 12px;
+  width: 42%;
+  height: 758px;
   flex-shrink: 0;
 }
 .trustContainer .imageContainer img {
@@ -18,24 +14,30 @@
   object-fit: cover;
 }
 .trustContainer .textContainer {
-  display: flex;
-  width: 561px;
-  height: 641px;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-shrink: 0;
+  width: 58%;
+  padding: 80px 0px;
+}
+.trustContainer .confiarList{
+  padding-left: 64px;
+  margin: 64px auto 0px auto ;
+  width: 75%;
 }
 .trustContainer .textContainer .Title {
-  font-size: 55px;
-  line-height: 65px; /* 118.182% */
+  width: 75%;
+  margin: 0 auto;
+  padding: 0px;
+  text-align: start;
 }
 .trustContainer .textContainer .Text {
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 27px;
 }
 .trustContainer .textContainer .confiarList div {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 42px;
+}
+.trustContainer .textContainer .confiarList div:last-child {
+  margin-bottom: 0px;
 }
 .trustContainer .textContainer .confiarList div span {
   display: inline-block;
@@ -44,36 +46,32 @@
   background-color: #1d619d;
   border-radius: 50%;
   position: absolute;
-  left: -28px;
-  top: 8px;
+  left: -64px;
+  top: 6px;
 }
 @media only screen and (max-width: 1250px) {
-  .trustContainer {
-    justify-content: space-between;
-  }
   .trustContainer .imageContainer {
-    width: 47%;
+    width: 44%;
   }
   .trustContainer .textContainer {
-    width: 47%;
-    height: auto;
-  }
-  .trustContainer .textContainer .confiarList {
-    width: 100%;
+    width: 56%;
+    padding-top: 64px;
   }
 }
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1150px) {
+  .trustContainer .imageContainer {
+    width: 40%;
+  }
+  .trustContainer .textContainer {
+    width: 60%;
+  }
   .trustContainer .textContainer .Title {
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 46px;
+    line-height: 65px;
   }
   .trustContainer .textContainer .Text {
-    font-size: 18px;
-    line-height: 28px;
-  }
-  .trustContainer .textContainer .confiarList div {
-    position: relative;
-    margin-bottom: 24px;
+    font-size: 15px;
+    line-height: 27px;
   }
 }
 
