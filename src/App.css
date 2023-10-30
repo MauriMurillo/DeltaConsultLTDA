@@ -33,15 +33,15 @@ body {
   font-size: 55px;
   font-style: normal;
   font-weight: 700;
-  margin-bottom: 13px;
+  margin-bottom: 29px;
   padding-left: 10px;
   padding-right: 10px;
 }
 .Text {
   text-align: center;
-  color: var(--text-gray-900, #18191f);
+  color: var(--text-gray-900, #000);
   font-size: 20px;
-  margin-bottom: 96px;
+  margin-bottom: 82px;
 }
 @media only screen and (max-width: 600px) {
   .Title {

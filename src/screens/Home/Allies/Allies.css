@@ -26,17 +26,18 @@
 .card .textContainer .name {
   color: #fff;
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
+  line-height: 35px;
   font-weight: 800;
-  height: 44px;
+  height: 70px;
 }
 .card .textContainer .desc {
-  margin-top: 20px;
+  margin-top: 34px;
   color: #fff;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
-  line-height: 40px;
+  line-height: 32px;
 }
 @media only screen and (max-width: 1300px) {
   .cardContainer {
@@ -54,8 +55,15 @@
   .card .textContainer {
     padding: 15px;
   }
+  .card .textContainer .name {
+    font-size: 20px;
+    line-height: 31px;
+    height: 62px;
+  }
   .card .textContainer .desc {
-    line-height: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 @media only screen and (max-width: 950px) {
@@ -71,10 +79,14 @@
     padding-left: 16px;
     padding-right: 16px;
   }
+  .card .textContainer .name {
+    font-size: 16px;
+    line-height: 26px;
+    height: 52px;
+  }
   .card .textContainer .desc {
-    margin-top: 12px;
-    font-size: 15px;
-    font-weight: 500;
+    margin-top: 20px;
+    font-size: 12px;
     line-height: 20px;
   }
 }
