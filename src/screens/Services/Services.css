@@ -83,6 +83,7 @@
 .filePane {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 96px;
 }
 @media only screen and (max-width: 1150px) {
