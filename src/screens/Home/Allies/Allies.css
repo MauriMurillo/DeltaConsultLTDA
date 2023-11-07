@@ -29,7 +29,6 @@
   font-size: 25px;
   line-height: 35px;
   font-weight: 800;
-  height: 70px;
 }
 .card .textContainer .desc {
   margin-top: 34px;
@@ -58,7 +57,6 @@
   .card .textContainer .name {
     font-size: 20px;
     line-height: 31px;
-    height: 62px;
   }
   .card .textContainer .desc {
     margin-top: 40px;
@@ -72,7 +70,7 @@
     row-gap: 64px;
   }
   .card {
-    width: 288px;
+    width: 228px;
     height: 288px;
   }
   .card .textContainer {
@@ -82,7 +80,6 @@
   .card .textContainer .name {
     font-size: 16px;
     line-height: 26px;
-    height: 52px;
   }
   .card .textContainer .desc {
     margin-top: 20px;
