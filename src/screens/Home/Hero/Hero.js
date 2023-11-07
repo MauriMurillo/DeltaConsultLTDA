@@ -24,6 +24,15 @@ function Hero() {
     }
   };
 
+  const bold = (texto) => {
+    const allEll = document.querySelectorAll(".heroText");
+    allEll.forEach((item) => {
+      item.innerHTML = item.innerHTML
+        .split(texto)
+        .join("<span className='bold'>" + texto + "</span>");
+    });
+  };
+
   const forwardHero = () => {
     const next = (heroPosition + 1) % homeHeroContent.length;
     animate("heroText", animationClassOut, animationClass);
@@ -33,7 +42,7 @@ function Hero() {
       animate("heroText", animationClass, animationClassOut);
       animate("heroButton", animationClass, animationClassOut);
       animate("heroImage", animationClass, animationClassOut);
-    }, 800);
+    }, 400);
     setTimeout(() => setHeroPosition(next), 801);
   };
   const rewindHero = () => {
@@ -46,7 +55,7 @@ function Hero() {
       animate("heroText", animationClass, animationClassOut);
       animate("heroButton", animationClass, animationClassOut);
       animate("heroImage", animationClass, animationClassOut);
-    }, 800);
+    }, 400);
     setTimeout(() => setHeroPosition(next), 801);
   };
 
@@ -54,7 +63,7 @@ function Hero() {
     animate("heroText", animationClass, animationClassOut);
     animate("heroButton", animationClass, animationClassOut);
     animate("heroImage", animationClass, animationClassOut);
-
+    bold("Delta");
     const next = (heroPosition + 1) % homeHeroContent.length;
     const move = setTimeout(() => {
       animate("heroText", animationClassOut, animationClass);
@@ -62,8 +71,8 @@ function Hero() {
       animate("heroImage", animationClassOut, animationClass);
       setTimeout(() => {
         setHeroPosition(next);
-      }, 801);
-    }, 17000);
+      }, 401);
+    }, 8000);
     return () => clearTimeout(move);
   }, [heroPosition, homeHeroContent]);
 

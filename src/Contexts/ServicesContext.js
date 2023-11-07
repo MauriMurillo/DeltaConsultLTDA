@@ -22,7 +22,7 @@ const ServicesContext = React.createContext();
 function ServicesProvider(props) {
   const services = [
     {
-      title: "Auditoria Externa",
+      title: "AUDITORIA EXTERNA",
       descripcion:
         "Realizamos auditorías para empresas de todos los sectores empresariales, identificando problemas y ofreciendo soluciones efectivas.",
       imagen: service1,
@@ -30,7 +30,7 @@ function ServicesProvider(props) {
       area: "serviceA",
     },
     {
-      title: "Consultoria Impositiva",
+      title: "CONSULTORIA IMPOSITIVA",
       descripcion:
         "Ofrecemos soluciones impositivas para empresas de todos los tamaños, ayudándoles a cumplir con sus obligaciones, normas y políticas fiscales de manera eficiente.",
       imagen: service4,
@@ -38,7 +38,7 @@ function ServicesProvider(props) {
       area: "serviceB",
     },
     {
-      title: "Consultoría Financiera",
+      title: "CONSULTORIA FINANCIERA",
       descripcion:
         "Brindamos soluciones enfocadas en ayudar a las empresas a mejorar su toma de decisiones en las gestiones financieras. También contamos con experiencia en servicios de análisis de estados financieros, valoración de empresas, asesoramiento en fusiones y adquisiciones, y gestión de riesgos financieros.",
       imagen: service2,
@@ -46,7 +46,7 @@ function ServicesProvider(props) {
       area: "serviceD",
     },
     {
-      title: "Consultoria Estrategica",
+      title: "CONSULTORIA ESTRATEGICA",
       descripcion:
         "Colaboramos a las empresas a desarrollar e implementar planes estratégicos para alcanzar sus objetivos a largo plazo. Trabajamos con la alta dirección de la empresa para analizar el mercado, identificar oportunidades y amenazas, y definir una estrategia clara y coherente.",
       imagen: service3,

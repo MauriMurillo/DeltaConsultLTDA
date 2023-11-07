@@ -27,8 +27,10 @@ function HeroProvider(props) {
       imageTB: TABLET01,
       imageCEL: CELULAR01,
       text: "Bienvenidos a Delta Consult, firma de servicios de auditoría y consultoría, miembro de la red SMS Latinoamérica.",
-      button: "Vamos",
+      button: "¡ Siguenos !",
       path: "/SMS",
+      bold: ["Delta"],
+      red: ["SMS Latinoamerica"],
     },
     {
       imagePC: PCNORMAL02,
@@ -36,7 +38,7 @@ function HeroProvider(props) {
       imageTB: TABLET02,
       imageCEL: CELULAR02,
       text: "Desde 1976 brindamos servicios profesionales personalizados, son 48 años liderando el mercado de auditoría y consultoría en Bolivia.",
-      button: "Descubre",
+      button: "¡ Descubre !",
       path: "/SMS",
     },
     {
@@ -45,7 +47,7 @@ function HeroProvider(props) {
       imageTB: TABLET03,
       imageCEL: CELULAR03,
       text: "Ofrecemos nuestros servicios a todo tipo de empresas. Son varios clientes de múltiples rubros los que confían en nuestra calidad.",
-      button: "Explora",
+      button: "¡Explora!",
       path: "/SMS",
     },
     {
@@ -54,7 +56,7 @@ function HeroProvider(props) {
       imageTB: TABLET04,
       imageCEL: CELULAR04,
       text: "SMS Latinoamérica es un red internacional de firmas de auditoría y consultoría, con +100 firmas en el mundo. Formamos parte del IFAC y del Forum of Firms.",
-      button: "Explora",
+      button: "¡Explora!",
       path: "/SMS",
     },
   ];
