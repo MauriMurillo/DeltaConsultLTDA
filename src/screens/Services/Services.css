@@ -135,6 +135,9 @@
   font-weight: 700;
   line-height: 40px;
 }
+.serviceDescription .ServiceText p{
+  margin-bottom: 16px;
+}
 .serviceDescription .ServiceButton {
   width: 65%;
   height: 64px;

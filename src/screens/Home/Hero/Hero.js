@@ -24,56 +24,37 @@ function Hero() {
     }
   };
 
-  const bold = (texto) => {
-    const allEll = document.querySelectorAll(".heroText");
-    allEll.forEach((item) => {
-      item.innerHTML = item.innerHTML
-        .split(texto)
-        .join("<span className='bold'>" + texto + "</span>");
-    });
+  const animateExit = () => {
+    animate("heroText", animationClassOut, animationClass);
+    animate("heroButton", animationClassOut, animationClass);
+    animate("heroImage", animationClassOut, animationClass);
   };
 
   const forwardHero = () => {
     const next = (heroPosition + 1) % homeHeroContent.length;
-    animate("heroText", animationClassOut, animationClass);
-    animate("heroButton", animationClassOut, animationClass);
-    animate("heroImage", animationClassOut, animationClass);
-    setTimeout(() => {
-      animate("heroText", animationClass, animationClassOut);
-      animate("heroButton", animationClass, animationClassOut);
-      animate("heroImage", animationClass, animationClassOut);
-    }, 400);
-    setTimeout(() => setHeroPosition(next), 801);
+    animateExit();
+    setTimeout(() => setHeroPosition(next), 301);
   };
   const rewindHero = () => {
     const next =
       heroPosition === 0 ? homeHeroContent.length - 1 : heroPosition - 1;
-    animate("heroText", animationClassOut, animationClass);
-    animate("heroButton", animationClassOut, animationClass);
-    animate("heroImage", animationClassOut, animationClass);
-    setTimeout(() => {
-      animate("heroText", animationClass, animationClassOut);
-      animate("heroButton", animationClass, animationClassOut);
-      animate("heroImage", animationClass, animationClassOut);
-    }, 400);
-    setTimeout(() => setHeroPosition(next), 801);
+    animateExit();
+    setTimeout(() => setHeroPosition(next), 301);
   };
 
   useEffect(() => {
     animate("heroText", animationClass, animationClassOut);
     animate("heroButton", animationClass, animationClassOut);
     animate("heroImage", animationClass, animationClassOut);
-    bold("Delta");
     const next = (heroPosition + 1) % homeHeroContent.length;
     const move = setTimeout(() => {
-      animate("heroText", animationClassOut, animationClass);
-      animate("heroButton", animationClassOut, animationClass);
-      animate("heroImage", animationClassOut, animationClass);
+      animateExit();
       setTimeout(() => {
         setHeroPosition(next);
-      }, 401);
-    }, 8000);
+      }, 300);
+    }, 10000);
     return () => clearTimeout(move);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [heroPosition, homeHeroContent]);
 
   return (

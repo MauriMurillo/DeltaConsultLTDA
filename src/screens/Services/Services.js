@@ -5,7 +5,7 @@ import { Footer } from "../../components/Footer/Footer.js";
 import { Downloadable } from "./Downloadable/Downloadable";
 import { ServicesContext } from "../../Contexts/ServicesContext";
 
-import close from "../../Assets/Icons/utilIcons/Close.svg"
+import close from "../../Assets/Icons/utilIcons/Close.svg";
 
 function Services() {
   const { services, documents } = useContext(ServicesContext);
@@ -33,7 +33,7 @@ function Services() {
                 >
                   <div className="content">
                     <p>{item.title}</p>
-                    <img alt="icono" src={item.icon}/>
+                    <img alt="icono" src={item.icon} />
                   </div>
                 </div>
               );
@@ -41,12 +41,22 @@ function Services() {
           </div>
         ) : (
           <div className="serviceDescription">
-            <img src={currentService.imagen} alt="foto servicio"/>
+            <img src={currentService.imagen} alt="foto servicio" />
             <div className="line">
               <p className="ServiceTitle"> {currentService.title}</p>
-              <img onClick={()=>{setShowDescription(false)}} src={close} alt=""/>
+              <img
+                onClick={() => {
+                  setShowDescription(false);
+                }}
+                src={close}
+                alt=""
+              />
             </div>
-            <div className="ServiceText">{currentService.descripcion}</div>
+            <div className="ServiceText">
+              {currentService.descripcion.map((item) => (
+                <p>{item}</p>
+              ))}
+            </div>
             <div className="ServiceButton">
               <p>Contacta con un experto Aquí</p>
             </div>
