@@ -26,18 +26,26 @@ function HeroProvider(props) {
       imagePCP: PCPEQUENA01,
       imageTB: TABLET01,
       imageCEL: CELULAR01,
-      text: "Bienvenidos a Delta Consult, firma de servicios de auditoría y consultoría, miembro de la red SMS Latinoamérica.",
+      text: (
+        <span>
+          Bienvenidos a <span className="bold">Delta Consult</span>, firma de
+          servicios de auditoría y consultoría, miembro de la red{" "}
+          <span className="bold redSMS">SMS Latinoamérica</span>.
+        </span>
+      ),
       button: "¡ Siguenos !",
       path: "/SMS",
-      bold: ["Delta"],
-      red: ["SMS Latinoamerica"],
     },
     {
       imagePC: PCNORMAL02,
       imagePCP: PCPEQUENA02,
       imageTB: TABLET02,
       imageCEL: CELULAR02,
-      text: "Desde 1976 brindamos servicios profesionales personalizados, son 48 años liderando el mercado de auditoría y consultoría en Bolivia.",
+      text: (
+        <span>
+          Desde <span className="bold">1976</span> brindamos servicios profesionales personalizados, son <span className="bold">48</span> años liderando el mercado de auditoría y consultoría en <span className="bold">Bolivia</span>.
+        </span>
+      ),
       button: "¡ Descubre !",
       path: "/SMS",
     },
