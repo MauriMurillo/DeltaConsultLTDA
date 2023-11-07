@@ -1,9 +1,17 @@
 import React from "react";
+
 import service1 from "../Assets/Images/serviceImage/service1.png";
 import service2 from "../Assets/Images/serviceImage/service2.png";
 import service3 from "../Assets/Images/serviceImage/service3.png";
 import service4 from "../Assets/Images/serviceImage/service4.png";
 import service5 from "../Assets/Images/serviceImage/service5.png";
+
+import externa from "../Assets/Icons/services/externa.svg";
+import estrategica from "../Assets/Icons/services/estrategica.svg";
+import financiera from "../Assets/Icons/services/financiera.svg";
+import impositiva from "../Assets/Icons/services/impositiva.svg";
+import sostenibilidad from "../Assets/Icons/services/sostenibilidad.svg";
+
 import linkImage1 from "../Assets/DocumentsD/imageLink.png";
 import linkImage2 from "../Assets/DocumentsD/imageLink2.png";
 import doingBusiness from "../Assets/DocumentsD/Doing Bussines Bolivia 2022.pdf";
@@ -18,6 +26,7 @@ function ServicesProvider(props) {
       descripcion:
         "Realizamos auditorías para empresas de todos los sectores empresariales, identificando problemas y ofreciendo soluciones efectivas.",
       imagen: service1,
+      icon: externa,
       area: "serviceA",
     },
     {
@@ -25,44 +34,48 @@ function ServicesProvider(props) {
       descripcion:
         "Ofrecemos soluciones impositivas para empresas de todos los tamaños, ayudándoles a cumplir con sus obligaciones, normas y políticas fiscales de manera eficiente.",
       imagen: service4,
+      icon: impositiva,
       area: "serviceB",
-    },
-    {
-      title: "Consultoria Estrategica",
-      descripcion:
-        "Colaboramos a las empresas a desarrollar e implementar planes estratégicos para alcanzar sus objetivos a largo plazo. Trabajamos con la alta dirección de la empresa para analizar el mercado, identificar oportunidades y amenazas, y definir una estrategia clara y coherente.",
-      imagen: service3,
-      area: "serviceC",
     },
     {
       title: "Consultoría Financiera",
       descripcion:
         "Brindamos soluciones enfocadas en ayudar a las empresas a mejorar su toma de decisiones en las gestiones financieras. También contamos con experiencia en servicios de análisis de estados financieros, valoración de empresas, asesoramiento en fusiones y adquisiciones, y gestión de riesgos financieros.",
       imagen: service2,
+      icon: financiera,
       area: "serviceD",
+    },
+    {
+      title: "Consultoria Estrategica",
+      descripcion:
+        "Colaboramos a las empresas a desarrollar e implementar planes estratégicos para alcanzar sus objetivos a largo plazo. Trabajamos con la alta dirección de la empresa para analizar el mercado, identificar oportunidades y amenazas, y definir una estrategia clara y coherente.",
+      imagen: service3,
+      icon: estrategica,
+      area: "serviceC",
     },
     {
       title: "Consultoria de Sostenibilidad",
       descripcion:
         "Ayudamos a las empresas a desarrollar planes de sostenibilidad y responsabilidad social, asegurándonos de que cumplan con las normas y regulaciones ambientales y sociales. Estas consultorías ayudan a las empresas a evaluar su desempeño ambiental, social y económico.",
       imagen: service5,
+      icon: sostenibilidad,
       area: "serviceE",
     },
   ];
 
   const documents = {
     brochure: {
-      title: "Brochure Delta",
+      title: "BROCHURE",
       pdf: brochure,
       descripcion:
-        "Doing Business Bolivia ofrece un interesante panorama lleno de oportunidades y desafíos. Su ubicación geográfica central en América del Sur brinda acceso a mercados vecinos, mientras que su rica diversidad cultural y recursos naturales presentan posibilidades en sectores como la minería, agricultura y turismo. Sin embargo, es fundamental comprender el entorno empresarial, que puede ser influenciado por factores como la burocracia, la infraestructura en desarrollo y la volatilidad política.",
+        "Encuentra información detallada sobre como trabajamos para ti.",
       imagen: linkImage2,
     },
     business: {
-      title: "Boing Business Bolivia",
+      title: "DOING BUSINESS",
       pdf: doingBusiness,
       descripcion:
-        "Doing Business Bolivia ofrece un interesante panorama lleno de oportunidades y desafíos. Su ubicación geográfica central en América del Sur brinda acceso a mercados vecinos, mientras que su rica diversidad cultural y recursos naturales presentan posibilidades en sectores como la minería, agricultura y turismo. Sin embargo, es fundamental comprender el entorno empresarial, que puede ser influenciado por factores como la burocracia, la infraestructura en desarrollo y la volatilidad política.",
+        "Ofrece un interesante panorama lleno de oportunidades y desafíos dentro de la patria.",
       imagen: linkImage1,
     },
   };

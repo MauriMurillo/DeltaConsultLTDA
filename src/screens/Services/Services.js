@@ -13,7 +13,7 @@ function Services() {
   return (
     <div className="servicesScreen Screen">
       <Header />
-      <div className="servicesSection">
+      <div className="servicesSection topTitle">
         <div className="textContainer">
           <p className="Title">SERVICIOS</p>
           <p className="Text">Ofrecemos siempre las mejores soluciones</p>
@@ -29,8 +29,9 @@ function Services() {
                     setShowDescription(true);
                   }}
                 >
-                  <div>
+                  <div className="content">
                     <p>{item.title}</p>
+                    <img alt="icono" src={item.icon}/>
                   </div>
                 </div>
               );
@@ -52,11 +53,16 @@ function Services() {
             </div>
           </div>
         )}
-        ;
       </div>
       <div className="files">
-        <Downloadable content={documents.brochure} />
-        <Downloadable content={documents.business} />
+        <div className="textContainer">
+          <p className="Title">MAS INFORMACION</p>
+          <p className="Text">Conoce mas de nosotros aqui.</p>
+        </div>
+        <div className="filePane">
+          <Downloadable content={documents.brochure} />
+          <Downloadable content={documents.business} />
+        </div>
       </div>
       <Footer />
     </div>
