@@ -1,20 +1,33 @@
 {
   "files": {
-    "main.css": "/DeltaConsultLTDA/static/css/main.40420fd7.css",
-    "main.js": "/DeltaConsultLTDA/static/js/main.aeef7808.js",
+    "main.css": "/DeltaConsultLTDA/static/css/main.954bb2a8.css",
+    "main.js": "/DeltaConsultLTDA/static/js/main.64296156.js",
     "static/media/Broshure Delta.pdf": "/DeltaConsultLTDA/static/media/Broshure Delta.6c08e8b719268a3bfd8e.pdf",
     "static/media/smsCountry2.png": "/DeltaConsultLTDA/static/media/smsCountry2.63551229c19204c4862a.png",
     "static/media/Doing Bussines Bolivia 2022.pdf": "/DeltaConsultLTDA/static/media/Doing Bussines Bolivia 2022.e06f582bc0e50d46f415.pdf",
     "static/media/Trust2.png": "/DeltaConsultLTDA/static/media/Trust2.243cbd623f5a9c2269e9.png",
-    "static/media/hero3.png": "/DeltaConsultLTDA/static/media/hero3.06f288269b87c23fa1cb.png",
     "static/media/Trust1.png": "/DeltaConsultLTDA/static/media/Trust1.891c37f2f060d1560aa9.png",
-    "static/media/hero2.png": "/DeltaConsultLTDA/static/media/hero2.726d6417b1db1ece2d84.png",
-    "static/media/hero1.png": "/DeltaConsultLTDA/static/media/hero1.45eb2ab47c87c556ea41.png",
+    "static/media/03PCNORMAL.jpg": "/DeltaConsultLTDA/static/media/03PCNORMAL.3c85ac1a3006b680abe5.jpg",
+    "static/media/04PCNORMAL.jpg": "/DeltaConsultLTDA/static/media/04PCNORMAL.80cb5eb2723d916c7f15.jpg",
+    "static/media/01PCNORMAL.jpg": "/DeltaConsultLTDA/static/media/01PCNORMAL.2811e450b57e6adb0598.jpg",
+    "static/media/02PCNORMAL.jpg": "/DeltaConsultLTDA/static/media/02PCNORMAL.e24a0fe0048ffc71e846.jpg",
     "static/media/smsInBolivia.png": "/DeltaConsultLTDA/static/media/smsInBolivia.2532e9412f43ca0ab1a9.png",
+    "static/media/04PCPEQUEÑA.jpg": "/DeltaConsultLTDA/static/media/04PCPEQUEÑA.9fd88f745d5c7301ec17.jpg",
+    "static/media/03PCPEQUEÑA.jpg": "/DeltaConsultLTDA/static/media/03PCPEQUEÑA.1edc818b1d821bf148c1.jpg",
     "static/media/imageLink2.png": "/DeltaConsultLTDA/static/media/imageLink2.e57c5161dc16de6c0a3c.png",
+    "static/media/01TABLET.jpg": "/DeltaConsultLTDA/static/media/01TABLET.e19a238a85d833f7f383.jpg",
+    "static/media/04TABLET.jpg": "/DeltaConsultLTDA/static/media/04TABLET.ded0de351cc01de724f5.jpg",
+    "static/media/01PCPEQUEÑA.jpg": "/DeltaConsultLTDA/static/media/01PCPEQUEÑA.b3430e5351a0d1eb1562.jpg",
+    "static/media/02PCPEQUEÑA.jpg": "/DeltaConsultLTDA/static/media/02PCPEQUEÑA.89d13582b605dde4bbc9.jpg",
+    "static/media/02TABLET.jpg": "/DeltaConsultLTDA/static/media/02TABLET.6d3216bacf030bbfeac7.jpg",
+    "static/media/03TABLET.jpg": "/DeltaConsultLTDA/static/media/03TABLET.2e0a8a7a3993ec88b56d.jpg",
+    "static/media/01CELULAR.jpg": "/DeltaConsultLTDA/static/media/01CELULAR.01aac4950b43e68c40e4.jpg",
+    "static/media/04CELULAR.jpg": "/DeltaConsultLTDA/static/media/04CELULAR.7fc9719e47d5fa61ef84.jpg",
     "static/media/Rectangle 601.png": "/DeltaConsultLTDA/static/media/Rectangle 601.3e063f7d2a3f97d31bae.png",
     "static/media/imageLink.png": "/DeltaConsultLTDA/static/media/imageLink.e1e5a62dc6c98bd5e16a.png",
+    "static/media/02CELULAR.jpg": "/DeltaConsultLTDA/static/media/02CELULAR.df034a302e8dc5e3d29b.jpg",
     "static/media/service5.png": "/DeltaConsultLTDA/static/media/service5.28e4a1756ca06b1e2fdc.png",
+    "static/media/03CELULAR.jpg": "/DeltaConsultLTDA/static/media/03CELULAR.4e82b4649280b516b75b.jpg",
     "static/media/service2.png": "/DeltaConsultLTDA/static/media/service2.94e5670a9abf2077ec0e.png",
     "static/media/ForodeFirmas.png": "/DeltaConsultLTDA/static/media/ForodeFirmas.a4214f19c3a1046b451a.png",
     "static/media/Rectangle 603.png": "/DeltaConsultLTDA/static/media/Rectangle 603.b1845be09f726b656e5f.png",
@@ -60,11 +73,11 @@
     "static/media/Menu.svg": "/DeltaConsultLTDA/static/media/Menu.865e3edc957a3cceb4ef8bb13fbfe0a7.svg",
     "static/media/Vector.svg": "/DeltaConsultLTDA/static/media/Vector.f6095feb0979a6fd32a1d69f3d11f0e5.svg",
     "static/media/Arrow2.svg": "/DeltaConsultLTDA/static/media/Arrow2.340ef4826fe2a69e9dff9c4f7f409256.svg",
-    "main.40420fd7.css.map": "/DeltaConsultLTDA/static/css/main.40420fd7.css.map",
-    "main.aeef7808.js.map": "/DeltaConsultLTDA/static/js/main.aeef7808.js.map"
+    "main.954bb2a8.css.map": "/DeltaConsultLTDA/static/css/main.954bb2a8.css.map",
+    "main.64296156.js.map": "/DeltaConsultLTDA/static/js/main.64296156.js.map"
   },
   "entrypoints": [
-    "static/css/main.40420fd7.css",
-    "static/js/main.aeef7808.js"
+    "static/css/main.954bb2a8.css",
+    "static/js/main.64296156.js"
   ]
 }
