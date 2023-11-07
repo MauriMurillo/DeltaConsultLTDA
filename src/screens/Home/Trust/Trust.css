@@ -18,11 +18,12 @@
   padding: 80px 0px;
 }
 .trustContainer .confiarList{
-  padding-left: 64px;
+  padding-left: 48px;
   margin: 64px auto 0px auto ;
   width: 75%;
 }
 .trustContainer .textContainer .Title {
+  line-height: 65px;
   width: 75%;
   margin: 0 auto;
   padding: 0px;
@@ -30,7 +31,7 @@
 }
 .trustContainer .textContainer .Text {
   font-size: 18px;
-  line-height: 27px;
+  line-height: 32px;
 }
 .trustContainer .textContainer .confiarList div {
   position: relative;
@@ -46,8 +47,8 @@
   background-color: #1d619d;
   border-radius: 50%;
   position: absolute;
-  left: -64px;
-  top: 6px;
+  left: -48px;
+  top: 8px;
 }
 @media only screen and (max-width: 1250px) {
   .trustContainer .imageContainer {
@@ -55,60 +56,54 @@
   }
   .trustContainer .textContainer {
     width: 56%;
-    padding-top: 64px;
+    padding-top: 16px;
   }
 }
 @media only screen and (max-width: 1150px) {
-  .trustContainer .imageContainer {
-    width: 40%;
-  }
   .trustContainer .textContainer {
-    width: 60%;
+    padding-top: 48px;
   }
   .trustContainer .textContainer .Title {
+    width: 80%;
     font-size: 46px;
     line-height: 65px;
   }
+  .trustContainer .confiarList{
+    width: 85%;
+  }
   .trustContainer .textContainer .Text {
     font-size: 15px;
-    line-height: 27px;
   }
 }
 
 @media only screen and (max-width: 950px) {
   .trustContainer {
-    padding-left: 64px;
-    padding-right: 64px;
     flex-direction: column;
     align-items: center;
   }
   .trustContainer .imageContainer {
     width: 100%;
-    height: 352px;
-    margin-bottom: 14px;
-    margin-top: 0px;
+    height: 384px;
   }
   .trustContainer .textContainer {
     width: 100%;
-    height: auto;
-    margin-top: 0px;
-    align-items: center;
+    padding: 48px 64px;
   }
   .trustContainer .textContainer .Title {
-    font-size: 46px;
-    line-height: 55px;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    line-height: 65px;
   }
   .trustContainer .textContainer .Text {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 32px;
   }
   .trustContainer .textContainer .confiarList {
-    width: calc(100% - 34px);
-    position: relative;
-    left: 14px;
+    margin-top: 48px;
+    width: 100%;
   }
   .trustContainer .textContainer .confiarList div {
-    position: relative;
     margin-bottom: 20px;
   }
   .trustContainer .textContainer .confiarList div span {
@@ -117,36 +112,26 @@
   }
 }
 @media only screen and (max-width: 550px) {
-  .trustContainer {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
   .trustContainer .imageContainer {
     height: 256px;
-    margin-bottom: 26px;
   }
   .trustContainer .textContainer {
     width: 100%;
     max-width: 500px;
-    height: auto;
-    margin-top: 0px;
     padding-left: 20px;
     padding-right: 20px;
-  }
-  .trustContainer .textContainer .confiarList div {
-    margin-bottom: 15px;
   }
   .trustContainer .textContainer .confiarList div span {
     width: 12px;
     height: 12px;
   }
   .trustContainer .textContainer .Title {
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 32px;
+    line-height: 45px;
     padding: 0px;
   }
   .trustContainer .textContainer .Text {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 32px;
   }
 }
