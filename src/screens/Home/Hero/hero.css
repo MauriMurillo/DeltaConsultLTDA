@@ -10,12 +10,12 @@
   height: 100%;
   max-height: 800px;
   width: 58%;
-  padding: 112px;
+  padding: 1px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
+  justify-content: space-around;
 }
 .heroContainer .imageContainer {
   width: 42%;
@@ -33,6 +33,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 70px;
+  width: 576px;
 }
 .textContainer .heroText img {
   margin: 0px 16px;
