@@ -1,8 +1,4 @@
 import React from "react";
-// Imagenes del hero
-import hero1 from "../Assets/Images/HomeImages/hero1.png";
-import hero2 from "../Assets/Images/HomeImages/hero2.png";
-import hero3 from "../Assets/Images/HomeImages/hero3.png";
 
 // Iconos Estadisticas Delta
 import people from "../Assets/Icons/stats/people.svg";
@@ -92,21 +88,6 @@ function ContentProvider(props) {
     },
   ];
 
-  const homeHeroContent = [
-    {
-      imageURL: hero1,
-      titulo: "Descubre los beneficios de ser miembro de",
-    },
-    {
-      imageURL: hero2,
-      titulo: "Nuestra representación internacional es",
-    },
-    {
-      imageURL: hero3,
-      titulo: "Delta Consult representa a Bolivia en",
-    },
-  ];
-
   const generalStatistics = [
     {
       icon: people,
@@ -186,7 +167,6 @@ function ContentProvider(props) {
     <ContentContext.Provider
       value={{
         offices,
-        homeHeroContent,
         generalStatistics,
         smsStatistics,
         trustStatement,

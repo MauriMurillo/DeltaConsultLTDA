@@ -1,9 +1,7 @@
 .heroContainer {
   height: calc(100vh - 96px);
-  background-color: #eee9e5;
-  /* background-color: red; */
   max-height: 800px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
@@ -11,12 +9,16 @@
 .heroContainer .textContainer {
   height: 100%;
   max-height: 800px;
-  width: 820px;
-  padding: 70px 120px;
+  width: 58%;
+  padding: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
 }
 .heroContainer .imageContainer {
-  width: 589px;
-  /* flex-grow: 1; */
+  width: 42%;
   height: 100%;
 }
 .heroContainer .imageContainer img {
@@ -25,35 +27,34 @@
   object-fit: cover;
 }
 
-.textContainer .title {
-  color: #a21f4a;
-  font-size: 48px;
+.textContainer .heroText {
+  color: #1d619d;
+  font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 75px; /* 156.25% */
-  height: 206px;
+  line-height: 70px;
 }
-.textContainer .logoHero {
-  width: 443px;
-  height: 135px;
+.textContainer .heroText img {
+  margin: 0px 16px;
+}
+
+.heroContainer .textContainer a {
   flex-shrink: 0;
-  margin-top: 28px;
-}
-.heroContainer .textContainer a{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 596px;
-  height: 64px;
-  background-color: #a21f4a;
-  border-radius: 60px;
+  width: 100%;
+  max-width: 576px;
+  height: 96px;
+  background-color: #1d619d;
+  border-radius: 15px;
   text-decoration: none;
-  margin-top: 180px;
 }
-.textContainer a p {
+.heroContainer .textContainer a p {
   color: #fff;
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 800;
+  font-style: italic;
 }
 .arrow {
   width: 40px;
@@ -79,63 +80,52 @@
 
 @media only screen and (max-width: 1150px) {
   .heroContainer .textContainer {
-    width: 750px;
+    width: 60%;
+  }
+  .heroContainer .imageContainer {
+    width: 40%;
   }
   .title {
-    font-size: 56px;
-    color: white;
+    font-size: 32px;
     font-weight: 700;
-    line-height: 72px;
-    font-family: "Encode Sans", sans-serif;
-  }
-  .text {
-    color: white;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    font-family: "Encode Sans", sans-serif;
-    margin-top: 40px;
+    line-height: 70px;
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
   .heroContainer {
-    justify-content: center;
-    background-position: 75% bottom;
+    height: auto;
+    max-height: none;
+    flex-direction: column-reverse;
+  }
+  .heroContainer .imageContainer {
+    width: 100%;
+    height: 222px;
   }
   .heroContainer .textContainer {
-    width: 100vw;
+    height: auto;
+    min-height: 470px;
+    width: 100%;
+    padding: 35px 40px 64px 40px;
   }
-  .title {
-    font-size: 48px;
-    color: white;
+  .textContainer .heroText {
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
     font-weight: 700;
-    line-height: 64px;
-    font-family: "Encode Sans", sans-serif;
+    line-height: 40px;
   }
-  .text {
-    color: white;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    font-family: "Encode Sans", sans-serif;
-    margin-top: 40px;
+  .heroContainer .textContainer a {
+    width: 100%;
+    max-width: 576px;
+    height: 64px;
+    background-color: #1d619d;
+    border-radius: 15px;
+    text-decoration: none;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .heroContainer .textContainer {
-    padding: 40px;
-  }
-  .arrow {
-    width: 25px;
-    height: 25px;
-  }
-  .forward {
-    top: calc(50% - 12.5px);
-  }
-  .rewind {
-    left: 0px;
-    top: calc(50% - 12.5px);
-  }
+  
 }

@@ -6,18 +6,22 @@ import { CompanyStats } from "./CompanyStats/CompanyStats.js";
 import { Trust } from "./Trust/Trust";
 import { ContentContext } from "../../Contexts/ContentContext.js";
 import { Allies } from "./Allies/Allies.js";
+import { HeroProvider } from "../../Contexts/HeroContext.js";
 
 function Home() {
-  const { generalStatistics, smsStatistics, allies } = useContext(ContentContext);
+  const { generalStatistics, smsStatistics, allies } =
+    useContext(ContentContext);
 
   return (
     <div className="homeScreen Screen">
       <Header />
-      <Hero />
+      <HeroProvider>
+        <Hero />
+      </HeroProvider>
       <CompanyStats direccion={"right"} estadisticas={generalStatistics} />
       <CompanyStats direccion={"left"} estadisticas={smsStatistics} />
       <Trust />
-      <Allies allies = {allies}/>
+      <Allies allies={allies} />
       <Footer />
     </div>
   );
