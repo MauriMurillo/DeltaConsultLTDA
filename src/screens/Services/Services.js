@@ -5,6 +5,8 @@ import { Footer } from "../../components/Footer/Footer.js";
 import { Downloadable } from "./Downloadable/Downloadable";
 import { ServicesContext } from "../../Contexts/ServicesContext";
 
+import close from "../../Assets/Icons/utilIcons/Close.svg"
+
 function Services() {
   const { services, documents } = useContext(ServicesContext);
   const [showDescription, setShowDescription] = useState(false);
@@ -39,17 +41,14 @@ function Services() {
           </div>
         ) : (
           <div className="serviceDescription">
+            <img src={currentService.imagen} alt="foto servicio"/>
             <div className="line">
-              <div className="ServiceTitle"> {currentService.title}</div>
+              <p className="ServiceTitle"> {currentService.title}</p>
+              <img onClick={()=>{setShowDescription(false)}} src={close} alt=""/>
             </div>
             <div className="ServiceText">{currentService.descripcion}</div>
-            <div
-              className="close"
-              onClick={() => {
-                setShowDescription(false);
-              }}
-            >
-              <p>CERRAR</p>
+            <div className="ServiceButton">
+              <p>Contacta con un experto Aquí</p>
             </div>
           </div>
         )}

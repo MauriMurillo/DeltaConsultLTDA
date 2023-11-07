@@ -54,9 +54,9 @@ function ServicesProvider(props) {
       area: "serviceC",
     },
     {
-      title: "Consultoria de Sostenibilidad",
+      title: "CONSULTORIA DE SOSTENIBILIDAD",
       descripcion:
-        "Ayudamos a las empresas a desarrollar planes de sostenibilidad y responsabilidad social, asegurándonos de que cumplan con las normas y regulaciones ambientales y sociales. Estas consultorías ayudan a las empresas a evaluar su desempeño ambiental, social y económico.",
+        "Los servicios de consultoría financiera de Delta Consult están diseñados para brindar a su empresa una ventaja competitiva en el complejo entorno financiero actual. Nuestro enfoque estratégico y personalizado en el ámbito financiero tiene un alcance en una serie de servicios: Análisis exhaustivos de Estados Financieros: Nuestro equipo de expertos proporciona una visión completa de la salud financiera Los servicios de consultoría financiera de Delta Consult están diseñados para brindar a su empresa una ventaja competitiva en el complejo entorno financiero actual. Nuestro enfoque estratégico y personalizado en el ámbito financiero tiene un alcance en una serie de servicios: Análisis exhaustivos de Estados Financieros: Nuestro equipo de expertos proporciona una visión completa de la salud financiera Los servicios de consultoría financiera de Delta Consult están diseñados para brindar a su empresa una ventaja competitiva en el complejo entorno financiero actual. Nuestro enfoque estratégico y personalizado en el ámbito financiero tiene un alcance en una serie de servicios: Análisis exhaustivos de Estados Financieros: Nuestro equipo de expertos proporciona una visión completa de la salud financiera ",
       imagen: service5,
       icon: sostenibilidad,
       area: "serviceE",
