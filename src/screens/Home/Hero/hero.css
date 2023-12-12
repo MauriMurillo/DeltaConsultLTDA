@@ -1,61 +1,54 @@
 .heroContainer {
-  height: calc(100vh - 96px);
-  max-height: 800px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  height: 768px;
   overflow: hidden;
+  position: relative;
 }
-.heroContainer .textContainer {
-  height: 100%;
-  max-height: 800px;
-  width: 58%;
-  padding: 1px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  justify-content: space-around;
-}
-.heroContainer .imageContainer {
-  width: 42%;
-  height: 100%;
-}
-.heroContainer .imageContainer img {
+.heroContainer .heroBack{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: -1;
 }
-
-.textContainer .heroText {
-  color: #1d619d;
-  font-size: 36px;
+.heroContainer .textContainer {
+  position: relative;
+  top: -100%;
+  max-height: 768px;
+  width: 580px;
+  margin-top: 77px;
+  margin-left: 92px;
+}
+.textContainer .heroTitle{
+  color: #FFF;
+  font-size: 54px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 70px;
-  width: 576px;
+  font-weight: 600;
+  line-height: 64px;
+  margin-bottom: 54px;
 }
-.textContainer .heroText img {
-  margin: 0px 16px;
+.textContainer .heroText {
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 39px; /* 162.5% */
+  margin-bottom: 64px;
 }
-
 .heroContainer .textContainer a {
-  flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: 576px;
-  height: 96px;
-  background-color: #1d619d;
-  border-radius: 15px;
+  width: 191px;
+  height: 64px;
+  border-radius: 10px;
+  border: solid white 4px;
   text-decoration: none;
 }
 .heroContainer .textContainer a p {
-  color: #fff;
-  font-size: 40px;
-  font-weight: 800;
-  font-style: italic;
+  color: #FFF;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
 }
 .arrow {
   width: 40px;
@@ -79,60 +72,8 @@
   top: calc(50% - 20px);
 }
 
-.textContainer .heroText .bold{
-  font-weight: 900;
-}
-.textContainer .heroText .redSMS{
-  color: #A21F4A;
-}
 @media only screen and (max-width: 1150px) {
-  .heroContainer .textContainer {
-    width: 60%;
-  }
-  .heroContainer .imageContainer {
-    width: 40%;
-  }
-  .title {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 70px;
-  }
 }
 
 @media only screen and (max-width: 950px) {
-  .heroContainer {
-    height: auto;
-    max-height: none;
-    flex-direction: column-reverse;
-  }
-  .heroContainer .imageContainer {
-    width: 100%;
-    height: 222px;
-  }
-  .heroContainer .textContainer {
-    height: auto;
-    min-height: 440px;
-    width: 100%;
-    padding: 35px 40px 64px 40px;
-  }
-  .textContainer .heroText {
-    flex-shrink: 0;
-    text-align: center;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-  }
-  .heroContainer .textContainer a {
-    width: 100%;
-    max-width: 576px;
-    height: 64px;
-    background-color: #1d619d;
-    border-radius: 15px;
-    text-decoration: none;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  
 }

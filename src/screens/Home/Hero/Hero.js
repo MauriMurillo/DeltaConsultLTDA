@@ -3,9 +3,6 @@ import { NavLink } from "react-router-dom";
 import "animate.css";
 import "./hero.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-
-import left from "../../../Assets/Images/Logos/blue_left.png";
-import right from "../../../Assets/Images/Logos/blue_right.png";
 import { HeroContext } from "../../../Contexts/HeroContext";
 
 function Hero() {
@@ -52,18 +49,25 @@ function Hero() {
       setTimeout(() => {
         setHeroPosition(next);
       }, 300);
-    }, 10000);
+    }, 19000);
     return () => clearTimeout(move);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [heroPosition, homeHeroContent]);
 
   return (
     <div className="heroContainer top">
+      <img
+        alt="background"
+        id="heroImage"
+        className="animate__animated heroBack"
+        src={homeHeroContent[heroPosition].imagePC}
+      />
       <div className="textContainer">
+        <p id="heroTitle" className="heroTitle animate__animated">
+          {homeHeroContent[heroPosition].title}
+        </p>
         <p id="heroText" className="heroText animate__animated">
-          <img src={right} alt="decor" />
           {homeHeroContent[heroPosition].text}
-          <img src={left} alt="decor" />
         </p>
         <NavLink
           to={homeHeroContent[heroPosition].path}
@@ -72,14 +76,6 @@ function Hero() {
         >
           <p>{homeHeroContent[heroPosition].button}</p>
         </NavLink>
-      </div>
-      <div className="imageContainer">
-        <img
-          id="heroImage"
-          className="animate__animated"
-          alt="sms hero"
-          src={homeHeroContent[heroPosition].imagePC}
-        />
       </div>
       <div className="arrow forward" onClick={forwardHero}>
         <IoIosArrowForward size={24} />

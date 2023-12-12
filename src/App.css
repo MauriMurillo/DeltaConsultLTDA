@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +6,11 @@
   font-family: "Montserrat", sans-serif;
 }
 html {
-  background-color: #f5f5f5;
-  overflow-x: hidden;
+  background-color: white;
 }
 body {
-  max-width: 1800px;
+  max-width: 1440px;
   margin: 0 auto;
-  background-color: white;
 }
 
 .Screen > * {
@@ -22,7 +19,7 @@ body {
 }
 .Screen > .navBar {
   margin-top: 0px;
-  height: 96px;
+  height: 100px;
 }
 .Screen > .top {
   margin-top: 0px;
