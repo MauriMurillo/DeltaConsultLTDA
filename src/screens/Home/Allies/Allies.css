@@ -141,9 +141,10 @@
   }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 600px) {
   .AlliesContainer > .textContainer {
-    width: 361px;
+    width: 100%;
+    max-width: 450px;
   }
   .AlliesTitle {
     text-align: center;
@@ -154,5 +155,7 @@
   }
   .cardContainer {
     width: 361px;
+    width: 100%;
+    max-width: 450px;
   }
 }

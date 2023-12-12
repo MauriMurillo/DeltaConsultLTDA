@@ -11,6 +11,7 @@ html {
 body {
   max-width: 1440px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .Screen > * {
