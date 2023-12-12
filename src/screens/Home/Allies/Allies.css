@@ -1,89 +1,158 @@
+.AlliesContainer {
+  background: #95c1d5;
+  padding-bottom: 64px;
+}
+.AlliesContainer > .textContainer {
+  width: 1056px;
+  padding-top: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+}
+.AlliesTitle {
+  color: #fff;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 74.074% */
+  margin-bottom: 31px;
+}
+.AlliesText {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 83.333% */
+}
 .cardContainer {
+  width: 1056px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
-  padding-left: 80px;
-  padding-right: 80px;
+  justify-content: space-between;
 }
 .card {
-  width: 352px;
-  height: 512px;
-  border-radius: 45px;
-  box-shadow: 0px 4px 4px 8px rgba(0, 0, 0, 0.25);
+  width: 288px;
+  height: 382px;
+  border-radius: 15px;
+  border: solid white 4px;
   overflow: hidden;
   text-decoration: none;
 }
 .card .imageContainer {
-  height: 50%;
+  background-color: white;
+  height: 186px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.card .imageContainer img {
+  width: 93%;
+}
 .card .textContainer {
-  padding: 25px;
-  height: 50%;
-  background-color: #364660;
+  height: 196px;
+  background-color: #95c1d5;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 30px;
+  padding-bottom: 42px;
 }
 .card .textContainer .name {
   color: #fff;
   text-align: center;
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 26px;
+  font-style: normal;
   font-weight: 800;
+  line-height: 32px; /* 123.077% */
+  margin-bottom: 30px;
 }
 .card .textContainer .desc {
-  margin-top: 34px;
   color: #fff;
   text-align: center;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 32px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 157.143% */
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1150px) {
+  .AlliesContainer > .textContainer {
+    width: 896px;
+  }
   .cardContainer {
-    padding-left: 48px;
-    padding-right: 48px;
+    width: 896px;
   }
   .card {
     width: 256px;
-    height: 384px;
-  }
-  .card .imageContainer img {
-    width: 200px;
-    height: 73px;
   }
   .card .textContainer {
-    padding: 15px;
-  }
-  .card .textContainer .name {
-    font-size: 20px;
-    line-height: 31px;
-  }
-  .card .textContainer .desc {
-    margin-top: 40px;
-    font-size: 14px;
-    line-height: 22px;
+    height: 196px;
+    background-color: #95c1d5;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 30px;
+    padding-bottom: 42px;
   }
 }
+
 @media only screen and (max-width: 950px) {
+  .AlliesContainer > .textContainer {
+    width: 576px;
+  }
+  .AlliesTitle {
+    font-size: 38px;
+    line-height: 40px; /* 105.263% */
+  }
+  .AlliesText {
+    font-size: 16px;
+    line-height: 20px; /* 125% */
+  }
   .cardContainer {
+    width: 576px;
+    justify-content: center;
     flex-wrap: wrap;
-    row-gap: 64px;
+    gap: 128px;
+    row-gap: 50px;
   }
   .card {
-    width: 228px;
+    width: 224px;
     height: 288px;
   }
+  .card .imageContainer {
+    height: 144px;
+  }
   .card .textContainer {
-    padding-left: 16px;
-    padding-right: 16px;
+    height: 144px;
+    background-color: #95c1d5;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 21px;
   }
   .card .textContainer .name {
+    padding-left: 39.5px;
+    padding-right: 39.5px;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 22px; /* 123.077% */
+    margin-bottom: 18px;
   }
   .card .textContainer .desc {
-    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 20px; /* 157.143% */
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .AlliesContainer > .textContainer {
+    width: 361px;
+  }
+  .AlliesTitle {
+    text-align: center;
+    line-height: 50px; /* 105.263% */
+  }
+  .AlliesText {
+    text-align: center;
+  }
+  .cardContainer {
+    width: 361px;
   }
 }

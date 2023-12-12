@@ -5,8 +5,8 @@ function Allies(props) {
   return (
     <div className="AlliesContainer">
       <div className="textContainer">
-        <h2 className="Title">EMPRESAS ALIADAS</h2>
-        <div className="Text">La diversificacion es la clave del exito.</div>
+        <h2 className="AlliesTitle">Nuestras empresas aliadas</h2>
+        <div className="AlliesText">La diversificacion es la clave del exito.</div>
       </div>
       <div className="cardContainer">
         {allies.map((item) => {
