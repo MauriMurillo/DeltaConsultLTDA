@@ -4,11 +4,11 @@ import "animate.css";
 import "./hero.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { HeroContext } from "../../../Contexts/HeroContext";
-
+import { DeltaContext } from "../../../Contexts/DeltaContext";
 function Hero() {
   const [heroPosition, setHeroPosition] = useState(0);
   const { homeHeroContent } = useContext(HeroContext);
-
+  const { screenSize } = useContext(DeltaContext);
   const animationClassOut = "animate__fadeOutLeftBig";
   const animationClass = "animate__fadeInRightBig";
 
@@ -22,6 +22,7 @@ function Hero() {
   };
 
   const animateExit = () => {
+    animate("heroTitle", animationClassOut, animationClass);
     animate("heroText", animationClassOut, animationClass);
     animate("heroButton", animationClassOut, animationClass);
     animate("heroImage", animationClassOut, animationClass);
@@ -40,6 +41,7 @@ function Hero() {
   };
 
   useEffect(() => {
+    animate("heroTitle", animationClass, animationClassOut);
     animate("heroText", animationClass, animationClassOut);
     animate("heroButton", animationClass, animationClassOut);
     animate("heroImage", animationClass, animationClassOut);
@@ -49,19 +51,49 @@ function Hero() {
       setTimeout(() => {
         setHeroPosition(next);
       }, 300);
-    }, 19000);
+    }, 10000);
     return () => clearTimeout(move);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [heroPosition, homeHeroContent]);
 
   return (
     <div className="heroContainer top">
-      <img
-        alt="background"
-        id="heroImage"
-        className="animate__animated heroBack"
-        src={homeHeroContent[heroPosition].imagePC}
-      />
+      {/* PC */}
+      {screenSize.width > 1150 ? (
+        <img
+          src={homeHeroContent[heroPosition].imagePC}
+          id="heroImage"
+          className="animate__animated heroBack"
+          alt="background"
+        />
+      ) : null}
+      {/* Laptop */}
+      {screenSize.width > 950 && screenSize.width <= 1150 ? (
+        <img
+          src={homeHeroContent[heroPosition].imagePCP}
+          id="heroImage"
+          className="animate__animated heroBack"
+          alt="background"
+        />
+      ) : null}
+      {/* Tablet */}
+      {screenSize.width > 600 && screenSize.width <= 950 ? (
+        <img
+          src={homeHeroContent[heroPosition].imageTB}
+          id="heroImage"
+          className="animate__animated heroBack"
+          alt="background"
+        />
+      ) : null}
+      {screenSize.width <= 600 ? (
+        <img
+          src={homeHeroContent[heroPosition].imageCEL}
+          id="heroImage"
+          className="animate__animated heroBack"
+          alt="background"
+        />
+      ) : null}
+
       <div className="textContainer">
         <p id="heroTitle" className="heroTitle animate__animated">
           {homeHeroContent[heroPosition].title}

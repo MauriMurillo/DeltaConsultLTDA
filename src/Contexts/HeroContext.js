@@ -3,12 +3,15 @@ import React from "react";
 import PCNORMAL02 from "../Assets/Images/SECCION1/PC LA PAZ.jpg";
 import PCNORMAL01 from "../Assets/Images/SECCION1/PC SANTA CRUZ.jpg";
 import PCNORMAL03 from "../Assets/Images/SECCION1/PC UYUNI 2.jpg";
+
 import PCPEQUENA02 from "../Assets/Images/SECCION1/LAPTOP LP.jpg";
 import PCPEQUENA01 from "../Assets/Images/SECCION1/LAPTOP SCZ.jpg";
 import PCPEQUENA03 from "../Assets/Images/SECCION1/LAPTOP UYUNI.jpg";
+
 import TABLET02 from "../Assets/Images/SECCION1/TABLET LPZ.jpg";
 import TABLET01 from "../Assets/Images/SECCION1/TABLET SCZ.jpg";
 import TABLET03 from "../Assets/Images/SECCION1/TABLET UYUNI.jpg";
+
 import CELULAR02 from "../Assets/Images/SECCION1/CELULAR LPZ.jpg";
 import CELULAR01 from "../Assets/Images/SECCION1/CELULAR SCZ.jpg";
 import CELULAR03 from "../Assets/Images/SECCION1/CELULAR UYUNI.jpg";
