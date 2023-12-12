@@ -1,137 +1,211 @@
 .trustContainer {
-  display: flex;
-  align-items: flex-start;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 624px 624px;
+  grid-template-rows: 160px 160px 160px 240px 240px;
+  /*                  ADD 40PX FOR SPACING */
+  width: 1248px;
+  height: 960px;
+  overflow: hidden;
+  grid-template-areas:
+    "a d"
+    "b d"
+    "c d"
+    "e f"
+    "e g";
+  margin-left: auto;
+  margin-right: auto;
 }
-.trustContainer .imageContainer {
-  width: 42%;
-  height: 758px;
-  flex-shrink: 0;
-}
-.trustContainer .imageContainer img {
+.trustContainer > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.trustContainer .textContainer {
-  width: 58%;
-  padding: 80px 0px;
+.trustContainer .one {
+  grid-area: d;
 }
-.trustContainer .confiarList{
-  padding-left: 48px;
-  margin: 64px auto 0px auto ;
-  width: 75%;
+.trustContainer .two {
+  grid-area: e;
 }
-.trustContainer .textContainer .Title {
-  line-height: 65px;
-  width: 75%;
-  margin: 0 auto;
-  padding: 0px;
-  text-align: start;
+.trustContainer .Trust {
+  color: #1d619d;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px;
 }
-.trustContainer .textContainer .Text {
-  font-size: 18px;
-  line-height: 32px;
+.trustContainer .Point {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 39px; /* 162.5% */
+  display: flex;
+  padding-right: 80px;
 }
-.trustContainer .textContainer .confiarList div {
-  position: relative;
-  margin-bottom: 42px;
-}
-.trustContainer .textContainer .confiarList div:last-child {
-  margin-bottom: 0px;
-}
-.trustContainer .textContainer .confiarList div span {
-  display: inline-block;
+.trustContainer .Point img {
   width: 16px;
-  height: 16px;
-  background-color: #1d619d;
-  border-radius: 50%;
-  position: absolute;
-  left: -48px;
-  top: 8px;
+  height: 18px;
+  position: relative;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+.trustContainer .Point:nth-last-child(-n + 2) {
+  padding-top: 40px;
+  padding-left: 80px;
+  padding-right: 35px;
+}
+.trustContainer .Point:last-child {
+  padding-top: 0px;
 }
 @media only screen and (max-width: 1250px) {
-  .trustContainer .imageContainer {
-    width: 44%;
+  .trustContainer {
+    grid-template-columns: 448px 448px;
+    grid-template-rows: 150px 181px 181px 256px 256px;
+    /*                  ADD 50PX FOR SPACING */
+    width: 896px;
+    height: 1024px;
   }
-  .trustContainer .textContainer {
-    width: 56%;
-    padding-top: 16px;
+  .trustContainer .Trust {
+    font-size: 38px;
+    line-height: 52px; /* 136.842% */
+  }
+  .trustContainer .Point {
+    font-size: 20px;
+    line-height: 39px; /* 162.5% */
+    padding-right: 50px;
+  }
+  .trustContainer .Point:nth-last-child(-n + 2) {
+    padding-top: 50px;
+    padding-left: 64px;
+    padding-right: 0px;
+  }
+  .trustContainer .Point:last-child {
+    padding-top: 0px;
   }
 }
-@media only screen and (max-width: 1150px) {
-  .trustContainer .textContainer {
-    padding-top: 48px;
+@media only screen and (max-width: 900px) {
+  .trustContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 352px 158px 100px 100px 100px 150px;
+    /*                  ADD 30PX FOR SPACING */
+    width: 100%;
+    max-width: 768px;
+    height: 960px;
+    overflow: hidden;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e";
+    margin-left: auto;
+    margin-right: auto;
   }
-  .trustContainer .textContainer .Title {
-    width: 80%;
-    font-size: 46px;
-    line-height: 65px;
+  .trustContainer .one {
+    grid-area: a;
   }
-  .trustContainer .confiarList{
-    width: 85%;
+  .trustContainer .two {
+    grid-area: a;
   }
-  .trustContainer .textContainer .Text {
-    font-size: 15px;
+  .trustContainer .Trust {
+    text-align: center;
+    font-size: 38px;
+    line-height: 40px;
+    padding-top: 64px;
+    padding-bottom: 54px;
+  }
+  .trustContainer .Point {
+    font-size: 16px;
+    line-height: 30px; /* 187.5% */
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+  .trustContainer .Point img {
+    width: 12px;
+    height: 14px;
+    margin-top: 8px;
+    margin-right: 15px;
+  }
+  .trustContainer .Point:nth-last-child(-n + 2) {
+    padding-top: 0px;
+    padding-left: 90px;
+    padding-right: 90px;
   }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 600px) {
   .trustContainer {
-    flex-direction: column;
-    align-items: center;
-  }
-  .trustContainer .imageContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 256px 180px 131px 131px 163px 195px;
+    /*             1054  -  436  = 618 - 480 */
     width: 100%;
-    height: 384px;
+    max-width: 425px;
+    height: 960px;
+    overflow: hidden;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e";
+    margin-left: auto;
+    margin-right: auto;
   }
-  .trustContainer .textContainer {
-    width: 100%;
-    padding: 48px 64px;
+  .trustContainer .Trust {
+    text-align: start;
+    font-size: 36px;
+    line-height: 50px;
+    padding: 40px;
   }
-  .trustContainer .textContainer .Title {
-    width: 100%;
-    text-align: center;
-    font-size: 40px;
-    line-height: 65px;
+  .trustContainer .Point {
+    font-size: 14px;
+    line-height: 32px; /* 187.5% */
+    padding-left: 40px;
+    padding-right: 40px;
   }
-  .trustContainer .textContainer .Text {
-    font-size: 15px;
-    line-height: 32px;
-  }
-  .trustContainer .textContainer .confiarList {
-    margin-top: 48px;
-    width: 100%;
-  }
-  .trustContainer .textContainer .confiarList div {
-    margin-bottom: 20px;
-  }
-  .trustContainer .textContainer .confiarList div span {
-    width: 14px;
-    height: 14px;
+  .trustContainer .Point:nth-last-child(-n + 2) {
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
-@media only screen and (max-width: 550px) {
-  .trustContainer .imageContainer {
-    height: 256px;
-  }
-  .trustContainer .textContainer {
+@media only screen and (max-width: 376px) {
+  .trustContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 256px 230px 131px 131px 163px 195px;
+    /*             1054  -  436  = 618 - 480 */
     width: 100%;
-    max-width: 500px;
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: 425px;
+    height: 1010px;
+    overflow: hidden;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e";
+    margin-left: auto;
+    margin-right: auto;
   }
-  .trustContainer .textContainer .confiarList div span {
-    width: 12px;
-    height: 12px;
+  .trustContainer .Trust {
+    text-align: start;
+    font-size: 36px;
+    line-height: 50px;
+    padding: 65px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  .trustContainer .textContainer .Title {
-    font-size: 32px;
-    line-height: 45px;
-    padding: 0px;
+  .trustContainer .Point {
+    font-size: 14px;
+    line-height: 32px; /* 187.5% */
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  .trustContainer .textContainer .Text {
-    font-size: 15px;
-    line-height: 32px;
+  .trustContainer .Point:nth-last-child(-n + 2) {
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
