@@ -18,8 +18,16 @@ function Home() {
       <HeroProvider>
         <Hero />
       </HeroProvider>
-      <CompanyStats direccion={"right"} estadisticas={generalStatistics} />
-      <CompanyStats direccion={"left"} estadisticas={smsStatistics} />
+      <CompanyStats
+        logo={generalStatistics.logo}
+        tipo={"delta"}
+        estadisticas={generalStatistics.stats}
+      />
+      <CompanyStats
+        logo={smsStatistics.logo}
+        tipo={"sms"}
+        estadisticas={smsStatistics.stats}
+      />
       <Trust />
       <Allies allies={allies} />
       <Footer />

@@ -1,26 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./CompanyStats.css";
 import { Stat } from "./Stat";
+import { DeltaContext } from "../../../Contexts/DeltaContext";
 
 function CompanyStats(props) {
-  const { estadisticas, direccion } = props;
+  const { estadisticas, logo, tipo } = props;
   return (
-    <div className={"statsContainer sC" + direccion}>
-      <div className={"outerContainer bC" + direccion}>
-        <div className={"whiteContainer wC" + direccion}>
-          {estadisticas.map((item) => {
-            return (
-              <Stat
-                contenido={{
-                  icon: item.icon,
-                  title: item.title,
-                  text: item.text,
-                }}
-              />
-            );
-          })}
-        </div>
-      </div>
+    <div className={"statsContainer " + tipo}>
+      <img alt="logo" src={logo} className="statLogo"/>
+      {estadisticas.map((item) => {
+        return (
+          <Stat
+            contenido={{
+              icon: item.icon,
+              title: item.title,
+              text: item.text,
+            }}
+          />
+        );
+      })}
+      <div className="divisor"/>
     </div>
   );
 }

@@ -1,16 +1,16 @@
 import React from "react";
 
+import logoDelta from "../Assets/Images/Logos/ISOTIPO DELTA BLANCO.png";
+import logoSMS from "../Assets/Images/Logos/istotipoSMS.png";
 // Iconos Estadisticas Delta
 import people from "../Assets/Icons/stats/people.svg";
 import profesional from "../Assets/Icons/stats/profesional.svg";
-import bars from "../Assets/Icons/stats/Bars.svg";
 import stars from "../Assets/Icons/stats/Stars.svg";
 
 // Iconos Estadisticas SMS
 import world from "../Assets/Icons/stats/World.svg";
 import person from "../Assets/Icons/stats/Person.svg";
-import tool from "../Assets/Icons/stats/Tool.svg";
-import up from "../Assets/Icons/stats/Up.svg";
+import world2 from "../Assets/Icons/stats/World2.svg";
 
 // Imagenes Confiar en Nosotros
 import trust from "../Assets/Images/HomeImages/Trust1.png";
@@ -88,51 +88,47 @@ function ContentProvider(props) {
     },
   ];
 
-  const generalStatistics = [
-    {
-      icon: people,
-      title: "250+",
-      text: "Clientes Satisfechos",
-    },
-    {
-      icon: profesional,
-      title: "50+",
-      text: "Profesionales Expertos",
-    },
-    {
-      icon: bars,
-      title: "3",
-      text: "Oficinas en Toda Bolivia",
-    },
-    {
-      icon: stars,
-      title: "20+",
-      text: "Premios y Reconocimientos",
-    },
-  ];
+  const generalStatistics = {
+    logo: logoDelta,
+    stats: [
+      {
+        icon: people,
+        title: "250+",
+        text: "Clientes Satisfechos",
+      },
+      {
+        icon: profesional,
+        title: "65+",
+        text: "Profesionales Expertos",
+      },
+      {
+        icon: stars,
+        title: "20+",
+        text: "Premios y Galardones",
+      },
+    ],
+  };
 
-  const smsStatistics = [
-    {
-      icon: world,
-      title: "120+",
-      text: "Redes Internacionales",
-    },
-    {
-      icon: person,
-      title: "1500+",
-      text: "Profesionales en Red",
-    },
-    {
-      icon: tool,
-      title: "1700+",
-      text: "Clientes que Apoyamos",
-    },
-    {
-      icon: up,
-      title: "4+",
-      text: "Gemas del infinito",
-    },
-  ];
+  const smsStatistics = {
+    logo: logoSMS,
+    stats: [
+      {
+        icon: world2,
+        title: "22+",
+        text: "Países americanos con oficinas de SMS Latinoamerica",
+      },
+      {
+        icon: person,
+        title: "2500+",
+        text: "Profesionales en Red",
+      },
+      {
+        icon: world,
+        title: "80+",
+        text: "Oficinas en el continente americano",
+      },
+    ],
+  };
 
   const trustStatement = [
     "Contamos con el registro y vigencia en principales entes de fiscalización y control que avalan nuestra calidad",
