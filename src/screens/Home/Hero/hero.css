@@ -3,18 +3,11 @@
   height: 768px;
   position: relative;
 }
-.heroBack{
+.heroBack {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* .heroContainer .heroBack{
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-} */
 .heroContainer .textContainer {
   position: relative;
   top: -100%;
@@ -23,8 +16,8 @@
   margin-top: 77px;
   margin-left: 92px;
 }
-.textContainer .heroTitle{
-  color: #FFF;
+.textContainer .heroTitle {
+  color: #fff;
   font-size: 54px;
   font-style: normal;
   font-weight: 600;
@@ -32,28 +25,12 @@
   margin-bottom: 54px;
 }
 .textContainer .heroText {
-  color: #FFF;
+  color: #fff;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: 39px; /* 162.5% */
   margin-bottom: 64px;
-}
-.heroContainer .textContainer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 191px;
-  height: 64px;
-  border-radius: 10px;
-  border: solid white 4px;
-  text-decoration: none;
-}
-.heroContainer .textContainer a p {
-  color: #FFF;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 600;
 }
 .arrow {
   width: 40px;
@@ -89,7 +66,7 @@
     margin-top: 46px;
     margin-left: 60px;
   }
-  .textContainer .heroTitle{
+  .textContainer .heroTitle {
     font-size: 50px;
     line-height: 64px;
     margin-bottom: 54px;
@@ -112,7 +89,7 @@
     flex-direction: column;
     justify-content: center;
   }
-  .textContainer .heroTitle{
+  .textContainer .heroTitle {
     text-align: center;
     font-size: 38px;
     line-height: 52px;
@@ -125,9 +102,9 @@
     margin-bottom: 64px;
   }
   .heroContainer .textContainer a {
-    margin-top:   auto;
+    margin-top: auto;
     margin-bottom: 96px;
-    margin-left:  auto;
+    margin-left: auto;
     margin-right: auto;
   }
 }

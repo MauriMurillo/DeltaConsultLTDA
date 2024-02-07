@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+:root {
+  --DeltaBlue: #1d619d;
+  --DarkBlue: #364660;
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +12,10 @@
   font-family: "Montserrat", sans-serif;
 }
 html {
-  background-color: white;
+  background-color: whitesmoke;
 }
 body {
+  background-color: white;
   max-width: 1440px;
   margin: 0 auto;
   overflow-x: hidden;
@@ -16,11 +23,9 @@ body {
 
 .Screen > * {
   margin-top: 25vh;
-  /* border: solid blue 20px; */
 }
-.Screen > .navBar {
+.Screen > nav {
   margin-top: 0px;
-  height: 100px;
 }
 .Screen > .top {
   margin-top: 0px;
@@ -30,7 +35,7 @@ body {
 }
 
 .Title {
-  color: #1d619d;
+  color: var(--DeltaBlue);
   text-align: center;
   font-size: 55px;
   font-style: normal;
@@ -41,7 +46,7 @@ body {
 }
 .Text {
   text-align: center;
-  color: var(--text-gray-900, #000);
+  color: #000;
   font-size: 20px;
   margin-bottom: 82px;
   padding-left: 10px;

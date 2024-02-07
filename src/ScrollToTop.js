@@ -1,12 +1,24 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { DeltaContext } from "./Contexts/DeltaContext";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
+  const { selectedSection, setShowOptionMenu, setShowSubMenu } =
+    useContext(DeltaContext);
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    setShowOptionMenu(false);
+    setShowSubMenu(false);
+    if (selectedSection === "") {
+      window.scrollTo(0, 0);
+    } else {
+      const element = document.getElementById(selectedSection);
+      if (element) {
+        element.scrollIntoView();
+      }
+    }
+  }, [pathname, selectedSection, setShowOptionMenu, setShowSubMenu]);
   return null;
 };
 
-export {ScrollToTop}
+export { ScrollToTop };

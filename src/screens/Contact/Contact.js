@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
 import { Header } from "../../components/Header/Header.js";
 import { Footer } from "../../components/Footer/Footer.js";
-import { ContentContext } from "../../Contexts/ContentContext.js";
 import { BigOffice } from "./BigOffice.js";
 import { ContactForm } from "./ContactForm/ContactForm.js";
+import { ComponentContext } from "../../Contexts/ComponentContext.js";
 
 function Contact() {
-  const { offices } = useContext(ContentContext);
+  const { offices } = useContext(ComponentContext);
   return (
     <div className="contactScreen Screen">
       <Header />

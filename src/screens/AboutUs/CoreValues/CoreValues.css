@@ -60,7 +60,7 @@
 .halfLogoRight {
   width: 440px;
   height: 512px;
-  background-image: url("../../../Assets/Images/valuesImage/der.png");
+  background-image: url("../../../Assets/default.png");
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -71,7 +71,7 @@
 .halfLogoLeft {
   width: 440px;
   height: 512px;
-  background-image: url("../../../Assets/Images/valuesImage/isq.png");
+  background-image: url("../../../Assets/default.png");
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;

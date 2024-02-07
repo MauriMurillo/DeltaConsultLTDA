@@ -1,0 +1,71 @@
+.mainIndustry {
+  height: 866px;
+  display: flex;
+  padding-bottom: 94px;
+  border-bottom: solid #d9d9d9 4px;
+}
+.mainIndustry .textContainer {
+  width: 800px;
+  padding-left: 94px;
+  padding-right: 64px;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+}
+.mainIndustry .imageContainer {
+  width: calc(100% - 800px);
+  height: 768px;
+}
+
+.mainIndustry .textContainer h1 {
+  font-size: 54px;
+  font-weight: 500;
+  color: var(--DeltaBlue);
+  margin-bottom: 50px;
+}
+.mainIndustry .textContainer > p {
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+.mainIndustry .textContainer > p:last-of-type {
+  flex-grow: 1;
+}
+.restIndustries {
+  padding-left: 96px;
+  padding-right: 96px;
+}
+.restIndustries h3{
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--DeltaBlue);
+  margin-bottom: 64px;
+}
+.restIndustries .Grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 110px;
+  row-gap: 96px;
+}
+
+.restIndustries .Grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.restIndustries .Grid img{
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.restIndustries .Grid p{
+  width: 224px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--DeltaBlue);
+  text-align: center;
+}

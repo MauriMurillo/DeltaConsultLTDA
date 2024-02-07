@@ -1,0 +1,72 @@
+/* Styles for the entire submenu */
+.optionMenu{
+  min-height: 448px;
+  background-color: var(--DarkBlue);
+  display: flex;
+  padding-bottom: 32px;
+}
+/* section with the description */
+.desc{
+  width: calc(100% - 832px);
+  padding-top: 70px;
+  padding-left: 94px;
+}
+.desc h2{
+  font-size: 38px;
+  line-height: 40px;
+  color: #FFFFFF;
+  font-weight: 600;
+  margin-bottom: 52px;
+}
+.desc p{
+  width: 333px;
+  font-size: 16px;
+  line-height: 32px;
+  color: white;
+}
+/* section with the links */
+.links{
+  padding-top: 32px;
+  width: 416px;
+}
+.links div{
+  height: 64px;
+  border-bottom: solid 2px #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 64px;
+  padding-right: 32px;
+}
+.links div:first-child{
+  height: 66px;
+  border-top: solid 2px #FFFFFF;
+}
+.links div{
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.links .active{
+  background-color: #9A9696;
+}
+/* sub menu */
+.subMenu{
+  width: 416px;
+  background-color: #9A9696;
+  padding-left: 64px;
+  padding-top: 34px;
+}
+.subMenu div{
+  height: 64px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.subMenu div:hover{
+  text-decoration: underline;
+}
+.filler{
+  width: 416px;
+}

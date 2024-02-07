@@ -1,10 +1,10 @@
 import React, { useContext, useState, useEffect } from "react";
 import "./Trust.css";
-import { ContentContext } from "../../../Contexts/ContentContext";
-import derecha from "../../../Assets/Images/Logos/blue_right.png";
-function Trust() {
+import { ContentContext } from "../../../Contexts/HomeContext";
+import derecha from "../../../Assets/default.png";
+function Trust(props) {
   // const [trustPosition, setTrustPosition] = useState(0);
-  const { trustStatement, trustImages } = useContext(ContentContext);
+  const { trustStatement, trustImages } = props;
 
   // const animationClassOut = "animate__fadeOut";
   // const animationClass = "animate__fadeIn";

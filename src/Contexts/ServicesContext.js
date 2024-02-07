@@ -1,21 +1,55 @@
 import React from "react";
 
-import service1 from "../Assets/Images/serviceImage/service1.png";
-import service2 from "../Assets/Images/serviceImage/service2.png";
-import service3 from "../Assets/Images/serviceImage/service3.png";
-import service4 from "../Assets/Images/serviceImage/service4.png";
-import service5 from "../Assets/Images/serviceImage/service5.png";
+import service1pc from "../Assets/servicios/seccionuno/auditoriafinancierapc.jpg";
+import service1laptop from "../Assets/servicios/seccionuno/auditoriafinancieralaptop.jpg";
+import service1tablet from "../Assets/servicios/seccionuno/auditoriafinancieratablet.jpg";
+import service1celular from "../Assets/servicios/seccionuno/auditoriafinancieracelu.jpg";
 
-import externa from "../Assets/Icons/services/externa.svg";
-import estrategica from "../Assets/Icons/services/estrategica.svg";
-import financiera from "../Assets/Icons/services/financiera.svg";
-import impositiva from "../Assets/Icons/services/impositiva.svg";
-import sostenibilidad from "../Assets/Icons/services/sostenibilidad.svg";
+import service2pc from "../Assets/servicios/seccionuno/auditoriaforensepc.jpg";
+import service2laptop from "../Assets/servicios/seccionuno/auditoriaforenselaptop.jpg";
+import service2tablet from "../Assets/servicios/seccionuno/auditoriaforensetablet.jpg";
+import service2celular from "../Assets/servicios/seccionuno/auditoriaforensecelu.jpg";
 
-import linkImage1 from "../Assets/DocumentsD/imageLink.png";
-import linkImage2 from "../Assets/DocumentsD/imageLink2.png";
-import doingBusiness from "../Assets/DocumentsD/Doing Bussines Bolivia 2022.pdf";
-import brochure from "../Assets/DocumentsD/Broshure Delta.pdf";
+import service3pc from "../Assets/servicios/seccionuno/auditoriaoperativapc.jpg";
+import service3laptop from "../Assets/servicios/seccionuno/auditoriaoperativalaptop.jpg";
+import service3tablet from "../Assets/servicios/seccionuno/auditoriaoperativatablet.jpg";
+import service3celular from "../Assets/servicios/seccionuno/auditoriaoperativacelu.jpg";
+
+import service4pc from "../Assets/servicios/seccionuno/auditoriatributariapc.jpg";
+import service4laptop from "../Assets/servicios/seccionuno/auditoriatributarialaptop.jpg";
+import service4tablet from "../Assets/servicios/seccionuno/auditoriatributariatablet.jpg";
+import service4celular from "../Assets/servicios/seccionuno/auditoriatributariacelu.jpg";
+
+import service5pc from "../Assets/servicios/seccionuno/consultoriadesostenibilidadpc.jpg";
+import service5laptop from "../Assets/servicios/seccionuno/consultoriadesostenibilidadlaptop.jpg";
+import service5tablet from "../Assets/servicios/seccionuno/consultoriadesostenibilidadtablet.jpg";
+import service5celular from "../Assets/servicios/seccionuno/consultoriadesostenibilidadcelu.jpg";
+
+import service6pc from "../Assets/servicios/seccionuno/consultoriadesostenibilidadpc.jpg";
+import service6laptop from "../Assets/servicios/seccionuno/consultoriadesostenibilidadlaptop.jpg";
+import service6tablet from "../Assets/servicios/seccionuno/consultoriadesostenibilidadtablet.jpg";
+import service6celular from "../Assets/servicios/seccionuno/consultoriadesostenibilidadcelu.jpg";
+
+import service7pc from "../Assets/servicios/seccionuno/consultoriadesostenibilidadpc.jpg";
+import service7laptop from "../Assets/servicios/seccionuno/consultoriadesostenibilidadlaptop.jpg";
+import service7tablet from "../Assets/servicios/seccionuno/consultoriadesostenibilidadtablet.jpg";
+import service7celular from "../Assets/servicios/seccionuno/consultoriadesostenibilidadcelu.jpg";
+
+import service8pc from "../Assets/servicios/seccionuno/consultoriadesostenibilidadpc.jpg";
+import service8laptop from "../Assets/servicios/seccionuno/consultoriadesostenibilidadlaptop.jpg";
+import service8tablet from "../Assets/servicios/seccionuno/consultoriadesostenibilidadtablet.jpg";
+import service8celular from "../Assets/servicios/seccionuno/consultoriadesostenibilidadcelu.jpg";
+
+import service9pc from "../Assets/servicios/seccionuno/consultoriadesostenibilidadpc.jpg";
+import service9laptop from "../Assets/servicios/seccionuno/consultoriadesostenibilidadlaptop.jpg";
+import service9tablet from "../Assets/servicios/seccionuno/consultoriadesostenibilidadtablet.jpg";
+import service9celular from "../Assets/servicios/seccionuno/consultoriadesostenibilidadcelu.jpg";
+
+import service10pc from "../Assets/servicios/seccionuno/consultoriadesostenibilidadpc.jpg";
+import service10laptop from "../Assets/servicios/seccionuno/consultoriadesostenibilidadlaptop.jpg";
+import service10tablet from "../Assets/servicios/seccionuno/consultoriadesostenibilidadtablet.jpg";
+import service10celular from "../Assets/servicios/seccionuno/consultoriadesostenibilidadcelu.jpg";
+
 
 const ServicesContext = React.createContext();
 
@@ -30,8 +64,7 @@ function ServicesProvider(props) {
 
         "Contamos con un equipo de auditores altamente capacitados y especializados en diversos sectores empresariales, lo que nos permite realizar una identificación precisa de los problemas y desafíos de una empresa en la auditoría externa para ofrecer a nuestros clientes una visión detallada y valiosa de su situación financiera.",
       ],
-      imagen: service1,
-      icon: externa,
+      imagen: service1pc,
       area: "serviceA",
     },
     {
@@ -45,8 +78,7 @@ function ServicesProvider(props) {
 
         "Cumplimiento Normativo: Estamos comprometidos a garantizar que su empresa cumpla con todas las políticas fiscales y en los plazos establecidos. ",
       ],
-      imagen: service4,
-      icon: impositiva,
+      imagen: service4pc,
       area: "serviceB",
     },
     {
@@ -62,8 +94,7 @@ function ServicesProvider(props) {
 
         "Gestión de Riesgos Financieros: Identificar, evaluar y mitigar los riesgos financieros potenciales de su empresa analizando el control interno de la empresa para una estabilidad financiera.",
       ],
-      imagen: service2,
-      icon: financiera,
+      imagen: service2pc,
       area: "serviceD",
     },
     {
@@ -73,8 +104,7 @@ function ServicesProvider(props) {
 
         "Realizamos análisis exhaustivos del mercado, identificando tendencias, oportunidades de crecimiento y posibles amenazas. A partir de ahí, nuestra misión es proporcionar insights valiosos que impulsen el crecimiento y mejoren la salud financiera de su organización ante un entorno empresarial en constante evolución.",
       ],
-      imagen: service3,
-      icon: estrategica,
+      imagen: service3pc,
       area: "serviceC",
     },
     {
@@ -84,33 +114,15 @@ function ServicesProvider(props) {
 
         "Nuestros servicios de consultoría de sostenibilidad ayudan a su empresa a desarrollar planes estratégicos de sostenibilidad y a cumplir con las normas y regulaciones ambientales y sociales. Evaluamos el desempeño ambiental, social y económico de su empresa y trabajamos para implementar prácticas sostenibles que beneficien a su empresa y a la sociedad en general.",
       ],
-      imagen: service5,
-      icon: sostenibilidad,
+      imagen: service5pc,
       area: "serviceE",
     },
   ];
 
-  const documents = {
-    brochure: {
-      title: "BROCHURE",
-      pdf: brochure,
-      descripcion:
-        "Encuentra información detallada sobre como trabajamos para ti.",
-      imagen: linkImage2,
-    },
-    business: {
-      title: "DOING BUSINESS",
-      pdf: doingBusiness,
-      descripcion:
-        "Ofrece un interesante panorama lleno de oportunidades y desafíos dentro de la patria.",
-      imagen: linkImage1,
-    },
-  };
   return (
     <ServicesContext.Provider
       value={{
         services,
-        documents,
       }}
     >
       {props.children}

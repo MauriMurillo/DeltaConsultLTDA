@@ -4,20 +4,25 @@ import { Footer } from "../../components/Footer/Footer.js";
 import { Hero } from "./Hero/Hero.js";
 import { CompanyStats } from "./CompanyStats/CompanyStats.js";
 import { Trust } from "./Trust/Trust";
-import { ContentContext } from "../../Contexts/ContentContext.js";
 import { Allies } from "./Allies/Allies.js";
-import { HeroProvider } from "../../Contexts/HeroContext.js";
+
+import { HomeContext } from "../../Contexts/HomeContext.js";
 
 function Home() {
-  const { generalStatistics, smsStatistics, allies } =
-    useContext(ContentContext);
+  const {
+    heroContent,
+    generalStatistics,
+    smsStatistics,
+    allies,
+    trustStatement,
+    trustImages,
+  } = useContext(HomeContext);
 
   return (
     <div className="homeScreen Screen">
       <Header />
-      <HeroProvider>
-        <Hero />
-      </HeroProvider>
+
+      <Hero heroContent={heroContent} />
       <CompanyStats
         logo={generalStatistics.logo}
         tipo={"delta"}
@@ -28,8 +33,9 @@ function Home() {
         tipo={"sms"}
         estadisticas={smsStatistics.stats}
       />
-      <Trust />
+      <Trust trustStatement={trustStatement} trustImages={trustImages} />
       <Allies allies={allies} />
+
       <Footer />
     </div>
   );

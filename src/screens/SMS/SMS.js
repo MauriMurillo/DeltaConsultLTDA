@@ -1,14 +1,14 @@
 import React from "react";
 import { Header } from "../../components/Header/Header.js";
 import { Footer } from "../../components/Footer/Footer.js";
-import smsLogo from "../../Assets/Images/Logos/SMSLogo.png";
-import isoSMS from "../../Assets/Images/Logos/istotipoSMS.png";
-import deltaLogo from "../../Assets/Images/Logos/ISOLOGO DELTA AZUL.png";
-import ifacLogo from "../../Assets/Images/Logos/IFAC.png";
-import forodefirmasLogo from "../../Assets/Images/Logos/ForodeFirmas.png";
-import sms1 from "../../Assets/Images/smsImages/smsCountry2.png";
-import sms2 from "../../Assets/Images/smsImages/smsInBolivia.png";
-import smsLink from "../../Assets/Images/smsImages/smsLink.png";
+import smsLogo from "../../Assets/Logos/SMSLogo.png";
+import isoSMS from "../../Assets/Logos/istotipoSMS.png";
+import deltaLogo from "../../Assets/Logos/ISOLOGO DELTA AZUL.png";
+import ifacLogo from "../../Assets/Logos/IFAC.png";
+import forodefirmasLogo from "../../Assets/Logos/ForodeFirmas.png";
+import sms1 from "../../Assets/default.png";
+import sms2 from "../../Assets/default.png";
+import smsLink from "../../Assets/default.png";
 import "./SMS.css";
 
 function SMS() {

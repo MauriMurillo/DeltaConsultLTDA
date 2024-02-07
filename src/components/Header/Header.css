@@ -1,4 +1,5 @@
 .navBar {
+  height: 96px;
   width: 100%;
   display: flex;
   place-items: center;
@@ -22,28 +23,6 @@
 .navBar .imageContainer a {
   width: 100%;
   height: 100%;
-}
-/* Links a las paginas */
-.listContainerHorizontal {
-  height: 40px;
-  display: flex;
-  place-items: center;
-  width: 600px;
-}
-.listScreensHorizontal {
-  width: 100%;
-  height: 40px;
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.listScreensHorizontal div a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 700;
 }
 /* Links a interno MiDelta */
 .navBar > .linkInternal {
@@ -88,32 +67,7 @@
   line-height: 32px;
   margin-left: 12px;
 }
-/* Links a paginas en Menu */
-.listContainerVertical {
-  height: calc(100% - 96px);
-  display: flex;
-  flex-direction: column;
-  padding: 74px;
-}
-.listScreensVertical div {
-  height: 67px;
-  border-bottom: solid #d9d9d9 3px;
-  margin-bottom: 28px;
-}
-.listScreensVertical div a {
-  color: #fff;
-  text-align: center;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-  display: inline-block;
-  text-decoration: none;
-}
-/* Extra estilos a links activos */
-.listScreensVertical div a.active {
-  color: #1d619d;
-}
+
 .menuLinks a:active {
   color: #49c6ff;
 }
@@ -124,12 +78,6 @@
   }
   .navBar .imageContainer {
     height: 32px;
-  }
-  .listContainerHorizontal {
-    width: 475px;
-  }
-  .listScreensHorizontal div a {
-    font-size: 12px;
   }
 }
 @media only screen and (max-width: 950px) {
@@ -155,29 +103,20 @@
   .showMenuButton {
     width: 32px;
   }
-  .listContainerVertical {
-    padding: 50px;
+
+  /* Links a interno en menu */
+  .menuScreen .linkInternal img {
+    width: 16px;
+    height: 16px;
   }
-  .listScreensVertical div {
-    height: 57px;
+  .menuScreen .linkInternal {
+    padding: 0px 50px;
   }
-  .listScreensVertical div a {
+  .menuScreen .linkInternal p {
     font-size: 20px;
     line-height: 20px;
+    margin-left: 4px;
   }
-  /* Links a interno en menu */
-.menuScreen .linkInternal img {
-  width: 16px;
-  height: 16px;
-}
-.menuScreen .linkInternal {
-  padding: 0px 50px;
-}
-.menuScreen .linkInternal p {
-  font-size: 20px;
-  line-height: 20px;
-  margin-left: 4px;
-}
 }
 @media only screen and (max-width: 380px) {
   .navBar {

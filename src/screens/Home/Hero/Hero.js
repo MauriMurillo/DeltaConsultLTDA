@@ -3,11 +3,13 @@ import { NavLink } from "react-router-dom";
 import "animate.css";
 import "./hero.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { HeroContext } from "../../../Contexts/HeroContext";
 import { DeltaContext } from "../../../Contexts/DeltaContext";
-function Hero() {
+import { Boton } from "../../../components/Boton/Boton";
+
+function Hero(props) {
+  const { heroContent } = props;
+
   const [heroPosition, setHeroPosition] = useState(0);
-  const { homeHeroContent } = useContext(HeroContext);
   const { screenSize } = useContext(DeltaContext);
   const animationClassOut = "animate__fadeOutLeftBig";
   const animationClass = "animate__fadeInRightBig";
@@ -29,13 +31,12 @@ function Hero() {
   };
 
   const forwardHero = () => {
-    const next = (heroPosition + 1) % homeHeroContent.length;
+    const next = (heroPosition + 1) % heroContent.length;
     animateExit();
     setTimeout(() => setHeroPosition(next), 301);
   };
   const rewindHero = () => {
-    const next =
-      heroPosition === 0 ? homeHeroContent.length - 1 : heroPosition - 1;
+    const next = heroPosition === 0 ? heroContent.length - 1 : heroPosition - 1;
     animateExit();
     setTimeout(() => setHeroPosition(next), 301);
   };
@@ -45,7 +46,7 @@ function Hero() {
     animate("heroText", animationClass, animationClassOut);
     animate("heroButton", animationClass, animationClassOut);
     animate("heroImage", animationClass, animationClassOut);
-    const next = (heroPosition + 1) % homeHeroContent.length;
+    const next = (heroPosition + 1) % heroContent.length;
     const move = setTimeout(() => {
       animateExit();
       setTimeout(() => {
@@ -54,14 +55,14 @@ function Hero() {
     }, 10000);
     return () => clearTimeout(move);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [heroPosition, homeHeroContent]);
+  }, [heroPosition, heroContent]);
 
   return (
     <div className="heroContainer top">
       {/* PC */}
       {screenSize.width > 1150 ? (
         <img
-          src={homeHeroContent[heroPosition].imagePC}
+          src={heroContent[heroPosition].imagePC}
           id="heroImage"
           className="animate__animated heroBack"
           alt="background"
@@ -70,7 +71,7 @@ function Hero() {
       {/* Laptop */}
       {screenSize.width > 950 && screenSize.width <= 1150 ? (
         <img
-          src={homeHeroContent[heroPosition].imagePCP}
+          src={heroContent[heroPosition].imagePCP}
           id="heroImage"
           className="animate__animated heroBack"
           alt="background"
@@ -79,7 +80,7 @@ function Hero() {
       {/* Tablet */}
       {screenSize.width > 600 && screenSize.width <= 950 ? (
         <img
-          src={homeHeroContent[heroPosition].imageTB}
+          src={heroContent[heroPosition].imageTB}
           id="heroImage"
           className="animate__animated heroBack"
           alt="background"
@@ -87,7 +88,7 @@ function Hero() {
       ) : null}
       {screenSize.width <= 600 ? (
         <img
-          src={homeHeroContent[heroPosition].imageCEL}
+          src={heroContent[heroPosition].imageCEL}
           id="heroImage"
           className="animate__animated heroBack"
           alt="background"
@@ -96,18 +97,18 @@ function Hero() {
 
       <div className="textContainer">
         <p id="heroTitle" className="heroTitle animate__animated">
-          {homeHeroContent[heroPosition].title}
+          {heroContent[heroPosition].title}
         </p>
         <p id="heroText" className="heroText animate__animated">
-          {homeHeroContent[heroPosition].text}
+          {heroContent[heroPosition].text}
         </p>
-        <NavLink
-          to={homeHeroContent[heroPosition].path}
-          id="heroButton"
-          className="animate__animated"
-        >
-          <p>{homeHeroContent[heroPosition].button}</p>
-        </NavLink>
+        <Boton
+          path={heroContent[heroPosition].path}
+          name={heroContent[heroPosition].button}
+          width={"191px"}
+          color={"#FFF"}
+          id={"heroButton"}
+        />
       </div>
       <div className="arrow forward" onClick={forwardHero}>
         <IoIosArrowForward size={24} />

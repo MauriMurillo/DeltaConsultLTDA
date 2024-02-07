@@ -4,13 +4,12 @@ import "./Footer.css";
 import { Office } from "./Office";
 import { Socials } from "./Socials";
 import { Rights } from "./Rights";
-import { ContentContext } from "../../Contexts/ContentContext";
 import { DeltaContext } from "../../Contexts/DeltaContext";
-
-import logo from "../../Assets/Images/Logos/ISOLOGO DELTA BLANCO.png";
+import { ComponentContext } from "../../Contexts/ComponentContext";
+import logo from "../../Assets/Logos/ISOLOGO DELTA BLANCO.png";
 
 function Footer() {
-  const { offices } = useContext(ContentContext);
+  const { offices } = useContext(ComponentContext);
   const { screenSize } = useContext(DeltaContext);
   return (
     <div className="footer">

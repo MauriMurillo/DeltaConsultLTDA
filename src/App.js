@@ -1,35 +1,90 @@
 import "./App.css";
+// Functionality
 import { HashRouter, Routes, Route } from "react-router-dom";
+import { ScrollToTop } from "./ScrollToTop";
+
+// Screensa
 import { Home } from "./screens/Home/Home";
 import { Services } from "./screens/Services/Services";
 import { SMS } from "./screens/SMS/SMS";
 import { Contact } from "./screens/Contact/Contact";
 import { AboutUs } from "./screens/AboutUs/AboutUs";
-import { Industries } from "./screens/Industries/Industries"
-import { DeltaProvider } from "./Contexts/DeltaContext";
-import { ContentProvider } from "./Contexts/ContentContext";
-import { ServicesProvider } from "./Contexts/ServicesContext";
-import { ScrollToTop } from "./ScrollToTop";
+import { Industries } from "./screens/Industries/Industries";
 
+//Context Provider General
+import { DeltaProvider } from "./Contexts/DeltaContext";
+import { ComponentProvider } from "./Contexts/ComponentContext";
+//Screen Context Provider
+import { HomeProvider } from "./Contexts/HomeContext";
+import { ServicesProvider } from "./Contexts/ServicesContext";
+import { AboutProvider } from "./Contexts/AboutContext";
+import { IndustriesProvider } from "./Contexts/IndustriesContext";
+import { SMSProvider } from "./Contexts/SMSContext";
+import { ContactProvider } from "./Contexts/ContactContext";
+
+//Main Application Structure
 function App() {
   return (
-    <ContentProvider>
-      <ServicesProvider>
-        <DeltaProvider>
-          <HashRouter>
-            <ScrollToTop />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/SMS" element={<SMS />} />
-              <Route path="/Contact" element={<Contact />} />
-              <Route path="/aboutUs" element={<AboutUs />} />
-              <Route path="/IndustriAs" element={<Industries/>}/>
-            </Routes>
-          </HashRouter>
-        </DeltaProvider>
-      </ServicesProvider>
-    </ContentProvider>
+    <DeltaProvider>
+      <ComponentProvider>
+        <HashRouter>
+          <ScrollToTop />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <HomeProvider>
+                  <Home />
+                </HomeProvider>
+              }
+            />
+
+            <Route
+              path="/Servicios"
+              element={
+                <ServicesProvider>
+                  <Services />
+                </ServicesProvider>
+              }
+            />
+            <Route
+              path="/Nosotros"
+              element={
+                <AboutProvider>
+                  <AboutUs />
+                </AboutProvider>
+              }
+            />
+            <Route
+              path="/Industrias"
+              element={
+                <IndustriesProvider>
+                  <Industries />
+                </IndustriesProvider>
+              }
+            />
+
+            <Route
+              path="/SMS"
+              element={
+                <SMSProvider>
+                  <SMS />
+                </SMSProvider>
+              }
+            />
+
+            <Route
+              path="/Contacto"
+              element={
+                <ContactProvider>
+                  <Contact />
+                </ContactProvider>
+              }
+            />
+          </Routes>
+        </HashRouter>
+      </ComponentProvider>
+    </DeltaProvider>
   );
 }
 
