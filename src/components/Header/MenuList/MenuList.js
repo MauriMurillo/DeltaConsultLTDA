@@ -5,48 +5,57 @@ import { DeltaContext } from "../../../Contexts/DeltaContext";
 
 function MenuList(props) {
   const { orientation } = props;
-  const { setShowOptionMenu, setSelectedOption } = useContext(DeltaContext);
+  const {
+    setShowOptionMenu,
+    setShowSubMenu,
+    setSelectedOption,
+    setSelectedItem,
+  } = useContext(DeltaContext);
   return (
-    <div className={`listContainer${orientation}`}>
-      <div className={`listScreens${orientation}`}>
-        <div
-          onClick={() => {
-            setSelectedOption("SERVICIOS");
-            setShowOptionMenu(true);
-          }}
-        >
-          SERVICIOS
-        </div>
-        <div
-          onClick={() => {
-            setSelectedOption("NOSOTROS");
-            setShowOptionMenu(true);
-          }}
-        >
-          NOSOTROS
-        </div>
-        <div
-          onClick={() => {
-            setSelectedOption("INDUSTRIAS");
-            setShowOptionMenu(true);
-          }}
-        >
-          INDUSTRIAS
-        </div>
-        <div
-          onClick={() => {
-            setShowOptionMenu(false);
-          }}
-        >
-          <NavLink to={"/SMS"}> SMS LATAM</NavLink>
-        </div>
-        <div
-          onClick={() => {
-            setShowOptionMenu(false);
-          }}
-        >
-          <NavLink to={"/Contacto"}> CONTACTO</NavLink>
-        </div>
+    <div className={`listScreens${orientation}`}>
+      <div
+        onClick={() => {
+          setSelectedOption("SERVICIOS");
+          setSelectedItem("");
+          setShowSubMenu(false);
+          setShowOptionMenu(true);
+        }}
+      >
+        SERVICIOS
+      </div>
+      <div
+        onClick={() => {
+          setSelectedOption("NOSOTROS");
+          setShowSubMenu(false);
+          setShowOptionMenu(true);
+        }}
+      >
+        NOSOTROS
+      </div>
+      <div
+        onClick={() => {
+          setSelectedOption("INDUSTRIAS");
+          setShowSubMenu(false);
+          setShowOptionMenu(true);
+        }}
+      >
+        INDUSTRIAS
+      </div>
+      <div
+        onClick={() => {
+          setShowSubMenu(false);
+          setShowOptionMenu(false);
+        }}
+      >
+        <NavLink to={"/SMS"}> SMS LATAM</NavLink>
+      </div>
+      <div
+        onClick={() => {
+          setShowSubMenu(false);
+          setShowOptionMenu(false);
+        }}
+      >
+        <NavLink to={"/Contacto"}> CONTACTO</NavLink>
       </div>
     </div>
   );

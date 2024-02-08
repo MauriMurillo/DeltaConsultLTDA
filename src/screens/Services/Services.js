@@ -8,16 +8,41 @@ import { DeltaContext } from "../../Contexts/DeltaContext.js";
 function Services() {
   const { services } = useContext(ServicesContext);
   const { selectedContent, setSelectedContent } = useContext(DeltaContext);
-
-  const display = services.filter((item) => item.title === selectedContent);
+  let main ={ }
+  if (selectedContent !== "") {
+    main = services.find((item) => item.title.toLowerCase() === selectedContent.toLowerCase());
+  }else{
+    main = services.find((item) => item.title.toLowerCase() === "auditoria financiera");
+  }
   return (
     <div className="servicesScreen Screen">
       <Header />
-      <section className="MainSection">{selectedContent}</section>
-      <section className="TeamSection">{display.title}</section>
+      <section className="MainSection">
+        <div className="textContainer">
+          <h1>{main.title}</h1>
+          <h3>Delta Consult Ofrece:</h3>
+          <p>{main.ofrece[0]}</p>
+          <h3>Nuestra Experiencia:</h3>
+          <p>{main.experiencia[0]}</p>
+        </div>
+        <div className="imageContainer">
+          <img alt={main.title} src={main.imagen}/>
+        </div>
+      </section>
+      <section className="TeamSection">
+        <h2>Nuestro Equipo</h2>
+        <div className="serviceTeamGrid">
+          {main.equipo.map((item) => <div>
+            <div className="text">
+              <p>{item.nombre}</p>
+              <p>{item.rol}</p>
+            </div>
+            <img alt="foto" src={item.foto}/>
+          </div>)}
+        </div>
+      </section>
       <section
         onClick={() => {
-          setSelectedContent("AUDITORIA EXTERNA");
 
         }}
       >

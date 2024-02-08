@@ -4,7 +4,6 @@ import { Header } from "../../components/Header/Header.js";
 import { Footer } from "../../components/Footer/Footer.js";
 import { DeltaContext } from "../../Contexts/DeltaContext.js";
 import { IndustriesContext } from "../../Contexts/IndustriesContext.js";
-import { Boton } from "../../components/Boton/Boton.js";
 function Industries() {
   const { selectedContent, setSelectedContent } = useContext(DeltaContext);
   const { industries } = useContext(IndustriesContext);
@@ -12,7 +11,6 @@ function Industries() {
   let main = {};
   let rest = [];
   if (selectedContent !== "") {
-    console.log("updation")
     main = industries.find(
       (item) => item.title.toLowerCase() === selectedContent.toLowerCase()
     );
@@ -21,10 +19,10 @@ function Industries() {
     );
   } else {
     main = industries.find(
-      (item) => item.title.toLowerCase() === "gubernamentales"
+      (item) => item.title.toLowerCase() === "estrategicas"
     );
     rest = industries.filter(
-      (item) => item.title.toLowerCase() !== "gubernamentales"
+      (item) => item.title.toLowerCase() !== "estrategicas"
     );
   }
   return (
@@ -37,13 +35,9 @@ function Industries() {
           {main.text.map((item) => (
             <p>{item}</p>
           ))}
-          <Boton
-            path="/"
-            name="CONTACTANOS PARA MAS INFORMACION"
-            width="608px"
-            color="#1D619D"
-            id={main.title}
-          />
+          <div className="Button">
+            <p>CONTACTA A NUESTROS EXPERTOS AQUÍ</p>
+          </div>
         </div>
         <div className="imageContainer">
           <img src={main.foto} alt="industria" />
@@ -56,7 +50,7 @@ function Industries() {
             <div
               onClick={() => {
                 setSelectedContent(item.title);
-                window.scrollTo(0,0)
+                window.scrollTo(0, 0);
               }}
               className="restItem"
             >

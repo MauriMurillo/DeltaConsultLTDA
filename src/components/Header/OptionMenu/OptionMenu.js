@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { DeltaContext } from "../../../Contexts/DeltaContext";
 import { ComponentContext } from "../../../Contexts/ComponentContext";
 
-import arrow from "../../../Assets/Icons/utilIcons/Arrow2.svg";
+import arrow from "../../../Assets/Icons/utilIcons/Header_Arrow.svg";
 function SubMenu(props) {
   const { selectedItem, setSelectedContent, setShowOptionMenu } =
     useContext(DeltaContext);

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Card } from "./Card";
 import { easeInOut, motion } from "framer-motion";
-import menuDown from "../../../Assets/Icons/utilIcons/Vector.svg";
-import arrow2 from "../../../Assets/Icons/utilIcons/Arrow2.svg"
+import menuDown from "../../../Assets/Icons/utilIcons/Account.svg";
+import arrow2 from "../../../Assets/Icons/utilIcons/Account.svg"
 function Department(props) {
   const { content } = props;
   const [showDepartment, setShowDepartment] = useState(false);

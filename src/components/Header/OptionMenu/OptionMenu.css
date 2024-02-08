@@ -1,72 +1,114 @@
 /* Styles for the entire submenu */
-.optionMenu{
+.optionMenu {
   min-height: 448px;
   background-color: var(--DarkBlue);
   display: flex;
-  padding-bottom: 32px;
 }
 /* section with the description */
-.desc{
-  width: calc(100% - 832px);
+.desc {
+  width: calc(100% - 802px);
   padding-top: 70px;
   padding-left: 94px;
+  margin-bottom: 32px;
 }
-.desc h2{
+.desc h2 {
   font-size: 38px;
   line-height: 40px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 600;
   margin-bottom: 52px;
 }
-.desc p{
+.desc p {
   width: 333px;
   font-size: 16px;
   line-height: 32px;
   color: white;
 }
 /* section with the links */
-.links{
+.links {
   padding-top: 32px;
-  width: 416px;
+  width: 386px;
+  margin-bottom: 32px;
 }
-.links div{
+.links div {
   height: 64px;
-  border-bottom: solid 2px #FFFFFF;
+  border-top: solid 2px #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 64px;
   padding-right: 32px;
 }
-.links div:first-child{
+.links div:last-child {
   height: 66px;
-  border-top: solid 2px #FFFFFF;
+  border-bottom: solid 2px #ffffff;
 }
-.links div{
+.links div {
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.links .active{
-  background-color: #9A9696;
+.links div:hover,
+.links .active {
+  background-color: #9a9696;
+  border-left: 8px solid var(--LightBlue);
+  padding-left: 56px;
+  border-top: none;
+}
+.links .active img {
+  transition: 0.5s;
+  transform: rotate(180deg);
 }
 /* sub menu */
-.subMenu{
+.subMenu {
   width: 416px;
-  background-color: #9A9696;
+  background-color: #9a9696;
   padding-left: 64px;
   padding-top: 34px;
 }
-.subMenu div{
+.subMenu div {
   height: 64px;
   display: flex;
   align-items: center;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.subMenu div:hover{
+.subMenu div:hover {
   text-decoration: underline;
 }
-.filler{
-  width: 416px;
+.filler {
+  width: 386px;
+}
+@media only screen and (max-width: 1250px) {
+  /* section with the description */
+  .desc {
+    width: calc(100% - 630px);
+    padding-left: 50px;
+  }
+  .desc h2 {
+    font-size: 32px;
+    margin-bottom: 43px;
+  }
+  .desc p {
+    width: 265px;
+    font-size: 14px;
+  }
+  /* section with the links */
+  .links {
+    width: 352px;
+  }
+  .links div {
+    font-size: 14px;
+  }
+  /* sub menu */
+  .subMenu {
+    padding-left: 32px;
+    width: 288px;
+  }
+  .subMenu div {
+    font-size: 13px;
+  }
+  .filler {
+    width: 288px;
+  }
 }

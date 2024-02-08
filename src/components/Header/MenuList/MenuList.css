@@ -1,12 +1,6 @@
-.listContainerHorizontal {
-  height: 40px;
-  display: flex;
-  place-items: center;
-  width: 600px;
-}
 .listScreensHorizontal {
-  width: 100%;
-  height: 40px;
+  width: 600px;
+  height: 96px;
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -14,20 +8,20 @@
 }
 .listScreensHorizontal div,
 .listScreensHorizontal div a {
+  height: 96px;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: #fff;
   font-size: 13px;
   font-style: normal;
   font-weight: 700;
 }
-
-/* Links a paginas en Menu */
-.listContainerVertical {
-  height: calc(100% - 96px);
-  display: flex;
-  flex-direction: column;
-  padding: 74px;
+.listScreensHorizontal div:hover {
+  border-bottom: solid 5px var(--LightBlue);
 }
+/* Links a paginas en Menu */
+
 .listScreensVertical div {
   height: 67px;
   border-bottom: solid #d9d9d9 3px;
@@ -49,7 +43,7 @@
 }
 
 @media only screen and (max-width: 1150px) and (min-width: 951px) {
-  .listContainerHorizontal {
+  .listScreensHorizontal {
     width: 475px;
   }
   .listScreensHorizontal div a {
@@ -58,9 +52,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .listContainerVertical {
-    padding: 50px;
-  }
   .listScreensVertical div {
     height: 57px;
   }

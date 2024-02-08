@@ -6,8 +6,7 @@ import { HeaderFull } from "./HeaderFull";
 import { OptionMenu } from "./OptionMenu/OptionMenu";
 
 function Header() {
-  const { screenSize, showOptionMenu, setShowOptionMenu } =
-    useContext(DeltaContext);
+  const { screenSize, showOptionMenu } = useContext(DeltaContext);
 
   if (screenSize.width <= 950) {
     return (

@@ -16,6 +16,11 @@
   width: calc(100% - 800px);
   height: 768px;
 }
+.mainIndustry .imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .mainIndustry .textContainer h1 {
   font-size: 54px;
@@ -36,13 +41,13 @@
   padding-left: 96px;
   padding-right: 96px;
 }
-.restIndustries h3{
-  font-size: 36px;
+.restIndustries h3 {
+  font-size: 38px;
   font-weight: 500;
   color: var(--DeltaBlue);
   margin-bottom: 64px;
 }
-.restIndustries .Grid{
+.restIndustries .Grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -50,22 +55,195 @@
   row-gap: 96px;
 }
 
-.restIndustries .Grid{
+.restIndustries .Grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.restIndustries .Grid img{
+.restIndustries .Grid img {
   border-radius: 15px;
   margin-bottom: 30px;
 }
 
-.restIndustries .Grid p{
+.restIndustries .Grid p {
   width: 224px;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
   color: var(--DeltaBlue);
   text-align: center;
+}
+
+.Button {
+  width: 608px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  border: solid 4px;
+  border-color: var(--DeltaBlue);
+  text-decoration: none;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+.Button p {
+  color: var(--DeltaBlue);
+  font-size: 26px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1250px) {
+  .mainIndustry .textContainer {
+    width: 576px;
+    padding-left: 64px;
+  }
+  .mainIndustry .imageContainer {
+    width: calc(100% - 576px);
+  }
+  .mainIndustry .textContainer h1 {
+    font-size: 38px;
+    line-height: 40px;
+    margin-bottom: 50px;
+  }
+  .restIndustries {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .restIndustries .Grid {
+    row-gap: 64px;
+  }
+  .Button {
+    width: 448px;
+  }
+  .Button p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .trustContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 352px 158px 100px 100px 100px 150px;
+    /*                  ADD 30PX FOR SPACING */
+    width: 100%;
+    max-width: 768px;
+    height: 960px;
+    overflow: hidden;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e";
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .trustContainer .one {
+    grid-area: a;
+  }
+  .trustContainer .two {
+    grid-area: a;
+  }
+  .trustContainer .Trust {
+    text-align: center;
+    font-size: 38px;
+    line-height: 40px;
+    padding-top: 64px;
+    padding-bottom: 54px;
+  }
+  .trustContainer .Point {
+    font-size: 16px;
+    line-height: 30px; /* 187.5% */
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+  .trustContainer .Point img {
+    width: 12px;
+    height: 14px;
+    margin-top: 8px;
+    margin-right: 15px;
+  }
+  .trustContainer .Point:nth-last-child(-n + 2) {
+    padding-top: 0px;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .trustContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 256px 180px 131px 131px 163px 195px;
+    /*             1054  -  436  = 618 - 480 */
+    width: 100%;
+    max-width: 425px;
+    height: 960px;
+    overflow: hidden;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e";
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .trustContainer .Trust {
+    text-align: start;
+    font-size: 36px;
+    line-height: 50px;
+    padding: 40px;
+  }
+  .trustContainer .Point {
+    font-size: 14px;
+    line-height: 32px; /* 187.5% */
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .trustContainer .Point:nth-last-child(-n + 2) {
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .trustContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 256px 230px 131px 131px 163px 195px;
+    /*             1054  -  436  = 618 - 480 */
+    width: 100%;
+    max-width: 425px;
+    height: 1010px;
+    overflow: hidden;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e";
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .trustContainer .Trust {
+    text-align: start;
+    font-size: 36px;
+    line-height: 50px;
+    padding: 65px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .trustContainer .Point {
+    font-size: 14px;
+    line-height: 32px; /* 187.5% */
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .trustContainer .Point:nth-last-child(-n + 2) {
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
