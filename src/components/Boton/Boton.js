@@ -6,7 +6,7 @@ function Boton(props) {
   return (
     <NavLink
       to={path}
-      className="Button animate__animated"
+      className="Button animate__animated_Mauri"
       id={id}
       style={{
         width: width,

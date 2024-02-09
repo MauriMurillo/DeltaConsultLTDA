@@ -10,6 +10,7 @@
   padding-left: 64px;
   padding-right: 64px;
   z-index: 999;
+  margin-top: 0px;
 }
 /* Logo en Header */
 .navBar .imageContainer {
@@ -66,10 +67,6 @@
   font-weight: 700;
   line-height: 32px;
   margin-left: 12px;
-}
-
-.menuLinks a:active {
-  color: #49c6ff;
 }
 @media only screen and (max-width: 1150px) and (min-width: 951px) {
   .navBar {

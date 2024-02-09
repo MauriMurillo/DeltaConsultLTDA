@@ -64,7 +64,7 @@ function Hero(props) {
         <img
           src={heroContent[heroPosition].imagePC}
           id="heroImage"
-          className="animate__animated heroBack"
+          className="animate__animated_Mauri heroBack"
           alt="background"
         />
       ) : null}
@@ -73,7 +73,7 @@ function Hero(props) {
         <img
           src={heroContent[heroPosition].imagePCP}
           id="heroImage"
-          className="animate__animated heroBack"
+          className="animate__animated_Mauri heroBack"
           alt="background"
         />
       ) : null}
@@ -82,7 +82,7 @@ function Hero(props) {
         <img
           src={heroContent[heroPosition].imageTB}
           id="heroImage"
-          className="animate__animated heroBack"
+          className="animate__animated_Mauri heroBack"
           alt="background"
         />
       ) : null}
@@ -90,16 +90,16 @@ function Hero(props) {
         <img
           src={heroContent[heroPosition].imageCEL}
           id="heroImage"
-          className="animate__animated heroBack"
+          className="animate__animated_Mauri heroBack"
           alt="background"
         />
       ) : null}
 
       <div className="textContainer">
-        <p id="heroTitle" className="heroTitle animate__animated">
+        <p id="heroTitle" className="heroTitle animate__animated_Mauri">
           {heroContent[heroPosition].title}
         </p>
-        <p id="heroText" className="heroText animate__animated">
+        <p id="heroText" className="heroText animate__animated_Mauri">
           {heroContent[heroPosition].text}
         </p>
         <Boton

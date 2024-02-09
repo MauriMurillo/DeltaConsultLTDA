@@ -10,17 +10,16 @@ function Header() {
 
   if (screenSize.width <= 950) {
     return (
-      <nav>
+      <React.Fragment>
         <HeaderMobile />
-        {showOptionMenu ? <OptionMenu /> : null}
-      </nav>
+      </React.Fragment>
     );
   } else {
     return (
-      <nav>
+      <React.Fragment>
         <HeaderFull />
         {showOptionMenu ? <OptionMenu /> : null}
-      </nav>
+      </React.Fragment>
     );
   }
 }
