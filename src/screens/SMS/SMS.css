@@ -1,231 +1,129 @@
-.smsSection,
+.smsSection {
+  margin-top: 0px;
+  color: var(--SMSRed);
+}
 .ifacSection {
+  color: var(--DeltaBlue);
+}
+.smsSection .textContainer,
+.ifacSection .textContainer {
+  padding-top: 90px;
+  padding-left: 96px;
+  padding-bottom: 32px;
+}
+.smsSection .textContainer .Title,
+.ifacSection .textContainer .Title {
+  font-size: 54px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.smsSection .textContainer .Text,
+.ifacSection .textContainer .Text {
+  font-size: 24px;
+  font-weight: 400;
+}
+.smsSection .pane1,
+.ifacSection .pane1 {
+  display: flex;
+  padding-left: 96px;
+  padding-right: 96px;
+  justify-content: space-between;
+}
+.smsSection .pane1 .textPane,
+.ifacSection .pane1 .textPane {
+  width: 608px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.smsSection .pane1 .textPane .TextSMS,
+.ifacSection .pane1 .textPane .TextSMS,
+.pane2 .TextDelta {
+  color: #000;
+  font-size: 16px;
+  line-height: 39px;
+}
+.smsSection .pane1 .textPane span {
+  width: 180px;
+  height: 55px;
+  position: relative;
+  top: 20px;
+  margin-right: 22px;
+}
+.smsSection .pane1 .textPane span img {
+  width: 180px;
+  height: 55px;
+}
+.ifacSection .pane1 .textPane .TextSMS p {
+  margin-top: 32px;
+}
+.smsSection .pane1 .textPane .smsLink,
+.ifacSection .pane1 .textPane .ifacLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  border: solid 3px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+.smsSection .pane1 .textPane .smsLink {
+  border-color: var(--SMSRed);
+}
+.ifacSection .pane1 .textPane .ifacLink {
+  border-color: var(--DeltaBlue);
+}
+.smsSection .pane1 .textPane .smsLink p,
+.ifacSection .pane1 .textPane .ifacLink p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.smsSection .pane1 .textPane .smsLink p {
+  color: var(--SMSRed);
+}
+.ifacSection .pane1 .textPane .ifacLink p {
+  color: var(--DeltaBlue);
+}
+.smsSection .pane1 img,
+.ifacSection .pane1 img {
+  width: 544px;
+  height: 608px;
+}
+.ifacSection .pane1 .textPane span {
+  width: 179px;
+  height: 32px;
+  margin-right: 22px;
+  position: relative;
+  top: 2px;
+}
+.ifacSection .pane1 .textPane span img {
+  width: 179px;
+  height: 32px;
+}
+.pane2 {
   padding-left: 96px;
   padding-right: 96px;
 }
-.smsLogoMain {
-  width: 839px;
-  height: 255px;
-  flex-shrink: 0;
-  margin-top: 70px;
-  margin-bottom: 44px;
+.pane2 h2 {
+  font-size: 48px;
+  color: var(--DeltaBlue);
+  margin-bottom: 76px;
 }
-.foroLogoMain {
-  width: 927px;
-  height: 166px;
-  margin-bottom: 60px;
-}
-.smsSection .content {
-  margin-bottom: 134px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.smsSection .content img {
-  width: 100%;
-  max-height: 546px;
-  object-fit: cover;
-  object-position: bottom;
-  margin-bottom: 63px;
-}
-.tsms {
-  line-height: 50px;
-  text-align: start;
-}
-.smsLink {
-  width: 735px;
-  height: 160px;
-  margin-top: 65px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-.background {
-  width: 592px;
-  height: 160px;
-  background-color: #a21f4a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.smsLink p {
-  color: #e5e9f2;
-  text-align: center;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 40px;
-  text-decoration: none;
-}
-.smsSection .content .smsLink img {
-  width: 144px;
-  height: 160px;
-  margin-bottom: 0px;
+.pane2 .TextDelta span {
+  width: 173px;
+  height: 29px;
+  margin-right: 22px;
   position: relative;
-  left: -1px;
+  top: 9px;
 }
-.smsDivider {
-  flex-shrink: 0;
-  margin-top: 103px;
-  margin-bottom: 103px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.isoSMS {
-  width: 20%;
-}
-.Delta {
-  width: 60%;
-}
-.smsSection .content2 {
-  margin-bottom: 134px;
-  display: flex;
-  align-items: center;
-  gap: 64px;
-}
-.smsSection .content2 img {
-  width: 50%;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-.ifacSection {
-  margin-bottom: min(25vh, 300px);
-}
-.firmasTitle {
-  width: 100%;
-  height: 157px;
-  flex-shrink: 0;
-  background-color: #d9d9d9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.firmasTitle p {
-  color: #47b8eb;
-  text-align: center;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 64px;
-}
-.ifacSection .content {
-  margin-bottom: 80px;
-}
-.tifac {
-  line-height: 50px;
-  text-align: start;
-  margin-bottom: 10px;
-}
-.ifacLink {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 767px;
-  height: 160px;
-  flex-shrink: 0;
-  background: #47b8eb;
-  text-decoration: none;
-}
-.ifacLink p {
-  color: #e5e9f2;
-  text-align: center;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 40px;
-}
-.ifacLink img {
-  width: 244px;
-  height: 80px;
-  flex-shrink: 0;
+.pane2 .TextDelta span img {
+  width: 173px;
+  height: 29px;
 }
 @media only screen and (max-width: 1300px) {
-  .smsSection .content2 {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 64px;
-  }
-  .smsSection .content2 img {
-    width: 70%;
-    border-radius: 50%;
-  }
 }
 @media only screen and (max-width: 900px) {
-  .smsLogoMain {
-    width: 100%;
-    height: auto;
-  }
-  .foroLogoMain {
-    width: 100%;
-    height: auto;
-  }
-  .smsLink {
-    width: 100%;
-  }
-  .smsLink p {
-    font-size: 28px;
-    line-height: 40px;
-  }
-  .smsDivider {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .ifacLink {
-    width: 100%;
-  }
-  .ifacLink p {
-    width: 50%;
-    font-size: 28px;
-    line-height: 40px;
-  }
-  .ifacLink img {
-    width: 40%;
-    flex-shrink: 0;
-  }
 }
 
 @media only screen and (max-width: 600px) {
-  .smsSection,
-  .ifacSection {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  .smsLink {
-    height: 80px;
-  }
-  .background {
-    height: 80px;
-  }
-  .smsLink p {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .smsSection .content .smsLink img {
-    width: 72px;
-    height: 80px;
-    margin-bottom: 0px;
-    position: relative;
-    left: -1px;
-  }
-  .ifacLink {
-    height: 80px;
-  }
-  .ifacLink p {
-    width: 100%;
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .ifacLink img{
-    width: auto;
-    height: 40px;
-  }
-  .tifac {
-    line-height: 30px;
-  }
-  .tsms{
-    line-height: 30px;
-  }
 }

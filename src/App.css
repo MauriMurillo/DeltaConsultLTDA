@@ -3,6 +3,7 @@
   --DeltaBlue: #1d619d;
   --DarkBlue: #364660;
   --LightBlue: #49C6FF;
+  --SMSRed: #A21F4A;
   scroll-behavior: smooth;
 }
 
@@ -22,7 +23,7 @@ body {
 }
 
 .Screen > * {
-  margin-top: 25vh;
+  margin-top: 15vh;
 }
 .Screen > nav {
   margin-top: 0px;
@@ -32,33 +33,4 @@ body {
 }
 .Screen > .topTitle {
   margin-top: 32px;
-}
-
-.Title {
-  color: var(--DeltaBlue);
-  text-align: center;
-  font-size: 55px;
-  font-style: normal;
-  font-weight: 700;
-  margin-bottom: 29px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.Text {
-  text-align: center;
-  color: #000;
-  font-size: 20px;
-  margin-bottom: 82px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-@media only screen and (max-width: 600px) {
-  .Title {
-    font-size: 35px;
-    margin-bottom: 15px;
-  }
-  .Text {
-    font-size: 15px;
-    margin-bottom: 64px;
-  }
 }
