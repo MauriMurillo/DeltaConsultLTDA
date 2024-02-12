@@ -1,13 +1,12 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./CompanyStats.css";
 import { Stat } from "./Stat";
-import { DeltaContext } from "../../../Contexts/DeltaContext";
 
 function CompanyStats(props) {
   const { estadisticas, logo, tipo } = props;
   return (
     <div className={"statsContainer " + tipo}>
-      <img alt="logo" src={logo} className="statLogo"/>
+      <img alt="logo" src={logo} className="statLogo" />
       {estadisticas.map((item) => {
         return (
           <Stat
@@ -19,7 +18,7 @@ function CompanyStats(props) {
           />
         );
       })}
-      <div className="divisor"/>
+      <div className="divisor" />
     </div>
   );
 }

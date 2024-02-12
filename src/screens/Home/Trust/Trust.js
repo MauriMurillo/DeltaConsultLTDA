@@ -1,33 +1,8 @@
-import React, { useContext, useState, useEffect } from "react";
+import React from "react";
 import "./Trust.css";
-import { ContentContext } from "../../../Contexts/HomeContext";
 import derecha from "../../../Assets/default.png";
 function Trust(props) {
-  // const [trustPosition, setTrustPosition] = useState(0);
   const { trustStatement, trustImages } = props;
-
-  // const animationClassOut = "animate__fadeOut";
-  // const animationClass = "animate__fadeIn";
-  // useEffect(() => {
-  //   const imageTrust = document.getElementById("imageTrust");
-  //   if (imageTrust) {
-  //     imageTrust.classList.remove(animationClass);
-  //     imageTrust.classList.remove(animationClassOut);
-  //     imageTrust.classList.add(animationClass);
-  //   }
-  //   const next = (trustPosition + 1) % trustImages.length;
-  //   const move = setTimeout(() => {
-  //     if (imageTrust) {
-  //       imageTrust.classList.remove(animationClass);
-  //       imageTrust.classList.remove(animationClassOut);
-  //       imageTrust.classList.add(animationClassOut);
-  //       setTimeout(() => {
-  //         setTrustPosition(next);
-  //       }, 801);
-  //     }
-  //   }, 700000);
-  //   return () => clearTimeout(move);
-  // }, [trustPosition, trustImages]);
 
   return (
     <div className="trustContainer">

@@ -1,5 +1,4 @@
 import React, { useContext, useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
 import "animate.css";
 import "./hero.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
@@ -11,44 +10,23 @@ function Hero(props) {
 
   const [heroPosition, setHeroPosition] = useState(0);
   const { screenSize } = useContext(DeltaContext);
-  const animationClassOut = "animate__fadeOutLeftBig";
-  const animationClass = "animate__fadeInRightBig";
-
-  const animate = (elementID, classIn, classOut) => {
-    const element = document.getElementById(elementID);
-    if (element) {
-      element.classList.remove(classIn);
-      element.classList.remove(classOut);
-      element.classList.add(classIn);
-    }
-  };
-
-  const animateExit = () => {
-    animate("heroTitle", animationClassOut, animationClass);
-    animate("heroText", animationClassOut, animationClass);
-    animate("heroButton", animationClassOut, animationClass);
-    animate("heroImage", animationClassOut, animationClass);
-  };
 
   const forwardHero = () => {
     const next = (heroPosition + 1) % heroContent.length;
-    animateExit();
+    //animate out
     setTimeout(() => setHeroPosition(next), 301);
   };
   const rewindHero = () => {
     const next = heroPosition === 0 ? heroContent.length - 1 : heroPosition - 1;
-    animateExit();
+    //animate out
     setTimeout(() => setHeroPosition(next), 301);
   };
 
   useEffect(() => {
-    animate("heroTitle", animationClass, animationClassOut);
-    animate("heroText", animationClass, animationClassOut);
-    animate("heroButton", animationClass, animationClassOut);
-    animate("heroImage", animationClass, animationClassOut);
+    //animate in
     const next = (heroPosition + 1) % heroContent.length;
     const move = setTimeout(() => {
-      animateExit();
+      //animateOut
       setTimeout(() => {
         setHeroPosition(next);
       }, 300);

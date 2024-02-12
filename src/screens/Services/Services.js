@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import "./Services.css";
 import { Header } from "../../components/Header/Header.js";
 import { Footer } from "../../components/Footer/Footer.js";
