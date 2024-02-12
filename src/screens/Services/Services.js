@@ -7,17 +7,21 @@ import { DeltaContext } from "../../Contexts/DeltaContext.js";
 
 function Services() {
   const { services } = useContext(ServicesContext);
-  const { selectedContent, setSelectedContent } = useContext(DeltaContext);
-  let main ={ }
+  const { selectedContent } = useContext(DeltaContext);
+  let main = {};
   if (selectedContent !== "") {
-    main = services.find((item) => item.title.toLowerCase() === selectedContent.toLowerCase());
-  }else{
-    main = services.find((item) => item.title.toLowerCase() === "auditoria financiera");
+    main = services.find(
+      (item) => item.title.toLowerCase() === selectedContent.toLowerCase()
+    );
+  } else {
+    main = services.find(
+      (item) => item.title.toLowerCase() === "auditoria financiera"
+    );
   }
   return (
     <div className="servicesScreen Screen">
       <Header />
-      <section className="MainSection">
+      <section className="servMainSection">
         <div className="textContainer">
           <h1>{main.title}</h1>
           <h3>Delta Consult Ofrece:</h3>
@@ -26,28 +30,25 @@ function Services() {
           <p>{main.experiencia[0]}</p>
         </div>
         <div className="imageContainer">
-          <img alt={main.title} src={main.imagen}/>
+          <img alt={main.title} src={main.imagen} />
         </div>
       </section>
-      <section className="TeamSection">
-        <h2>Nuestro Equipo</h2>
+      <section className="servTeamSection">
+        <h2>Nuestro equipo especializado</h2>
         <div className="serviceTeamGrid">
-          {main.equipo.map((item) => <div>
-            <div className="text">
-              <p>{item.nombre}</p>
-              <p>{item.rol}</p>
+          {main.equipo.map((item) => (
+            <div>
+              <div className="text">
+                <p className="name">{item.nombre}</p>
+                <p className="role">{item.rol}</p>
+              </div>
+              <img alt="foto" src={item.foto} />
             </div>
-            <img alt="foto" src={item.foto}/>
-          </div>)}
+          ))}
         </div>
-      </section>
-      <section
-        onClick={() => {
-
-        }}
-      >
-        {" "}
-        Hola{" "}
+        <a className="serviceLink" href="#" target="_blank" rel="noreferrer">
+          <p>CONTÁCTANOS PARA MÁS INFORMACIÓN</p>
+        </a>
       </section>
       <Footer />
     </div>

@@ -1,234 +1,100 @@
-.servicesSection {
+.servMainSection {
+  margin-top: 0px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
 }
-.serviceGrid {
-  width: 85%;
-  min-width: 1100px;
-  display: grid;
-  grid-template-columns: 256px 1fr 256px;
-  grid-template-rows: repeat(3, 160px);
-  grid-gap: 32px;
-  grid-template-areas:
-    "a a b"
-    "c d b"
-    "c e e";
+.servMainSection .textContainer {
+  padding-left: 96px;
+  padding-right: 64px;
+  padding-top: 72px;
+  width: 800px;
+  flex-shrink: 0;
 }
-.serviceGrid > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.servMainSection .textContainer h1 {
+  font-weight: 500;
+  font-size: 54px;
+  color: var(--DeltaBlue);
+  margin-bottom: 52px;
 }
-.serviceGrid .content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 64px;
-  row-gap: 32px;
-}
-.serviceGrid .content > p {
-  color: #fff;
-  text-align: center;
-  font-size: 24px;
-  font-style: normal;
+.servMainSection .textContainer h3 {
+  font-size: 20px;
   font-weight: 700;
-  line-height: 40px;
+  margin-bottom: 32px;
 }
-.serviceGrid .content > img {
-  width: 64px;
-  height: 64px;
+.servMainSection .textContainer p {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 32px;
 }
-.serviceGrid .serviceA {
-  grid-area: a;
-  animation: slideInLeft;
-  animation-duration: 2s;
-  border-top-left-radius: 60px;
-  background-color: #95c1d5;
+.servMainSection .imageContainer {
+  width: calc(100% - 800px);
+  height: 768px;
+  flex-shrink: 1;
 }
-.serviceGrid .serviceB {
-  grid-area: b;
-  animation: slideInDown;
-  animation-duration: 2s;
-  border-top-right-radius: 60px;
-  background-color: #364660;
-}
-.serviceGrid .serviceC {
-  grid-area: c;
-  animation: slideInUp;
-  animation-duration: 2s;
-  border-bottom-left-radius: 60px;
-  background-color: #364660;
-}
-.serviceGrid .serviceB .content {
-  flex-direction: column-reverse;
-}
-.serviceGrid .serviceC .content {
-  flex-direction: column-reverse;
-}
-.serviceGrid .serviceD {
-  grid-area: d;
-  animation: zoomIn;
-  animation-duration: 2s;
-  border-radius: 45px;
-  background-color: #c6bdbd;
-}
-.serviceGrid .serviceE {
-  grid-area: e;
-  animation: slideInRight;
-  animation-duration: 2s;
-  border-bottom-right-radius: 60px;
-  background-color: #95c1d5;
-}
-.filePane {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 96px;
-}
-
-.serviceDescription {
-  width: 85%;
-  min-width: 1100px;
-  display: grid;
-  grid-template-columns: 512px 1fr;
-  grid-template-rows: 96px 352px 96px;
-  grid-template-areas:
-    "a b"
-    "a c"
-    "a d";
-  border-radius: 60px;
-  overflow: hidden;
-  background-color: #364660;
-}
-.serviceDescription > img {
-  grid-area: a;
+.servMainSection .imageContainer img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.serviceDescription .line {
-  grid-area: b;
-  background-color: #333545;
+.servTeamSection {
+  padding-left: 96px;
+  padding-right: 96px;
+}
+.servTeamSection h2 {
+  font-size: 38px;
+  font-weight: 500;
+  color: var(--DeltaBlue);
+  margin-bottom: 64px;
+}
+.servTeamSection .serviceTeamGrid {
   display: flex;
   justify-content: space-between;
-  padding: 32px 64px;
+  flex-wrap: wrap;
+  row-gap: 64px;
 }
-.serviceDescription .line .ServiceTitle {
-  color: #fff;
-  text-align: center;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  margin-left: 78px;
-  line-height: 32px;
+.servTeamSection .serviceTeamGrid > div {
+  width: 330px;
+  height: 96px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
 }
-.serviceDescription .ServiceText {
-  margin-right: 64px;
-  margin-bottom: 32px;
-  padding: 38px 32px 32px 64px;
-  overflow: auto;
-  grid-area: c;
-  color: #fff;
+.servTeamSection .serviceTeamGrid > div > img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  margin-right: 32px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.servTeamSection .serviceTeamGrid > div .text .name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.servTeamSection .serviceTeamGrid > div .text .role {
   font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 40px;
+  line-height: 20px;
 }
-.serviceDescription .ServiceText p{
-  margin-bottom: 16px;
-}
-.serviceDescription .ServiceButton {
-  width: 65%;
+.servTeamSection .serviceLink {
+  width: 738px;
   height: 64px;
-  border-radius: 15px;
-  background-color: #333545;
-  justify-self: center;
+  margin: 48px auto;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.serviceDescription .ServiceButton p {
-  color: #fff;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
+  border: solid 3px var(--DeltaBlue);
+  border-radius: 15px;
   text-decoration: none;
 }
+.servTeamSection .serviceLink p{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--DeltaBlue);
+}
 @media only screen and (max-width: 1150px) {
-  .serviceGrid {
-    min-width: 0px;
-    width: calc(100% - 128px);
-    grid-template-columns: 192px 1fr 192px;
-    grid-template-rows: repeat(3, 160px);
-  }
-  .serviceGrid > div {
-    padding: 48px 64px;
-  }
-  .serviceGrid .content {
-    column-gap: 32px;
-    row-gap: 32px;
-  }
 }
 @media only screen and (max-width: 950px) {
-  .serviceGrid {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .serviceGrid > div {
-    border-radius: 45px;
-    padding: 32px;
-    height: 128px;
-    width: 66%;
-    min-width: 364px;
-    max-width: 600px;
-  }
-  .serviceGrid .serviceB .content,
-  .serviceGrid .serviceC .content {
-    flex-direction: row-reverse;
-  }
-  .serviceGrid .content > p {
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-  }
-  .serviceGrid .serviceA {
-    animation: slideInRight;
-    border-top-left-radius: 45px;
-  }
-  .serviceGrid .serviceB {
-    animation: slideInLeft;
-    border-top-right-radius: 45px;
-  }
-  .serviceGrid .serviceC {
-    animation: slideInRight;
-    border-bottom-left-radius: 45px;
-  }
-  .serviceGrid .serviceD {
-    animation: slideInLeft;
-  }
-  .serviceGrid .serviceE {
-    animation: slideInRight;
-    border-bottom-right-radius: 45px;
-  }
 }
 @media only screen and (max-width: 600px) {
-  .serviceGrid > div {
-    width: 80%;
-    min-width: 300px;
-    max-width: 450px;
-    padding: 30px 50px;
-  }
-  .serviceGrid .content > img {
-    width: 48px;
-    height: 48px;
-  }
-  .filePane {
-    display: flex;
-    justify-content: center;
-    gap: 64px;
-  }
 }
