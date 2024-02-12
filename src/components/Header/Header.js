@@ -3,10 +3,9 @@ import "./Header.css";
 import { DeltaContext } from "../../Contexts/DeltaContext";
 import { HeaderMobile } from "./HeaderMobile";
 import { HeaderFull } from "./HeaderFull";
-import { OptionMenu } from "./OptionMenu/OptionMenu";
 
 function Header() {
-  const { screenSize, showOptionMenu } = useContext(DeltaContext);
+  const { screenSize} = useContext(DeltaContext);
 
   if (screenSize.width <= 950) {
     return (
@@ -18,7 +17,6 @@ function Header() {
     return (
       <React.Fragment>
         <HeaderFull />
-        {showOptionMenu ? <OptionMenu /> : null}
       </React.Fragment>
     );
   }
