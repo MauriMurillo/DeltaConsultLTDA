@@ -221,26 +221,49 @@ function TeamContentProvider(props) {
   ];
 
   const coreValuesInfo = {
-    mision: {
-      title: "MISION",
+    proposito: {
+      title: "Propósito",
       description:
-        "Respeto total en el compromiso con el cliente: El cumplimiento del “commitment” o compromiso con el cliente es nuestro principal valor, siempre debemos cumplir con el servicio prometido y en las fechas comprometidas. ",
+        "Contribuir al crecimiento y éxito sostenible de las entidades a las que servimos profesionalmente a nivel nacional e internacional.",
+    },
+    mision: {
+      title: "Misión",
+      description:
+        "Nuestra misión es proporcionar servicios profesionales de excelencia en auditoría y consultoría, respaldados por sólidos conocimientos y habilidades. Nos convertimos en el apoyo fundamental para la toma de decisiones gerenciales de nuestros clientes, mediante la aplicación de procesos innovadores y una investigación continua.",
     },
     vision: {
-      title: "VISION",
+      title: "Visión",
       description:
-        "Respeto total en el compromiso con el cliente: El cumplimiento del “commitment” o compromiso con el cliente es nuestro principal valor, siempre debemos cumplir con el servicio prometido y en las fechas comprometidas. ",
-    },
-    etica: {
-      title: "ETICA",
-      description:
-        "Basar la actividad en un firme respeto hacia el individuo, fundamento esencial de toda organización.* Liderar el trabajo profesional en la región que hemos definido como de nuestra incumbencia* Prestar el servicio profesional con los mejores estándares de calidad.* ",
+        "Nuestra visión es ser la firma líder en servicios de auditoría y consultoría para empresas y organizaciones, con un profundo compromiso hacia el desarrollo del aparato productivo, económico y humano de Bolivia y su región.",
     },
     valores: {
-      title: "VALORES",
-      description:
-        "Basar la actividad en un firme respeto hacia el individuo, fundamento esencial de toda organización.* Liderar el trabajo profesional en la región que hemos definido como de nuestra incumbencia* Prestar el servicio profesional con los mejores estándares de calidad.* ",
+      title: "Valores",
+      lista:[
+        "Respeto total en el compromiso con el cliente",
+        "El lograr y consolidar el liderazgo",
+        "La aplicación de la tecnología vigente",
+        "Calidad total",
+        "Capacitación continua",
+        "Servicio y continuidad con el cliente",
+        "Confidencialidad",
+        "Desarrollo de Recursos Humanos",
+        "Respeto, honestidad e integridad",
+        ],
     },
+    principios:{
+      title: "Principios",
+      lista: [
+        "Respeto por las personas",
+        "Respeto por las políticas de nuestros clientes",
+        "Compromiso con la integridad profesional",
+        "Respecto por el género",
+        "Solidaridad",
+        "Responsabilidad social",
+        "Medio Ambiente",
+        "Promover el liderazgo y la excelencia",
+        "Educación, capacitación y actualización",
+      ]
+    }
   };
 
   const historia = [
@@ -270,7 +293,10 @@ function TeamContentProvider(props) {
     },
   ];
 
-  const files = [{ title: "BROCHURE", imagen: historia1, pdf: "" },{ title: "DOING BUSINESS", imagen: historia1, pdf: "" }, ];
+  const files = [
+    { title: "BROCHURE", imagen: historia1, pdf: "" },
+    { title: "DOING BUSINESS", imagen: historia1, pdf: "" },
+  ];
   return (
     <TeamContentContext.Provider
       value={{
