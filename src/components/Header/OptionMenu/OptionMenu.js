@@ -62,8 +62,13 @@ function OptionMenu() {
           return (
             <div
               onClick={() => {
-                setSelectedItem(item.name);
-                setShowSubMenu(true);
+                if (showSubMenu) {
+                  setShowSubMenu(false)
+                  setSelectedItem("")
+                }else{
+                  setSelectedItem(item.name);
+                  setShowSubMenu(true);
+                }
               }}
               className={item.name === selectedItem ? "active" : ""}
             >
