@@ -2,11 +2,9 @@ import React, { useState } from "react";
 
 function Card(props) {
   const [showData, setShowData] = useState(0);
-  const { event, direction } = props;
+  const { event} = props;
   return (
-    <div className={"card " + direction}>
-      <div className="dataPoint"></div>
-      <div className="connector"></div>
+    <div className="card">
       <div
         className="cardContent"
         onClick={() => {
@@ -23,6 +21,7 @@ function Card(props) {
       <div className="year">
         <p>{event.year}</p>
       </div>
+      <div className="dataPoint"></div>
     </div>
   );
 }

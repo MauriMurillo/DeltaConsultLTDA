@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import "./History.css";
 import { TeamContentContext } from "../../../Contexts/TeamContentContext";
 import { Card } from "./Card";
 function History() {
+  const ref = useRef(null);
   const { historia } = useContext(TeamContentContext);
-  let counter = 0;
   return (
     <div className="history">
       <section className="sectionText" id="NuestraHistoria">
@@ -13,11 +13,10 @@ function History() {
       </section>
       <div className="historyContainer">
         <div className="timelineContainer">
-          <div className="timeline">
+          <div className="timeline" ref={ref}>
             {historia.map((item) => {
-              counter = 1 - counter;
               return (
-                <Card event={item} direction={counter === 1 ? "up" : "down"} />
+                <Card event={item}/>
               );
             })}
           </div>
