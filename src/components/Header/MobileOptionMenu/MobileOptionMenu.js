@@ -91,13 +91,24 @@ function MobileOptionMenu() {
           <section className="links">
             {display.menu.map((item) => {
               return (
-                <div className="deploy">
+                <div
+                  className={
+                    item.name === selectedItem ? "active deploy" : "deploy"
+                  }
+                >
                   <div
                     onClick={() => {
-                      setSelectedItem(item.name);
-                      setShowSubMenu(true);
+                      if (showSubMenu) {
+                        setSelectedItem("");
+                        setShowSubMenu(false);
+                      } else {
+                        setSelectedItem(item.name);
+                        setShowSubMenu(true);
+                      }
                     }}
-                    className={item.name === selectedItem ? "active item" : "item"}
+                    className={
+                      item.name === selectedItem ? "active item" : "item"
+                    }
                   >
                     <p>{item.name}</p>
                     <img src={arrow} alt="arrow" />

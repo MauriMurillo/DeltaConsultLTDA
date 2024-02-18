@@ -40,16 +40,23 @@
   justify-content: space-between;
   padding-left: 64px;
   padding-right: 32px;
+  font-size: 16px;
+  color: #ffffff;
 }
 .mobileOptionMenu .links > div:last-child {
   height: 66px;
   border-bottom: solid 2px #ffffff;
 }
-.mobileOptionMenu .links > div {
-  font-size: 16px;
-  color: #ffffff;
+.mobileOptionMenu .links > .active,
+.mobileOptionMenu .links > div:hover{
+  background-color: #9a9696;
+    border-left: 8px solid var(--LightBlue);
+    border-top: none;
 }
-
+.mobileOptionMenu .links > .active img,
+.mobileOptionMenu .links > div:hover img {
+  transform: rotate(180deg);
+}
 .mobileOptionMenu .filler {
   width: 320px;
 }
@@ -73,9 +80,22 @@
   align-items: center;
 }
 .mobileOptionMenu .subMenu {
+  width: 320px;
   padding-top: 172px;
+  background-color: #9a9696;
 }
-
+.mobileOptionMenu .subMenu > div{
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 32px;
+  font-size: 16px;
+  color: #ffffff;
+}
+.mobileOptionMenu .links div img {
+  transition: 0.5s;
+}
 @media only screen and (max-width: 600px) {
   .mobileOptionMenu {
     height: calc(100vh - 192px);
@@ -134,6 +154,9 @@
     background-color: #9a9696;
     border-left: 8px solid var(--LightBlue);
     border-top: none;
+  }
+  .mobileOptionMenu .links .deploy .active img{
+    transform: rotate(270deg);
   }
   .mobileOptionMenu .links .deployed {
     display: flex;
