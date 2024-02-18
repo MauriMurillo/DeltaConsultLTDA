@@ -87,14 +87,119 @@
   border-radius: 15px;
   text-decoration: none;
 }
-.servTeamSection .serviceLink p{
-  font-size: 20px;
+.servTeamSection .serviceLink p {
+  font-size: 26px;
   font-weight: 600;
   color: var(--DeltaBlue);
 }
 @media only screen and (max-width: 1150px) {
+  .servMainSection .textContainer {
+    padding-left: 64px;
+    padding-right: 40px;
+    width: 576px;
+  }
+  .servMainSection .textContainer h1 {
+    font-size: 38px;
+  }
+  .servMainSection .imageContainer {
+    width: calc(100% - 576px);
+  }
+  .servTeamSection {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .servTeamSection .serviceTeamGrid > div {
+    width: 272px;
+  }
+  .servTeamSection .serviceTeamGrid > div .text .name {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  .servTeamSection .serviceTeamGrid > div .text .role {
+    font-size: 14px;
+  }
 }
 @media only screen and (max-width: 950px) {
+  .servMainSection {
+    flex-direction: column-reverse;
+  }
+  .servMainSection .textContainer {
+    width: auto;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 64px;
+  }
+  .servMainSection .textContainer h1 {
+    font-size: 48px;
+  }
+  .servMainSection .textContainer h3 {
+    font-size: 20px;
+  }
+  .servMainSection .textContainer p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .servMainSection .imageContainer {
+    height: 352px;
+    width: auto;
+  }
+  .servTeamSection {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .servTeamSection .serviceTeamGrid > div .text .name {
+    font-size: 14px;
+  }
+  .servTeamSection .serviceTeamGrid > div .text .role {
+    font-size: 14px;
+  }
+  .servTeamSection .serviceLink {
+    width: 638px;
+  }
+  .servTeamSection .serviceLink p {
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 600px) {
+  .servMainSection .textContainer {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 40px;
+  }
+  .servMainSection .textContainer h1 {
+    font-size: 30px;
+  }
+  .servMainSection .imageContainer {
+    height: 256px;
+  }
+  .servTeamSection {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+  .servTeamSection h2 {
+    font-size: 24px;
+    margin-bottom: 64px;
+  }
+  .servTeamSection .serviceTeamGrid > div {
+    width: 180px;
+    height: 64px;
+  }
+  .servTeamSection .serviceTeamGrid > div > img {
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+  }
+  .servTeamSection .serviceTeamGrid > div .text .name {
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
+  .servTeamSection .serviceTeamGrid > div .text .role {
+    font-size: 10px;
+  }
+  .servTeamSection .serviceLink {
+    width: auto;
+  }
+  .servTeamSection .serviceLink p {
+    font-size: 14px;
+  }
 }

@@ -1,87 +1,161 @@
-.downloadContainer {
-  width: 352px;
-  height: 576px;
-  background-color: #364660;
-  box-shadow: 0px 4px 4px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 45px;
-  overflow: hidden;
+.AlliesContainer {
+  background: #95c1d5;
+  padding-bottom: 64px;
 }
-.downloadContainer .content {
-  padding: 20px 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
+.AlliesContainer > .textContainer {
+  width: 1056px;
+  padding-top: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
 }
-.downloadContainer .titleDownload {
+.AlliesTitle {
   color: #fff;
-  font-size: 25px;
-  font-weight: 800;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 74.074% */
+  margin-bottom: 31px;
 }
-.downloadContainer .descriptionDownload {
+.AlliesText {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 83.333% */
+}
+.AlliesContainer .cardContainer {
+  width: 1056px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.AlliesContainer .card {
+  width: 288px;
+  height: 382px;
+  border-radius: 15px;
+  border: solid white 4px;
+  overflow: hidden;
+  text-decoration: none;
+}
+.AlliesContainer .card .imageContainer {
+  background-color: white;
+  height: 186px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AlliesContainer .card .imageContainer img {
+  width: 93%;
+}
+.AlliesContainer .card .textContainer {
+  height: 196px;
+  background-color: #95c1d5;
+  padding-left: 29px;
+  padding-right: 29px;
+  padding-top: 30px;
+  padding-bottom: 42px;
+}
+.AlliesContainer .card .textContainer .name {
   color: #fff;
   text-align: center;
-  font-size: 18px;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 32px; /* 123.077% */
+  margin-bottom: 30px;
+}
+.AlliesContainer .card .textContainer .desc {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
   font-weight: 600;
-  line-height: 32px;
-  height: 120px;
+  line-height: 22px; /* 157.143% */
 }
-.downloadContainer .imageContainer {
-  width: 100%;
-  height: 45%;
-}
-.downloadContainer .imageContainer img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.downloadContainer .iconContainer {
-  height: 64px;
-  width: 64px;
-}
-.iconContainer img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+@media only screen and (max-width: 1150px) {
+  .AlliesContainer > .textContainer {
+    width: 896px;
+  }
+  .AlliesContainer .cardContainer {
+    width: 896px;
+  }
+  .AlliesContainer .card {
+    width: 256px;
+  }
+  .AlliesContainer .card .textContainer {
+    height: 196px;
+    background-color: #95c1d5;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 30px;
+    padding-bottom: 42px;
+  }
 }
 
-@media only screen and (max-width: 1100px) {
-  .downloadContainer {
-    width: 256px;
-    height: 448px;
+@media only screen and (max-width: 950px) {
+  .AlliesContainer > .textContainer {
+    width: 576px;
   }
-  .downloadContainer .content {
-    padding: 30px;
-    gap: 10px;
+  .AlliesTitle {
+    font-size: 38px;
+    line-height: 40px; /* 105.263% */
   }
-  .downloadContainer .titleDownload {
-    font-size: 20px;
+  .AlliesText {
+    font-size: 16px;
+    line-height: 20px; /* 125% */
   }
-  .downloadContainer .descriptionDownload {
-    font-size: 14px;
-    line-height: 22px;
-    height: 82px;
+  .AlliesContainer .cardContainer {
+    width: 576px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 128px;
+    row-gap: 50px;
+  }
+  .AlliesContainer .card {
+    width: 224px;
+    height: 288px;
+  }
+  .AlliesContainer .card .imageContainer {
+    height: 144px;
+  }
+  .AlliesContainer .card .textContainer {
+    height: 144px;
+    background-color: #95c1d5;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 21px;
+  }
+  .AlliesContainer .card .textContainer .name {
+    padding-left: 39.5px;
+    padding-right: 39.5px;
+    font-size: 16px;
+    line-height: 22px; /* 123.077% */
+    margin-bottom: 18px;
+  }
+  .AlliesContainer .card .textContainer .desc {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+    line-height: 20px; /* 157.143% */
   }
 }
-@media only screen and (max-width: 900px) {
-  .downloadContainer {
-    width: 224px;
-    height: 384px;
+
+@media only screen and (max-width: 600px) {
+  .AlliesContainer > .textContainer {
+    width: 100%;
+    max-width: 450px;
   }
-  .downloadContainer .content {
-    padding: 15px 30px;
-    gap: 15px;
+  .AlliesTitle {
+    text-align: center;
+    line-height: 50px; /* 105.263% */
   }
-  .downloadContainer .titleDownload {
-    font-size: 16px;
+  .AlliesText {
+    text-align: center;
   }
-  .downloadContainer .descriptionDownload {
-    font-size: 12px;
-    line-height: 22px;
-    height: 82px;
-  }
-  .downloadContainer .iconContainer {
-    height: 43px;
-    width: 43px;
+  .AlliesContainer .cardContainer {
+    width: 361px;
+    width: 100%;
+    max-width: 450px;
   }
 }

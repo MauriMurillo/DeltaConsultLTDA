@@ -1,27 +1,37 @@
-import React from "react";
-import downloadIcon from "../../../Assets/Icons/utilIcons/download.svg";
+import React, { useContext } from "react";
 import "./Downloadable.css";
-function Downloadable(props) {
-  const { content } = props;
+import downloadIcon from "../../../Assets/Icons/utilIcons/DownloadIcon.svg";
+import { TeamContentContext } from "../../../Contexts/TeamContentContext";
+function Downloadable() {
+  const { files } = useContext(TeamContentContext);
   return (
-    <div className="downloadContainer">
-      <div className="imageContainer">
-        <img src={content.imagen} alt="documentPreview" />
-      </div>
-      <div className="content">
-        <div className="titleDownload">{content.title}</div>
-        <div className="descriptionDownload">{content.descripcion}</div>
-        <a
-          className="iconContainer"
-          href={content.pdf}
-          download={"dcl" + content.title}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={downloadIcon} alt="download" />
-        </a>
+    <div className="AlliesContainer">
+      <section className="textContainer">
+        <h2 className="AlliesTitle">Brochure y Doing Business</h2>
+        <p className="AlliesText">Encuentra mas informacion de nosotros aqui</p>
+      </section>
+      <div className="cardContainer">
+        {files.map((item) => {
+          return (
+            <a
+              href={item.pdf}
+              target="_blank"
+              rel="noreferrer"
+              className="card"
+            >
+              <div className="imageContainer">
+                <img alt={item.title} src={item.imagen} />
+              </div>
+              <div className="textContainer">
+                <p className="name"> {item.title}</p>
+                <img className="icon" src={downloadIcon} alt="download" />
+              </div>
+            </a>
+          );
+        })}
       </div>
     </div>
   );
 }
+
 export { Downloadable };

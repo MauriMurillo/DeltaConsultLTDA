@@ -4,7 +4,7 @@ import { Footer } from "../../components/Footer/Footer.js";
 import { CoreValues } from "./CoreValues/CoreValues.js";
 import { Team } from "./Team/Team.js";
 import { History } from "./History/History.js";
-import { LinksTo } from "../../components/LinksTo/LinksTo.js";
+import { Downloadable } from "./Downloadable/Downloadable.js";
 
 function AboutUs() {
   return (
@@ -13,7 +13,7 @@ function AboutUs() {
       <CoreValues />
       <Team />
       <History />
-      {/* <LinksTo/> */}
+      <Downloadable/>
       <Footer />
     </div>
   );

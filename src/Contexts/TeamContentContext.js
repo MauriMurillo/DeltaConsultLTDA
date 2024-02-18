@@ -269,12 +269,15 @@ function TeamContentProvider(props) {
       image: historia1,
     },
   ];
+
+  const files = [{ title: "BROCHURE", imagen: historia1, pdf: "" },{ title: "DOING BUSINESS", imagen: historia1, pdf: "" }, ];
   return (
     <TeamContentContext.Provider
       value={{
         team,
         coreValuesInfo,
         historia,
+        files,
       }}
     >
       {props.children}
