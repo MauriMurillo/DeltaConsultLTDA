@@ -9,9 +9,9 @@ function Header() {
 
   if (screenSize.width <= 950) {
     return (
-      <React.Fragment>
+      <nav className="superNav">
         <HeaderMobile />
-      </React.Fragment>
+      </nav>
     );
   } else {
     return (

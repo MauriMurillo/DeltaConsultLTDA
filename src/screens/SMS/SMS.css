@@ -44,6 +44,7 @@
   line-height: 39px;
 }
 .smsSection .pane1 .textPane span {
+  display: inline-block;
   width: 180px;
   height: 55px;
   position: relative;
@@ -66,6 +67,7 @@
   border: solid 3px;
   border-radius: 15px;
   text-decoration: none;
+  margin-top: 30px;
 }
 .smsSection .pane1 .textPane .smsLink {
   border-color: var(--SMSRed);
@@ -86,10 +88,11 @@
 }
 .smsSection .pane1 img,
 .ifacSection .pane1 img {
-  width: 544px;
+  width: calc(100% - 64px - 608px);
   height: 608px;
 }
 .ifacSection .pane1 .textPane span {
+  display: inline-block;
   width: 179px;
   height: 32px;
   margin-right: 22px;
@@ -120,10 +123,151 @@
   width: 173px;
   height: 29px;
 }
+
 @media only screen and (max-width: 1300px) {
+  .smsSection .textContainer,
+  .ifacSection .textContainer {
+    padding-left: 64px;
+  }
+  .smsSection .pane1,
+  .ifacSection .pane1 {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .smsSection .pane1 .textPane,
+  .ifacSection .pane1 .textPane {
+    width: 480px;
+  }
+  .smsSection .pane1 img,
+  .ifacSection .pane1 img {
+    width: calc(100% - 64px - 480px);
+    height: 710px;
+  }
+
+  .pane2 {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .pane2 h2 {
+    font-size: 48px;
+    color: var(--DeltaBlue);
+    margin-bottom: 46px;
+  }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
+  .smsSection .textContainer,
+  .ifacSection .textContainer {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .smsSection .textContainer .Title,
+  .ifacSection .textContainer .Title {
+    font-size: 48px;
+  }
+  .smsSection .pane1 {
+    gap: 44px;
+    flex-direction: column-reverse;
+  }
+  .ifacSection .pane1 {
+    gap: 44px;
+    flex-direction: column;
+  }
+  .smsSection .pane1 .textPane,
+  .ifacSection .pane1 .textPane {
+    width: 100%;
+  }
+  .smsSection .pane1 img,
+  .ifacSection .pane1 img {
+    width: 100%;
+    height: 320px;
+  }
+  .pane2 h2 {
+    font-size: 38px;
+    margin-bottom: 42px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .smsSection .textContainer,
+  .ifacSection .textContainer {
+    padding-top: 64px;
+    padding-left: 0px;
+    padding-bottom: 52px;
+  }
+  .smsSection .textContainer .Title,
+  .ifacSection .textContainer .Title {
+    font-size: 38px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .smsSection .textContainer .Text,
+  .ifacSection .textContainer .Text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .smsSection .pane1,
+  .ifacSection .pane1 {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .smsSection .pane1 .textPane .TextSMS,
+  .ifacSection .pane1 .textPane .TextSMS,
+  .pane2 .TextDelta {
+    font-size: 12px;
+    line-height: 30px;
+  }
+  .smsSection .pane1 .textPane span {
+    width: 126px;
+    height: 39px;
+    top: 14px;
+    margin-right: 16px;
+  }
+  .smsSection .pane1 .textPane span img {
+    width: 126px;
+    height: 39px;
+  }
+  .ifacSection .pane1 .textPane .TextSMS p {
+    margin-top: 0px;
+  }
+  .smsSection .pane1 .textPane .smsLink p,
+  .ifacSection .pane1 .textPane .ifacLink p {
+    font-size: 14px;
+  }
+  .smsSection .pane1 img,
+  .ifacSection .pane1 img {
+    height: 320px;
+  }
+  .ifacSection .pane1 .textPane span {
+    width: 160px;
+    height: 29px;
+    margin-right: 16px;
+  }
+  .ifacSection .pane1 .textPane span img {
+    width: 160px;
+    height: 29px;
+  }
+
+  .pane2 {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .pane2 h2 {
+    font-size: 38px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 60px;
+  }
+  .pane2 .TextDelta span {
+    width: 154px;
+    height: 26px;
+    margin-right: 16px;
+    top: 7px;
+  }
+  .pane2 .TextDelta span img {
+    width: 154px;
+    height: 26px;
+  }
 }

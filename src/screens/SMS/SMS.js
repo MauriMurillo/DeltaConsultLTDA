@@ -42,7 +42,7 @@ function SMS() {
               target="_blank"
               rel="noreferrer"
             >
-              <p> Haz Click para visitar SMS</p>
+              <p> VISITA SMS LATINOAMERICA AQUI</p>
             </a>
           </div>
           <img alt="whereSMS" src={sms1} />
