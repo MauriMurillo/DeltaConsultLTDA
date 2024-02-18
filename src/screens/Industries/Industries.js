@@ -4,8 +4,10 @@ import { Header } from "../../components/Header/Header.js";
 import { Footer } from "../../components/Footer/Footer.js";
 import { DeltaContext } from "../../Contexts/DeltaContext.js";
 import { IndustriesContext } from "../../Contexts/IndustriesContext.js";
+import { DropMenu } from "../../components/DropMenu/DropMenu.js";
 function Industries() {
-  const { selectedContent, setSelectedContent } = useContext(DeltaContext);
+  const { screenSize, selectedContent, setSelectedContent } =
+    useContext(DeltaContext);
   const { industries } = useContext(IndustriesContext);
 
   let main = {};
@@ -43,23 +45,40 @@ function Industries() {
           <img src={main.foto} alt="industria" />
         </div>
       </section>
-      <section className="restIndustries">
-        <h3>Explora Nuestras Industrias</h3>
-        <div className="Grid">
-          {rest.map((item) => (
-            <div
-              onClick={() => {
-                setSelectedContent(item.title);
-                window.scrollTo(0, 0);
-              }}
-              className="restItem"
-            >
-              <img src={item.mini} alt="industria" />
-              <p>{item.title}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      {screenSize.width > 950 ? (
+        <section className="restIndustries">
+          <h3>Explora Nuestras Industrias</h3>
+          <div className="Grid">
+            {rest.map((item) => (
+              <div
+                onClick={() => {
+                  setSelectedContent(item.title);
+                  window.scrollTo(0, 0);
+                }}
+                className="restItem"
+              >
+                <img src={item.mini} alt="industria" />
+                <p>{item.title}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      ) : (
+        <DropMenu title="Explora Nuestras Industrias">
+          <ul className="restList">
+            {rest.map((item) => (
+              <li
+                onClick={() => {
+                  setSelectedContent(item.title);
+                  window.scrollTo(0, 0);
+                }}
+              >
+                {item.title}
+              </li>
+            ))}
+          </ul>
+        </DropMenu>
+      )}
       <Footer />
     </div>
   );
