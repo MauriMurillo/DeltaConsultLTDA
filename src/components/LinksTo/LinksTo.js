@@ -1,13 +1,16 @@
 import React from "react";
 import "./Allies.css";
-function Allies(props) {
+function LinksTo(props) {
   const { allies } = props;
   return (
     <div className="AlliesContainer">
-      <div className="textContainer">
-        <h2 className="AlliesTitle">Nuestras empresas aliadas</h2>
-        <div className="AlliesText">La diversificacion es la clave del exito.</div>
-      </div>
+      <section className="sectionText">
+        <h2>Propósito</h2>
+        <p>
+          Contribuir al crecimiento sostenible de las entidades a las que
+          servimos a nivel nacional e internacional.
+        </p>
+      </section>
       <div className="cardContainer">
         {allies.map((item) => {
           return (
@@ -32,4 +35,4 @@ function Allies(props) {
   );
 }
 
-export { Allies };
+export { LinksTo };

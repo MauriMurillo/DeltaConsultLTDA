@@ -1,23 +1,28 @@
 import React, { useContext } from "react";
 import "./Team.css";
 import { TeamContentContext } from "../../../Contexts/TeamContentContext";
-import { Department } from "./Department";
+import { DropMenu } from "../../../components/DropMenu/DropMenu";
+import { Group } from "./Card";
 
 function Team() {
   const { team } = useContext(TeamContentContext);
   return (
     <div className="teamContainer">
-      <div className="textContainer">
-        <div className="Title">NUESTRO EQUIPO</div>
-        <div className="Text">
-          Nuestros profesionales se encuentran a su disposición para guiarlo en
-          el desarrollo, control y asesoramiento de su proyecto cualquiera sea
-          su objetivo.
-        </div>
-      </div>
-      {team.map((item) => (
-        <Department content={item} />
-      ))}
+      <section className="sectionText" id="NuestroEquipo">
+        <h1>Nuestro equipo de liderazgo</h1>
+        <p>Una base firme para el presente y el futuro</p>
+      </section>
+      <DropMenu title="Socios y Directores" notop={true}>
+        <Group/>
+      </DropMenu>
+
+      <DropMenu title="Gerencia" stack={true}>
+        <Group/>
+      </DropMenu>
+
+      <DropMenu title="Subgerencia y Encargados">
+        <Group/>
+      </DropMenu>
     </div>
   );
 }

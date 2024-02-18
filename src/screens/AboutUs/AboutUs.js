@@ -4,17 +4,16 @@ import { Footer } from "../../components/Footer/Footer.js";
 import { CoreValues } from "./CoreValues/CoreValues.js";
 import { Team } from "./Team/Team.js";
 import { History } from "./History/History.js";
-import { TeamContentProvider } from "../../Contexts/TeamContentContext.js";
+import { LinksTo } from "../../components/LinksTo/LinksTo.js";
 
 function AboutUs() {
   return (
     <div className="aboutUsScreen Screen">
       <Header />
-      <TeamContentProvider>
-        <CoreValues/>
-        <Team />
-        <History />
-      </TeamContentProvider>
+      <CoreValues />
+      <Team />
+      <History />
+      {/* <LinksTo/> */}
       <Footer />
     </div>
   );

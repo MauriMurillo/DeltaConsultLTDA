@@ -24,13 +24,13 @@
   font-weight: 600;
   line-height: 20px; /* 83.333% */
 }
-.cardContainer {
+.AlliesContainer.cardContainer {
   width: 1056px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
-.card {
+.AlliesContainer .card {
   width: 288px;
   height: 382px;
   border-radius: 15px;
@@ -38,17 +38,17 @@
   overflow: hidden;
   text-decoration: none;
 }
-.card .imageContainer {
+.AlliesContainer .card .imageContainer {
   background-color: white;
   height: 186px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.card .imageContainer img {
+.AlliesContainer .card .imageContainer img {
   width: 93%;
 }
-.card .textContainer {
+.AlliesContainer .card .textContainer {
   height: 196px;
   background-color: #95c1d5;
   padding-left: 28px;
@@ -56,7 +56,7 @@
   padding-top: 30px;
   padding-bottom: 42px;
 }
-.card .textContainer .name {
+.AlliesContainer .card .textContainer .name {
   color: #fff;
   text-align: center;
   font-size: 26px;
@@ -65,7 +65,7 @@
   line-height: 32px; /* 123.077% */
   margin-bottom: 30px;
 }
-.card .textContainer .desc {
+.AlliesContainer .card .textContainer .desc {
   color: #fff;
   text-align: center;
   font-size: 14px;
@@ -77,13 +77,13 @@
   .AlliesContainer > .textContainer {
     width: 896px;
   }
-  .cardContainer {
+  .AlliesContainer .cardContainer {
     width: 896px;
   }
-  .card {
+  .AlliesContainer .card {
     width: 256px;
   }
-  .card .textContainer {
+  .AlliesContainer .card .textContainer {
     height: 196px;
     background-color: #95c1d5;
     padding-left: 12px;
@@ -105,35 +105,35 @@
     font-size: 16px;
     line-height: 20px; /* 125% */
   }
-  .cardContainer {
+  .AlliesContainer .cardContainer {
     width: 576px;
     justify-content: center;
     flex-wrap: wrap;
     gap: 128px;
     row-gap: 50px;
   }
-  .card {
+  .AlliesContainer .card {
     width: 224px;
     height: 288px;
   }
-  .card .imageContainer {
+  .AlliesContainer .card .imageContainer {
     height: 144px;
   }
-  .card .textContainer {
+  .AlliesContainer .card .textContainer {
     height: 144px;
     background-color: #95c1d5;
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 21px;
   }
-  .card .textContainer .name {
+  .AlliesContainer .card .textContainer .name {
     padding-left: 39.5px;
     padding-right: 39.5px;
     font-size: 16px;
     line-height: 22px; /* 123.077% */
     margin-bottom: 18px;
   }
-  .card .textContainer .desc {
+  .AlliesContainer .card .textContainer .desc {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 12px;
@@ -153,7 +153,7 @@
   .AlliesText {
     text-align: center;
   }
-  .cardContainer {
+  .AlliesContainer .cardContainer {
     width: 361px;
     width: 100%;
     max-width: 450px;

@@ -4,7 +4,7 @@ import { Footer } from "../../components/Footer/Footer.js";
 import { Hero } from "./Hero/Hero.js";
 import { CompanyStats } from "./CompanyStats/CompanyStats.js";
 import { Trust } from "./Trust/Trust";
-import { Allies } from "./Allies/Allies.js";
+import { LinksTo } from "../../components/LinksTo/LinksTo.js"
 
 import { HomeContext } from "../../Contexts/HomeContext.js";
 
@@ -34,7 +34,7 @@ function Home() {
         estadisticas={smsStatistics.stats}
       />
       <Trust trustStatement={trustStatement} trustImages={trustImages} />
-      <Allies allies={allies} />
+      <LinksTo allies={allies} />
 
       <Footer />
     </div>

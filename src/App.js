@@ -17,7 +17,7 @@ import { ComponentProvider } from "./Contexts/ComponentContext";
 //Screen Context Provider
 import { HomeProvider } from "./Contexts/HomeContext";
 import { ServicesProvider } from "./Contexts/ServicesContext";
-import { AboutProvider } from "./Contexts/AboutContext";
+import { TeamContentProvider } from "./Contexts/TeamContentContext";
 import { IndustriesProvider } from "./Contexts/IndustriesContext";
 import { SMSProvider } from "./Contexts/SMSContext";
 import { ContactProvider } from "./Contexts/ContactContext";
@@ -50,9 +50,9 @@ function App() {
             <Route
               path="/Nosotros"
               element={
-                <AboutProvider>
+                <TeamContentProvider>
                   <AboutUs />
-                </AboutProvider>
+                </TeamContentProvider>
               }
             />
             <Route

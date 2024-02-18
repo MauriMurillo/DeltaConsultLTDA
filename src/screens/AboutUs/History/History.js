@@ -7,10 +7,10 @@ function History() {
   let counter = 0;
   return (
     <div className="history">
-      <div className="textContainer">
-        <div className="Title">NUESTRA HISTORIA</div>
-        <div className="Text">Una base firme para el presente y futuro</div>
-      </div>
+      <section className="sectionText" id="NuestraHistoria">
+        <h2>Nuestra Historia</h2>
+        <p>Una base firme para el presente y el futuro</p>
+      </section>
       <div className="historyContainer">
         <div className="timelineContainer">
           <div className="timeline">

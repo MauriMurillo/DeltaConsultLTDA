@@ -43,4 +43,9 @@ function Card(props) {
     );
   }
 }
-export { Card };
+function Group(){
+  return <div>
+    hola
+  </div>
+}
+export { Group};

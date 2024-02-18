@@ -3,8 +3,7 @@ import "animate.css";
 import "./hero.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { DeltaContext } from "../../../Contexts/DeltaContext";
-import { Boton } from "../../../components/Boton/Boton";
-
+import { NavLink } from "react-router-dom";
 function Hero(props) {
   const { heroContent } = props;
 
@@ -80,13 +79,32 @@ function Hero(props) {
         <p id="heroText" className="heroText animate__animated_Mauri">
           {heroContent[heroPosition].text}
         </p>
-        <Boton
-          path={heroContent[heroPosition].path}
-          name={heroContent[heroPosition].button}
-          width={"191px"}
-          color={"#FFF"}
-          id={"heroButton"}
-        />
+        <NavLink
+          to={heroContent[heroPosition].path}
+          className="Button animate__animated_Mauri"
+          id="heroButton"
+          style={{
+            width: "191px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "64px",
+            border: "solid 4px",
+            borderColor: "#FFF",
+            textDecoration: "none",
+            borderRadius: "10px",
+          }}
+        >
+          <p
+            style={{
+              color: "#FFF",
+              fontSize: "26px",
+              fontWeight: "600",
+            }}
+          >
+            {heroContent[heroPosition].button}
+          </p>
+        </NavLink>
       </div>
       <div className="arrow forward" onClick={forwardHero}>
         <IoIosArrowForward size={24} />
