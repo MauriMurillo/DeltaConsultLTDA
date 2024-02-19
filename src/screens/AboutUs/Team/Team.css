@@ -2,6 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  column-gap: 32px;
+  height: 512px;
+  overflow: auto;
 }
 .individualFrame {
   display: flex;
@@ -17,6 +20,8 @@
 }
 .individualFrame .desc {
   width: calc(100% - 352px);
+  height: 512px;
+  overflow: auto;
   padding: 64px;
   padding-right: 96px;
   background-color: var(--DarkBlue);
@@ -27,13 +32,11 @@
   font-size: 16px;
   line-height: 30px;
   color: #ffffff;
-}
-.individualFrame .desc p:first-child {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 /* ALL CARDS */
 .cardTeam {
-  margin-top: 64px;
+  margin-top: 32px;
   margin-bottom: 32px;
   height: 384px;
   width: 288px;
@@ -74,20 +77,20 @@
 }
 
 @media only screen and (max-width: 1150px) {
+  .allFrame{
+    height: 418px;
+  }
   .individualFrame .desc {
     width: calc(100% - 256px);
     height: 418px;
-    overflow: auto;
   }
   .individualFrame .desc p {
     font-size: 10px;
-  }
-  .individualFrame .desc p:first-child {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   /* ALL CARDS */
   .cardTeam {
-    margin-bottom: 64px;
+    margin-bottom: 32px;
     height: 288px;
     width: 224px;
   }
@@ -151,15 +154,11 @@
   }
   .individualFrame .desc {
     width: 100%;
-    height: 418px;
     padding-top: 32px;
     padding-left: 60px;
     padding-right: 96px;
   }
-  .individualFrame .desc p:first-child {
-    margin-bottom: 32px;
-  }
-  .cardTeam{
+  .cardTeam {
     margin-top: 0px;
     margin-bottom: 0px;
   }
