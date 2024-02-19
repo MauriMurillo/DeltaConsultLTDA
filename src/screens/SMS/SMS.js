@@ -4,7 +4,8 @@ import { Footer } from "../../components/Footer/Footer.js";
 import smsLogo from "../../Assets/Logos/SMSLogo.png";
 import deltaLogo from "../../Assets/Logos/ISOLOGO DELTA AZUL.png";
 import forodefirmasLogo from "../../Assets/Logos/ForodeFirmas.png";
-import sms1 from "../../Assets/default.png";
+import sms1 from "../../Assets/smslatam/mapsms.png";
+import sms2 from "../../Assets/smslatam/worldsms.png"
 import "./SMS.css";
 
 function SMS() {
@@ -75,7 +76,7 @@ function SMS() {
           <div className="Text">El mas grande de Latinoamerica</div>
         </div>
         <div className="pane1">
-          <img alt="ifacWorld" src={sms1} />
+          <img alt="ifacWorld" src={sms2} />
           <div className="textPane">
             <div className="TextSMS">
               <span>

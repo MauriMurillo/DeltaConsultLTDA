@@ -26,6 +26,8 @@ import Rolando from "../Assets/nosotros/secciondos/fotospersonalnumeradas/20. Ro
 import Valentina from "../Assets/nosotros/secciondos/fotospersonalnumeradas/21. Valentina Calle Ledezma_ Encargada de Marketing.jpg";
 import Luz from "../Assets/nosotros/secciondos/fotospersonalnumeradas/22. Luz Flores Tapia_ Encargada de Contabilidad.jpg";
 
+import brochure from "../Assets/nosotros/secciontres/brochure.png"
+import doingbusiness from "../Assets/nosotros/secciontres/doingbusiness.png"
 const TeamContentContext = React.createContext();
 
 function TeamContentProvider(props) {
@@ -360,8 +362,8 @@ function TeamContentProvider(props) {
   ];
 
   const files = [
-    { title: "BROCHURE", imagen: historia1, pdf: "#" },
-    { title: "DOING BUSINESS", imagen: historia1, pdf: "#" },
+    { title: "BROCHURE", imagen: brochure, pdf: "#" },
+    { title: "DOING BUSINESS", imagen: doingbusiness, pdf: "#" },
   ];
   return (
     <TeamContentContext.Provider
