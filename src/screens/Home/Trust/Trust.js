@@ -1,6 +1,6 @@
 import React from "react";
 import "./Trust.css";
-import derecha from "../../../Assets/default.png";
+import derecha from "../../../Assets/Logos/flecha.png";
 function Trust(props) {
   const { trustStatement, trustImages } = props;
 

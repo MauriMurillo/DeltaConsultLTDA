@@ -17,7 +17,7 @@ import CELULAR02 from "../Assets/paginadeinicio/seccionuno/celularlapaz.jpg";
 import CELULAR01 from "../Assets/paginadeinicio/seccionuno/celularsantacruz.jpg";
 import CELULAR03 from "../Assets/paginadeinicio/seccionuno/celularuyuni.jpg";
 
-import logoDelta from "../Assets/Logos/ISOTIPO DELTA BLANCO.png";
+import logoDelta from "../Assets/Logos/isoitipo.png";
 import logoSMS from "../Assets/Logos/istotipoSMS.png";
 // Iconos Estadisticas Delta
 import people from "../Assets/Icons/stats/people.svg";
@@ -30,8 +30,8 @@ import person from "../Assets/Icons/stats/Person.svg";
 import world2 from "../Assets/Icons/stats/World2.svg";
 
 // Imagenes Confiar en Nosotros
-import trust from "../Assets/default.png";
-import trust2 from "../Assets/default.png";
+import trust2 from "../Assets/paginadeinicio/secciontres/foto1pc.jpg";
+import trust from "../Assets/paginadeinicio/secciontres/foto2pc.jpg";
 
 //Logos Empresas Aliadas
 import swiss from "../Assets/paginadeinicio/seccioncuatro/pcswiss.jpg";
