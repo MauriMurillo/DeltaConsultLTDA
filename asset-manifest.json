@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DeltaConsultLTDA/static/css/main.97906474.css",
-    "main.js": "/DeltaConsultLTDA/static/js/main.11e3e7eb.js",
+    "main.css": "/DeltaConsultLTDA/static/css/main.86fa94a6.css",
+    "main.js": "/DeltaConsultLTDA/static/js/main.a31811e0.js",
     "static/media/18. Diana Flores Tapia_ Subgerente Contable.jpg": "/DeltaConsultLTDA/static/media/18. Diana Flores Tapia_ Subgerente Contable.65caa0d5ae8dc3974a51.jpg",
     "static/media/2. Edgardo Vásquez Durán_ Director de Auditoría - Socio.jpg": "/DeltaConsultLTDA/static/media/2. Edgardo Vásquez Durán_ Director de Auditoría - Socio.b1c24ef77166f6b41400.jpg",
     "static/media/4. Paula Calle Rojas.jpg": "/DeltaConsultLTDA/static/media/4. Paula Calle Rojas.14f8541df06bfa3305ee.jpg",
@@ -33,6 +33,7 @@
     "static/media/estrategicaspc.jpg": "/DeltaConsultLTDA/static/media/estrategicaspc.4c96fcb930401564bb59.jpg",
     "static/media/industrialpc.jpg": "/DeltaConsultLTDA/static/media/industrialpc.b3b06465acbf75d28fb6.jpg",
     "static/media/laptoplapaz.jpg": "/DeltaConsultLTDA/static/media/laptoplapaz.f739ec34e44520342080.jpg",
+    "static/media/worldsms.png": "/DeltaConsultLTDA/static/media/worldsms.bb8f3f4df2f2f224bfb3.png",
     "static/media/financierapc.jpg": "/DeltaConsultLTDA/static/media/financierapc.9161ad91717d6594d46c.jpg",
     "static/media/serviciospc.jpg": "/DeltaConsultLTDA/static/media/serviciospc.036abaae4eea8b56d849.jpg",
     "static/media/consultoriadesostenibilidadpc.jpg": "/DeltaConsultLTDA/static/media/consultoriadesostenibilidadpc.0eacc3b6117411d9015b.jpg",
@@ -40,6 +41,7 @@
     "static/media/laptopsantacruz.jpg": "/DeltaConsultLTDA/static/media/laptopsantacruz.4bd77f2164689b78581b.jpg",
     "static/media/osflpc.jpg": "/DeltaConsultLTDA/static/media/osflpc.e11fd659ac59efe95e14.jpg",
     "static/media/auditoriafinancierapc.jpg": "/DeltaConsultLTDA/static/media/auditoriafinancierapc.7026a706f10c6abb723c.jpg",
+    "static/media/foto1pc.jpg": "/DeltaConsultLTDA/static/media/foto1pc.ef70897f5515ecbc988e.jpg",
     "static/media/tabletuyuni.jpg": "/DeltaConsultLTDA/static/media/tabletuyuni.3fcb8e2f7afbb8c71a00.jpg",
     "static/media/auditoriatributariapc.jpg": "/DeltaConsultLTDA/static/media/auditoriatributariapc.ad9b4e2fa7630cb9c080.jpg",
     "static/media/tabletlapaz.jpg": "/DeltaConsultLTDA/static/media/tabletlapaz.3a52270d1838c331c498.jpg",
@@ -60,6 +62,8 @@
     "static/media/rhlaptop.jpg": "/DeltaConsultLTDA/static/media/rhlaptop.a5430653ce6c559a7827.jpg",
     "static/media/celularuyuni.jpg": "/DeltaConsultLTDA/static/media/celularuyuni.d4c91abff374417322fb.jpg",
     "static/media/celularsantacruz.jpg": "/DeltaConsultLTDA/static/media/celularsantacruz.2429d777b7834d8bff4c.jpg",
+    "static/media/mapsms.png": "/DeltaConsultLTDA/static/media/mapsms.582cd9feeeb6d22d963c.png",
+    "static/media/foto2pc.jpg": "/DeltaConsultLTDA/static/media/foto2pc.0b9ca5fcbb23dd2610dd.jpg",
     "static/media/auditoriatributariatablet.jpg": "/DeltaConsultLTDA/static/media/auditoriatributariatablet.959383dfa88fb5bf6381.jpg",
     "static/media/consultoriafinancieralaptop.jpg": "/DeltaConsultLTDA/static/media/consultoriafinancieralaptop.8c98beca5f56b4932933.jpg",
     "static/media/consultoriafinancieratablet.jpg": "/DeltaConsultLTDA/static/media/consultoriafinancieratablet.2992b3361fa7eb07f6f4.jpg",
@@ -84,6 +88,7 @@
     "static/media/consultoriatributariacelu.jpg": "/DeltaConsultLTDA/static/media/consultoriatributariacelu.ee9b0574725a3d87ea4a.jpg",
     "static/media/outsoursingcelu.jpg": "/DeltaConsultLTDA/static/media/outsoursingcelu.355e200a49c8ead3f44e.jpg",
     "static/media/consultoriaestrategicacelu.jpg": "/DeltaConsultLTDA/static/media/consultoriaestrategicacelu.410ff0c542a61447717d.jpg",
+    "static/media/doingbusiness.png": "/DeltaConsultLTDA/static/media/doingbusiness.5f94aad1b94d6c4b31b7.png",
     "static/media/auditoriatributariacelu.jpg": "/DeltaConsultLTDA/static/media/auditoriatributariacelu.e7dc591c77181f1b00c7.jpg",
     "static/media/turismopeque.jpg": "/DeltaConsultLTDA/static/media/turismopeque.2b0f0688a3d60ddca8a4.jpg",
     "static/media/auditoriaforensecelu.jpg": "/DeltaConsultLTDA/static/media/auditoriaforensecelu.a186b3f44e752927ddd7.jpg",
@@ -96,10 +101,12 @@
     "static/media/serviciospeque.jpg": "/DeltaConsultLTDA/static/media/serviciospeque.5933c16ab7cc3fb34c99.jpg",
     "static/media/financierapeque.jpg": "/DeltaConsultLTDA/static/media/financierapeque.66639d641d201d13cb6d.jpg",
     "static/media/osflpeque.jpg": "/DeltaConsultLTDA/static/media/osflpeque.45e774fe6d17fefd179f.jpg",
+    "static/media/brochure.png": "/DeltaConsultLTDA/static/media/brochure.2c19f0138e4495827583.png",
     "static/media/SMSLogo.png": "/DeltaConsultLTDA/static/media/SMSLogo.7d2f939e1409639cc7ea.png",
     "static/media/ISOLOGO DELTA BLANCO.png": "/DeltaConsultLTDA/static/media/ISOLOGO DELTA BLANCO.57cbef5c38d2dc2b2d4b.png",
+    "static/media/isoitipo.png": "/DeltaConsultLTDA/static/media/isoitipo.fc44e52b5e4faa759f7b.png",
     "static/media/ISOLOGO DELTA AZUL.png": "/DeltaConsultLTDA/static/media/ISOLOGO DELTA AZUL.2a89ecff42aa19ee1e34.png",
-    "static/media/ISOTIPO DELTA BLANCO.png": "/DeltaConsultLTDA/static/media/ISOTIPO DELTA BLANCO.3ec79bac6627a8017842.png",
+    "static/media/flecha.png": "/DeltaConsultLTDA/static/media/flecha.2061544983e016f41601.png",
     "static/media/World.svg": "/DeltaConsultLTDA/static/media/World.f0dcd6f9041fd5cfe7e147caf88f5c5f.svg",
     "static/media/World2.svg": "/DeltaConsultLTDA/static/media/World2.a5d6ef4f768f43e77751d3e8300b1b7c.svg",
     "static/media/logo-whatsapp.svg": "/DeltaConsultLTDA/static/media/logo-whatsapp.bbecf97ac5213f9f1c974a92fa7e5921.svg",
@@ -113,19 +120,19 @@
     "static/media/logo-linkedin.svg": "/DeltaConsultLTDA/static/media/logo-linkedin.3fa9c3f24a9fcfb2054aacc064cf70bf.svg",
     "index.html": "/DeltaConsultLTDA/index.html",
     "static/media/Account.svg": "/DeltaConsultLTDA/static/media/Account.a922a30472c60a8b34f4c86c3dfb30c2.svg",
-    "static/media/Message.svg": "/DeltaConsultLTDA/static/media/Message.90e821de067bee7ed76d1b486196b304.svg",
+    "static/media/Message.svg": "/DeltaConsultLTDA/static/media/Message.5ebbc3e293251af7818f3c0451c00f70.svg",
     "static/media/email-icon.svg": "/DeltaConsultLTDA/static/media/email-icon.8d6081a70bb49b7165fe31605d56cb3a.svg",
-    "static/media/Location.svg": "/DeltaConsultLTDA/static/media/Location.5fae544f75e278990c7a1c8f1d0efec4.svg",
+    "static/media/Location.svg": "/DeltaConsultLTDA/static/media/Location.d4e0b3c834d2f923dca86edd38ce9909.svg",
     "static/media/location-icon.svg": "/DeltaConsultLTDA/static/media/location-icon.e9bcc610c6d70a0aaf987a46057de6c4.svg",
     "static/media/logo-facebook.svg": "/DeltaConsultLTDA/static/media/logo-facebook.802b893bf23c3576d9a63d1fa084a66d.svg",
     "static/media/Header_Arrow.svg": "/DeltaConsultLTDA/static/media/Header_Arrow.81c9cf93d734a4d7d2cb8a9e1d0304d2.svg",
     "static/media/Menu.svg": "/DeltaConsultLTDA/static/media/Menu.865e3edc957a3cceb4ef8bb13fbfe0a7.svg",
     "static/media/Arrow_drop.svg": "/DeltaConsultLTDA/static/media/Arrow_drop.e556d5b3d9df7884f48f058313ef5ed6.svg",
-    "main.97906474.css.map": "/DeltaConsultLTDA/static/css/main.97906474.css.map",
-    "main.11e3e7eb.js.map": "/DeltaConsultLTDA/static/js/main.11e3e7eb.js.map"
+    "main.86fa94a6.css.map": "/DeltaConsultLTDA/static/css/main.86fa94a6.css.map",
+    "main.a31811e0.js.map": "/DeltaConsultLTDA/static/js/main.a31811e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.97906474.css",
-    "static/js/main.11e3e7eb.js"
+    "static/css/main.86fa94a6.css",
+    "static/js/main.a31811e0.js"
   ]
 }
