@@ -6,9 +6,10 @@
   --SMSRed: #a21f4a;
   scroll-behavior: smooth;
 }
-html{
-  max-width: 1700px;
+html {
+  max-width: 1510px;
   margin: 0 auto;
+  background-color: whitesmoke;
 }
 * {
   margin: 0;
@@ -19,4 +20,3 @@ html{
 body {
   background-color: white;
 }
-

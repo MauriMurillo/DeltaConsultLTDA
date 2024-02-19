@@ -1,54 +1,38 @@
-.officeHeading {
-  height: 95px;
-  margin-top: 95px;
-  flex-shrink: 0;
-  background-color: #1d619d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.officeHeading p {
-  color: #f5f5f5;
-  text-align: center;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 64px; /* 100% */
+.bigOfficeContainer > p {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 40px;
+  color: var(--DeltaBlue);
+  margin-left: 96px;
+  margin-top: 32px;
 }
 .contentFlex {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
-  width: 100%;
-  padding-left: 95px;
-  padding-right: 95px;
-  padding-top: 95px;
-  gap: 86px;
+  padding-left: 96px;
+  padding-right: 96px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  border-bottom: #d9d9d9 4px solid;
 }
 .officeDataContainer {
-  height: 405px;
+  height: 320px;
+  width: 374px;
   display: flex;
   flex-direction: column;
-  gap: 66px;
-}
-.cityBig {
-  color: #364660;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 32px;
+  gap: 64px;
 }
 .cnb {
-  display: flex;
-  justify-content: space-between;
+  width: 374px;
 }
 .cnb a {
-  display: flex;
-  justify-content: flex-start;
   text-decoration: none;
-  align-items: flex-end;
+  width: 374px;
+  display: flex;
 }
 .cnb a p {
-  color: #364660;
+  color: var(--DeltaBlue);
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -56,14 +40,14 @@
   text-decoration: none;
 }
 .cnb a .icon {
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
   margin-right: 18px;
   align-self: flex-start;
 }
 .embedMap {
-  width: 50%;
-  height: 384px;
+  width: 608px;
+  height: 320px;
   flex-shrink: 0;
 }
 .embedMap iframe {
@@ -71,80 +55,96 @@
   height: 100%;
 }
 @media only screen and (max-width: 1200px) {
+  .contactSection .sectionText {
+    padding-left: 64px;
+  }
+  .bigOfficeContainer > p {
+    margin-left: 64px;
+  }
   .contentFlex {
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 60px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .embedMap {
+    width: 448px;
   }
 }
-@media only screen and (max-width: 900px) {
-  .officeHeading {
-    height: 64px;
-    margin-top: 55px;
-  }
-  .officeHeading p {
-    color: #f5f5f5;
-    text-align: center;
-    font-size: 36px;
-    line-height: 36px;
-  }
-  .contentFlex {
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 60px;
-    gap: 15px;
+@media only screen and (max-width: 960px) {
+  .bigOfficeContainer > p {
+    font-size: 38px;
+    margin-left: 64px;
   }
   .officeDataContainer {
-    height: 405px;
-    display: flex;
-    flex-direction: column;
+    width: 258px;
   }
-  .cityBig {
-    font-size: 24px;
-    line-height: 24px;
+  .cnb {
+    width: 258px;
+  }
+  .cnb a {
+    width: 258px;
   }
   .cnb a p {
-    font-size: 15px;
-    line-height: 24px; /* 160% */
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
   }
-  .cnb a .icon {
-    margin-right: 18px;
-    align-self: flex-start;
+  .embedMap {
+    width: 312px;
   }
 }
-@media only screen and (max-width: 650px) {
-  .officeHeading {
-    margin-top: 65px;
+@media only screen and (max-width: 715px) {
+  .contactSection .sectionText {
+    margin-top: 64px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
-  .officeHeading p {
-    font-size: 32px;
-    line-height: 32px;
+  .contactSection .sectionText > h2,
+  .contactSection .sectionText > h1 {
+    font-size: 38px;
+    text-align: center;
+  }
+  .contactSection .sectionText > p {
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .contactSection .bigOfficeContainer > p {
+    margin-left: 0px;
+    font-size: 38px;
+    line-height: 40px;
+    text-align: center;
   }
   .contentFlex {
     flex-direction: column-reverse;
-    align-items: center;
+    justify-content: flex-start;
     padding-left: 0px;
     padding-right: 0px;
-    padding-top: 0px;
-    gap: 36px;
-  }
-  .officeDataContainer {
-    width: 320px;
-    height: auto;
+    padding-top: 32px;
     gap: 40px;
   }
-  .cityBig {
-    color: #364660;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
+  .officeDataContainer {
+    height: auto;
+    width: 100%;
+    gap: 32px;
+  }
+  .cnb {
+    width: auto;
+    margin: auto;
+  }
+  .cnb a {
+    width: 270px;
   }
   .cnb a p {
-    font-size: 13px;
-    line-height: 24px;
+    font-size: 16px;
   }
-  .embedMap{
-    width: 100%;
+  .cnb a .icon {
+    width: 26px;
+    height: 26px;
+  }
+  .embedMap {
+    width: auto;
+    height: 224px;
   }
 }

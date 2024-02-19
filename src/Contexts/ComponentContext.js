@@ -59,7 +59,7 @@ function ComponentProvider(props) {
 
   const offices = [
     {
-      ciudad: "LA PAZ",
+      ciudad: "La Paz",
       direccion: "C. Méndez Arcos #831 - Edif. Delta - Z. Sopocachi",
       telefono: "(+591-2) 2427222",
       mail: "deltaconsult@dcl.com.bo",
@@ -79,7 +79,7 @@ function ComponentProvider(props) {
       area: "b",
     },
     {
-      ciudad: "SANTA CRUZ",
+      ciudad: "Santa Cruz",
       direccion: "C. Fermin Peralta #110 - Edif. Delta - Z. EQUIPETROL",
       telefono: "(+591-3) 3454756",
       mail: "deltascz@dcl.com.bo",
@@ -99,7 +99,7 @@ function ComponentProvider(props) {
       area: "c",
     },
     {
-      ciudad: "COCHABAMBA",
+      ciudad: "Cochabamba",
       direccion:
         "Calle Los Molles, MZ.035 Edificio Delta PB Nº847 - Zona Cala Cala",
       telefono: "(591)-72044457",

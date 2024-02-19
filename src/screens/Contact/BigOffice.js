@@ -7,12 +7,9 @@ function BigOffice(props) {
   const { content } = props;
   return (
     <div className="bigOfficeContainer">
-      <div className="officeHeading">
-        <p>{content.ciudad}</p>
-      </div>
+      <p>{content.ciudad}</p>
       <div className="contentFlex">
         <div className="officeDataContainer">
-          <p className="cityBig ">OFICINA {content.ciudad}</p>
           <div className="cnb">
             <a target="_blank" rel="noreferrer" href={"mailto:" + content.mail}>
               <img src={emailIcon} className="icon" alt="email" />

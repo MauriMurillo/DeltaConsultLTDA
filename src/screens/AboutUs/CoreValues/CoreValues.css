@@ -63,15 +63,15 @@
   border-bottom: #d9d9d9 4px solid;
   padding-left: 96px;
 }
-.sectionText h2,
-.sectionText h1 {
+.sectionText > h2,
+.sectionText > h1 {
   font-style: normal;
   font-weight: 600;
   font-size: 54px;
   color: var(--DeltaBlue);
   margin-bottom: 32px;
 }
-.sectionText p {
+.sectionText > p {
   font-weight: 400;
   font-size: 24px;
   color: var(--DeltaBlue);
@@ -117,7 +117,7 @@
     margin-top: 64px;
     padding-left: 64px;
   }
-  .sectionText p {
+  .sectionText > p {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 64px;
@@ -160,12 +160,12 @@
     padding-left: 32px;
     padding-right: 32px;
   }
-  .sectionText h2,
-  .sectionText h1 {
+  .sectionText > h2,
+  .sectionText >h1 {
     font-size: 38px;
     text-align: center;
   }
-  .sectionText p {
+  .sectionText > p {
     font-weight: 400;
     margin-bottom: 40px;
     text-align: center;

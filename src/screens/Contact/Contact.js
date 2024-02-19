@@ -10,18 +10,18 @@ function Contact() {
   return (
     <div className="contactScreen Screen">
       <Header />
-      <div className="contactSection" style={{ marginTop: "150px" }}>
-        <div className="textContainer" style={{ marginBottom: "120px" }}>
-          <div className="Title">¿NECESITAS AYUDA?</div>
-          <div className="Text">
+      <div className="contactSection">
+        <div className="sectionText">
+          <h2>¿NECESITAS AYUDA?</h2>
+          <p>
             Contáctese con nosotros y dispondrá de atención cordial y oportuna a
             sus necesidades
-          </div>
-          {offices.map((item) => (
-            <BigOffice content={item} />
-          ))}
+          </p>
         </div>
-        <ContactForm/>
+        {offices.map((item) => (
+          <BigOffice content={item} />
+        ))}
+        {/* <ContactForm /> */}
       </div>
       <Footer />
     </div>
