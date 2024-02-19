@@ -52,58 +52,60 @@ function OptionMenu() {
   });
 
   return (
-    <div className="optionMenu">
-      <section className="desc">
-        <h2>{display.title}</h2>
-        <p>{display.text}</p>
-      </section>
-      <section className="links">
-        {display.menu.map((item) => {
-          return (
+    <div className="optionMenuForBig">
+      <div className="optionMenu wide">
+        <section className="desc">
+          <h2>{display.title}</h2>
+          <p>{display.text}</p>
+        </section>
+        <section className="links">
+          {display.menu.map((item) => {
+            return (
+              <div
+                onClick={() => {
+                  if (showSubMenu) {
+                    setShowSubMenu(false);
+                    setSelectedItem("");
+                  } else {
+                    setSelectedItem(item.name);
+                    setShowSubMenu(true);
+                  }
+                }}
+                className={item.name === selectedItem ? "active" : ""}
+              >
+                <p>{item.name}</p>
+                <img src={arrow} alt="arrow" />
+              </div>
+            );
+          })}
+          {display.links.map((item) => (
             <div
               onClick={() => {
-                if (showSubMenu) {
-                  setShowSubMenu(false)
-                  setSelectedItem("")
-                }else{
-                  setSelectedItem(item.name);
-                  setShowSubMenu(true);
+                if (selectedOption === "NOSOTROS") {
+                  setShowOptionMenu(false);
+                  setSelectedSection(item);
+                  navigate("/Nosotros");
+                } else if (selectedOption === "INDUSTRIAS") {
+                  setShowOptionMenu(false);
+                  setSelectedContent(item);
+                  navigate("/Industrias");
+                } else if (selectedOption === "SERVICIOS") {
+                  setShowOptionMenu(false);
+                  setSelectedContent(item);
+                  navigate("/Servicios");
                 }
               }}
-              className={item.name === selectedItem ? "active" : ""}
             >
-              <p>{item.name}</p>
-              <img src={arrow} alt="arrow" />
+              {item}
             </div>
-          );
-        })}
-        {display.links.map((item) => (
-          <div
-            onClick={() => {
-              if (selectedOption === "NOSOTROS") {
-                setShowOptionMenu(false);
-                setSelectedSection(item);
-                navigate("/Nosotros");
-              } else if (selectedOption === "INDUSTRIAS") {
-                setShowOptionMenu(false);
-                setSelectedContent(item);
-                navigate("/Industrias");
-              } else if (selectedOption === "SERVICIOS") {
-                setShowOptionMenu(false);
-                setSelectedContent(item);
-                navigate("/Servicios");
-              }
-            }}
-          >
-            {item}
-          </div>
-        ))}
-      </section>
-      {showSubMenu ? (
-        <SubMenu options={display.menu} />
-      ) : (
-        <div className="filler" />
-      )}
+          ))}
+        </section>
+        {showSubMenu ? (
+          <SubMenu options={display.menu} />
+        ) : (
+          <div className="filler" />
+        )}
+      </div>
     </div>
   );
 }

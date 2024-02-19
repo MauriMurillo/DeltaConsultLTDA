@@ -12,7 +12,7 @@ function Footer() {
   const { offices } = useContext(ComponentContext);
   const { screenSize } = useContext(DeltaContext);
   return (
-    <div className="footer noTop">
+    <div className="footer noTop wide">
       <div className="footerContainer">
         {screenSize.width > 1150 || screenSize.width <= 1000 ? (
           <div className="logoFooter">

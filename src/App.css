@@ -7,9 +7,7 @@
   scroll-behavior: smooth;
 }
 html {
-  max-width: 1510px;
   margin: 0 auto;
-  background-color: whitesmoke;
 }
 * {
   margin: 0;
@@ -20,12 +18,32 @@ html {
 body {
   background-color: white;
 }
-.Screen > *{
-  margin-top: 10vh;
+.Screen > * {
+  max-width: 1510px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
 }
-.Screen > .noTop{
+.Screen > .noTop {
   margin-top: 0px;
 }
-.Screen > .Bottom{
-  margin-bottom: 10vh;
+.Screen > .Bottom {
+  margin-bottom: 150px;
+}
+.wide {
+  max-width: none;
+}
+.wide > * {
+  max-width: 1510px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.optionMenuForBig {
+  max-width: none;
+  background-color: var(--DarkBlue);
+}
+.optionMenuForBig > div {
+  max-width: 1510px;
+  margin-left: auto;
+  margin-right: auto;
 }
