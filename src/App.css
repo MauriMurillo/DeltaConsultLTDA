@@ -6,32 +6,17 @@
   --SMSRed: #a21f4a;
   scroll-behavior: smooth;
 }
-
+html{
+  max-width: 1700px;
+  margin: 0 auto;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
-html {
-  background-color: whitesmoke;
-}
 body {
   background-color: white;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
-
-.Screen > * {
-  margin-top: 15vh;
-}
-.Screen > nav {
-  margin-top: 0px;
-}
-.Screen > .top {
-  margin-top: 0px;
-}
-.Screen > .topTitle {
-  margin-top: 32px;
-}

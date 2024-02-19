@@ -10,7 +10,7 @@ import { DeltaContext } from "../../Contexts/DeltaContext";
 function HeaderFull() {
   const { showOptionMenu } = useContext(DeltaContext);
   return (
-    <nav className="superNav">
+    <nav className="superNav wide">
       <div className="navBar">
         <div className="imageContainer">
           <NavLink to={"/"}>

@@ -1,4 +1,5 @@
 .superNav {
+  background-color: #1d619d;
   position: sticky;
   top: 0px;
   z-index: 1000;
@@ -6,10 +7,11 @@
 .navBar {
   height: 96px;
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   place-items: center;
   justify-content: space-between;
-  background-color: #1d619d;
   padding-left: 64px;
   padding-right: 64px;
   z-index: 999;
