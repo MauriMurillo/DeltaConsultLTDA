@@ -1,0 +1,166 @@
+.allFrame {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.individualFrame {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 96px;
+}
+.individualFrame .icon {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 32px;
+  right: 48px;
+}
+.individualFrame .desc {
+  width: calc(100% - 352px);
+  padding: 64px;
+  padding-right: 96px;
+  background-color: var(--DarkBlue);
+  position: relative;
+}
+.individualFrame .desc p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.individualFrame .desc p:first-child {
+  margin-bottom: 50px;
+}
+/* ALL CARDS */
+.cardTeam {
+  margin-top: 64px;
+  margin-bottom: 32px;
+  height: 384px;
+  width: 288px;
+  border: solid 4px var(--DarkBlue);
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: var(--DarkBlue);
+}
+.cardTeam .imageContainer {
+  width: 280px;
+  height: 256px;
+  border-bottom: 4px solid var(--DarkBlue);
+}
+.cardTeam .imageContainer img {
+  width: 100%;
+  height: 100%;
+}
+.cardTeam .cardInfo {
+  padding-top: 28px;
+}
+.cardTeam .cardInfo .name {
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.cardTeam .cardInfo .job {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* EXTRA */
+.menuDeploy {
+  border-bottom: solid 4px #d9d9d9 !important;
+}
+
+@media only screen and (max-width: 1150px) {
+  .individualFrame .desc {
+    width: calc(100% - 256px);
+    height: 418px;
+    overflow: auto;
+  }
+  .individualFrame .desc p {
+    font-size: 10px;
+  }
+  .individualFrame .desc p:first-child {
+    margin-bottom: 40px;
+  }
+  /* ALL CARDS */
+  .cardTeam {
+    margin-bottom: 64px;
+    height: 288px;
+    width: 224px;
+  }
+  .cardTeam .imageContainer {
+    width: 216px;
+    height: 192px;
+  }
+  .cardTeam .cardInfo {
+    padding-top: 16px;
+  }
+  .cardTeam .cardInfo .name {
+    font-size: 16px;
+  }
+  .cardTeam .cardInfo .job {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .individualFrame {
+    padding-left: 64px;
+  }
+  .individualFrame .desc {
+    width: calc(100% - 224px);
+    padding-right: 64px;
+  }
+  .individualFrame .icon {
+    top: 32px;
+    right: 32px;
+  }
+  /* ALL CARDS */
+  .cardTeam {
+    width: 192px;
+  }
+  .cardTeam .imageContainer {
+    width: 184px;
+    height: 192px;
+  }
+  .cardTeam .cardInfo .name {
+    margin-bottom: 14px;
+  }
+  .cardTeam .cardInfo .job {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .allFrame {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 46px;
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+  .individualFrame {
+    padding-left: 0px;
+  }
+  .individualFrame .icon {
+    top: 32px;
+    right: 32px;
+  }
+  .individualFrame .desc {
+    width: 100%;
+    height: 418px;
+    padding-top: 32px;
+    padding-left: 60px;
+    padding-right: 96px;
+  }
+  .individualFrame .desc p:first-child {
+    margin-bottom: 32px;
+  }
+  .cardTeam{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}

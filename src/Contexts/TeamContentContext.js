@@ -7,218 +7,95 @@ import historia3 from "../Assets/default.png";
 const TeamContentContext = React.createContext();
 
 function TeamContentProvider(props) {
-  const team = [
-    {
-      department: "Gerencia",
-      color: "",
-      members: [
-        {
-          picture: picture,
-          name: "James A Hetfield",
-          job: "Guitarrista Principal",
-          mail: "jah@dcl.com.bo",
-          phone: "(+591) 720-444484",
-          resume:
-            "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        },
-        {
-          picture: picture,
-          name: "James A Hetfield",
-          job: "Guitarrista Principal",
-          mail: "jah@dcl.com.bo",
-          phone: "(+591) 720-444484",
-          resume:
-            "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        },
-        {
-          picture: picture,
-          name: "James A Hetfield",
-          job: "Guitarrista Principal",
-          mail: "jah@dcl.com.bo",
-          phone: "(+591) 720-444484",
-          resume:
-            "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        },
-        {
-          picture: picture,
-          name: "James A Hetfield",
-          job: "Guitarrista Principal",
-          mail: "jah@dcl.com.bo",
-          phone: "(+591) 720-444484",
-          resume:
-            "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        },
-      ],
-    },
-    {
-      department: "Auditores",
-      color: "",
-      members: [
-        {
-          picture: picture,
-          name: "James A Hetfield",
-          job: "Guitarrista Principal",
-          mail: "jah@dcl.com.bo",
-          phone: "(+591) 720-444484",
-          resume:
-            "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        },
-        {
-          picture: picture,
-          name: "James A Hetfield",
-          job: "Guitarrista Principal",
-          mail: "jah@dcl.com.bo",
-          phone: "(+591) 720-444484",
-          resume:
-            "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        },
-        {
-          picture: picture,
-          name: "James A Hetfield",
-          job: "Guitarrista Principal",
-          mail: "jah@dcl.com.bo",
-          phone: "(+591) 720-444484",
-          resume:
-            "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        },
-        {
-          picture: picture,
-          name: "James A Hetfield",
-          job: "Guitarrista Principal",
-          mail: "jah@dcl.com.bo",
-          phone: "(+591) 720-444484",
-          resume:
-            "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        },
-      ],
-    },
-    {
-      department: "Consultores",
-      color: "",
-      members: [
-        {
-          picture: picture,
-          name: "James A Hetfield",
-          job: "Guitarrista Principal",
-          mail: "jah@dcl.com.bo",
-          phone: "(+591) 720-444484",
-          resume:
-            "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        },
-        {
-          picture: picture,
-          name: "James A Hetfield",
-          job: "Guitarrista Principal",
-          mail: "jah@dcl.com.bo",
-          phone: "(+591) 720-444484",
-          resume:
-            "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        },
-        {
-          picture: picture,
-          name: "James A Hetfield",
-          job: "Guitarrista Principal",
-          mail: "jah@dcl.com.bo",
-          phone: "(+591) 720-444484",
-          resume:
-            "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        },
-        {
-          picture: picture,
-          name: "James A Hetfield",
-          job: "Guitarrista Principal",
-          mail: "jah@dcl.com.bo",
-          phone: "(+591) 720-444484",
-          resume:
-            "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        },
-      ],
-    },
-    {
-      department: "Diseno",
-      color: "",
-      members: [
-        {
-          picture: picture,
-          name: "James A Hetfield",
-          job: "Guitarrista Principal",
-          mail: "jah@dcl.com.bo",
-          phone: "(+591) 720-444484",
-          resume:
-            "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        },
-        {
-          picture: picture,
-          name: "James A Hetfield",
-          job: "Guitarrista Principal",
-          mail: "jah@dcl.com.bo",
-          phone: "(+591) 720-444484",
-          resume:
-            "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        },
-        {
-          picture: picture,
-          name: "James A Hetfield",
-          job: "Guitarrista Principal",
-          mail: "jah@dcl.com.bo",
-          phone: "(+591) 720-444484",
-          resume:
-            "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        },
-        {
-          picture: picture,
-          name: "James A Hetfield",
-          job: "Guitarrista Principal",
-          mail: "jah@dcl.com.bo",
-          phone: "(+591) 720-444484",
-          resume:
-            "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        },
-      ],
-    },
-    {
-      department: "Manejo",
-      color: "",
-      members: [
-        {
-          picture: picture,
-          name: "James A Hetfield",
-          job: "Guitarrista Principal",
-          mail: "jah@dcl.com.bo",
-          phone: "(+591) 720-444484",
-          resume:
-            "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        },
-        {
-          picture: picture,
-          name: "James A Hetfield",
-          job: "Guitarrista Principal",
-          mail: "jah@dcl.com.bo",
-          phone: "(+591) 720-444484",
-          resume:
-            "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        },
-        {
-          picture: picture,
-          name: "James A Hetfield",
-          job: "Guitarrista Principal",
-          mail: "jah@dcl.com.bo",
-          phone: "(+591) 720-444484",
-          resume:
-            "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        },
-        {
-          picture: picture,
-          name: "James A Hetfield",
-          job: "Guitarrista Principal",
-          mail: "jah@dcl.com.bo",
-          phone: "(+591) 720-444484",
-          resume:
-            "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        },
-      ],
-    },
-  ];
+  const team = {
+    Socios: [
+      {
+        picture: picture,
+        name: "James A Hetfield",
+        job: "Guitarrista Principal",
+        mail: "jah@dcl.com.bo",
+        phone: "(+591) 720-444484",
+        resume:
+          ["Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",]
+      },
+      {
+        picture: picture,
+        name: "James A Hetfield",
+        job: "Guitarrista Principal",
+        mail: "jah@dcl.com.bo",
+        phone: "(+591) 720-444484",
+        resume:
+          ["Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",]
+      },
+      {
+        picture: picture,
+        name: "James A Hetfield",
+        job: "Guitarrista Principal",
+        mail: "jah@dcl.com.bo",
+        phone: "(+591) 720-444484",
+        resume:
+          ["Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",]
+      },
+    ],
+    Gerencias: [
+      {
+        picture: picture,
+        name: "James A Hetfield",
+        job: "Guitarrista Principal",
+        mail: "jah@dcl.com.bo",
+        phone: "(+591) 720-444484",
+        resume:
+          ["Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",]
+      },
+      {
+        picture: picture,
+        name: "James A Hetfield",
+        job: "Guitarrista Principal",
+        mail: "jah@dcl.com.bo",
+        phone: "(+591) 720-444484",
+        resume:
+          ["Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",]
+      },
+      {
+        picture: picture,
+        name: "James A Hetfield",
+        job: "Guitarrista Principal",
+        mail: "jah@dcl.com.bo",
+        phone: "(+591) 720-444484",
+        resume:
+          ["Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",]
+      },
+    ],
+    Subgerencias: [
+      {
+        picture: picture,
+        name: "James A Hetfield",
+        job: "Guitarrista Principal",
+        mail: "jah@dcl.com.bo",
+        phone: "(+591) 720-444484",
+        resume:
+          ["Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",]
+      },
+      {
+        picture: picture,
+        name: "James A Hetfield",
+        job: "Guitarrista Principal",
+        mail: "jah@dcl.com.bo",
+        phone: "(+591) 720-444484",
+        resume:[
+          "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",]
+      },
+      {
+        picture: picture,
+        name: "James A Hetfield",
+        job: "Guitarrista Principal",
+        mail: "jah@dcl.com.bo",
+        phone: "(+591) 720-444484",
+        resume:
+          ["Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",]
+      },
+    ],
+  };
 
   const coreValuesInfo = {
     proposito: {
@@ -238,7 +115,7 @@ function TeamContentProvider(props) {
     },
     valores: {
       title: "Valores",
-      lista:[
+      lista: [
         "Respeto total en el compromiso con el cliente",
         "El lograr y consolidar el liderazgo",
         "La aplicación de la tecnología vigente",
@@ -248,9 +125,9 @@ function TeamContentProvider(props) {
         "Confidencialidad",
         "Desarrollo de Recursos Humanos",
         "Respeto, honestidad e integridad",
-        ],
+      ],
     },
-    principios:{
+    principios: {
       title: "Principios",
       lista: [
         "Respeto por las personas",
@@ -262,8 +139,8 @@ function TeamContentProvider(props) {
         "Medio Ambiente",
         "Promover el liderazgo y la excelencia",
         "Educación, capacitación y actualización",
-      ]
-    }
+      ],
+    },
   };
 
   const historia = [

@@ -13,15 +13,15 @@ function Team() {
         <p>Una base firme para el presente y el futuro</p>
       </section>
       <DropMenu title="Socios y Directores" notop={true}>
-        <Group/>
+        <Group members={team.Socios} />
       </DropMenu>
 
       <DropMenu title="Gerencia" stack={true}>
-        <Group/>
+        <Group members={team.Gerencias} />
       </DropMenu>
 
       <DropMenu title="Subgerencia y Encargados">
-        <Group/>
+        <Group members={team.Subgerencias} />
       </DropMenu>
     </div>
   );

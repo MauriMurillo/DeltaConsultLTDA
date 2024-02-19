@@ -5,9 +5,9 @@ function DropMenu(props) {
   const { screenSize } = useContext(DeltaContext);
   const { title, stack, notop } = props;
   const [deployed, setDeployed] = useState(false);
-  const borderBot = stack ? "none" : "solid 4px rgba(54,70,96,0.2)";
-  const borderTop = (stack || notop) ? "none" : "solid 4px rgba(54,70,96,0.2)";
-
+  const borderBot = stack ? "none" : "solid 4px #d9d9d9";
+  const borderTop = (stack || notop) ? "none" : "solid 4px #d9d9d9";
+  const height = stack ? "92px" : "100px";
   const styles = {
     compu: {
       paddingLeft: "96px",
@@ -16,7 +16,7 @@ function DropMenu(props) {
       color: "#364660",
       borderTop: borderTop,
       borderBottom: borderBot,
-      height: "100px",
+      height: height,
       display: "flex",
       alignItems: "center",
       justifyContent: "space-between",
@@ -28,7 +28,7 @@ function DropMenu(props) {
       color: "#364660",
       borderTop: borderTop,
       borderBottom: borderBot,
-      height: "100px",
+      height: height,
       display: "flex",
       alignItems: "center",
       justifyContent: "space-between",
@@ -40,7 +40,7 @@ function DropMenu(props) {
       color: "#364660",
       borderTop: borderTop,
       borderBottom: borderBot,
-      height: "100px",
+      height: height,
       display: "flex",
       alignItems: "center",
       justifyContent: "space-between",
@@ -49,7 +49,7 @@ function DropMenu(props) {
   return (
     <div>
       <div
-        className="menuTitle"
+        className={deployed ? "menuTitle menuDeploy" : "menuTitle"}
         onClick={deployed ? () => setDeployed(false) : () => setDeployed(true)}
         style={
           screenSize.width > 950
