@@ -50,7 +50,7 @@ function HomeProvider(props) {
       title: "Bienvenidos a Delta Consult",
       text: "Somos una firma de servicios de auditoría y consultoría, miembro de la red SMS Latinoamérica.",
       button: "Explora",
-      path: "/SMS",
+      path: "/Servicios",
     },
     {
       imagePC: PC02,
@@ -60,7 +60,7 @@ function HomeProvider(props) {
       title: "Liderando el mercado desde 1976",
       text: "Son 48 años brindando servicios de auditoría y consultoría en Bolivia.",
       button: "Explora",
-      path: "/SMS",
+      path: "/Nosotros",
     },
     {
       imagePC: PC03,
@@ -70,7 +70,7 @@ function HomeProvider(props) {
       title: "Te ofrecemos servicios de calidad",
       text: "Son varios clientes de múltiples rubros los que confían en nuestra experiencia",
       button: "Explora",
-      path: "/SMS",
+      path: "/Industries",
     },
   ];
 
@@ -79,17 +79,17 @@ function HomeProvider(props) {
     stats: [
       {
         icon: people,
-        title: "250+",
+        title: "+250",
         text: "Clientes Satisfechos",
       },
       {
         icon: profesional,
-        title: "65+",
+        title: "+65",
         text: "Profesionales Expertos",
       },
       {
         icon: stars,
-        title: "20+",
+        title: "+20",
         text: "Premios y Galardones",
       },
     ],
@@ -100,17 +100,17 @@ function HomeProvider(props) {
     stats: [
       {
         icon: world2,
-        title: "22+",
+        title: "+22",
         text: "Países americanos con oficinas de SMS Latinoamerica",
       },
       {
         icon: person,
-        title: "2500+",
+        title: "+2500",
         text: "Profesionales en Red",
       },
       {
         icon: world,
-        title: "80+",
+        title: "+80",
         text: "Oficinas en el continente americano",
       },
     ],
@@ -135,7 +135,7 @@ function HomeProvider(props) {
     {
       logo: business,
       nombre: "DELTA ESCUELA DE NEGOCIOS",
-      descripcion: "Capacitaciones Empresariales y formación profesional",
+      descripcion: "Capacitaciones empresariales y formación profesional",
       url: "",
     },
     {

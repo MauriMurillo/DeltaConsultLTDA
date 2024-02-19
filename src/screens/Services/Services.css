@@ -48,9 +48,9 @@
 }
 .servTeamSection .serviceTeamGrid {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 64px;
+  gap: 128px;
 }
 .servTeamSection .serviceTeamGrid > div {
   width: 330px;
@@ -58,6 +58,7 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  justify-content: flex-end;
 }
 .servTeamSection .serviceTeamGrid > div > img {
   width: 96px;
@@ -103,10 +104,16 @@
   }
   .servMainSection .imageContainer {
     width: calc(100% - 576px);
+    height: 800px;
   }
   .servTeamSection {
     padding-left: 64px;
     padding-right: 64px;
+  }
+  .servTeamSection .serviceTeamGrid {
+    row-gap: 64px;
+    column-gap: 0px;
+    justify-content: space-between;
   }
   .servTeamSection .serviceTeamGrid > div {
     width: 272px;
@@ -154,7 +161,7 @@
     font-size: 14px;
   }
   .servTeamSection .serviceLink {
-    width: 638px;
+    width: 100%;
   }
   .servTeamSection .serviceLink p {
     font-size: 20px;

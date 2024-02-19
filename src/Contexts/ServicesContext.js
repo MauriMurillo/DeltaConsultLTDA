@@ -50,7 +50,14 @@ import service10laptop from "../Assets/servicios/seccionuno/rhlaptop.jpg";
 import service10tablet from "../Assets/servicios/seccionuno/rhtablet.jpg";
 import service10celular from "../Assets/servicios/seccionuno/rhcelu.jpg";
 
-import foto from "../Assets/default.png";
+import Oscar from "../Assets/nosotros/secciondos/fotospersonalnumeradas/1. Oscar Calle Rojas_ Gerente General - Socio.jpg";
+import Edgardo from "../Assets/nosotros/secciondos/fotospersonalnumeradas/2. Edgardo Vásquez Durán_ Director de Auditoría - Socio.jpg";
+import Americo from "../Assets/nosotros/secciondos/fotospersonalnumeradas/7. Americo Antezana Ibañez.jpg";
+import Miguel from "../Assets/nosotros/secciondos/fotospersonalnumeradas/6. Miguel Gutiérrez Salas_ Gerente de Auditoría.jpg";
+import Goldie from "../Assets/nosotros/secciondos/fotospersonalnumeradas/5. Goldie Calla Ruiz_ Gerente de Auditoría.jpg";
+import Maria from "../Assets/nosotros/secciondos/fotospersonalnumeradas/8. Maria Teresa Vargas.jpg";
+import Renato from "../Assets/nosotros/secciondos/fotospersonalnumeradas/10. Renato Calle Ledezma_ Gerente de Consultoría.jpg";
+import Ximena from "../Assets/nosotros/secciondos/fotospersonalnumeradas/3. Ximena Calle Rojas.jpg";
 const ServicesContext = React.createContext();
 
 function ServicesProvider(props) {
@@ -60,57 +67,75 @@ function ServicesProvider(props) {
 
       ofrece: [
         "En Delta Consult, nos enorgullece liderar con excelencia y precisión en el ámbito de la auditoría financiera. Nuestro compromiso se refleja en la realización de auditorías exhaustivas que trascienden en la revisión de estados financieros. Nos especializamos en la identificación proactiva de riesgos financieros, la evaluación minuciosa de controles internos y la entrega de informes claros y detallados que brindan a nuestros clientes y usuarios externos una visión completa de la salud financiera de la empresa.",
-        "Ya sea para empresas emergentes o grandes corporaciones, nuestro servicio de auditoría financiera se adapta con precisión a las necesidades específicas de cada cliente. Nuestra profunda comprensión de las normativas tanto locales como internacionales garantiza la confianza y transparencia en nuestras opiniones sobre los análisis financieros, consolidándose como socios confiables que impulsan la integridad y solidez de las operaciones financieras de nuestros clientes.",
       ],
 
       experiencia: [
-        "Nuestro largo recorrido en la realización de auditorías externas es un pilar fundamental de nuestra excelencia. Son 48 años de experiencia, nuestro equipo de profesionales altamente capacitados ha trabajado con una diversidad de industrias, perfeccionado nuestra capacidad para llevar a cabo auditorías financieras precisas y completas que cumplen con los más altos estándares profesionales. ",
+        "Nuestro largo recorrido en la realización de auditorías externas es un pilar fundamental de nuestra excelencia. Son 48 años de experiencia, nuestro equipo de profesionales altamente capacitados ha perfeccionado nuestra capacidad para llevar a cabo auditorías financieras que cumplen con los más altos estándares profesionales. ",
       ],
       equipo: [
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
+        { foto: Oscar, nombre: "Oscar Calle", rol: "Gerente General" },
+        {
+          foto: Edgardo,
+          nombre: "Edgardo Vásquez",
+          rol: "Director de Auditoría",
+        },
+        {
+          foto: Americo,
+          nombre: "Américo Antezana",
+          rol: "Gerente de Auditoría",
+        },
+        {
+          foto: Miguel,
+          nombre: "Miguel Gutiérrez",
+          rol: "Gerente de Auditoría",
+        },
+        { foto: Goldie, nombre: "Goldie Calla", rol: "Gerente de Auditoría" },
+        { foto: Maria, nombre: "Maria Vargas", rol: "Gerente de Auditoría" },
       ],
-      imagen: service1pc,
+      imagen: [service1pc, service1laptop, service1tablet, service1celular],
     },
 
     {
       title: "Auditoria Operativa",
 
       ofrece: [
-        "Nuestro servicios de auditoría operativa van más allá de la revisión superficial de procesos. Nos destacamos por realizar análisis detallados de las operaciones comerciales, evaluando la eficiencia y efectividad de los sistemas internos. Nuestro alcance abarca la identificación de áreas de mejora, la optimización de procesos y la implementación de prácticas recomendadas. Con un enfoque proactivo, colaboramos estrechamente con nuestros clientes para fortalecer sus operaciones y potenciar la eficacia operativa en todos los niveles de la organización.",
+        "Nuestro servicios de auditoría operativa van más allá de la revisión superficial de procesos. Nos destacamos por realizar análisis detallados de las operaciones comerciales, evaluando la eficiencia y efectividad de los sistemas internos. Nuestro alcance abarca la identificación de áreas de mejora, la optimización de procesos y la implementación de prácticas recomendadas. Con un enfoque proactivo, colaboramos estrechamente con nuestros clientes para fortalecer sus operaciones y potenciar la eficacia.",
       ],
 
       experiencia: [
-        "En el ámbito de la auditoría operativa, nuestro equipo cuenta con una vasta experiencia en diversas industrias, permitiéndonos ofrecer soluciones personalizadas adaptadas a las necesidades específicas de cada cliente. Hemos ayudado a empresas a identificar y abordar áreas de riesgo, mejorando la eficiencia y garantizando la alineación con sus objetivos estratégicos. La combinación de conocimientos especializados y una sólida metodología de trabajo hace que Delta Consult sea la elección ideal para aquellos que buscan una auditoría operativa integral y orientada a resultados.",
+        "En el ámbito de la auditoría operativa, nuestro equipo cuenta con una vasta experiencia en diversas industrias, permitiéndonos ofrecer soluciones personalizadas adaptadas a las necesidades de cada cliente. Conocimientos especializados y una sólida metodología de trabajo hace que Delta Consult sea la elección ideal.",
       ],
       equipo: [
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
+        { foto: Oscar, nombre: "Oscar Calle", rol: "Gerente General" },
+        { foto: Goldie, nombre: "Goldie Calla", rol: "Gerente de Auditoría" },
+        { foto: Renato, nombre: "Renato Calle", rol: "Gerente de Consultoría" },
       ],
-      imagen: service3pc,
+      imagen: [service3pc, service3laptop, service3tablet, service3celular],
     },
 
     {
       title: "Auditoria Forense",
 
       ofrece: [
-        "Nuestros servicios de auditoría forense, ofrecen un enfoque meticuloso para investigar y analizar posibles irregularidades y fraudes dentro de las operaciones financieras de una empresa. Nuestro alcance comprende la recolección y preservación de evidencia, la realización de análisis financieros forenses y la emisión de informes detallados. Brindamos a nuestros clientes la confianza de que cualquier preocupación relacionada con la integridad financiera será abordada de manera exhaustiva y profesional.",
+        "Nuestros servicios de auditoría forense, ofrecen un enfoque meticuloso para investigar y analizar posibles irregularidades y fraudes dentro de las operaciones financieras de una empresa. Nuestro alcance comprende la recolección y preservación de evidencia, la realización de análisis financieros forenses y la emisión de informes detallados. Cualquier preocupación relacionada con la integridad financiera será abordada de manera exhaustiva y profesional.",
       ],
 
       experiencia: [
-        "Con una trayectoria comprobada en el campo de la auditoría forense, nuestro equipo de expertos ha trabajado en casos diversos, desde la identificación de malversaciones de fondos hasta la investigación de irregularidades contables. Nuestra experiencia nos permite abordar situaciones complejas con sensibilidad y discreción, garantizando una resolución efectiva y ética de los problemas detectados.",
+        "Con una trayectoria comprobada en el campo de la auditoría forense, nuestro equipo de expertos ha trabajado en casos diversos, desde la identificación de malversaciones de fondos hasta la investigación de irregularidades contables. Nuestra experiencia nos permite abordar situaciones complejas con sensibilidad y discreción.",
       ],
       equipo: [
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
+        {
+          foto: Edgardo,
+          nombre: "Edgardo Vásquez",
+          rol: "Director de Auditoría",
+        },
+        {
+          foto: Miguel,
+          nombre: "Miguel Gutiérrez",
+          rol: "Gerente de Auditoría",
+        },
       ],
-      imagen: service2pc,
+      imagen: [service2pc, service2laptop, service2tablet, service2celular],
     },
 
     {
@@ -121,126 +146,134 @@ function ServicesProvider(props) {
       ],
 
       experiencia: [
-        "Con una sólida experiencia en auditoría tributaria, nuestro equipo de profesionales ha trabajado con empresas de diversos sectores, adaptándonos a la complejidad de las leyes fiscales en constante cambio. Nuestra experiencia nos posiciona como asesores confiables que brindan soluciones efectivas y estratégicas para abordar los desafíos tributarios, asegurando el cumplimiento normativo y la eficiencia fiscal de nuestros clientes.",
+        "Con una sólida experiencia en auditoría tributaria, nuestro equipo de profesionales ha trabajado, adaptándonos a la complejidad de las leyes fiscales en constante cambio. Nuestra experiencia nos posiciona como asesores confiables que brindan soluciones efectivas y estratégicas para abordar los desafíos tributarios.",
       ],
       equipo: [
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
+        {
+          foto: Americo,
+          nombre: "Américo Antezana",
+          rol: "Gerente de Auditoría",
+        },
+        { foto: Maria, nombre: "Maria Vargas", rol: "Gerente de Auditoría" },
       ],
-      imagen: service4pc,
+      imagen: [service4pc, service4laptop, service4tablet, service4celular],
     },
 
     {
       title: "Consultoria Financiera",
 
       ofrece: [
-        "En Delta Consult, nos enorgullece ofrecer una gama completa de servicios de consultoría financiera diseñados para impulsar el éxito financiero de nuestros clientes. En el ámbito de Finanzas Corporativas, proporcionamos asesoramiento estratégico que abarca desde la estructuración de capital hasta la gestión de riesgos, contribuyendo a decisiones financieras clave. Nuestra especialización en Valoración de Empresas utiliza metodologías precisas para determinar el valor real de activos y negocios, mientras que en Proyecciones Financieras brindamos análisis detallados que ofrecen una visión anticipada del rendimiento económico.",
-        "Además, destacamos por nuestra competencia en la gestión de Fusiones y Adquisiciones, facilitando procesos complejos con enfoque analítico y estratégico. En el ámbito de Banca de Inversión, ofrecemos asesoramiento especializado para optimizar inversiones y maximizar el rendimiento financiero de nuestros clientes. Complementando estos servicios, nuestra consultoría aborda aspectos clave como la Gestión de Finanzas Estratégicas, el Análisis de Rentabilidad y Eficiencia, y la Estrategia de Diversificación de Portafolio. Asimismo, garantizamos el Cumplimiento Normativo y Regulatorio, asegurando que las operaciones financieras se realicen dentro de los límites legales establecidos. ",
+        "Para la consultoría financiera realizamos tres servicios. Primero, el análisis exhaustivo de estados financieros, donde nuestro equipo proporciona una visión completa de la salud financiera de su empresa. Segundo, la valoración de la empresa, en procesos de M&A, brindamos asesoramiento, desde la evaluación inicial hasta la integración posterior a las transacciones. Por último, la gestión de riesgos corporativos, donde identificamos y mitigamos los riesgos empresariales, sean inherentes.",
       ],
 
       experiencia: [
-        "Con una amplia experiencia en consultoría financiera, nuestro equipo ha llevado a cabo valoraciones precisas, proyecciones financieras detalladas y exitosas gestiones de fusiones y adquisiciones. Hemos demostrado nuestro compromiso con el éxito financiero de nuestros clientes, ofreciendo asesoramiento especializado en banca de inversión que ha generado resultados sólidos. En Delta Consult, combinamos experiencia técnica con una comprensión profunda de los mercados financieros para guiar a nuestros clientes hacia decisiones estratégicas que impulsan el crecimiento y la rentabilidad a largo plazo.",
+        "Nuestros servicios de consultoría financiera están diseñados para brindar a su empresa una ventaja competitiva en el complejo entorno de un mercado competitivo y acceso financiero actual. Nuestro enfoque en el ámbito financiero tiene un alcance amplio por los servicios detallados anteriormente.",
       ],
       equipo: [
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
+        { foto: Oscar, nombre: "Oscar Calle", rol: "Gerente General" },
+        {
+          foto: Edgardo,
+          nombre: "Edgardo Vásquez",
+          rol: "Director de Auditoría",
+        },
+        { foto: Renato, nombre: "Renato Calle", rol: "Gerente de Consultoría" },
       ],
-      imagen: service7pc,
+      imagen: [service7pc, service7laptop, service7tablet, service7celular],
     },
 
     {
       title: "Consultoria Tributaria",
 
       ofrece: [
-        "En Delta Consult, nos destacamos por ofrecer servicios integrales de consultoría tributaria, proporcionando asesoramiento estratégico para optimizar la carga fiscal y garantizar el cumplimiento normativo. ",
-        "Nuestro alcance abarca desde la revisión y adecuación de registros fiscales hasta la identificación de oportunidades legales para maximizar beneficios fiscales. En Consultoría Tributaria, ofrecemos soluciones adaptadas a la legislación local e internacional, incluyendo la preparación de declaraciones tributarias y la gestión de situaciones tributarias complejas.",
+        "Al reconocer la importancia crítica de la consultoría tributaria y legal en el contexto empresarial boliviano, Delta Consult cuenta con un equipo de expertos en impuestos altamente capacitados y familiarizados con el entorno tributario nacional e internacional. Nuestro equipo trabaja para garantizar que su empresa cumpla con sus obligaciones fiscales de manera eficiente y en conformidad con las normativas fiscales locales e internacionales.",
       ],
 
       experiencia: [
-        "Con una sólida experiencia en consultoría tributaria, nuestro equipo de profesionales ha asesorado a empresas de diversos sectores, hemos demostrado nuestra capacidad para minimizar riesgos fiscales y garantizar el cumplimiento normativo, al tiempo que identificamos oportunidades para optimizar la carga tributaria. En Delta Consult, combinamos un profundo conocimiento de la normativa fiscal con un enfoque proactivo, asegurando que nuestros clientes cuenten con estrategias tributarias sólidas y efectivas para respaldar su salud financiera y operativa a largo plazo.",
+        "Nuestros servicios de consultoría financiera están diseñados para brindar a su empresa una ventaja competitiva en el complejo entorno de un mercado competitivo y acceso financiero actual. Nuestro enfoque estratégico y personalizado en el ámbito financiero tiene un alcance amplio por los servicios detallados anteriormente.",
       ],
       equipo: [
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
+        { foto: Oscar, nombre: "Oscar Calle", rol: "Gerente General" },
+        {
+          foto: Edgardo,
+          nombre: "Edgardo Vásquez",
+          rol: "Director de Auditoría",
+        },
       ],
-      imagen: service8pc,
+      imagen: [service8pc, service8laptop, service8tablet, service8celular],
     },
 
     {
       title: "Consultoria Estrategica",
 
       ofrece: [
-        "En Delta Consult, ofrecemos servicios de consultoría estratégica diseñados para guiar a las empresas en la formulación e implementación de estrategias que impulsen el éxito a largo plazo. Nuestro alcance abarca desde la evaluación del entorno competitivo hasta la identificación de oportunidades de crecimiento, proporcionando un enfoque integral para abordar desafíos empresariales complejos. En Consultoría Estratégica, nos especializamos en la definición de objetivos claros, el diseño de modelos de negocio innovadores y la ejecución eficiente de planes estratégicos que generen ventajas competitivas sostenibles.",
+        "En Delta Consult creemos que una estrategia empresarial sólida es esencial para el adecuado rendimiento de cualquier emprendimiento y la maximización del patrimonio a largo plazo. Nuestros consultores estratégicos trabajan en estrecha y frecuente colaboración con la alta dirección de su empresa para realizar planes estratégicos donde se incluyen análisis de mercado, identificación de oportunidades y amenazas, y se termina por definir una estrategia clara y coherente.",
       ],
       experiencia: [
-        "Con una sólida trayectoria en consultoría estratégica, nuestro equipo ha colaborado exitosamente con empresas de diversos sectores. Nuestros trabajos se destacaron por diseñar e implementar estrategias que generaron ventajas competitivas en las gestiones de nuestros clientes, adaptándonos a entornos dinámicos y brindando soluciones efectivas para los desafíos empresariales actuales y futuros. En Delta Consult, combinamos análisis perspicaz y visión estratégica para el crecimiento sostenible de nuestros clientes.",
+        "Realizamos análisis exhaustivos del mercado, identificando tendencias, oportunidades de crecimiento y posibles amenazas. A partir de ahí, nuestra misión es proporcionar insights valiosos que impulsen el crecimiento y mejoren la salud financiera de su organización ante un entorno empresarial en constante evolución.",
       ],
       equipo: [
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
+        { foto: Oscar, nombre: "Oscar Calle", rol: "Gerente General" },
+        {
+          foto: Edgardo,
+          nombre: "Edgardo Vásquez",
+          rol: "Director de Auditoría",
+        },
+        { foto: Renato, nombre: "Renato Calle", rol: "Gerente de Consultoría" },
       ],
-      imagen: service6pc,
+      imagen: [service6pc, service6laptop, service6tablet, service6celular],
     },
 
     {
       title: "Consultoria de Sostenibilidad",
 
       ofrece: [
-        "Delta Consult ofrece servicios especializados en consultoría de sostenibilidad, abordando la creciente necesidad de integrar prácticas empresariales social y ambientalmente responsables. Nuestro alcance abarca desde la evaluación del impacto ambiental y social hasta la implementación de estrategias que fomenten la sostenibilidad a lo largo de la cadena de valor. En Consultoría de Sostenibilidad, nos enfocamos en la creación de prácticas éticas y sostenibles que no solo benefician al entorno, sino que también mejoran la resiliencia y reputación de la empresa.",
+        "Nuestros servicios de consultoría de sostenibilidad ayudan a su empresa a desarrollar planes estratégicos enfocados específicamente en la sostenibilidad, lo que sirve para cumplir con las normas y regulaciones ambientales y sociales. Evaluamos el desempeño ambiental y social, y cómo estos afectan económicamente a su empresa. Trabajamos para implementar prácticas sostenibles que beneficien a su empresa y a la sociedad en general.",
       ],
       experiencia: [
-        "En Delta Consult, combinamos nuestro compromiso con la sostenibilidad con un enfoque pragmático, asegurando que nuestros clientes puedan avanzar hacia una operación más sostenible y ética en un mundo en constante cambio.",
-        "Nuestro equipo ha asesorado a empresas de diversos sectores para integrar principios de responsabilidad social y ambiental en sus operaciones. Hemos liderado y demostrado nuestra capacidad para desarrollar estrategias que generan un impacto positivo, desde la gestión eficiente de recursos hasta la implementación de iniciativas de responsabilidad social corporativa.",
+        "En Delta Consult, abrazamos la responsabilidad social y la sostenibilidad como componentes esenciales del éxito empresarial contemporáneo. Este servicio empezó a ser considerado recientemente, si bien es nuevo incluso para nosotros, nos esmeramos en que la calidad sea la misma que nos caracterizó siempre.",
       ],
       equipo: [
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
+        { foto: Oscar, nombre: "Oscar Calle", rol: "Gerente General" },
+        {
+          foto: Edgardo,
+          nombre: "Edgardo Vásquez",
+          rol: "Director de Auditoría",
+        },
+        { foto: Renato, nombre: "Renato Calle", rol: "Gerente de Consultoría" },
       ],
-      imagen: service5pc,
+      imagen: [service5pc, service5laptop, service5tablet, service5celular],
     },
 
     {
       title: "Outsourcing de Contabilidad",
 
       ofrece: [
-        "Mediante nuestra empresa aliada, Swiss Consult, brindamos servicios integrales de outsourcing de contabilidad, facilitando a las empresas una gestión financiera eficiente y conforme a las normativas. Nuestro alcance incluye asesoramiento contable y legal, proporcionando orientación clave en la toma de decisiones financieras. ",
-        "Nos especializamos en bookkeeping o teneduría de libros, garantizando registros contables precisos y organizados. Realizamos la reconstrucción contable cuando es necesaria, ofreciendo soluciones efectivas para rectificar registros y mantener la integridad financiera. También gestionamos planillas salariales, asegurando un manejo preciso y puntual de los aspectos relacionados con los recursos humanos.",
+        "Delta Consult se destaca como proveedor integral de servicios de outsourcing de contabilidad, ofreciendo un amplio espectro de soluciones para satisfacer las necesidades financieras de sus clientes. Su gama de servicios incluye asesoramiento contable, teneduría de libros, y reconstrucción contable, destacándose por un enfoque preciso y metódico, gestión de planillas salariales, proporcionando una administración eficiente de los pagos a los empleados.",
       ],
 
       experiencia: [
-        "Con una sólida experiencia en outsourcing de contabilidad, hemos colaborado con empresas de diversos sectores. Desde la preparación de Estados Financieros (EEFF) hasta la valoración de activos fijos, nuestro equipo ofrece soluciones que van más allá de la simple gestión contable. Nos destacamos por la precisión en las declaraciones tributarias, asegurando el cumplimiento normativo y la optimización fiscal. ",
+        "En Delta Consult, abrazamos la responsabilidad social y la sostenibilidad como componentes esenciales del éxito empresarial contemporáneo. Este servicio empezó a ser considerado recientemente, si bien es nuevo incluso para nosotros, nos esmeramos en que la calidad sea la misma que nos caracterizó siempre.",
       ],
       equipo: [
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
+        { foto: Ximena, nombre: "Ximena Calle", rol: "Gerente de Consultoría" },
       ],
-      imagen: service9pc,
+      imagen: [service9pc, service9laptop, service9tablet, service9celular],
     },
 
     {
       title: "Recursos Humanos",
 
       ofrece: [
-        "Delta Consult también ofrece servicios en recursos humanos para empresas. Buscamos aquellas aptitudes que tu negocio necesita para crecer, abordando aspectos cruciales para el desarrollo y optimización del capital humano en las empresas. ",
-        "Nuestra oferta incluye la Medición de Clima Organizacional, permitiendo evaluar y mejorar la dinámica laboral para impulsar la productividad y satisfacción de los empleados. Nos destacamos en el Reclutamiento y Selección de Personal, colaborando estrechamente con las empresas para identificar candidatos idóneos que se alineen con sus valores y necesidades.",
+        "El alcance de Delta Consult en sus servicios incluyen: Medición de Clima Organizacional, Reclutamiento y Selección de Personal, Diseño de escalas salariales, Reingeniería Organizacional, Capacitación y entrenamiento, y Evaluación del desempeño. Asimismo, sobresalen en el diseño de escalas salariales, garantizando equidad y competitividad en la remuneración, y en la reingeniería organizacional, optimizando estructuras para impulsar la eficiencia y adaptabilidad.",
       ],
 
       experiencia: [
-        "Hemos liderado proyectos exitosos en el Diseño de Escalas Salariales, asegurando equidad y competitividad. En Reingeniería Organizacional, hemos optimizado estructuras y procesos internos, contribuyendo al crecimiento sostenible de las empresas. Nuestra experiencia también se destaca en el ámbito de Capacitación y Entrenamiento, ofreciendo programas personalizados que fortalecen habilidades esenciales. Además, en la Evaluación del Desempeño, implementamos procesos efectivos que proporcionan una evaluación precisa y fomentan el desarrollo continuo del personal. ",
-        "En Delta Consult, nuestra experiencia se traduce en soluciones integrales que potencian el capital humano y mejoran la eficiencia operativa de las empresas.",
+        "Delta Consult se destaca en el campo de la consultoría de recursos humanos. Desde la medición del Clima Organizacional, que permite evaluar y mejorar la dinámica laboral, hasta el reclutamiento y selección de personal, donde su enfoque personalizado asegura la identificación de candidatos alineados con la cultura y objetivos de la empresa.",
       ],
       equipo: [
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
-        { foto: foto, nombre: "jeferson gutierritos", rol: "contador" },
+        { foto: Ximena, nombre: "Ximena Calle", rol: "Gerente de Consultoría" },
       ],
-      imagen: service10pc,
+      imagen: [service10pc, service10laptop, service10tablet, service10celular],
     },
   ];
 

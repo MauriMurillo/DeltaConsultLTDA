@@ -7,7 +7,7 @@ import { DeltaContext } from "../../Contexts/DeltaContext.js";
 
 function Services() {
   const { services } = useContext(ServicesContext);
-  const { selectedContent } = useContext(DeltaContext);
+  const { selectedContent, screenSize } = useContext(DeltaContext);
   let main = {};
   if (selectedContent !== "") {
     main = services.find(
@@ -18,6 +18,14 @@ function Services() {
       (item) => item.title.toLowerCase() === "auditoria financiera"
     );
   }
+  const index =
+    screenSize.width > 1150
+      ? 0
+      : screenSize.width > 950
+      ? 1
+      : screenSize.width > 600
+      ? 2
+      : 3;
   return (
     <div className="servicesScreen Screen">
       <Header />
@@ -30,7 +38,7 @@ function Services() {
           <p>{main.experiencia[0]}</p>
         </div>
         <div className="imageContainer">
-          <img alt={main.title} src={main.imagen} />
+          <img alt={main.title} src={main.imagen[index]} />
         </div>
       </section>
       <section className="servTeamSection">
