@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DeltaConsultLTDA/static/css/main.86fa94a6.css",
-    "main.js": "/DeltaConsultLTDA/static/js/main.a31811e0.js",
+    "main.js": "/DeltaConsultLTDA/static/js/main.a4ecd27b.js",
     "static/media/18. Diana Flores Tapia_ Subgerente Contable.jpg": "/DeltaConsultLTDA/static/media/18. Diana Flores Tapia_ Subgerente Contable.65caa0d5ae8dc3974a51.jpg",
     "static/media/2. Edgardo Vásquez Durán_ Director de Auditoría - Socio.jpg": "/DeltaConsultLTDA/static/media/2. Edgardo Vásquez Durán_ Director de Auditoría - Socio.b1c24ef77166f6b41400.jpg",
     "static/media/4. Paula Calle Rojas.jpg": "/DeltaConsultLTDA/static/media/4. Paula Calle Rojas.14f8541df06bfa3305ee.jpg",
@@ -129,10 +129,10 @@
     "static/media/Menu.svg": "/DeltaConsultLTDA/static/media/Menu.865e3edc957a3cceb4ef8bb13fbfe0a7.svg",
     "static/media/Arrow_drop.svg": "/DeltaConsultLTDA/static/media/Arrow_drop.e556d5b3d9df7884f48f058313ef5ed6.svg",
     "main.86fa94a6.css.map": "/DeltaConsultLTDA/static/css/main.86fa94a6.css.map",
-    "main.a31811e0.js.map": "/DeltaConsultLTDA/static/js/main.a31811e0.js.map"
+    "main.a4ecd27b.js.map": "/DeltaConsultLTDA/static/js/main.a4ecd27b.js.map"
   },
   "entrypoints": [
     "static/css/main.86fa94a6.css",
-    "static/js/main.a31811e0.js"
+    "static/js/main.a4ecd27b.js"
   ]
 }
