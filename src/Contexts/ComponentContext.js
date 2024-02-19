@@ -6,7 +6,7 @@ function ComponentProvider(props) {
   const options = [
     {
       title: "SERVICIOS",
-      text: "Conoce los distintos servicios que podemos prestarle a tu empresa. Nuestro compromiso con la excelencia y la adaptabilidad nos permite brindar servicios de auditoría y consultoría altamente especializados en una amplia variedad de industrias en Bolivia. ",
+      text: "Conoce los distintos servicios que podemos prestarle a tu empresa. Nuestro compromiso con la excelencia y la adaptabilidad nos permite brindar servicios de auditoría y consultoría altamente especializados en una amplia variedad de industrias en Bolivia.",
       menu: [
         {
           name: "AUDITORIA EXTERNA",
@@ -42,7 +42,7 @@ function ComponentProvider(props) {
     },
     {
       title: "INDUSTRIAS",
-      text: "Exploramos diversas áreas y sectores profesionales para ofrecer servicios especializados de auditoría y consultoría. Independientemente de la industria en la que operes, estamos comprometidos a proporcionar soluciones adaptadas a tus necesidades específicas.",
+      text: "Conoce los distintos rubros y áreas profesionales a las que prestamos nuestros servicios. Sin importar el campo en el que tu empresa se desempeñe, podemos brindarte soluciones a través de auditorías y consultorías. Explora las industrias con las que trabajamos.",
       menu: [],
       links: [
         "GUBERNAMENTALES",
@@ -52,7 +52,7 @@ function ComponentProvider(props) {
         "TECNOLOGICAS",
         "ESTRATEGICAS",
         "SIN FINES DE LUCRO",
-        "TURISMO Y GASTRONOMIA"
+        "TURISMO Y GASTRONOMIA",
       ],
     },
   ];

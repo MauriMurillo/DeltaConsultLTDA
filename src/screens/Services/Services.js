@@ -41,7 +41,7 @@ function Services() {
           <img alt={main.title} src={main.imagen[index]} />
         </div>
       </section>
-      <section className="servTeamSection">
+      <section className="servTeamSection Bottom">
         <h2>Nuestro equipo especializado</h2>
         <div className="serviceTeamGrid">
           {main.equipo.map((item) => (

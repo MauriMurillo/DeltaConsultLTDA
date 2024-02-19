@@ -35,7 +35,7 @@ function Hero(props) {
   }, [heroPosition, heroContent]);
 
   return (
-    <div className="heroContainer top">
+    <div className="heroContainer noTop">
       {/* PC */}
       {screenSize.width > 1150 ? (
         <img

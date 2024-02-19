@@ -9,7 +9,7 @@ function Header() {
 
   if (screenSize.width <= 950) {
     return (
-      <nav className="superNav">
+      <nav className="superNav noTop">
         <HeaderMobile />
       </nav>
     );

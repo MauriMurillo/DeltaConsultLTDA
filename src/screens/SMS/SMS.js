@@ -69,7 +69,7 @@ function SMS() {
         </div>
       </div>
 
-      <div className="ifacSection">
+      <div className="ifacSection Bottom">
         <div className="textContainer">
           <h2 className="Title">Foro de Firmas</h2>
           <div className="Text">El mas grande de Latinoamerica</div>

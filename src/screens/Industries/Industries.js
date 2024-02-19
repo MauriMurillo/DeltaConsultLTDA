@@ -30,7 +30,7 @@ function Industries() {
   return (
     <div className="industriesScreen Screen">
       <Header />
-      <section className="mainIndustry top">
+      <section className="mainIndustry noTop">
         <div className="textContainer">
           <h1>{main.title}</h1>
 
@@ -46,7 +46,7 @@ function Industries() {
         </div>
       </section>
       {screenSize.width > 950 ? (
-        <section className="restIndustries">
+        <section className="restIndustries Bottom">
           <h3>Explora Nuestras Industrias</h3>
           <div className="Grid">
             {rest.map((item) => (

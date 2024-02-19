@@ -19,8 +19,6 @@ import { HomeProvider } from "./Contexts/HomeContext";
 import { ServicesProvider } from "./Contexts/ServicesContext";
 import { TeamContentProvider } from "./Contexts/TeamContentContext";
 import { IndustriesProvider } from "./Contexts/IndustriesContext";
-import { SMSProvider } from "./Contexts/SMSContext";
-import { ContactProvider } from "./Contexts/ContactContext";
 
 //Main Application Structure
 function App() {
@@ -67,20 +65,11 @@ function App() {
             <Route
               path="/SMS"
               element={
-                <SMSProvider>
                   <SMS />
-                </SMSProvider>
               }
             />
 
-            <Route
-              path="/Contacto"
-              element={
-                <ContactProvider>
-                  <Contact />
-                </ContactProvider>
-              }
-            />
+            <Route path="/Contacto" element={<Contact />} />
           </Routes>
         </HashRouter>
       </ComponentProvider>

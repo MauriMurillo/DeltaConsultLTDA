@@ -20,3 +20,12 @@ html {
 body {
   background-color: white;
 }
+.Screen > *{
+  margin-top: 10vh;
+}
+.Screen > .noTop{
+  margin-top: 0px;
+}
+.Screen > .Bottom{
+  margin-bottom: 10vh;
+}
