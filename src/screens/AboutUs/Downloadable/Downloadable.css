@@ -1,161 +1,105 @@
-.AlliesContainer {
-  background: #95c1d5;
-  padding-bottom: 64px;
+#BROCHURE\ Y\ DOING\ BUSINESS .cardContainer {
+  justify-content: space-around;
 }
-.AlliesContainer > .textContainer {
-  width: 1056px;
-  padding-top: 64px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 70px;
+#BROCHURE\ Y\ DOING\ BUSINESS .card {
+  height: 384px;
 }
-.AlliesTitle {
-  color: #fff;
-  font-size: 54px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 40px; /* 74.074% */
-  margin-bottom: 31px;
+#BROCHURE\ Y\ DOING\ BUSINESS .card .imageContainer {
+  height: 184px;
 }
-.AlliesText {
-  color: #fff;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 20px; /* 83.333% */
+#BROCHURE\ Y\ DOING\ BUSINESS .card .imageContainer img {
+  width: 100%;
+  height: 100%;
+  border-bottom: 4px solid white;
 }
-.AlliesContainer .cardContainer {
-  width: 1056px;
-  margin: 0 auto;
+#BROCHURE\ Y\ DOING\ BUSINESS .card .textContainer {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 32px;
+  padding-bottom: 28px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 }
-.AlliesContainer .card {
-  width: 288px;
-  height: 382px;
-  border-radius: 15px;
-  border: solid white 4px;
-  overflow: hidden;
-  text-decoration: none;
+#BROCHURE\ Y\ DOING\ BUSINESS .card .textContainer .name {
+  margin-bottom: 45px;
 }
-.AlliesContainer .card .imageContainer {
-  background-color: white;
-  height: 186px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.AlliesContainer .card .imageContainer img {
-  width: 93%;
-}
-.AllillesContainer .card .textContainer {
-  height: 196px;
-  background-color: #95c1d5;
-  padding-left: 29px;
-  padding-right: 29px;
-  padding-top: 30px;
-  padding-bottom: 42px;
-}
-.AlliesContainer .card .textContainer .name {
-  color: #fff;
-  text-align: center;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 32px; /* 123.077% */
-  margin-bottom: 30px;
-}
-.AlliesContainer .card .textContainer .desc {
-  color: #fff;
-  text-align: center;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 22px; /* 157.143% */
+#BROCHURE\ Y\ DOING\ BUSINESS .card .textContainer .icon {
+  width: 64px;
+  height: 64px;
 }
 @media only screen and (max-width: 1150px) {
-  .AlliesContainer > .textContainer {
-    width: 896px;
+  #BROCHURE\ Y\ DOING\ BUSINESS .card {
+    height: 384px;
+    width: 288px;
   }
-  .AlliesContainer .cardContainer {
-    width: 896px;
+  #BROCHURE\ Y\ DOING\ BUSINESS .card .imageContainer {
+    height: 184px;
   }
-  .AlliesContainer .card {
-    width: 256px;
+  #BROCHURE\ Y\ DOING\ BUSINESS .card .imageContainer img {
+    width: 100%;
+    height: 100%;
+    border-bottom: 4px solid white;
   }
-  .AlliesContainer .card .textContainer {
-    height: 196px;
-    background-color: #95c1d5;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 30px;
-    padding-bottom: 42px;
+  #BROCHURE\ Y\ DOING\ BUSINESS .card .textContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 32px;
+    padding-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #BROCHURE\ Y\ DOING\ BUSINESS .card .textContainer .name {
+    margin-bottom: 45px;
   }
 }
 
 @media only screen and (max-width: 950px) {
-  .AlliesContainer > .textContainer {
-    width: 576px;
-  }
   .AlliesTitle {
-    font-size: 38px;
-    line-height: 40px; /* 105.263% */
+    padding-right: 32px;
   }
-  .AlliesText {
-    font-size: 16px;
-    line-height: 20px; /* 125% */
+  #BROCHURE\ Y\ DOING\ BUSINESS .cardContainer {
+    gap: 0px;
   }
-  .AlliesContainer .cardContainer {
-    width: 576px;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 128px;
-    row-gap: 50px;
-  }
-  .AlliesContainer .card {
+  #BROCHURE\ Y\ DOING\ BUSINESS .card {
     width: 224px;
     height: 288px;
   }
-  .AlliesContainer .card .imageContainer {
-    height: 144px;
+  #BROCHURE\ Y\ DOING\ BUSINESS .card .imageContainer {
+    height: 140px;
   }
-  .AlliesContainer .card .textContainer {
-    height: 144px;
-    background-color: #95c1d5;
+  #BROCHURE\ Y\ DOING\ BUSINESS .card .textContainer {
+    height: 148px;
+  }
+  #BROCHURE\ Y\ DOING\ BUSINESS .card .textContainer .name {
     padding-left: 0px;
     padding-right: 0px;
-    padding-top: 21px;
-  }
-  .AlliesContainer .card .textContainer .name {
-    padding-left: 39.5px;
-    padding-right: 39.5px;
     font-size: 16px;
     line-height: 22px; /* 123.077% */
     margin-bottom: 18px;
   }
-  .AlliesContainer .card .textContainer .desc {
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 12px;
-    line-height: 20px; /* 157.143% */
+  #BROCHURE\ Y\ DOING\ BUSINESS .card .textContainer .icon {
+    width: 46px;
+    height: 46px;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .AlliesContainer > .textContainer {
-    width: 100%;
-    max-width: 450px;
-  }
   .AlliesTitle {
     text-align: center;
     line-height: 50px; /* 105.263% */
+    padding-right: 0px;
   }
   .AlliesText {
     text-align: center;
   }
-  .AlliesContainer .cardContainer {
+  #BROCHURE\ Y\ DOING\ BUSINESS .cardContainer {
     width: 361px;
     width: 100%;
     max-width: 450px;
+    gap: 64px;
   }
 }
