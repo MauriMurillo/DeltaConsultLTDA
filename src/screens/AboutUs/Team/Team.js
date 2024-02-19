@@ -7,7 +7,7 @@ import { Group } from "./Card";
 function Team() {
   const { team } = useContext(TeamContentContext);
   return (
-    <div className="teamContainer">
+    <div className="teamContainer" id="NUESTRO EQUIPO">
       <section className="sectionText" id="NuestroEquipo">
         <h1>Nuestro equipo de liderazgo</h1>
         <p>Una base firme para el presente y el futuro</p>

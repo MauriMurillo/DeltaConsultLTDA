@@ -6,7 +6,7 @@ function History() {
   const ref = useRef(null);
   const { historia } = useContext(TeamContentContext);
   return (
-    <div className="history">
+    <div className="history" id="NUESTRA HISTORIA">
       <section className="sectionText" id="NuestraHistoria">
         <h2>Nuestra Historia</h2>
         <p>Una base firme para el presente y el futuro</p>

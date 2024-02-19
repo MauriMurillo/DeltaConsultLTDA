@@ -19,7 +19,7 @@ const ScrollToTop = () => {
     } else {
       const element = document.getElementById(selectedSection);
       if (element) {
-        element.scrollIntoView();
+        element.scrollIntoView(false);
       }
     }
   }, [

@@ -37,7 +37,7 @@ function ComponentProvider(props) {
         "PROPOSITO",
         "NUESTRO EQUIPO",
         "NUESTRA HISTORIA",
-        "BROSURE Y DOING BUSINESS",
+        "BROCHURE Y DOING BUSINESS",
       ],
     },
     {
