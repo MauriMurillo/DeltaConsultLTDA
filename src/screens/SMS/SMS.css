@@ -4,6 +4,7 @@
 }
 .ifacSection {
   color: var(--DeltaBlue);
+  margin-top: 0px;
 }
 .smsSection .textContainer,
 .ifacSection .textContainer {
