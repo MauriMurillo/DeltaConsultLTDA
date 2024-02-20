@@ -2,9 +2,9 @@ import React, { useContext, useState } from "react";
 import close from "../../../Assets/Icons/utilIcons/Close.svg";
 import { DeltaContext } from "../../../Contexts/DeltaContext";
 function Card(props) {
-  const { cardData, setPerson } = props;
+  const { cardData, setPerson, person } = props;
   return (
-    <div className="cardTeam" onClick={() => setPerson(cardData.name)}>
+    <div className="cardTeam" onClick={cardData.name === person ? ()=>setPerson("") : () => setPerson(cardData.name)}>
       <div className="imageContainer">
         <img src={cardData.picture} alt={cardData.name} />
       </div>

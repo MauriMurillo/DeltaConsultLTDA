@@ -32,27 +32,6 @@
   line-height: 39px; /* 162.5% */
   margin-bottom: 64px;
 }
-.arrow {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  background-color: #f4f5f7;
-  opacity: 0.5;
-}
-.arrow:hover {
-  opacity: 1;
-}
-.forward {
-  right: 0px;
-  top: calc(50% - 20px);
-}
-.rewind {
-  left: 0px;
-  top: calc(50% - 20px);
-}
 
 @media only screen and (max-width: 950px) {
   .heroContainer {
@@ -107,4 +86,27 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
+/* Fixes */
+#heroButton:hover {
+  border-color: var(--LightBlue);
+}
+#heroButton:hover p {
+  color: var(--LightBlue);
+}
+#heroButton {
+  width: 191px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  border: solid 4px;
+  border-color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+}
+#heroButton p {
+  color: #fff;
+  fontsize: 26px;
+  fontweight: 600;
 }

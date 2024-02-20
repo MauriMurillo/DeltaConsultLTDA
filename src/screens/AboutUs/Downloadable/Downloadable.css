@@ -20,10 +20,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 #BROCHURE\ Y\ DOING\ BUSINESS .card .textContainer .name {
-  margin-bottom: 45px;
+  margin-bottom: 25px;
+  /* Fix Santi  */
 }
 #BROCHURE\ Y\ DOING\ BUSINESS .card .textContainer .icon {
   width: 64px;

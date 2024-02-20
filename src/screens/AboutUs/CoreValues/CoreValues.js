@@ -5,8 +5,8 @@ import { DropMenu } from "../../../components/DropMenu/DropMenu";
 function CoreValues() {
   const { coreValuesInfo } = useContext(TeamContentContext);
   return (
-    <div className="valuesContainer top" id="PROPOSITO">
-      <section className="sectionText">
+    <div className="valuesContainer top" >
+      <section className="sectionText" id="PROPOSITO">
         <h2>{coreValuesInfo.proposito.title}</h2>
         <p>{coreValuesInfo.proposito.description}</p>
       </section>

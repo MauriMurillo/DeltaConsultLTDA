@@ -9,14 +9,13 @@ const ScrollToTop = () => {
     setShowOptionMenu,
     setShowSubMenu,
     setShowMobileMenu,
+    selectedOption
   } = useContext(DeltaContext);
   useEffect(() => {
     setShowOptionMenu(false);
     setShowSubMenu(false);
     setShowMobileMenu(false);
-    if (selectedSection === "") {
-      window.scrollTo(0, 0);
-    } else {
+    if (selectedSection !== "" && selectedOption === "NOSOTROS") {
       const element = document.getElementById(selectedSection);
       if (element) {
         element.scrollIntoView({
@@ -25,14 +24,10 @@ const ScrollToTop = () => {
           inline: "center",
         });
       }
+    } else {
+      window.scrollTo(0, 0);
     }
-  }, [
-    pathname,
-    selectedSection,
-    setShowMobileMenu,
-    setShowOptionMenu,
-    setShowSubMenu,
-  ]);
+  }, [pathname, selectedOption, selectedSection, setShowMobileMenu, setShowOptionMenu, setShowSubMenu]);
   return null;
 };
 

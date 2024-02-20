@@ -26,8 +26,11 @@ import Rolando from "../Assets/nosotros/secciondos/fotospersonalnumeradas/20. Ro
 import Valentina from "../Assets/nosotros/secciondos/fotospersonalnumeradas/21. Valentina Calle Ledezma_ Encargada de Marketing.jpg";
 import Luz from "../Assets/nosotros/secciondos/fotospersonalnumeradas/22. Luz Flores Tapia_ Encargada de Contabilidad.jpg";
 
-import brochure from "../Assets/nosotros/secciontres/brochure.png"
-import doingbusiness from "../Assets/nosotros/secciontres/doingbusiness.png"
+import brochure from "../Assets/nosotros/secciontres/brochure.png";
+import doingbusiness from "../Assets/nosotros/secciontres/doingbusiness.png";
+
+import brochurepdf from "../Assets/nosotros/Broshure Delta.pdf"
+import businesspdf from "../Assets/nosotros/Doing Bussines Bolivia 2022.pdf"
 const TeamContentContext = React.createContext();
 
 function TeamContentProvider(props) {
@@ -184,7 +187,7 @@ function TeamContentProvider(props) {
 
           "Es parte del equipo de Delta Consult desde el año 2014, desempeñándose como auditor financiero hasta alcanzar el puesto de subgerente de auditoría. Su experiencia laboral reside en los trabajos realizados para la empresa.",
 
-          "José Luis tiene gusto por el voleibol, viajar y conocer nuevas personas.",
+          "José Luis tiene gusto por el voleibol, viajar y conocer nuevas personas. Gran Valor.",
         ],
       },
       {
@@ -362,8 +365,8 @@ function TeamContentProvider(props) {
   ];
 
   const files = [
-    { title: "BROCHURE", imagen: brochure, pdf: "#" },
-    { title: "DOING BUSINESS", imagen: doingbusiness, pdf: "#" },
+    { title: "BROCHURE", imagen: brochure, pdf: brochurepdf },
+    { title: "DOING BUSINESS", imagen: doingbusiness, pdf: businesspdf },
   ];
   return (
     <TeamContentContext.Provider

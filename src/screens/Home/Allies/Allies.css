@@ -32,7 +32,7 @@
 }
 .AlliesContainer .card {
   width: 288px;
-  height: 382px;
+  height: 396px;
   border-radius: 15px;
   border: solid white 4px;
   overflow: hidden;
@@ -49,12 +49,12 @@
   width: 93%;
 }
 .AlliesContainer .card .textContainer {
-  height: 196px;
+  height: 210px;
   background-color: #95c1d5;
   padding-left: 28px;
   padding-right: 28px;
   padding-top: 30px;
-  padding-bottom: 42px;
+  padding-bottom: 38px;
 }
 .AlliesContainer .card .textContainer .name {
   color: #fff;

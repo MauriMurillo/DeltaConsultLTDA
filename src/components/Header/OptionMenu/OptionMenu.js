@@ -63,7 +63,7 @@ function OptionMenu() {
             return (
               <div
                 onClick={() => {
-                  if (showSubMenu) {
+                  if (showSubMenu && selectedItem === item.name) {
                     setShowSubMenu(false);
                     setSelectedItem("");
                   } else {

@@ -57,6 +57,7 @@ function MenuList(props) {
         onClick={() => {
           setShowSubMenu(false);
           setShowOptionMenu(false);
+          setSelectedOption("SMS");
         }}
       >
         <NavLink to={"/SMS"}> SMS LATAM</NavLink>
@@ -65,6 +66,7 @@ function MenuList(props) {
         onClick={() => {
           setShowSubMenu(false);
           setShowOptionMenu(false);
+          setSelectedOption("CONTACTO");
         }}
       >
         <NavLink to={"/Contacto"}> CONTACTO</NavLink>
