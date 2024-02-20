@@ -19,7 +19,7 @@ body {
   background-color: white;
 }
 .Screen > * {
-  max-width: 1510px;
+  max-width: 1900px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 150px;
@@ -34,7 +34,7 @@ body {
   max-width: none;
 }
 .wide > * {
-  max-width: 1510px;
+  max-width: 1900px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -43,7 +43,7 @@ body {
   background-color: var(--DarkBlue);
 }
 .optionMenuForBig > div {
-  max-width: 1510px;
+  max-width: 1900px;
   margin-left: auto;
   margin-right: auto;
 }

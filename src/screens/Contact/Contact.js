@@ -4,6 +4,7 @@ import { Footer } from "../../components/Footer/Footer.js";
 import { BigOffice } from "./BigOffice.js";
 import { ContactForm } from "./ContactForm/ContactForm.js";
 import { ComponentContext } from "../../Contexts/ComponentContext.js";
+import { ResumeForm } from "./ResumeForm/ResumeForm.js";
 
 function Contact() {
   const { offices } = useContext(ComponentContext);
@@ -21,7 +22,8 @@ function Contact() {
         {offices.map((item) => (
           <BigOffice content={item} />
         ))}
-        {/* <ContactForm /> */}
+        <ContactForm />
+        <ResumeForm/>
       </div>
       <Footer />
     </div>
