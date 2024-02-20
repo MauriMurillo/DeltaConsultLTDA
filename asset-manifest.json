@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/DeltaConsultLTDA/static/css/main.86fa94a6.css",
-    "main.js": "/DeltaConsultLTDA/static/js/main.a4ecd27b.js",
+    "main.css": "/DeltaConsultLTDA/static/css/main.39fbf182.css",
+    "main.js": "/DeltaConsultLTDA/static/js/main.fdb16a77.js",
+    "static/media/Broshure Delta.pdf": "/DeltaConsultLTDA/static/media/Broshure Delta.6c08e8b719268a3bfd8e.pdf",
     "static/media/18. Diana Flores Tapia_ Subgerente Contable.jpg": "/DeltaConsultLTDA/static/media/18. Diana Flores Tapia_ Subgerente Contable.65caa0d5ae8dc3974a51.jpg",
     "static/media/2. Edgardo Vásquez Durán_ Director de Auditoría - Socio.jpg": "/DeltaConsultLTDA/static/media/2. Edgardo Vásquez Durán_ Director de Auditoría - Socio.b1c24ef77166f6b41400.jpg",
     "static/media/4. Paula Calle Rojas.jpg": "/DeltaConsultLTDA/static/media/4. Paula Calle Rojas.14f8541df06bfa3305ee.jpg",
@@ -18,6 +19,7 @@
     "static/media/11. César Portugal Villamil_ Gerente de Tecnología de Información.jpg": "/DeltaConsultLTDA/static/media/11. César Portugal Villamil_ Gerente de Tecnología de Información.b21ee53492d9e8a428b8.jpg",
     "static/media/13. José Luis Marras Alarcón_ Subgerente de Auditoría.jpg": "/DeltaConsultLTDA/static/media/13. José Luis Marras Alarcón_ Subgerente de Auditoría.36388e7d7673b368c76a.jpg",
     "static/media/12. Julio Mendoza Ticona_ Subgerente de Auditoría.jpg": "/DeltaConsultLTDA/static/media/12. Julio Mendoza Ticona_ Subgerente de Auditoría.0ca8ac3bfde4ed83e9ca.jpg",
+    "static/media/Doing Bussines Bolivia 2022.pdf": "/DeltaConsultLTDA/static/media/Doing Bussines Bolivia 2022.e06f582bc0e50d46f415.pdf",
     "static/media/5. Goldie Calla Ruiz_ Gerente de Auditoría.jpg": "/DeltaConsultLTDA/static/media/5. Goldie Calla Ruiz_ Gerente de Auditoría.b9c66646e81f0bccc7c7.jpg",
     "static/media/22. Luz Flores Tapia_ Encargada de Contabilidad.jpg": "/DeltaConsultLTDA/static/media/22. Luz Flores Tapia_ Encargada de Contabilidad.b8bed00ae85ec2d936c2.jpg",
     "static/media/16. Zaida Bolívar Cari_ Subgerente de Recursos Humanos.jpg": "/DeltaConsultLTDA/static/media/16. Zaida Bolívar Cari_ Subgerente de Recursos Humanos.ce5e5e95edda4cf5d84d.jpg",
@@ -128,11 +130,11 @@
     "static/media/Header_Arrow.svg": "/DeltaConsultLTDA/static/media/Header_Arrow.81c9cf93d734a4d7d2cb8a9e1d0304d2.svg",
     "static/media/Menu.svg": "/DeltaConsultLTDA/static/media/Menu.865e3edc957a3cceb4ef8bb13fbfe0a7.svg",
     "static/media/Arrow_drop.svg": "/DeltaConsultLTDA/static/media/Arrow_drop.e556d5b3d9df7884f48f058313ef5ed6.svg",
-    "main.86fa94a6.css.map": "/DeltaConsultLTDA/static/css/main.86fa94a6.css.map",
-    "main.a4ecd27b.js.map": "/DeltaConsultLTDA/static/js/main.a4ecd27b.js.map"
+    "main.39fbf182.css.map": "/DeltaConsultLTDA/static/css/main.39fbf182.css.map",
+    "main.fdb16a77.js.map": "/DeltaConsultLTDA/static/js/main.fdb16a77.js.map"
   },
   "entrypoints": [
-    "static/css/main.86fa94a6.css",
-    "static/js/main.a4ecd27b.js"
+    "static/css/main.39fbf182.css",
+    "static/js/main.fdb16a77.js"
   ]
 }
