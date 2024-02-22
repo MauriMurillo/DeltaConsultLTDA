@@ -3,7 +3,7 @@ import "./Allies.css";
 function Allies(props) {
   const { allies } = props;
   return (
-    <div className="AlliesContainer wide">
+    <div className="AlliesContainer wide" style={{marginTop:"100px"}}>
       <section className="textContainer">
         <h2 className="AlliesTitle">Nuestras empresas aliadas</h2>
         <p className="AlliesText">La diversificacion es la clave del exito.</p>
