@@ -6,7 +6,7 @@ import { ComponentContext } from "../../../Contexts/ComponentContext";
 
 import arrow from "../../../Assets/Icons/utilIcons/Header_Arrow.svg";
 function MobileSubMenu(props) {
-  const { selectedItem, setSelectedContent, setShowOptionMenu } =
+  const { selectedItem, setSelectedContent, setShowOptionMenu, setShowMobileMenu } =
     useContext(DeltaContext);
   const { options } = props;
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ function MobileSubMenu(props) {
         .links.map((item) => (
           <div
             onClick={() => {
-              setShowOptionMenu(false);
+              setShowMobileMenu(false);
               setShowOptionMenu(false);
               setSelectedContent(item);
               navigate("/Servicios");
