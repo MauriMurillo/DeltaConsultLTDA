@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DeltaConsultLTDA/static/css/main.39fbf182.css",
-    "main.js": "/DeltaConsultLTDA/static/js/main.fdb16a77.js",
+    "main.css": "/DeltaConsultLTDA/static/css/main.bf19a336.css",
+    "main.js": "/DeltaConsultLTDA/static/js/main.2d045ece.js",
     "static/media/Broshure Delta.pdf": "/DeltaConsultLTDA/static/media/Broshure Delta.6c08e8b719268a3bfd8e.pdf",
     "static/media/18. Diana Flores Tapia_ Subgerente Contable.jpg": "/DeltaConsultLTDA/static/media/18. Diana Flores Tapia_ Subgerente Contable.65caa0d5ae8dc3974a51.jpg",
     "static/media/2. Edgardo Vásquez Durán_ Director de Auditoría - Socio.jpg": "/DeltaConsultLTDA/static/media/2. Edgardo Vásquez Durán_ Director de Auditoría - Socio.b1c24ef77166f6b41400.jpg",
@@ -105,16 +105,16 @@
     "static/media/osflpeque.jpg": "/DeltaConsultLTDA/static/media/osflpeque.45e774fe6d17fefd179f.jpg",
     "static/media/brochure.png": "/DeltaConsultLTDA/static/media/brochure.2c19f0138e4495827583.png",
     "static/media/SMSLogo.png": "/DeltaConsultLTDA/static/media/SMSLogo.7d2f939e1409639cc7ea.png",
-    "static/media/ISOLOGO DELTA BLANCO.png": "/DeltaConsultLTDA/static/media/ISOLOGO DELTA BLANCO.57cbef5c38d2dc2b2d4b.png",
+    "static/media/ISOLOGO DELTA BLANCO.png": "/DeltaConsultLTDA/static/media/ISOLOGO DELTA BLANCO.ed1eb08bd0d5ecefa9d0.png",
     "static/media/isoitipo.png": "/DeltaConsultLTDA/static/media/isoitipo.fc44e52b5e4faa759f7b.png",
     "static/media/ISOLOGO DELTA AZUL.png": "/DeltaConsultLTDA/static/media/ISOLOGO DELTA AZUL.2a89ecff42aa19ee1e34.png",
     "static/media/flecha.png": "/DeltaConsultLTDA/static/media/flecha.2061544983e016f41601.png",
-    "static/media/World.svg": "/DeltaConsultLTDA/static/media/World.f0dcd6f9041fd5cfe7e147caf88f5c5f.svg",
-    "static/media/World2.svg": "/DeltaConsultLTDA/static/media/World2.a5d6ef4f768f43e77751d3e8300b1b7c.svg",
+    "static/media/World.svg": "/DeltaConsultLTDA/static/media/World.2386e837acf45b8b1e5db73d23367416.svg",
+    "static/media/World2.svg": "/DeltaConsultLTDA/static/media/World2.988e97960f664ad492dfbcef022fc680.svg",
     "static/media/logo-whatsapp.svg": "/DeltaConsultLTDA/static/media/logo-whatsapp.bbecf97ac5213f9f1c974a92fa7e5921.svg",
     "static/media/profesional.svg": "/DeltaConsultLTDA/static/media/profesional.a1e4e598d48d4e95b960739f97d32f61.svg",
     "static/media/people.svg": "/DeltaConsultLTDA/static/media/people.77a74257792593667361066e57ff0d1f.svg",
-    "static/media/Person.svg": "/DeltaConsultLTDA/static/media/Person.2a321e6391c2e213a2a087a91879138a.svg",
+    "static/media/Person.svg": "/DeltaConsultLTDA/static/media/Person.a2e5768fbfbd98910767372db2bdcef4.svg",
     "static/media/Close.svg": "/DeltaConsultLTDA/static/media/Close.700a91b2ce6939e20fcd54d10244779b.svg",
     "static/media/phone-icon.svg": "/DeltaConsultLTDA/static/media/phone-icon.ea40f9c73b86bae9705ceeb4f52e50a4.svg",
     "static/media/Stars.svg": "/DeltaConsultLTDA/static/media/Stars.7ecc1a8040688590abf4836fa204a6c0.svg",
@@ -130,11 +130,11 @@
     "static/media/Header_Arrow.svg": "/DeltaConsultLTDA/static/media/Header_Arrow.81c9cf93d734a4d7d2cb8a9e1d0304d2.svg",
     "static/media/Menu.svg": "/DeltaConsultLTDA/static/media/Menu.865e3edc957a3cceb4ef8bb13fbfe0a7.svg",
     "static/media/Arrow_drop.svg": "/DeltaConsultLTDA/static/media/Arrow_drop.e556d5b3d9df7884f48f058313ef5ed6.svg",
-    "main.39fbf182.css.map": "/DeltaConsultLTDA/static/css/main.39fbf182.css.map",
-    "main.fdb16a77.js.map": "/DeltaConsultLTDA/static/js/main.fdb16a77.js.map"
+    "main.bf19a336.css.map": "/DeltaConsultLTDA/static/css/main.bf19a336.css.map",
+    "main.2d045ece.js.map": "/DeltaConsultLTDA/static/js/main.2d045ece.js.map"
   },
   "entrypoints": [
-    "static/css/main.39fbf182.css",
-    "static/js/main.fdb16a77.js"
+    "static/css/main.bf19a336.css",
+    "static/js/main.2d045ece.js"
   ]
 }
