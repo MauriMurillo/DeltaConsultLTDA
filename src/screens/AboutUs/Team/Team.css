@@ -24,6 +24,7 @@
   overflow: auto;
   padding: 64px;
   padding-right: 96px;
+  padding-top: 96px;
   background-color: var(--DarkBlue);
   position: relative;
 }
@@ -44,6 +45,9 @@
   border-radius: 15px;
   overflow: hidden;
   background-color: var(--DarkBlue);
+}
+.cardTeam:hover{
+  background-color: #537d9a;
 }
 .cardTeam .imageContainer {
   width: 280px;

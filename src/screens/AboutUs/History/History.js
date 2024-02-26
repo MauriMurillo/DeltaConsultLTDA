@@ -8,7 +8,7 @@ function History() {
   return (
     <div className="history" id="NUESTRA HISTORIA">
       <section className="sectionText" id="NuestraHistoria">
-        <h2>Nuestra Historia</h2>
+        <h2>Nuestra historia</h2>
         <p>Una base firme para el presente y el futuro</p>
       </section>
       <div className="historyContainer">

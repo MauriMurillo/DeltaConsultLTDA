@@ -1,7 +1,6 @@
 import "./App.css";
 // Functionality
 import { HashRouter, Routes, Route } from "react-router-dom";
-import { ScrollToTop } from "./ScrollToTop";
 
 // Screensa
 import { Home } from "./screens/Home/Home";
@@ -26,7 +25,6 @@ function App() {
     <DeltaProvider>
       <ComponentProvider>
         <HashRouter>
-          <ScrollToTop />
           <Routes>
             <Route
               path="/"
@@ -62,12 +60,7 @@ function App() {
               }
             />
 
-            <Route
-              path="/SMS"
-              element={
-                  <SMS />
-              }
-            />
+            <Route path="/SMS" element={<SMS />} />
 
             <Route path="/Contacto" element={<Contact />} />
           </Routes>

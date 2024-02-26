@@ -47,6 +47,9 @@
   flex-wrap: wrap;
   gap: 32px;
 }
+.footer .logos a:hover{
+  background-color: #537d9a;
+}
 .footer .logos a {
   width: 64px;
   height: 64px;
@@ -85,6 +88,9 @@
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
+}
+.cn a:hover p{
+  text-decoration: underline;
 }
 .footer p {
   color: white;

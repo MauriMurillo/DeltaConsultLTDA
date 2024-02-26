@@ -1,0 +1,112 @@
+.formContainer {
+  width: 1248px;
+  background-color: var(--DarkBlue);
+  height: 608px;
+  border-radius: 15px;
+  margin: 64px auto;
+  overflow: hidden;
+}
+.formContainer .resumeForm {
+  display: grid;
+  grid-template-columns: 800px 448px;
+  grid-template-rows: repeat(5, 96px) 128px;
+  grid-template-areas:
+    "a f"
+    "b f"
+    "c f"
+    "d f"
+    "e f"
+    "g f";
+}
+.formContainer .resumeForm label:not(.f) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-bottom: solid #fff 4px;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+.formContainer .resumeForm input,
+::placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: var(--DarkBlue);
+  border: none;
+}
+.formContainer .resumeForm input {
+  height: 64px;
+}
+input:-webkit-autofill {
+  background-color: var(--LightBlue) !important;
+}
+input:autofill {
+  background-color: var(--LightBlue) !important;
+}
+textarea {
+  resize: none;
+  background-color: var(--DarkBlue);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  border: none;
+}
+.a {
+  grid-area: a;
+}
+.b {
+  grid-area: b;
+}
+.c {
+  grid-area: c;
+}
+.d {
+  grid-area: d;
+}
+.e {
+  grid-area: e;
+}
+.f {
+  grid-area: f;
+  background-color: #333545;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 64px;
+}
+.f input {
+  visibility: hidden;
+}
+.f > p {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 88px;
+}
+.f > img {
+  width: 128px;
+  height: 128px;
+  transform: rotate(180deg);
+}
+.g {
+  grid-area: g;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.formContainer .resumeForm .g > input {
+  background: #ffffff;
+  border-radius: 5px;
+  width: 128px;
+  height: 32px;
+  margin-right: 288px;
+  color: var(--DarkBlue);
+  font-weight: 700;
+}
+@media only screen and (max-width: 1250px) {
+}

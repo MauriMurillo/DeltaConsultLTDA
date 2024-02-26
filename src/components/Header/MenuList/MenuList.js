@@ -8,22 +8,24 @@ function MenuList(props) {
   const { orientation } = props;
   const {
     setShowOptionMenu,
-    setShowSubMenu,
     setSelectedOption,
-    setSelectedItem,
     showOptionMenu,
     selectedOption,
+    setShowSubMenu,
+    setShowMobileMenu,
+    setSelectedItem,
+    setSelectedContent,
   } = useContext(DeltaContext);
   return (
     <div className={`listScreens${orientation}`}>
       <div
         onClick={() => {
+          setShowSubMenu(false);
+          setSelectedItem("");
           showOptionMenu && selectedOption === "SERVICIOS"
             ? setShowOptionMenu(false)
             : setShowOptionMenu(true);
           setSelectedOption("SERVICIOS");
-          setSelectedItem("");
-          setShowSubMenu(false);
         }}
       >
         <div>SERVICIOS</div>
@@ -31,11 +33,12 @@ function MenuList(props) {
       </div>
       <div
         onClick={() => {
+          setShowSubMenu(false);
+          setSelectedItem("");
           showOptionMenu && selectedOption === "NOSOTROS"
             ? setShowOptionMenu(false)
             : setShowOptionMenu(true);
           setSelectedOption("NOSOTROS");
-          setShowSubMenu(false);
         }}
       >
         <div>NOSOTROS</div>
@@ -43,11 +46,12 @@ function MenuList(props) {
       </div>
       <div
         onClick={() => {
+          setShowSubMenu(false);
+          setSelectedItem("");
           showOptionMenu && selectedOption === "INDUSTRIAS"
             ? setShowOptionMenu(false)
             : setShowOptionMenu(true);
           setSelectedOption("INDUSTRIAS");
-          setShowSubMenu(false);
         }}
       >
         <div>INDUSTRIAS</div>
@@ -57,7 +61,11 @@ function MenuList(props) {
         onClick={() => {
           setShowSubMenu(false);
           setShowOptionMenu(false);
+          setShowMobileMenu(false);
+          setSelectedItem("");
+          setSelectedContent("");
           setSelectedOption("SMS");
+          window.scrollTo(0, 0);
         }}
       >
         <NavLink to={"/SMS"}> SMS LATAM</NavLink>
@@ -66,7 +74,11 @@ function MenuList(props) {
         onClick={() => {
           setShowSubMenu(false);
           setShowOptionMenu(false);
+          setShowMobileMenu(false);
+          setSelectedItem("");
+          setSelectedContent("");
           setSelectedOption("CONTACTO");
+          window.scrollTo(0, 0);
         }}
       >
         <NavLink to={"/Contacto"}> CONTACTO</NavLink>

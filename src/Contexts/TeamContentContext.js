@@ -310,7 +310,7 @@ function TeamContentProvider(props) {
     valores: {
       title: "Valores",
       lista: [
-        "Respeto total en el compromiso con el cliente",
+        "Respeto en el compromiso con el cliente",
         "El lograr y consolidar el liderazgo",
         "La aplicación de la tecnología vigente",
         "Calidad total",

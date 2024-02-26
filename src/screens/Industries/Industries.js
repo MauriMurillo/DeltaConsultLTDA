@@ -46,7 +46,7 @@ function Industries() {
         </div>
       </section>
       {screenSize.width > 950 ? (
-        <section className="restIndustries Bottom">
+        <section className="restIndustries Bottom" style={{marginTop: "100px"}}>
           <h3>Explora Nuestras Industrias</h3>
           <div className="Grid">
             {rest.map((item) => (

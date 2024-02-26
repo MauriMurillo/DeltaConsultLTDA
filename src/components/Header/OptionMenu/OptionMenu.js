@@ -6,8 +6,13 @@ import { ComponentContext } from "../../../Contexts/ComponentContext";
 
 import arrow from "../../../Assets/Icons/utilIcons/Header_Arrow.svg";
 function SubMenu(props) {
-  const { selectedItem, setSelectedContent, setShowOptionMenu } =
-    useContext(DeltaContext);
+  const {
+    selectedItem,
+    setSelectedContent,
+    setShowSubMenu,
+    setShowOptionMenu,
+    setSelectedItem,
+  } = useContext(DeltaContext);
   const { options } = props;
   const navigate = useNavigate();
 
@@ -18,8 +23,11 @@ function SubMenu(props) {
         .links.map((item) => (
           <div
             onClick={() => {
+              setShowSubMenu(false);
               setShowOptionMenu(false);
+              setSelectedItem("");
               setSelectedContent(item);
+              window.scrollTo(0, 0);
               navigate("/Servicios");
             }}
           >
@@ -37,7 +45,6 @@ function OptionMenu() {
     setShowSubMenu,
     selectedItem,
     setSelectedItem,
-    setSelectedSection,
     setSelectedContent,
     setShowOptionMenu,
   } = useContext(DeltaContext);
@@ -67,8 +74,8 @@ function OptionMenu() {
                     setShowSubMenu(false);
                     setSelectedItem("");
                   } else {
-                    setSelectedItem(item.name);
                     setShowSubMenu(true);
+                    setSelectedItem(item.name);
                   }
                 }}
                 className={item.name === selectedItem ? "active" : ""}
@@ -81,17 +88,28 @@ function OptionMenu() {
           {display.links.map((item) => (
             <div
               onClick={() => {
+                setShowSubMenu(false);
+                setShowOptionMenu(false);
                 if (selectedOption === "NOSOTROS") {
-                  setShowOptionMenu(false);
-                  setSelectedSection(item);
                   navigate("/Nosotros");
+                  setTimeout(function () {
+                    const element = document.getElementById(item);
+                    if (element) {
+                      console.log(item);
+                      element.scrollIntoView({
+                        behavior: "auto",
+                        block: "center",
+                        inline: "center",
+                      });
+                    }
+                  }, 50);
                 } else if (selectedOption === "INDUSTRIAS") {
-                  setShowOptionMenu(false);
                   setSelectedContent(item);
+                  window.scrollTo(0, 0);
                   navigate("/Industrias");
                 } else if (selectedOption === "SERVICIOS") {
-                  setShowOptionMenu(false);
                   setSelectedContent(item);
+                  window.scrollTo(0, 0);
                   navigate("/Servicios");
                 }
               }}

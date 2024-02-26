@@ -11,9 +11,9 @@ function Contact() {
   return (
     <div className="contactScreen Screen">
       <Header />
-      <div className="contactSection">
+      <div className="contactSection" style={{marginTop: "0px"}}>
         <div className="sectionText">
-          <h2>¿NECESITAS AYUDA?</h2>
+          <h2>¿Necesitas ayuda?</h2>
           <p>
             Contáctese con nosotros y dispondrá de atención cordial y oportuna a
             sus necesidades
@@ -22,8 +22,8 @@ function Contact() {
         {offices.map((item) => (
           <BigOffice content={item} />
         ))}
-        <ContactForm />
-        <ResumeForm/>
+        {/* <ContactForm /> */}
+        {/* <ResumeForm/> */}
       </div>
       <Footer />
     </div>

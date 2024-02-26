@@ -10,12 +10,32 @@ import { DeltaContext } from "../../Contexts/DeltaContext";
 import { MobileOptionMenu } from "./MobileOptionMenu/MobileOptionMenu";
 
 function HeaderMobile() {
-  const { showMobileMenu, setShowMobileMenu, showOptionMenu } =
-    useContext(DeltaContext);
+  const {
+    showMobileMenu,
+    setShowMobileMenu,
+    showOptionMenu,
+    setShowSubMenu,
+    setShowOptionMenu,
+    setSelectedItem,
+    setSelectedContent,
+    setSelectedOption,
+  } = useContext(DeltaContext);
   return (
     <div className="navBar">
       <div className="imageContainer">
-        <NavLink to={"/"} onClick={() => setShowMobileMenu(false)}>
+        <NavLink
+          to={"/"}
+          onClick={() => {
+            setShowMobileMenu(false);
+            setShowSubMenu(false);
+            setShowOptionMenu(false);
+            setShowMobileMenu(false);
+            setSelectedItem("");
+            setSelectedContent("");
+            setSelectedOption("INICIO");
+            window.scrollTo(0, 0);
+          }}
+        >
           <img alt="logo Delta" src={logoDelta}></img>
         </NavLink>
       </div>

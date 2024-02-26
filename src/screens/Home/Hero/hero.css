@@ -92,10 +92,7 @@
 }
 /* Fixes */
 #heroButton:hover {
-  border-color: var(--LightBlue);
-}
-#heroButton:hover p {
-  color: var(--LightBlue);
+  background-color: #95c1d5;
 }
 #heroButton {
   width: 191px;

@@ -1,5 +1,5 @@
 .AlliesContainer {
-  background: #95c1d5;
+  background: #537d9a;
   padding-bottom: 64px;
 }
 .AlliesContainer > .textContainer {
@@ -11,7 +11,7 @@
 }
 .AlliesTitle {
   color: #fff;
-  font-size: 54px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 600;
   line-height: 40px; /* 74.074% */
@@ -32,11 +32,14 @@
 }
 .AlliesContainer .card {
   width: 288px;
-  height: 396px;
+  height: 386px;
   border-radius: 15px;
   border: solid white 4px;
   overflow: hidden;
   text-decoration: none;
+}
+.AlliesContainer .card .textContainer:hover{
+  background-color: #95c1d5;
 }
 .AlliesContainer .card .imageContainer {
   background-color: white;
@@ -49,8 +52,8 @@
   width: 93%;
 }
 .AlliesContainer .card .textContainer {
-  height: 210px;
-  background-color: #95c1d5;
+  height: 200px;
+  background-color: #537d9a;
   padding-left: 28px;
   padding-right: 28px;
   padding-top: 30px;
@@ -63,7 +66,7 @@
   font-style: normal;
   font-weight: 800;
   line-height: 32px; /* 123.077% */
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .AlliesContainer .card .textContainer .desc {
   color: #fff;
@@ -85,7 +88,6 @@
   }
   .AlliesContainer .card .textContainer {
     height: 196px;
-    background-color: #95c1d5;
     padding-left: 12px;
     padding-right: 12px;
     padding-top: 30px;
@@ -121,7 +123,6 @@
   }
   .AlliesContainer .card .textContainer {
     height: 144px;
-    background-color: #95c1d5;
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 21px;

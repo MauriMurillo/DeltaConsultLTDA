@@ -1,7 +1,11 @@
+.valuesContainer, .teamContainer{
+  margin-bottom: 96px;
+}
+
 .mision,
 .vision {
   min-height: 130px;
-  margin-bottom: 96px;
+  margin-bottom: 84px;
   padding-left: 96px;
   padding-right: 96px;
   display: flex;
@@ -14,8 +18,8 @@
 .vision p {
   margin-top: 26px;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 40px;
+  font-size: 22px;
+  line-height: 42px;
   color: #000000;
 }
 .mision h3,
@@ -41,6 +45,7 @@
 }
 .valuesLists ul {
   list-style-type: none;
+  width: 400px;
 }
 .valuesLists ul li {
   font-weight: 500;
@@ -59,23 +64,27 @@
 }
 
 .sectionText {
-  margin-top: 90px;
+  padding-top: 52px;
+  padding-bottom: 52px;
+  margin-top: 0px;
   border-bottom: #d9d9d9 4px solid;
   padding-left: 96px;
+  padding-right: 32px;
+  background-color: #95c1d5;
 }
 .sectionText > h2,
 .sectionText > h1 {
   font-style: normal;
   font-weight: 600;
   font-size: 54px;
-  color: var(--DeltaBlue);
-  margin-bottom: 32px;
+  color: #fff;
+  margin-bottom: 25px;
 }
 .sectionText > p {
   font-weight: 400;
   font-size: 24px;
-  color: var(--DeltaBlue);
-  margin-bottom: 72px;
+  line-height: 34px;
+  color: #fff;
 }
 
 @media only screen and (max-width: 950px) {

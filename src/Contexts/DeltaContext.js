@@ -3,17 +3,22 @@ import { useEffect, useState } from "react";
 const DeltaContext = React.createContext();
 
 function DeltaProvider(props) {
-  const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [showMobileMenu, setShowMobileMenu] = useState(false); //Whether to show the menu on mobile
 
-  const [showOptionMenu, setShowOptionMenu] = useState(false);
-  const [showSubMenu, setShowSubMenu] = useState(false);
+  const [showOptionMenu, setShowOptionMenu] = useState(false); //Whether to show individual menu
+  const [showSubMenu, setShowSubMenu] = useState(false); //Whether to show subMenu
 
-  const [selectedOption, setSelectedOption] = useState("");
-  const [selectedItem, setSelectedItem] = useState("");
-  const [selectedSection, setSelectedSection] = useState("");
-  const [selectedContent, setSelectedContent] = useState("");
+  const [selectedOption, setSelectedOption] = useState(""); //Selected Option, In header
+  const [selectedItem, setSelectedItem] = useState(""); //selected item in the services submenu
+  const [selectedContent, setSelectedContent] = useState(""); //content to be displayed in services or industries page
   const [screenSize, setScreenSize] = useState(getCurrentDimension());
   // Funcion para responder desde el render a cambios en el viewport
+
+  // Para implementar el envio de correos en los formularios, Javascript aqui, hacer con el cesar
+  function sendMailContact(formData) {}
+
+  function sendMailResume(formData) {}
+
   function getCurrentDimension() {
     return {
       width: window.innerWidth,
@@ -46,9 +51,9 @@ function DeltaProvider(props) {
         setSelectedContent,
         selectedItem,
         setSelectedItem,
-        selectedSection,
-        setSelectedSection,
         screenSize,
+        sendMailContact,
+        sendMailResume,
       }}
     >
       {props.children}

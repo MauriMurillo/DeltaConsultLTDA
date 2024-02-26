@@ -6,8 +6,14 @@ import { ComponentContext } from "../../../Contexts/ComponentContext";
 
 import arrow from "../../../Assets/Icons/utilIcons/Header_Arrow.svg";
 function MobileSubMenu(props) {
-  const { selectedItem, setSelectedContent, setShowOptionMenu, setShowMobileMenu } =
-    useContext(DeltaContext);
+  const {
+    selectedItem,
+    setSelectedContent,
+    setShowSubMenu,
+    setShowOptionMenu,
+    setSelectedItem,
+    setShowMobileMenu,
+  } = useContext(DeltaContext);
   const { options } = props;
   const navigate = useNavigate();
 
@@ -19,8 +25,11 @@ function MobileSubMenu(props) {
           <div
             onClick={() => {
               setShowMobileMenu(false);
+              setShowSubMenu(false);
               setShowOptionMenu(false);
+              setSelectedItem("");
               setSelectedContent(item);
+              window.scrollTo(0, 0);
               navigate("/Servicios");
             }}
           >
@@ -31,8 +40,14 @@ function MobileSubMenu(props) {
   );
 }
 function TabletSubMenu(props) {
-  const { selectedItem, setSelectedContent, setShowOptionMenu } =
-    useContext(DeltaContext);
+  const {
+    selectedItem,
+    setSelectedContent,
+    setShowSubMenu,
+    setShowOptionMenu,
+    setSelectedItem,
+    setShowMobileMenu,
+  } = useContext(DeltaContext);
   const { options } = props;
   const navigate = useNavigate();
 
@@ -43,9 +58,12 @@ function TabletSubMenu(props) {
         .links.map((item) => (
           <div
             onClick={() => {
+              setShowMobileMenu(false);
+              setShowSubMenu(false);
               setShowOptionMenu(false);
-              setShowOptionMenu(false);
+              setSelectedItem("");
               setSelectedContent(item);
+              window.scrollTo(0, 0);
               navigate("/Servicios");
             }}
           >
@@ -124,16 +142,29 @@ function MobileOptionMenu() {
             {display.links.map((item) => (
               <div
                 onClick={() => {
-                  setShowOptionMenu(false);
                   setShowMobileMenu(false);
+                  setShowSubMenu(false);
+                  setShowOptionMenu(false);
+                  setSelectedItem("");
                   if (selectedOption === "NOSOTROS") {
-                    setSelectedSection(item);
+                    const element = document.getElementById(item);
+                    if (element) {
+                      element.scrollIntoView({
+                        behavior: "auto",
+                        block: "center",
+                        inline: "center",
+                      });
+                    }
                     navigate("/Nosotros");
                   } else if (selectedOption === "INDUSTRIAS") {
+                    setSelectedSection("");
                     setSelectedContent(item);
+                    window.scrollTo(0, 0);
                     navigate("/Industrias");
                   } else if (selectedOption === "SERVICIOS") {
+                    setSelectedSection("");
                     setSelectedContent(item);
+                    window.scrollTo(0, 0);
                     navigate("/Servicios");
                   }
                 }}

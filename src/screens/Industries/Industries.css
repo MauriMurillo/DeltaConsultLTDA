@@ -1,14 +1,14 @@
 .mainIndustry {
-  height: 866px;
+  height: 772px;
   display: flex;
-  padding-bottom: 94px;
-  border-bottom: solid #d9d9d9 4px;
+  padding-bottom: 0px;
 }
 .mainIndustry .textContainer {
   width: 800px;
   padding-left: 94px;
   padding-right: 64px;
-  padding-top: 90px;
+  padding-top: 52px;
+  padding-bottom: 52px;
   display: flex;
   flex-direction: column;
 }
@@ -26,7 +26,7 @@
   font-size: 54px;
   font-weight: 500;
   color: var(--DeltaBlue);
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 .mainIndustry .textContainer > p {
   font-size: 16px;
@@ -52,7 +52,7 @@
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 110px;
-  row-gap: 96px;
+  row-gap: 64px;
 }
 
 .restIndustries .Grid {
@@ -75,6 +75,9 @@
   text-align: center;
 }
 
+.restIndustries .Grid div:hover p{
+  text-decoration: underline;
+}
 .Button {
   max-width: 608px;
   display: flex;
@@ -86,6 +89,9 @@
   text-decoration: none;
   border-radius: 10px;
   flex-shrink: 0;
+}
+.Button:hover{
+  background-color: #95c1d5;
 }
 .Button p {
   color: var(--DeltaBlue);

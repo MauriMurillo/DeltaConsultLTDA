@@ -8,11 +8,30 @@ import { OptionMenu } from "./OptionMenu/OptionMenu";
 import { DeltaContext } from "../../Contexts/DeltaContext";
 
 function HeaderFull() {
-  const { showOptionMenu } = useContext(DeltaContext);
+  const {
+    showOptionMenu,
+    setShowSubMenu,
+    setShowMobileMenu,
+    setShowOptionMenu,
+    setSelectedItem,
+    setSelectedContent,
+    setSelectedOption,
+  } = useContext(DeltaContext);
   return (
     <nav className="superNav noTop wide">
       <div className="navBar">
-        <div className="imageContainer">
+        <div
+          className="imageContainer"
+          onClick={() => {
+            setShowSubMenu(false);
+            setShowOptionMenu(false);
+            setShowMobileMenu(false);
+            setSelectedItem("");
+            setSelectedContent("");
+            setSelectedOption("INICIO");
+            window.scrollTo(0, 0);
+          }}
+        >
           <NavLink to={"/"}>
             <img alt="logo Delta" src={logoDelta}></img>
           </NavLink>
