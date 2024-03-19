@@ -4,7 +4,7 @@ import { Footer } from "../../components/Footer/Footer.js";
 import smsLogo from "../../Assets/Logos/SMSLogo.png";
 import deltaLogo from "../../Assets/Logos/ISOLOGO DELTA AZUL.png";
 import forodefirmasLogo from "../../Assets/Logos/ForodeFirmas.png";
-import sms1 from "../../Assets/smslatam/mapsms.png";
+import sms1 from "../../Assets/smslatam/smslatampc.jpg";
 import sms2 from "../../Assets/smslatam/worldsms.png";
 import "./SMS.css";
 

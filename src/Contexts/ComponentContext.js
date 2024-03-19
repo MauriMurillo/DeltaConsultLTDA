@@ -102,8 +102,8 @@ function ComponentProvider(props) {
       ciudad: "Cochabamba",
       direccion:
         "Calle Los Molles, MZ.035 Edificio Delta PB Nº847 - Zona Cala Cala",
-      telefono: "(591)-72044457",
-      mail: "zvillca@dcl.com.bo",
+      telefono: "(591)-72044437",
+      mail: "deltaconsult@dcl.com.bo",
       mapLink: "https://goo.gl/maps/NUT77m3tGa78EmKr9",
       embed: (
         <iframe

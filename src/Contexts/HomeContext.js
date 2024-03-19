@@ -3,19 +3,19 @@ import React from "react";
 //Imagenes Hero PC
 import PC01 from "../Assets/paginadeinicio/seccionuno/pclapaz.jpg";
 import PC02 from "../Assets/paginadeinicio/seccionuno/pcsantacruz.jpg";
-import PC03 from "../Assets/paginadeinicio/seccionuno/pcuyuni.jpg";
+import PC03 from "../Assets/paginadeinicio/seccionuno/cochapc.jpg";
 //Imagenes Hero Laptop
 import LAPTOP01 from "../Assets/paginadeinicio/seccionuno/laptoplapaz.jpg";
 import LAPTOP02 from "../Assets/paginadeinicio/seccionuno/laptopsantacruz.jpg";
-import LAPTOP03 from "../Assets/paginadeinicio/seccionuno/laptopuyuni.jpg";
+import LAPTOP03 from "../Assets/paginadeinicio/seccionuno/cochalaptop.jpg";
 //Imagenes Hero Tablet
 import TABLET02 from "../Assets/paginadeinicio/seccionuno/tabletlapaz.jpg";
 import TABLET01 from "../Assets/paginadeinicio/seccionuno/tabletsantacruz.jpg";
-import TABLET03 from "../Assets/paginadeinicio/seccionuno/tabletuyuni.jpg";
+import TABLET03 from "../Assets/paginadeinicio/seccionuno/cochatablet.jpg";
 //Imagenes Hero Celular
 import CELULAR02 from "../Assets/paginadeinicio/seccionuno/celularlapaz.jpg";
 import CELULAR01 from "../Assets/paginadeinicio/seccionuno/celularsantacruz.jpg";
-import CELULAR03 from "../Assets/paginadeinicio/seccionuno/celularuyuni.jpg";
+import CELULAR03 from "../Assets/paginadeinicio/seccionuno/cochacelu.jpg";
 
 import logoDelta from "../Assets/Logos/isoitipo.png";
 import logoSMS from "../Assets/Logos/istotipoSMS.png";
@@ -31,7 +31,7 @@ import world2 from "../Assets/Icons/stats/World2.svg";
 
 // Imagenes Confiar en Nosotros
 import trust2 from "../Assets/paginadeinicio/secciontres/foto1pc.jpg";
-import trust from "../Assets/paginadeinicio/secciontres/foto2pc.jpg";
+import trust from "../Assets/paginadeinicio/secciontres/foto1confiarnostroslaptop.jpg";
 
 //Logos Empresas Aliadas
 import swiss from "../Assets/paginadeinicio/seccioncuatro/pcswiss.jpg";
@@ -80,17 +80,17 @@ function HomeProvider(props) {
       {
         icon: people,
         title: "+250",
-        text: "Clientes Satisfechos",
+        text: "Clientes satisfechos",
       },
       {
         icon: profesional,
         title: "+65",
-        text: "Profesionales Expertos",
+        text: "Consultores asociados",
       },
       {
         icon: stars,
         title: "+20",
-        text: "Premios y Galardones",
+        text: "Premios y galardones",
       },
     ],
   };
@@ -106,7 +106,7 @@ function HomeProvider(props) {
       {
         icon: person,
         title: "+2500",
-        text: "Profesionales en Red",
+        text: "Profesionales en red",
       },
       {
         icon: world,
