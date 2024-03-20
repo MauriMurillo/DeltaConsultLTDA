@@ -5,7 +5,7 @@ import { TeamContentContext } from "../../../Contexts/TeamContentContext";
 function Downloadable() {
   const { files } = useContext(TeamContentContext);
   return (
-    <div className="AlliesContainer wide" id="BROCHURE Y DOING BUSINESS">
+    <div className="AlliesContainer" id="BROCHURE Y DOING BUSINESS">
       <section className="textContainer">
         <h2 className="AlliesTitle">Brochure y Doing Business</h2>
         <p className="AlliesText">Encuentra mas informacion de nosotros aqui</p>
