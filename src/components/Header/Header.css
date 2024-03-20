@@ -3,6 +3,7 @@
   position: sticky;
   top: 0px;
   z-index: 1000;
+  height: 96px;
 }
 .navBar {
   height: 96px;
