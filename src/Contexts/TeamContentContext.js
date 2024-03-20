@@ -22,9 +22,7 @@ import Zaida from "../Assets/nosotros/secciondos/fotospersonalnumeradas/16. Zaid
 import Rene from "../Assets/nosotros/secciondos/fotospersonalnumeradas/17. Rene Carpio Choque_ Subgerente Operativo - Propuestas.jpg";
 import Diana from "../Assets/nosotros/secciondos/fotospersonalnumeradas/18. Diana Flores Tapia_ Subgerente Contable.jpg";
 import Ignacio from "../Assets/nosotros/secciondos/fotospersonalnumeradas/19. Ignacio Sanjines Calle_ Encargado de Diseño Gráfico.jpg";
-import Rolando from "../Assets/nosotros/secciondos/fotospersonalnumeradas/20. Rolando Yapuchura Mendoza_ Encargado Operativo.jpg";
 import Valentina from "../Assets/nosotros/secciondos/fotospersonalnumeradas/21. Valentina Calle Ledezma_ Encargada de Marketing.jpg";
-import Luz from "../Assets/nosotros/secciondos/fotospersonalnumeradas/22. Luz Flores Tapia_ Encargada de Contabilidad.jpg";
 
 import brochure from "../Assets/nosotros/secciontres/brochure.png";
 import doingbusiness from "../Assets/nosotros/secciontres/doingbusiness.png";
@@ -35,7 +33,7 @@ const TeamContentContext = React.createContext();
 
 function TeamContentProvider(props) {
   const team = {
-    Socios: [
+    Directores: [
       {
         picture: Oscar,
         name: "Oscar Calle Rojas",
@@ -54,50 +52,8 @@ function TeamContentProvider(props) {
           "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
         ],
       },
-      {
-        picture: Ximena,
-        name: "Ximena Calle Rojas",
-        job: "Gerente de Consultoría - Socia",
-        resume: [
-          "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-          "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        ],
-      },
-      {
-        picture: Paula,
-        name: "Paula Calle Rojas",
-        job: "Asesor Legal - Socia",
-        resume: [
-          "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-          "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        ],
-      },
     ],
-    Gerencias: [
-      {
-        picture: Goldie,
-        name: "Goldie Calla Ruiz",
-        job: "Gerente de Auditoría",
-        resume: [
-          "Goldie es contadora pública, egresada de la Universidad Mayor, Real y Pontificia de San Francisco Xavier de Chuquisaca, contando con el Título en Provisión Nacional de contadora pública autorizada. Es técnico en aplicaciones en torno a Windows, título que obtuvo en el Centro de Capacitación Privada en Computación. Asimismo cuenta con un reconocimiento del Colegio de Auditores o Contadores Públicos de La Paz por el destacado desempeño profesional.",
-
-          "Es parte del equipo de Delta Consult desde el año 2006, desempeñándose como auditor financiero y actualmente bajo el cargo de gerente de auditoría. Tuvo experiencia como auditor interno en empresas en el rubro de la construcción en la ciudad de Chuquisaca. ",
-
-          "Goldie tiene interés personal por los viajes y la fotografía.",
-        ],
-      },
-      {
-        picture: Miguel,
-        name: "Miguel Gutiérrez Salas",
-        job: "Gerente de Auditoría",
-        resume: [
-          "Miguel es auditor financiero, titulado de la Universidad Mayor de San Andrés, egresado de la Maestría en Gestión Financiera. Cuenta con múltiples diplomados; diplomado en Administración Financiera de Negocios, diplomado en Finanzas Corporativas, diplomado en Gestión de Proyectos de Inversión Privada, y diplomado en Finanzas Bancarias y Microfinanciamiento, todos efectuados en el Instituto de Investigación y Capacitación en Ciencias Administrativas de la UMSA. También tiene un diplomado en Tributación hecho en la Unidad de Postgrado de la Carrera de Contaduría Pública de la UMSA.",
-
-          "Es parte del equipo de Delta Consult Ltda desde el año 2010, desempeñándose como auditor financiero, especializado en el análisis de estados financieros y contabilidad de pequeñas y grandes empresas del sector público, privado y organizaciones no gubernamentales. Además trabajó como profesional independiente, realizando consultorías e informes financieros. ",
-
-          "Miguel disfruta de hacer deporte y participar en actividades artísticas y culturales.",
-        ],
-      },
+    Gerencia: [
       {
         picture: Americo,
         name: "Américo Antezana Ibáñez",
@@ -108,20 +64,6 @@ function TeamContentProvider(props) {
           "Es parte del equipo de Delta Consult desde la gestión de 2011, donde después de desempeñarse como auditor y destacar en el campo de la auditoría gubernamental, escaló hasta el puesto de gerente de auditoría.",
 
           "Américo es aficionado a la lectura.",
-        ],
-      },
-      {
-        picture: Maria,
-        name: "Maria Teresa Vargas Viña",
-        job: "Gerente de Auditoría",
-        resume: [
-          "Maria Teresa es contadora pública, con Título en Provisión Nacional de la Universidad Autónoma Gabriel René Moreno. Cuenta con un diplomado en Educación Superior realizado en la Universidad Autónoma Gabriel René Moreno. ",
-
-          "Es parte del equipo de Delta Consult desde noviembre del 2005, ocupando el cargo de gerente de auditoría en la regional Santa Cruz de la Sierra. Impulsó el crecimiento de clientes al supervisar, revisar y efectuar seguimiento permanente de nuestro trabajo.",
-
-          "Tiene experiencia laboral en finanzas corporativas y como consultor externo en finanzas personales para mujeres. Actualmente brinda asesoramiento, cursos de capacitación y talleres en finanzas personales a mujeres emprendedoras con nuevos emprendimientos. ",
-
-          "Maria Teresa tiene una afición personal por el yoga, bailar, viajar y conocer nuevas culturas.",
         ],
       },
       {
@@ -136,6 +78,27 @@ function TeamContentProvider(props) {
           "Cuenta con experiencia laboral referente a la contabilidad realizada en empresas comerciales y la elaboración de registros de declaraciones juradas a Impuestos Nacionales. ",
 
           "Nilda Marley disfruta de realizar viajes, practicar el senderismo y también leer libros.",
+        ],
+      },
+      {
+        picture: Goldie,
+        name: "Goldie Calla Ruiz",
+        job: "Gerente de Auditoría",
+        resume: [
+          "Goldie es contadora pública, egresada de la Universidad Mayor, Real y Pontificia de San Francisco Xavier de Chuquisaca, contando con el Título en Provisión Nacional de contadora pública autorizada. Es técnico en aplicaciones en torno a Windows, título que obtuvo en el Centro de Capacitación Privada en Computación. Asimismo cuenta con un reconocimiento del Colegio de Auditores o Contadores Públicos de La Paz por el destacado desempeño profesional.",
+
+          "Es parte del equipo de Delta Consult desde el año 2006, desempeñándose como auditor financiero y actualmente bajo el cargo de gerente de auditoría. Tuvo experiencia como auditor interno en empresas en el rubro de la construcción en la ciudad de Chuquisaca. ",
+
+          "Goldie tiene interés personal por los viajes y la fotografía.",
+        ],
+      },
+      {
+        picture: Paula,
+        name: "Paula Calle Rojas",
+        job: "Asesor Legal - Socia",
+        resume: [
+          "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
+          "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
         ],
       },
       {
@@ -155,6 +118,27 @@ function TeamContentProvider(props) {
         ],
       },
       {
+        picture: Ximena,
+        name: "Ximena Calle Rojas",
+        job: "Gerente de Consultoría - Socia",
+        resume: [
+          "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
+          "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
+        ],
+      },
+      {
+        picture: Miguel,
+        name: "Miguel Gutiérrez Salas",
+        job: "Gerente de Auditoría",
+        resume: [
+          "Miguel es auditor financiero, titulado de la Universidad Mayor de San Andrés, egresado de la Maestría en Gestión Financiera. Cuenta con múltiples diplomados; diplomado en Administración Financiera de Negocios, diplomado en Finanzas Corporativas, diplomado en Gestión de Proyectos de Inversión Privada, y diplomado en Finanzas Bancarias y Microfinanciamiento, todos efectuados en el Instituto de Investigación y Capacitación en Ciencias Administrativas de la UMSA. También tiene un diplomado en Tributación hecho en la Unidad de Postgrado de la Carrera de Contaduría Pública de la UMSA.",
+
+          "Es parte del equipo de Delta Consult Ltda desde el año 2010, desempeñándose como auditor financiero, especializado en el análisis de estados financieros y contabilidad de pequeñas y grandes empresas del sector público, privado y organizaciones no gubernamentales. Además trabajó como profesional independiente, realizando consultorías e informes financieros. ",
+
+          "Miguel disfruta de hacer deporte y participar en actividades artísticas y culturales.",
+        ],
+      },
+      {
         picture: Cesar,
         name: "César Portugal Villamil",
         job: "Gerente de Tecnología de Información",
@@ -166,28 +150,42 @@ function TeamContentProvider(props) {
           "Cesar disfruta escuchar música y actualizarse con temas de interés profesional.",
         ],
       },
+      {
+        picture: Maria,
+        name: "Maria Teresa Vargas Viña",
+        job: "Gerente de Auditoría",
+        resume: [
+          "Maria Teresa es contadora pública, con Título en Provisión Nacional de la Universidad Autónoma Gabriel René Moreno. Cuenta con un diplomado en Educación Superior realizado en la Universidad Autónoma Gabriel René Moreno. ",
+
+          "Es parte del equipo de Delta Consult desde noviembre del 2005, ocupando el cargo de gerente de auditoría en la regional Santa Cruz de la Sierra. Impulsó el crecimiento de clientes al supervisar, revisar y efectuar seguimiento permanente de nuestro trabajo.",
+
+          "Tiene experiencia laboral en finanzas corporativas y como consultor externo en finanzas personales para mujeres. Actualmente brinda asesoramiento, cursos de capacitación y talleres en finanzas personales a mujeres emprendedoras con nuevos emprendimientos. ",
+
+          "Maria Teresa tiene una afición personal por el yoga, bailar, viajar y conocer nuevas culturas.",
+        ],
+      },
     ],
     Subgerencias: [
       {
-        picture: Julio,
-        name: "Julio Mendoza Ticona",
-        job: "Subgerente de Auditoría",
+        picture: Zaida,
+        name: "Zaida Bolívar Cari",
+        job: "Subgerente de Recursos Humanos",
         resume: [
-          "Julio es contador público, con Título en Provisión Nacional otorgado por la Universidad Mayor de San Andrés. Forma parte del equipo de Delta Consult desde la gestión 2011, en un inicio desempeñando el cargo de auditor financiero y actualmente como subgerente de auditoría. Cuenta con experiencia en análisis de cartera en instituciones gubernamentales.",
+          "CONTABILIDAD BÁSICA en el instituto Life - ASISTENTE GERENCIAL en el IBTA ",
 
-          "Julio disfruta de realizar viajes y conocer nuevas culturas.",
+          "ingreso a la empresa  Delta Consult Ltda. un 9/05/2007 como Recepcionista y en la actualidad se encuentra trabajando como Secretaria - experiencias fueron prácticamente en la empresa Delta Consult Ltda. ya que colaboro  diferentes áreas (administración y auditoria) - Hobbies: se parodia decir viajar.",
         ],
       },
       {
-        picture: Jose,
-        name: "José Luis Marras Alarcón",
-        job: "Subgerente de Auditoría",
+        picture: Valentina,
+        name: "Valentina Calle Ledezma",
+        job: "Encargada de Marketing",
         resume: [
-          "José Luis es contador público, egresado de la Universidad Mayor de San Andrés. Cuenta con un diplomado en tributación en el Instituto de Investigaciones de Ciencias Contables, Financieras y Auditoría, Unidad de Postgrado. ",
+          "Valentina es licenciada en marketing y medios digitales, egresada de la Universidad Católica Boliviana. Es parte del equipo de Delta Consult desde 2023, impulsando el desarrollo del área de marketing y recursos humanos.",
 
-          "Es parte del equipo de Delta Consult desde el año 2014, desempeñándose como auditor financiero hasta alcanzar el puesto de subgerente de auditoría. Su experiencia laboral reside en los trabajos realizados para la empresa.",
+          "Tiene experiencia laboral como miembro del equipo de comunicación en organizaciones no gubernamentales y humanitarias, también fungió como community manager, creando contenidos estratégicos digitales para empresas de varios rubros en el mercado boliviano.",
 
-          "José Luis tiene gusto por el voleibol, viajar y conocer nuevas personas. Gran Valor.",
+          "Valentina disfruta hacer equitación y viajar, así como estudiar y conocer las nuevas tendencias en el mundo digital.",
         ],
       },
       {
@@ -202,30 +200,6 @@ function TeamContentProvider(props) {
           "Cuenta con amplia experiencia laboral formada en el campo de auditoría financiera, desempeñándose como auditor externo en una amplia cartera de clientes, principalmente en entidades reguladas e industriales. Desarrolló y mantuvo relaciones internas y externas, que fueron cruciales para la mejora y el éxito de la empresa. ",
 
           "Betza tiene afición por los viajes, conocer nuevas culturas, costumbres y formas de vida, además de un apego por la danza. Como pasatiempos ocasionales realiza deportes extremos y repostería.",
-        ],
-      },
-      {
-        picture: Vismark,
-        name: "Vismark Laruta Aguirre",
-        job: "Subgerente de Auditoría",
-        resume: [
-          "Vismarck es contador público autorizado, con Título en Provisión Nacional otorgado por la Universidad Mayor de San Andrés. Participó en múltiples cursos de especialización en la administración de activos fijos, así como cuenta con un diplomado en Finanzas Corporativas otorgado por la Universidad Franz Tamayo. Actualmente se encuentra cursando los diplomados en Derecho y Técnica Tributaria y Auditoría Gubernamental.",
-
-          "Es parte del equipo de Delta Consult desde la gestión 2017, desempeñándose como auditor financiero y consultor. Cuenta con amplia experiencia laboral formada en el campo de auditoría financiera, desempeñándose como auditor externo en una amplia cartera de clientes, principalmente en entidades reguladas, industrias, instituciones públicas y fundaciones no lucrativas, entre otras. También desempeñó cargos de jefatura en el área de administración, talento humano y activos fijos. ",
-
-          "Su perfil como auditor es formado desde asignaciones en Delta Consult, como también con cursos de especialización profesional. A través de la amplia cartera que mantiene la firma y la constante innovación de procedimientos y normativas, mantiene la premisa de ejecutar programas de estudios de posgrado.",
-
-          "Vismarck tiene una afición por diferentes deportes, en especial el fútbol y la natación. Gusta de compartir tiempo en familia, viajar y ocasionalmente realizar deportes extremos.",
-        ],
-      },
-      {
-        picture: Zaida,
-        name: "Zaida Bolívar Cari",
-        job: "Subgerente de Recursos Humanos",
-        resume: [
-          "CONTABILIDAD BÁSICA en el instituto Life - ASISTENTE GERENCIAL en el IBTA ",
-
-          "ingreso a la empresa  Delta Consult Ltda. un 9/05/2007 como Recepcionista y en la actualidad se encuentra trabajando como Secretaria - experiencias fueron prácticamente en la empresa Delta Consult Ltda. ya que colaboro  diferentes áreas (administración y auditoria) - Hobbies: se parodia decir viajar.",
         ],
       },
       {
@@ -249,6 +223,42 @@ function TeamContentProvider(props) {
         ],
       },
       {
+        picture: Vismark,
+        name: "Vismark Laruta Aguirre",
+        job: "Subgerente de Auditoría",
+        resume: [
+          "Vismarck es contador público autorizado, con Título en Provisión Nacional otorgado por la Universidad Mayor de San Andrés. Participó en múltiples cursos de especialización en la administración de activos fijos, así como cuenta con un diplomado en Finanzas Corporativas otorgado por la Universidad Franz Tamayo. Actualmente se encuentra cursando los diplomados en Derecho y Técnica Tributaria y Auditoría Gubernamental.",
+
+          "Es parte del equipo de Delta Consult desde la gestión 2017, desempeñándose como auditor financiero y consultor. Cuenta con amplia experiencia laboral formada en el campo de auditoría financiera, desempeñándose como auditor externo en una amplia cartera de clientes, principalmente en entidades reguladas, industrias, instituciones públicas y fundaciones no lucrativas, entre otras. También desempeñó cargos de jefatura en el área de administración, talento humano y activos fijos. ",
+
+          "Su perfil como auditor es formado desde asignaciones en Delta Consult, como también con cursos de especialización profesional. A través de la amplia cartera que mantiene la firma y la constante innovación de procedimientos y normativas, mantiene la premisa de ejecutar programas de estudios de posgrado.",
+
+          "Vismarck tiene una afición por diferentes deportes, en especial el fútbol y la natación. Gusta de compartir tiempo en familia, viajar y ocasionalmente realizar deportes extremos.",
+        ],
+      },
+      {
+        picture: Jose,
+        name: "José Luis Marras Alarcón",
+        job: "Subgerente de Auditoría",
+        resume: [
+          "José Luis es contador público, egresado de la Universidad Mayor de San Andrés. Cuenta con un diplomado en tributación en el Instituto de Investigaciones de Ciencias Contables, Financieras y Auditoría, Unidad de Postgrado. ",
+
+          "Es parte del equipo de Delta Consult desde el año 2014, desempeñándose como auditor financiero hasta alcanzar el puesto de subgerente de auditoría. Su experiencia laboral reside en los trabajos realizados para la empresa.",
+
+          "José Luis tiene gusto por el voleibol, viajar y conocer nuevas personas. Gran Valor.",
+        ],
+      },
+      {
+        picture: Julio,
+        name: "Julio Mendoza Ticona",
+        job: "Subgerente de Auditoría",
+        resume: [
+          "Julio es contador público, con Título en Provisión Nacional otorgado por la Universidad Mayor de San Andrés. Forma parte del equipo de Delta Consult desde la gestión 2011, en un inicio desempeñando el cargo de auditor financiero y actualmente como subgerente de auditoría. Cuenta con experiencia en análisis de cartera en instituciones gubernamentales.",
+
+          "Julio disfruta de realizar viajes y conocer nuevas culturas.",
+        ],
+      },
+      {
         picture: Ignacio,
         name: "Ignacio Sanjines Calle",
         job: "Encargado de Diseño Gráfico",
@@ -258,34 +268,6 @@ function TeamContentProvider(props) {
           "Tiene experiencia laboral como consultor freelance en el desarrollo de marcas y productos gráficos para distintas entidades en diversos rubros como el textil, educativo y empresarial en general. Firmando como Gran Monín explora una faceta más artística, y lejos de su trabajo como diseñador gráfico, ha logrado reconocimiento local como ilustrador e historietista.",
 
           "Ignacio gusta de jugar fútbol y videojuegos, así como estudiar y producir música.",
-        ],
-      },
-      {
-        picture: Rolando,
-        name: "Rolando Yapuchura Mendoza",
-        job: "Encargado Operativo",
-        resume: [
-          "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
-        ],
-      },
-      {
-        picture: Valentina,
-        name: "Valentina Calle Ledezma",
-        job: "Encargada de Marketing",
-        resume: [
-          "Valentina es licenciada en marketing y medios digitales, egresada de la Universidad Católica Boliviana. Es parte del equipo de Delta Consult desde 2023, impulsando el desarrollo del área de marketing y recursos humanos.",
-
-          "Tiene experiencia laboral como miembro del equipo de comunicación en organizaciones no gubernamentales y humanitarias, también fungió como community manager, creando contenidos estratégicos digitales para empresas de varios rubros en el mercado boliviano.",
-
-          "Valentina disfruta hacer equitación y viajar, así como estudiar y conocer las nuevas tendencias en el mundo digital.",
-        ],
-      },
-      {
-        picture: Luz,
-        name: "Luz Flores Tapia",
-        job: "Encargada de Contabilidad",
-        resume: [
-          "Por su distintiva voz y su puesta en escena, junto con el estilo de guitarra de Keith Richards, han sido la marca registrada de la banda durante toda su carrera. Con el tiempo, Jagger logró notoriedad en la prensa por su admitida relación con las drogas y sus polémicas relaciones personales, siendo nombrado a menudo como una figura contracultural.",
         ],
       },
     ],

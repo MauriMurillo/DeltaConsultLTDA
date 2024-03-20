@@ -46,7 +46,9 @@ function SMS() {
               <p> VISITA SMS LATINOAMERICA AQUI</p>
             </a>
           </div>
-          <img alt="whereSMS" src={sms1} />
+          <a href="https://smslatam.com/section/view/123" target="_blank" rel="noreferrer">
+            <img alt="whereSMS" src={sms1} />
+          </a>
         </div>
       </div>
       <div className="pane2" style={{ marginTop: "0px" }}>
