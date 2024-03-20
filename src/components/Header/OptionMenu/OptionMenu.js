@@ -95,7 +95,6 @@ function OptionMenu() {
                   setTimeout(function () {
                     const element = document.getElementById(item);
                     if (element) {
-                      console.log(item);
                       element.scrollIntoView({
                         behavior: "auto",
                         block: "center",

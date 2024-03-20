@@ -22,8 +22,8 @@ function Contact() {
         {offices.map((item) => (
           <BigOffice content={item} />
         ))}
-        <ContactForm />
-        <ResumeForm/>
+        {/* <ContactForm /> */}
+        {/* <ResumeForm/> */}
       </div>
       <Footer />
     </div>

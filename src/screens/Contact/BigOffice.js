@@ -9,6 +9,7 @@ function BigOffice(props) {
     <div className="bigOfficeContainer">
       <p>{content.ciudad}</p>
       <div className="contentFlex">
+        <div className="embedMap">{content.embed}</div>
         <div className="officeDataContainer">
           <div className="cnb">
             <a target="_blank" rel="noreferrer" href={"mailto:" + content.mail}>
@@ -33,7 +34,6 @@ function BigOffice(props) {
             </a>
           </div>
         </div>
-        <div className="embedMap">{content.embed}</div>
       </div>
     </div>
   );

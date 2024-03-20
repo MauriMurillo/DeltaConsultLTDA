@@ -34,11 +34,15 @@
 /* Links a interno MiDelta */
 .navBar > .linkInternal {
   width: 92px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
   margin-left: 40px;
+}
+.navBar > .linkInternal:hover{
+  border-bottom: solid var(--LightBlue) 5px;
 }
 .navBar > .linkInternal img {
   width: 20px;

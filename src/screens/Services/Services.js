@@ -4,10 +4,12 @@ import { Header } from "../../components/Header/Header.js";
 import { Footer } from "../../components/Footer/Footer.js";
 import { ServicesContext } from "../../Contexts/ServicesContext";
 import { DeltaContext } from "../../Contexts/DeltaContext.js";
+import { NavLink, useNavigate } from "react-router-dom";
 
 function Services() {
   const { services } = useContext(ServicesContext);
   const { selectedContent, screenSize } = useContext(DeltaContext);
+  const navigate = useNavigate();
   let main = {};
   if (selectedContent !== "") {
     main = services.find(
@@ -45,7 +47,20 @@ function Services() {
         <h2>Nuestro equipo especializado</h2>
         <div className="serviceTeamGrid">
           {main.equipo.map((item) => (
-            <div>
+            <div onClick={() => {
+              navigate("/Nosotros");
+              setTimeout(function () {
+              const element = document.getElementById("NuestroEquipo");
+              if (element) {
+                element.scrollIntoView({
+                  behavior: "auto",
+                  block: "center",
+                  inline: "center",
+                });
+              }
+              }, 50);
+            }}>
+            {/* <div> */}
               <div className="text">
                 <p className="name">{item.nombre}</p>
                 <p className="role">{item.rol}</p>
@@ -54,9 +69,9 @@ function Services() {
             </div>
           ))}
         </div>
-        <a className="serviceLink" href="#" target="_blank" rel="noreferrer">
+        <NavLink className="serviceLink" to={"/Contacto"}>
           <p>CONTÁCTANOS PARA MÁS INFORMACIÓN</p>
-        </a>
+        </NavLink>
       </section>
       <Footer />
     </div>
