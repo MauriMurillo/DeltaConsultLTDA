@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/DeltaConsultLTDA/static/css/main.5ff524c0.css",
-    "main.js": "/DeltaConsultLTDA/static/js/main.4fc369d1.js",
-    "static/media/Broshure Delta.pdf": "/DeltaConsultLTDA/static/media/Broshure Delta.6c08e8b719268a3bfd8e.pdf",
+    "main.css": "/DeltaConsultLTDA/static/css/main.a59ca96c.css",
+    "main.js": "/DeltaConsultLTDA/static/js/main.7d3b3c20.js",
+    "static/media/Delta Consult Brochure digital.pdf": "/DeltaConsultLTDA/static/media/Delta Consult Brochure digital.0e02d56e225b5593659e.pdf",
     "static/media/18. Diana Flores Tapia_ Subgerente Contable.jpg": "/DeltaConsultLTDA/static/media/18. Diana Flores Tapia_ Subgerente Contable.65caa0d5ae8dc3974a51.jpg",
     "static/media/2. Edgardo Vásquez Durán_ Director de Auditoría - Socio.jpg": "/DeltaConsultLTDA/static/media/2. Edgardo Vásquez Durán_ Director de Auditoría - Socio.b1c24ef77166f6b41400.jpg",
+    "static/media/17. Rene Carpio Choque_ Subgerente Operativo - Propuestas.jpg": "/DeltaConsultLTDA/static/media/17. Rene Carpio Choque_ Subgerente Operativo - Propuestas.b6f628087687df87a868.jpg",
     "static/media/4. Paula Calle Rojas.jpg": "/DeltaConsultLTDA/static/media/4. Paula Calle Rojas.14f8541df06bfa3305ee.jpg",
-    "static/media/17. Rene Carpio Choque_ Subgerente Operativo - Propuestas.jpg": "/DeltaConsultLTDA/static/media/17. Rene Carpio Choque_ Subgerente Operativo - Propuestas.bbb49821bfc4216a645c.jpg",
     "static/media/cochapc.jpg": "/DeltaConsultLTDA/static/media/cochapc.6b9079fa288409244d71.jpg",
     "static/media/3. Ximena Calle Rojas.jpg": "/DeltaConsultLTDA/static/media/3. Ximena Calle Rojas.23b241b5303f779ceee3.jpg",
     "static/media/8. Maria Teresa Vargas.jpg": "/DeltaConsultLTDA/static/media/8. Maria Teresa Vargas.ced1b1e0fbda085d2259.jpg",
     "static/media/21. Valentina Calle Ledezma_ Encargada de Marketing.jpg": "/DeltaConsultLTDA/static/media/21. Valentina Calle Ledezma_ Encargada de Marketing.441e48fb906d364dad69.jpg",
     "static/media/6. Miguel Gutiérrez Salas_ Gerente de Auditoría.jpg": "/DeltaConsultLTDA/static/media/6. Miguel Gutiérrez Salas_ Gerente de Auditoría.f3be8780d4e0d535b14d.jpg",
-    "static/media/20. Rolando Yapuchura Mendoza_ Encargado Operativo.jpg": "/DeltaConsultLTDA/static/media/20. Rolando Yapuchura Mendoza_ Encargado Operativo.d2c4d1f8d9c9d156ffab.jpg",
-    "static/media/15. Vismark Laruta Aguirre_ Subgerente de Auditoría.jpg": "/DeltaConsultLTDA/static/media/15. Vismark Laruta Aguirre_ Subgerente de Auditoría.f94588f5fc43f125e1da.jpg",
+    "static/media/15. Vismark Laruta Aguirre_ Subgerente de Auditoría.jpg": "/DeltaConsultLTDA/static/media/15. Vismark Laruta Aguirre_ Subgerente de Auditoría.1576f37ebd635dc56de3.jpg",
     "static/media/9. Nilda Aruquipa Ramos_ Gerente de Impuestos.jpg": "/DeltaConsultLTDA/static/media/9. Nilda Aruquipa Ramos_ Gerente de Impuestos.1c09b5172919d623109f.jpg",
     "static/media/14. Betza Cantuta Huanca_ Subgerente de Auditoría.jpg": "/DeltaConsultLTDA/static/media/14. Betza Cantuta Huanca_ Subgerente de Auditoría.36418d8da50ba86a3c20.jpg",
     "static/media/1. Oscar Calle Rojas_ Gerente General - Socio.jpg": "/DeltaConsultLTDA/static/media/1. Oscar Calle Rojas_ Gerente General - Socio.b85a901d7ae1f0915ea2.jpg",
@@ -23,10 +22,9 @@
     "static/media/Doing Bussines Bolivia 2022.pdf": "/DeltaConsultLTDA/static/media/Doing Bussines Bolivia 2022.e06f582bc0e50d46f415.pdf",
     "static/media/5. Goldie Calla Ruiz_ Gerente de Auditoría.jpg": "/DeltaConsultLTDA/static/media/5. Goldie Calla Ruiz_ Gerente de Auditoría.b9c66646e81f0bccc7c7.jpg",
     "static/media/cochalaptop.jpg": "/DeltaConsultLTDA/static/media/cochalaptop.ffca7a854c89cfa93aab.jpg",
-    "static/media/22. Luz Flores Tapia_ Encargada de Contabilidad.jpg": "/DeltaConsultLTDA/static/media/22. Luz Flores Tapia_ Encargada de Contabilidad.b8bed00ae85ec2d936c2.jpg",
-    "static/media/16. Zaida Bolívar Cari_ Subgerente de Recursos Humanos.jpg": "/DeltaConsultLTDA/static/media/16. Zaida Bolívar Cari_ Subgerente de Recursos Humanos.ce5e5e95edda4cf5d84d.jpg",
     "static/media/10. Renato Calle Ledezma_ Gerente de Consultoría.jpg": "/DeltaConsultLTDA/static/media/10. Renato Calle Ledezma_ Gerente de Consultoría.c49032eaa79ada94d640.jpg",
     "static/media/7. Americo Antezana Ibañez.jpg": "/DeltaConsultLTDA/static/media/7. Americo Antezana Ibañez.3bad0ed858e30c77a9eb.jpg",
+    "static/media/16. Zaida Bolívar Cari_ Subgerente de Recursos Humanos.jpg": "/DeltaConsultLTDA/static/media/16. Zaida Bolívar Cari_ Subgerente de Recursos Humanos.47dd9d63572b7e9d3356.jpg",
     "static/media/pclapaz.jpg": "/DeltaConsultLTDA/static/media/pclapaz.a35829b9f83a9acb3dc3.jpg",
     "static/media/19. Ignacio Sanjines Calle_ Encargado de Diseño Gráfico.jpg": "/DeltaConsultLTDA/static/media/19. Ignacio Sanjines Calle_ Encargado de Diseño Gráfico.891f56dab7644851af5a.jpg",
     "static/media/cochatablet.jpg": "/DeltaConsultLTDA/static/media/cochatablet.605d5d93e9776bf81973.jpg",
@@ -130,11 +128,11 @@
     "static/media/Header_Arrow.svg": "/DeltaConsultLTDA/static/media/Header_Arrow.81c9cf93d734a4d7d2cb8a9e1d0304d2.svg",
     "static/media/Menu.svg": "/DeltaConsultLTDA/static/media/Menu.865e3edc957a3cceb4ef8bb13fbfe0a7.svg",
     "static/media/Arrow_drop.svg": "/DeltaConsultLTDA/static/media/Arrow_drop.e556d5b3d9df7884f48f058313ef5ed6.svg",
-    "main.5ff524c0.css.map": "/DeltaConsultLTDA/static/css/main.5ff524c0.css.map",
-    "main.4fc369d1.js.map": "/DeltaConsultLTDA/static/js/main.4fc369d1.js.map"
+    "main.a59ca96c.css.map": "/DeltaConsultLTDA/static/css/main.a59ca96c.css.map",
+    "main.7d3b3c20.js.map": "/DeltaConsultLTDA/static/js/main.7d3b3c20.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ff524c0.css",
-    "static/js/main.4fc369d1.js"
+    "static/css/main.a59ca96c.css",
+    "static/js/main.7d3b3c20.js"
   ]
 }
