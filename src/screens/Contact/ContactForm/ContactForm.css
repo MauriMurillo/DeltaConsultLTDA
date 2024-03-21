@@ -1,0 +1,109 @@
+.formContainer .contactForm {
+  display: grid;
+  grid-template-columns: 800px 448px;
+  grid-template-rows: repeat(3, 96px) 160px;
+  grid-template-areas:
+    "a d"
+    "b d"
+    "c d"
+    "g d";
+}
+.formContainer .contactForm label:not(.d) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-bottom: solid #fff 4px;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+.formContainer .contactForm input,
+::placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: var(--DarkBlue);
+  border: none;
+}
+.formContainer .contactForm input {
+  height: 64px;
+}
+
+.contactForm .d {
+  grid-area: d;
+  background-color: #333545;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 64px;
+}
+
+.formContainer .contactForm .g > input {
+  background: #ffffff;
+  border-radius: 5px;
+  width: 128px;
+  height: 32px;
+  margin-right: 288px;
+  color: var(--DarkBlue);
+  font-weight: 700;
+}
+.contactForm #mensaje {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 1250px) {
+  .formContainer .contactForm {
+    grid-template-columns: 576px 320px;
+  }
+  .formContainer .contactForm .g > input {
+    margin-right: 224px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .formContainer .contactForm {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 96px) 128px 128px;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "g";
+  }
+  .formContainer .contactForm .d {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border-bottom: solid #fff 4px;
+    padding: 0px 64px;
+    padding-top: 56px;
+    background-color: transparent;
+  }
+  .formContainer .contactForm input,
+  ::placeholder {
+    font-size: 16px;
+  }
+  .formContainer .contactForm .g > input {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .formContainer .contactForm {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 64px) 96px 128px;
+  }
+  .formContainer .contactForm label:not(.d) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .formContainer .contactForm .d {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 40px;
+  }
+  .formContainer .contactForm input {
+    height: 40px;
+  }
+}

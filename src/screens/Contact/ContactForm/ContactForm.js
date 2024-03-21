@@ -12,26 +12,30 @@ function ContactForm() {
       <div className="formContainer">
         <form className="contactForm" action={sendMailContact}>
           <label className="a" for="nombre">
-            NOMBRE
-            <input type="name" id="nombre" />
+            <input type="name" id="nombre" placeholder="NOMBRE" />
           </label>
 
           <label className="b" for="mail">
-            E-MAIL
-            <input type="mail" id="mail" />
+            <input type="mail" id="mail" placeholder="EMAIL" />
           </label>
 
           <label className="c" for="asunto">
-            CIUDAD
-            <input type="text" id="asunto" />
+            <input type="text" id="asunto" placeholder="ASUNTO" />
           </label>
 
           <label className="d" for="mensaje">
-            MENSAJE
-            <textarea id="mensaje" rows="4" col="50" resize="false"></textarea>
+            <textarea
+              id="mensaje"
+              rows="4"
+              col="50"
+              resize="false"
+              placeholder="MENSAJE"
+            ></textarea>
           </label>
 
-          <input type="submit" />
+          <div className="g submitArea">
+            <input type="submit" value="ENVIAR" />
+          </div>
         </form>
       </div>
     </div>

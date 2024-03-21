@@ -1,7 +1,6 @@
 .formContainer {
   width: 1248px;
   background-color: var(--DarkBlue);
-  height: 608px;
   border-radius: 15px;
   margin: 64px auto;
   overflow: hidden;
@@ -141,7 +140,6 @@ input::file-selector-button {
 @media only screen and (max-width: 950px) {
   .formContainer {
     width: 640px;
-    height: 776px;
   }
   .formContainer .resumeForm {
     grid-template-columns: 1fr;
@@ -198,7 +196,6 @@ input::file-selector-button {
   .formContainer {
     width: 95%;
     max-width: 344px;
-    height: 632px;
     padding-top: 16px;
   }
   .formContainer .resumeForm {
