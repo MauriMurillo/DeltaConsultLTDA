@@ -60,7 +60,6 @@ function Services() {
               }
               }, 50);
             }}>
-            {/* <div> */}
               <div className="text">
                 <p className="name">{item.nombre}</p>
                 <p className="role">{item.rol}</p>

@@ -209,22 +209,31 @@
   .ifacSection .textContainer .Title {
     font-size: 48px;
   }
+  .smsSection .pane1,
+  .ifacSection .pane1 {
+    padding-left: 0;
+    padding-right: 0;
+    height: auto;
+  }
   .smsSection .pane1 {
-    gap: 44px;
     flex-direction: column-reverse;
   }
   .ifacSection .pane1 {
-    gap: 44px;
     flex-direction: column;
   }
   .smsSection .pane1 .textPane,
   .ifacSection .pane1 .textPane {
     width: 100%;
+    padding-left: 64px;
+    padding-right: 64px;
   }
-  .smsSection .pane1 img,
+  .smsSection .pane1 > a {
+    width: 100%;
+    height: 375px;
+  }
   .ifacSection .pane1 img {
     width: 100%;
-    height: 320px;
+    height: 375px;
   }
   .pane2 h2 {
     font-size: 38px;
@@ -252,8 +261,8 @@
     font-size: 16px;
     line-height: 20px;
   }
-  .smsSection .pane1,
-  .ifacSection .pane1 {
+  .smsSection .pane1 .textPane,
+  .ifacSection .pane1 .textPane {
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -280,7 +289,9 @@
   .ifacSection .pane1 .textPane .ifacLink p {
     font-size: 14px;
   }
-  .smsSection .pane1 img,
+  .smsSection .pane1 > a{
+    height: 320px;
+  }
   .ifacSection .pane1 img {
     height: 320px;
   }
@@ -293,11 +304,11 @@
     width: 160px;
     height: 29px;
   }
-
-  .pane2 {
+  .pane2 .TextDelta {
     padding-left: 32px;
     padding-right: 32px;
   }
+
   .pane2 h2 {
     font-size: 38px;
     line-height: 40px;

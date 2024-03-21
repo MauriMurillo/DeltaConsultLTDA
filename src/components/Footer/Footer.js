@@ -29,7 +29,12 @@ function Footer() {
 
         {screenSize.width <= 1000 ? (
           <div className="linkContact">
-            <NavLink to={"/contact"}>
+            <NavLink
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+              to={"/Contacto"}
+            >
               <p>Contacto de nuestras oficinas en Bolivia</p>
             </NavLink>
           </div>

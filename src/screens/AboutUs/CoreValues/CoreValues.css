@@ -110,9 +110,13 @@
     padding-left: 64px;
     padding-right: 64px;
     padding-top: 64px;
+    justify-content: space-between;
   }
   .valuesLists h3 {
     font-size: 38px;
+  }
+  .valuesLists ul {
+    width: 310px;
   }
   .valuesLists ul li {
     font-size: 12px;
@@ -161,9 +165,7 @@
   .valuesLists h3 {
     margin-bottom: 56px;
   }
-  
   .sectionText {
-    margin-top: 64px;
     padding-left: 32px;
     padding-right: 32px;
   }

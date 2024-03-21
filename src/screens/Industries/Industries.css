@@ -149,6 +149,10 @@
   .mainIndustry .textContainer > p {
     margin-bottom: 40px;
   }
+  .mainIndustry + div{
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
   .restList {
     padding-left: 64px;
     padding-right: 64px;

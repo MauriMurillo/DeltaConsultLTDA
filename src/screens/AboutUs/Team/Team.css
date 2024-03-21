@@ -95,7 +95,7 @@
   /* ALL CARDS */
   .cardTeam {
     margin-bottom: 32px;
-    height: 288px;
+    height: 296px;
     width: 224px;
   }
   .cardTeam .imageContainer {
@@ -142,9 +142,7 @@
 @media only screen and (max-width: 600px) {
   .allFrame {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
     gap: 46px;
     padding-top: 46px;
     padding-bottom: 46px;

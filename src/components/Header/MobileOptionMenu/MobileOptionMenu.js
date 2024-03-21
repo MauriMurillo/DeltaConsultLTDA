@@ -81,7 +81,6 @@ function MobileOptionMenu() {
     setShowSubMenu,
     selectedItem,
     setSelectedItem,
-    setSelectedSection,
     setSelectedContent,
     setShowOptionMenu,
     setShowMobileMenu,
@@ -147,22 +146,22 @@ function MobileOptionMenu() {
                   setShowOptionMenu(false);
                   setSelectedItem("");
                   if (selectedOption === "NOSOTROS") {
-                    const element = document.getElementById(item);
-                    if (element) {
-                      element.scrollIntoView({
-                        behavior: "auto",
-                        block: "center",
-                        inline: "center",
-                      });
-                    }
                     navigate("/Nosotros");
+                    setTimeout(function () {
+                      const element = document.getElementById(item);
+                      if (element) {
+                        element.scrollIntoView({
+                          behavior: "auto",
+                          block: "center",
+                          inline: "center",
+                        });
+                      }
+                    }, 50);
                   } else if (selectedOption === "INDUSTRIAS") {
-                    setSelectedSection("");
                     setSelectedContent(item);
                     window.scrollTo(0, 0);
                     navigate("/Industrias");
                   } else if (selectedOption === "SERVICIOS") {
-                    setSelectedSection("");
                     setSelectedContent(item);
                     window.scrollTo(0, 0);
                     navigate("/Servicios");

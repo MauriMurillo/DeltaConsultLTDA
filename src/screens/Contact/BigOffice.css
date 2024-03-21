@@ -94,7 +94,6 @@
 }
 @media only screen and (max-width: 715px) {
   .contactSection .sectionText {
-    margin-top: 64px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -116,7 +115,7 @@
     text-align: center;
   }
   .contentFlex {
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: flex-start;
     padding-left: 0px;
     padding-right: 0px;

@@ -48,10 +48,10 @@
   border-bottom: solid 2px #ffffff;
 }
 .mobileOptionMenu .links > .active,
-.mobileOptionMenu .links > div:hover{
+.mobileOptionMenu .links > div:hover {
   background-color: #9a9696;
-    border-left: 8px solid var(--LightBlue);
-    border-top: none;
+  border-left: 8px solid var(--LightBlue);
+  border-top: none;
 }
 .mobileOptionMenu .links > .active img,
 .mobileOptionMenu .links > div:hover img {
@@ -84,7 +84,7 @@
   padding-top: 172px;
   background-color: #9a9696;
 }
-.mobileOptionMenu .subMenu > div{
+.mobileOptionMenu .subMenu > div {
   height: 64px;
   display: flex;
   align-items: center;
@@ -155,7 +155,7 @@
     border-left: 8px solid var(--LightBlue);
     border-top: none;
   }
-  .mobileOptionMenu .links .deploy .active img{
+  .mobileOptionMenu .links .deploy .active img {
     transform: rotate(270deg);
   }
   .mobileOptionMenu .links .deployed {
