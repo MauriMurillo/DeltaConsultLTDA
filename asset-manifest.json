@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/DeltaConsultLTDA/static/css/main.a59ca96c.css",
+    "main.css": "/DeltaConsultLTDA/static/css/main.357131fc.css",
     "main.js": "/DeltaConsultLTDA/static/js/main.7d3b3c20.js",
     "static/media/Delta Consult Brochure digital.pdf": "/DeltaConsultLTDA/static/media/Delta Consult Brochure digital.0e02d56e225b5593659e.pdf",
     "static/media/18. Diana Flores Tapia_ Subgerente Contable.jpg": "/DeltaConsultLTDA/static/media/18. Diana Flores Tapia_ Subgerente Contable.65caa0d5ae8dc3974a51.jpg",
@@ -128,11 +128,11 @@
     "static/media/Header_Arrow.svg": "/DeltaConsultLTDA/static/media/Header_Arrow.81c9cf93d734a4d7d2cb8a9e1d0304d2.svg",
     "static/media/Menu.svg": "/DeltaConsultLTDA/static/media/Menu.865e3edc957a3cceb4ef8bb13fbfe0a7.svg",
     "static/media/Arrow_drop.svg": "/DeltaConsultLTDA/static/media/Arrow_drop.e556d5b3d9df7884f48f058313ef5ed6.svg",
-    "main.a59ca96c.css.map": "/DeltaConsultLTDA/static/css/main.a59ca96c.css.map",
+    "main.357131fc.css.map": "/DeltaConsultLTDA/static/css/main.357131fc.css.map",
     "main.7d3b3c20.js.map": "/DeltaConsultLTDA/static/js/main.7d3b3c20.js.map"
   },
   "entrypoints": [
-    "static/css/main.a59ca96c.css",
+    "static/css/main.357131fc.css",
     "static/js/main.7d3b3c20.js"
   ]
 }
