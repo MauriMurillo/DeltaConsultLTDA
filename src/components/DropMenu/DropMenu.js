@@ -3,8 +3,8 @@ import arrow from "../../Assets/Icons/utilIcons/Arrow_drop.svg";
 import { DeltaContext } from "../../Contexts/DeltaContext";
 function DropMenu(props) {
   const { screenSize } = useContext(DeltaContext);
-  const { title, stack, notop } = props;
-  const [deployed, setDeployed] = useState(false);
+  const { title, stack, notop, initial } = props;
+  const [deployed, setDeployed] = useState(initial);
   const borderBot = stack ? "none" : "solid 4px #d9d9d9";
   const borderTop = (stack || notop) ? "none" : "solid 4px #d9d9d9";
   const height = stack ? "92px" : "100px";

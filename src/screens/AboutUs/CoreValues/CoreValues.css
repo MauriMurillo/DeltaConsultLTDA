@@ -1,7 +1,6 @@
 .valuesContainer, .teamContainer{
   margin-bottom: 96px;
 }
-
 .mision,
 .vision {
   min-height: 130px;
@@ -123,7 +122,6 @@
     height: 8px;
   }
   .sectionText {
-    margin-top: 64px;
     padding-left: 64px;
   }
   .sectionText > p {

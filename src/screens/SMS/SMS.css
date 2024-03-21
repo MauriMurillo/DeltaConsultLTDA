@@ -1,4 +1,6 @@
-.smsSection, .ifacSection, .pane2  {
+.smsSection,
+.ifacSection,
+.pane2 {
   margin-top: 0px;
   color: #fff;
 }
@@ -8,7 +10,7 @@
 .ifacSection .textContainer {
   background-color: #47b8eb;
 }
-.pane2 .textContainer{
+.pane2 .textContainer {
   background-color: var(--DeltaBlue);
   padding-left: 96px;
   padding-right: 96px;
@@ -53,7 +55,7 @@
   padding-bottom: 52px;
   padding-top: 32px;
 }
-.ifacSection .pane1 .textPane{
+.ifacSection .pane1 .textPane {
   padding-top: 52px;
 }
 .smsSection .pane1 .textPane .TextSMS,
@@ -76,7 +78,7 @@
   height: 55px;
 }
 .ifacSection .pane1 .textPane .TextSMS p {
-  margin-top: 32px;
+  margin-top: 24px;
 }
 .smsSection .pane1 .textPane .smsLink,
 .ifacSection .pane1 .textPane .ifacLink {
@@ -106,17 +108,19 @@
 .ifacSection .pane1 .textPane .ifacLink p {
   color: var(--DeltaBlue);
 }
-.smsSection .pane1 > a{
+.smsSection .pane1 > a {
   width: calc(100% - 608px - 64px);
+  max-width: 1000px;
   height: 768px;
   display: block;
 }
-.smsSection .pane1 img{
+.smsSection .pane1 img {
   width: 100%;
   height: 100%;
 }
 .ifacSection .pane1 img {
   width: calc(100% - 608px - 64px);
+  max-width: 1000px;
   height: 768px;
 }
 .ifacSection .pane1 .textPane span {
@@ -139,7 +143,6 @@
   color: #fff;
   margin-bottom: 25px;
   background-color: var(--DeltaBlue);
-
 }
 .pane2 .TextDelta {
   padding-left: 96px;
@@ -163,28 +166,36 @@
   .ifacSection .textContainer {
     padding-left: 64px;
   }
-  .smsSection .pane1,
-  .ifacSection .pane1 {
+  .smsSection .pane1 {
     padding-left: 64px;
+    height: 820px;
+  }
+  .ifacSection .pane1 {
     padding-right: 64px;
+    height: 820px;
   }
   .smsSection .pane1 .textPane,
   .ifacSection .pane1 .textPane {
     width: 480px;
   }
-  .smsSection .pane1 img,
+  .smsSection .pane1 > a {
+    width: calc(100% - 64px - 480px);
+    height: 100%;
+  }
   .ifacSection .pane1 img {
     width: calc(100% - 64px - 480px);
-    height: 710px;
+    height: 100%;
   }
-
-  .pane2 {
+  .pane2 .textContainer {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .pane2 .TextDelta {
     padding-left: 64px;
     padding-right: 64px;
   }
   .pane2 h2 {
     font-size: 48px;
-    color: var(--DeltaBlue);
     margin-bottom: 46px;
   }
 }

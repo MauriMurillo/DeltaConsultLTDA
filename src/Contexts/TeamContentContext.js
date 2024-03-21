@@ -27,7 +27,7 @@ import Valentina from "../Assets/nosotros/secciondos/fotospersonalnumeradas/21. 
 import brochure from "../Assets/nosotros/secciontres/brochure.png";
 import doingbusiness from "../Assets/nosotros/secciontres/doingbusiness.png";
 
-import brochurepdf from "../Assets/nosotros/Broshure Delta.pdf"
+import brochurepdf from "../Assets/nosotros/Delta Consult Brochure digital.pdf"
 import businesspdf from "../Assets/nosotros/Doing Bussines Bolivia 2022.pdf"
 const TeamContentContext = React.createContext();
 

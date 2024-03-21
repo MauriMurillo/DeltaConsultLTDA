@@ -12,7 +12,7 @@ function Team() {
         <h1>Nuestro equipo de liderazgo</h1>
         <p>Una base firme para el presente y el futuro</p>
       </section>
-      <DropMenu title="Directores" notop={true}>
+      <DropMenu title="Directores" notop={true} initial={true}>
         <Group members={team.Directores} />
       </DropMenu>
 
