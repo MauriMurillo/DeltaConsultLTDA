@@ -73,12 +73,25 @@ textarea {
   background-color: #333545;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 64px;
 }
-.f input {
-  visibility: hidden;
+.f #auxContainer {
+  width: 100%;
+}
+.f #auxContainer #resume {
+  margin-top: 96px;
+  overflow: visible;
+  height: 30px;
+  text-align: center;
+  width: inherit;
+}
+.formContainer .f input {
+  background-color: #333545;
+}
+input::file-selector-button {
+  display: none;
 }
 .f > p {
   font-weight: 400;
@@ -109,4 +122,100 @@ textarea {
   font-weight: 700;
 }
 @media only screen and (max-width: 1250px) {
+  .formContainer {
+    width: 896px;
+  }
+  .formContainer .resumeForm {
+    grid-template-columns: 576px 320px;
+  }
+  .g {
+    grid-area: g;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .formContainer .resumeForm .g > input {
+    margin-right: 224px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .formContainer {
+    width: 640px;
+    height: 776px;
+  }
+  .formContainer .resumeForm {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 96px) 168px 128px;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f"
+      "g";
+  }
+  .formContainer .resumeForm input,
+  ::placeholder {
+    font-size: 16px;
+  }
+  textarea {
+    font-size: 16px;
+  }
+  .f {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 48px 32px;
+    grid-template-areas:
+      "texto logo"
+      "archivo archivo";
+    padding: 24px 64px;
+    margin-top: 32px;
+  }
+  .f #auxContainer {
+    grid-area: archivo;
+    width: 100%;
+  }
+  .f #auxContainer #resume {
+    margin-top: 0px;
+  }
+  .f > p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0;
+    text-align: start;
+  }
+  .f > img {
+    width: 48px;
+    height: 48px;
+  }
+  .formContainer .resumeForm .g > input {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .formContainer {
+    width: 95%;
+    max-width: 344px;
+    height: 632px;
+    padding-top: 16px;
+  }
+  .formContainer .resumeForm {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 64px) 168px 128px;
+  }
+  .formContainer .resumeForm label:not(.f) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .formContainer .resumeForm input {
+    height: 40px;
+  }
+  textarea {
+    height: 32px;
+  }
+  .f {
+    row-gap: 16px;
+  }
 }

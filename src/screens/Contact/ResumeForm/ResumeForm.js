@@ -42,10 +42,12 @@ function ResumeForm() {
             ></textarea>
           </label>
 
-          <label className="f">
+          <label className="f" for="resume">
             <p>SUBE TU CV AQUI</p>
             <img src={download} alt="subir" />
-            <input id="resume" type="file" accept=".pdf" />
+            <div id="auxContainer">
+              <input id="resume" type="file" accept=".pdf" />
+            </div>
           </label>
           <div className="g submitArea">
             <input type="submit" value="ENVIAR" />
