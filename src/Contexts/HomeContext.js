@@ -48,7 +48,7 @@ function HomeProvider(props) {
       imageTB: TABLET01,
       imageCEL: CELULAR01,
       title: "Bienvenidos a Delta Consult",
-      text: "Somos una firma de servicios de auditoría y consultoría, miembro de la red SMS Latinoamérica.",
+      text: "Somos una firma de servicios de auditoría y consultoría, miembro de la red SMS Latinoamérica",
       button: "Explora",
       path: "/Servicios",
     },
@@ -58,7 +58,7 @@ function HomeProvider(props) {
       imageTB: TABLET02,
       imageCEL: CELULAR02,
       title: "Liderando el mercado desde 1976",
-      text: "Son 48 años brindando servicios de auditoría y consultoría en Bolivia.",
+      text: "Son 48 años brindando servicios de auditoría y consultoría en Bolivia",
       button: "Explora",
       path: "/Nosotros",
     },
@@ -80,7 +80,7 @@ function HomeProvider(props) {
       {
         icon: people,
         title: "+250",
-        text: "Clientes satisfechos",
+        text: "Clientes satisfechos por gestión",
       },
       {
         icon: profesional,

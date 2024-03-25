@@ -6,7 +6,7 @@ function Allies(props) {
     <div className="AlliesContainer" style={{marginTop:"100px"}}>
       <section className="textContainer">
         <h2 className="AlliesTitle">Nuestras empresas aliadas</h2>
-        <p className="AlliesText">La diversificacion es la clave del exito.</p>
+        <p className="AlliesText">La diversificacion es la clave del exito</p>
       </section>
       <div className="cardContainer">
         {allies.map((item) => {

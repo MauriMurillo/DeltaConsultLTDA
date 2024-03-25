@@ -22,8 +22,7 @@ function Footer() {
 
         {screenSize.width > 1150 || screenSize.width <= 1000 ? (
           <p className="contactDescription">
-            Somos una firma constituida en Bolivia para efectuar trabajos y
-            servicios profesionales en las areas de auditoría y consultoría.
+            Somos una firma constituida en Bolivia para trabajar en las areas de auditoría y consultoría. <NavLink  className="linkAdd" onClick={()=>{window.scrollTo(0,0)}} to={"/Contacto"}>¿Quieres trabajar con nosotros?</NavLink>
           </p>
         ) : null}
 

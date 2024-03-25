@@ -89,10 +89,11 @@
   align-items: center;
   text-decoration: none;
 }
-.cn a:hover p{
+.cn a:hover p, .linkAdd:hover{
   text-decoration: underline;
 }
-.footer p {
+.footer p, .linkAdd{
+  text-decoration: none;
   color: white;
   font-size: 14px;
   font-style: normal;

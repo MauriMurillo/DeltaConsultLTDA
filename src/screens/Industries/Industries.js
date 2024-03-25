@@ -5,11 +5,12 @@ import { Footer } from "../../components/Footer/Footer.js";
 import { DeltaContext } from "../../Contexts/DeltaContext.js";
 import { IndustriesContext } from "../../Contexts/IndustriesContext.js";
 import { DropMenu } from "../../components/DropMenu/DropMenu.js";
+import { useNavigate } from "react-router-dom";
 function Industries() {
   const { screenSize, selectedContent, setSelectedContent } =
     useContext(DeltaContext);
   const { industries } = useContext(IndustriesContext);
-
+  const navigate = useNavigate();
   let main = {};
   let rest = [];
   if (selectedContent !== "") {
@@ -37,7 +38,13 @@ function Industries() {
           {main.text.map((item) => (
             <p>{item}</p>
           ))}
-          <div className="Button">
+          <div
+            onClick={() => {
+              navigate("/Contacto");
+              window.scrollTo(0, 0);
+            }}
+            className="Button"
+          >
             <p>CONTACTA A NUESTROS EXPERTOS AQUÍ</p>
           </div>
         </div>
@@ -46,7 +53,10 @@ function Industries() {
         </div>
       </section>
       {screenSize.width > 950 ? (
-        <section className="restIndustries Bottom" style={{marginTop: "100px"}}>
+        <section
+          className="restIndustries Bottom"
+          style={{ marginTop: "100px" }}
+        >
           <h3>Explora Nuestras Industrias</h3>
           <div className="Grid">
             {rest.map((item) => (

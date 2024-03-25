@@ -60,6 +60,20 @@
   align-items: center;
   justify-content: flex-end;
 }
+.servTeamSection .serviceTeamGrid > div:hover{
+  cursor: pointer;
+}
+.servTeamSection .serviceTeamGrid > div:hover .text .name{
+  color: var(--DeltaBlue);
+  font-weight: 700;
+}
+.servTeamSection .serviceTeamGrid > div:hover .text .role{
+  color: var(--DeltaBlue);
+}
+.servTeamSection .serviceTeamGrid > div:hover img{
+  border: 4px var(--DeltaBlue) solid;
+}
+
 .servTeamSection .serviceTeamGrid > div > img {
   width: 96px;
   height: 96px;
