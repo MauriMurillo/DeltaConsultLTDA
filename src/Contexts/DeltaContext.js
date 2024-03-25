@@ -15,9 +15,15 @@ function DeltaProvider(props) {
   // Funcion para responder desde el render a cambios en el viewport
 
   // Para implementar el envio de correos en los formularios, Javascript aqui, hacer con el cesar
-  function sendMailContact(formData) {}
+  function sendMailContact(formData) {
+    console.log("form received");
+    // console.log(formData);
+  }
 
-  function sendMailResume(formData) {}
+  function sendMailResume(formData) {
+    console.log("form received");
+    // console.log(formData);
+  }
 
   function getCurrentDimension() {
     return {

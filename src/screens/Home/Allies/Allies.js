@@ -9,9 +9,10 @@ function Allies(props) {
         <p className="AlliesText">La diversificacion es la clave del exito</p>
       </section>
       <div className="cardContainer">
-        {allies.map((item) => {
+        {allies.map((item, index) => {
           return (
             <a
+              key={`aliada${index}`}
               href={item.url}
               target="_blank"
               rel="noreferrer"

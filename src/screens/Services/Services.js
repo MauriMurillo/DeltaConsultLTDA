@@ -43,23 +43,29 @@ function Services() {
           <img alt={main.title} src={main.imagen[index]} />
         </div>
       </section>
-      <section className="servTeamSection Bottom" style={{marginTop: "100px"}}>
+      <section
+        className="servTeamSection Bottom"
+        style={{ marginTop: "100px" }}
+      >
         <h2>Nuestro equipo especializado</h2>
         <div className="serviceTeamGrid">
-          {main.equipo.map((item) => (
-            <div onClick={() => {
-              navigate("/Nosotros");
-              setTimeout(function () {
-              const element = document.getElementById("NuestroEquipo");
-              if (element) {
-                element.scrollIntoView({
-                  behavior: "auto",
-                  block: "center",
-                  inline: "center",
-                });
-              }
-              }, 50);
-            }}>
+          {main.equipo.map((item, index) => (
+            <div
+              key={`equipoEspecializado${index}`}
+              onClick={() => {
+                navigate("/Nosotros");
+                setTimeout(function () {
+                  const element = document.getElementById("NuestroEquipo");
+                  if (element) {
+                    element.scrollIntoView({
+                      behavior: "auto",
+                      block: "center",
+                      inline: "center",
+                    });
+                  }
+                }, 50);
+              }}
+            >
               <div className="text">
                 <p className="name">{item.nombre}</p>
                 <p className="role">{item.rol}</p>

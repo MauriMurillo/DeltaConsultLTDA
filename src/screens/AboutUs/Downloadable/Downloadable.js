@@ -11,9 +11,10 @@ function Downloadable() {
         <p className="AlliesText">Encuentra mas informacion de nosotros aqui</p>
       </section>
       <div className="cardContainer">
-        {files.map((item) => {
+        {files.map((item, index) => {
           return (
             <a
+              key={`documento${index}`}
               href={item.pdf}
               target="_blank"
               rel="noreferrer"

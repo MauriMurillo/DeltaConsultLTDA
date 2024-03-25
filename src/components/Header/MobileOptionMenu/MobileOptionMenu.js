@@ -21,8 +21,9 @@ function MobileSubMenu(props) {
     <div className="deployed">
       {options
         .find((item) => item.name === selectedItem)
-        .links.map((item) => (
+        .links.map((item, index) => (
           <div
+            key={`submenuCelu${index}`}
             onClick={() => {
               setShowMobileMenu(false);
               setShowSubMenu(false);
@@ -55,8 +56,9 @@ function TabletSubMenu(props) {
     <div className="subMenu">
       {options
         .find((item) => item.name === selectedItem)
-        .links.map((item) => (
+        .links.map((item, index) => (
           <div
+            key={`submenuTablet${index}`}
             onClick={() => {
               setShowMobileMenu(false);
               setShowSubMenu(false);
@@ -106,9 +108,10 @@ function MobileOptionMenu() {
         <div className="items">
           <h2 className="mobileMenuTitle">{display.title}</h2>
           <section className="links">
-            {display.menu.map((item) => {
+            {display.menu.map((item, index) => {
               return (
                 <div
+                  key={`opcionConSub${index}`}
                   className={
                     item.name === selectedItem ? "active deploy" : "deploy"
                   }
@@ -138,8 +141,9 @@ function MobileOptionMenu() {
                 </div>
               );
             })}
-            {display.links.map((item) => (
+            {display.links.map((item, index) => (
               <div
+                key={`opcionSinSub${index}`}
                 onClick={() => {
                   setShowMobileMenu(false);
                   setShowSubMenu(false);

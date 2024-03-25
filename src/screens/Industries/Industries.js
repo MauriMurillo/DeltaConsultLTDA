@@ -35,8 +35,8 @@ function Industries() {
         <div className="textContainer">
           <h1>{main.title}</h1>
 
-          {main.text.map((item) => (
-            <p>{item}</p>
+          {main.text.map((item, index) => (
+            <p key={`indTexto${index}`}>{item}</p>
           ))}
           <div
             onClick={() => {
@@ -59,8 +59,9 @@ function Industries() {
         >
           <h3>Explora Nuestras Industrias</h3>
           <div className="Grid">
-            {rest.map((item) => (
+            {rest.map((item, index) => (
               <div
+                key={`otras${index}`}
                 onClick={() => {
                   setSelectedContent(item.title);
                   window.scrollTo(0, 0);
@@ -76,8 +77,9 @@ function Industries() {
       ) : (
         <DropMenu title="Explora Nuestras Industrias">
           <ul className="restList">
-            {rest.map((item) => (
+            {rest.map((item, index) => (
               <li
+                key={`otrasDrop${index}`}
                 onClick={() => {
                   setSelectedContent(item.title);
                   window.scrollTo(0, 0);

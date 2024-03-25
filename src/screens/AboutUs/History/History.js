@@ -14,10 +14,8 @@ function History() {
       <div className="historyContainer">
         <div className="timelineContainer">
           <div className="timeline" ref={ref}>
-            {historia.map((item) => {
-              return (
-                <Card event={item}/>
-              );
+            {historia.map((item, index) => {
+              return <Card key={`historia${index}`} event={item} />;
             })}
           </div>
         </div>

@@ -21,9 +21,9 @@ function Trust(props) {
       <div className="Trust">
         <p>¿Por qué confiar en nosotros?</p>
       </div>
-      {trustStatement.map((item) => {
+      {trustStatement.map((item, index) => {
         return (
-          <div className="Point" style={{ textAlign: "start" }}>
+          <div key={`confiar${index}`} className="Point" style={{ textAlign: "start" }}>
             <img alt="bullet point" src={derecha} />
             <p>{item}</p>
           </div>

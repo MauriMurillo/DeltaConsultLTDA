@@ -4,7 +4,14 @@ import { DeltaContext } from "../../../Contexts/DeltaContext";
 function Card(props) {
   const { cardData, setPerson, person } = props;
   return (
-    <div className="cardTeam" onClick={cardData.name === person ? ()=>setPerson("") : () => setPerson(cardData.name)}>
+    <div
+      className="cardTeam"
+      onClick={
+        cardData.name === person
+          ? () => setPerson("")
+          : () => setPerson(cardData.name)
+      }
+    >
       <div className="imageContainer">
         <img src={cardData.picture} alt={cardData.name} />
       </div>
@@ -25,8 +32,8 @@ function Individual(props) {
         <Card cardData={persona} setPerson={setPerson} person={person} />
       ) : null}
       <div className="desc">
-        {persona.resume.map((item) => (
-          <p>{item}</p>
+        {persona.resume.map((item, index) => (
+          <p key={`parrafo${index}`}>{item}</p>
         ))}
         <img
           className="icon"
@@ -43,8 +50,8 @@ function All(props) {
   const { members, setPerson } = props;
   return (
     <div className="allFrame">
-      {members.map((item) => (
-        <Card cardData={item} setPerson={setPerson} />
+      {members.map((item, index) => (
+        <Card cardData={item} setPerson={setPerson} key={`persona${index}`} />
       ))}
     </div>
   );

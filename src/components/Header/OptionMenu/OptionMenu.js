@@ -20,8 +20,9 @@ function SubMenu(props) {
     <div className="subMenu">
       {options
         .find((item) => item.name === selectedItem)
-        .links.map((item) => (
+        .links.map((item, index) => (
           <div
+            key={`subCompu${index}`}
             onClick={() => {
               setShowSubMenu(false);
               setShowOptionMenu(false);
@@ -66,9 +67,10 @@ function OptionMenu() {
           <p>{display.text}</p>
         </section>
         <section className="links">
-          {display.menu.map((item) => {
+          {display.menu.map((item, index) => {
             return (
               <div
+                key={`opcionConSub${index}`}
                 onClick={() => {
                   if (showSubMenu && selectedItem === item.name) {
                     setShowSubMenu(false);
@@ -85,8 +87,9 @@ function OptionMenu() {
               </div>
             );
           })}
-          {display.links.map((item) => (
+          {display.links.map((item, index) => (
             <div
+              key={`opcionSinSub${index}`}
               onClick={() => {
                 setShowSubMenu(false);
                 setShowOptionMenu(false);

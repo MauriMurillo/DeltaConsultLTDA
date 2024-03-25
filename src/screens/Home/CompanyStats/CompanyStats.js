@@ -7,9 +7,10 @@ function CompanyStats(props) {
   return (
     <div className={"statsContainer " + tipo}>
       <img alt="logo" src={logo} className="statLogo" />
-      {estadisticas.map((item) => {
+      {estadisticas.map((item, index) => {
         return (
           <Stat
+            key={`stat${index}`}
             contenido={{
               icon: item.icon,
               title: item.title,

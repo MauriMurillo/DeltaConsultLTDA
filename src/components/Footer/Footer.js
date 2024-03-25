@@ -22,7 +22,17 @@ function Footer() {
 
         {screenSize.width > 1150 || screenSize.width <= 1000 ? (
           <p className="contactDescription">
-            Somos una firma constituida en Bolivia para trabajar en las areas de auditoría y consultoría. <NavLink  className="linkAdd" onClick={()=>{window.scrollTo(0,0)}} to={"/Contacto"}>¿Quieres trabajar con nosotros?</NavLink>
+            Somos una firma constituida en Bolivia para trabajar en las areas de
+            auditoría y consultoría.{" "}
+            <NavLink
+              className="linkAdd"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+              to={"/Contacto"}
+            >
+              ¿Quieres trabajar con nosotros?
+            </NavLink>
           </p>
         ) : null}
 
@@ -42,8 +52,10 @@ function Footer() {
         <Socials />
 
         {screenSize.width > 1000
-          ? offices.map(function (officeItem) {
-              return <Office content={officeItem} />;
+          ? offices.map((officeItem, index) => {
+              return (
+                <Office key={`oficinaFooter${index}`} content={officeItem} />
+              );
             })
           : null}
       </div>
