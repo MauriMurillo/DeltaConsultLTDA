@@ -1,8 +1,23 @@
-import React, { useContext } from "react";
+import React, { useState } from "react";
 import "./ContactForm.css";
-import { DeltaContext } from "../../../Contexts/DeltaContext";
+
 function ContactForm() {
-  const { sendMailContact } = useContext(DeltaContext);
+  const [formData, setFormData] = useState({
+    nombre: "",
+    mail: "",
+    asunto: "",
+    mensaje: "",
+  });
+  const handleOnChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.id]: e.target.value,
+    });
+  };
+  const handleOnSubmit = (e) => {
+    console.log(FormData);
+    console.log("Formulario Enviado");
+  };
   return (
     <div className="contactForm">
       <div className="sectionText" style={{ borderBottom: "none" }}>
@@ -10,31 +25,45 @@ function ContactForm() {
         <p>Te atenderemos lo mas pronto posible</p>
       </div>
       <div className="formContainer">
-        <form className="contactForm" action={sendMailContact}>
-          <label className="a" for="nombre">
-            <input type="name" id="nombre" placeholder="NOMBRE" />
+        <form className="contactForm" onSubmit={handleOnSubmit}>
+          <label className="a" htmlFor="nombre">
+            <input
+              type="name"
+              id="nombre"
+              placeholder="NOMBRE"
+              onChange={handleOnChange}
+            />
           </label>
 
-          <label className="b" for="mail">
-            <input type="mail" id="mail" placeholder="EMAIL" />
+          <label className="b" htmlFor="mail">
+            <input
+              type="mail"
+              id="mail"
+              placeholder="EMAIL"
+              onChange={handleOnChange}
+            />
           </label>
 
-          <label className="c" for="asunto">
-            <input type="text" id="asunto" placeholder="ASUNTO" />
+          <label className="c" htmlFor="asunto">
+            <input
+              type="text"
+              id="asunto"
+              placeholder="ASUNTO"
+              onChange={handleOnChange}
+            />
           </label>
 
-          <label className="d" for="mensaje">
+          <label className="d" htmlFor="mensaje">
             <textarea
               id="mensaje"
-              rows="4"
-              col="50"
               resize="false"
               placeholder="MENSAJE"
-            ></textarea>
+              onChange={handleOnChange}
+            />
           </label>
 
           <div className="g submitArea">
-            <input type="submit" value="ENVIAR" />
+            <input type="submit" value="ENVIAR" onChange={handleOnChange} />
           </div>
         </form>
       </div>

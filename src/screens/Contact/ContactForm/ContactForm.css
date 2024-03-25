@@ -22,7 +22,7 @@
   font-size: 20px;
   line-height: 20px;
   color: #ffffff;
-  background-color: var(--DarkBlue);
+  background-color: transparent;
   border: none;
 }
 .formContainer .contactForm input {

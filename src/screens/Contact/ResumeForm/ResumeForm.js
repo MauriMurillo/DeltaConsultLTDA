@@ -1,9 +1,33 @@
-import React, { useContext } from "react";
+import React, { useState } from "react";
 import "./ResumeFrom.css";
-import { DeltaContext } from "../../../Contexts/DeltaContext";
 import download from "../../../Assets/Icons/utilIcons/DownloadIcon.svg";
 function ResumeForm() {
-  const { sendMailResume } = useContext(DeltaContext);
+  const [formData, setFormData] = useState({
+    nombreR: "",
+    mailR: "",
+    telefono: "",
+    ciudad: "",
+    mensajeR: "",
+    resume: "",
+  });
+  const handleOnChange = (e) => {
+    console.log([e.target.id]);
+    console.log(e.target.value);
+    setFormData({
+      ...formData,
+      [e.target.id]: e.target.value,
+    });
+  };
+  const handleFileUpload = (e) => {
+    setFormData({
+      ...formData,
+      resume: e.target.files[0],
+    });
+  };
+  const handleOnSubmit = (e) => {
+    console.log(formData.resume);
+    console.log("Formulario Enviado");
+  };
   return (
     <div>
       <div className="sectionText" style={{ borderBottom: "none" }}>
@@ -11,42 +35,64 @@ function ResumeForm() {
         <p>Envíanos tu información y se parte de la familia</p>
       </div>
       <div className="formContainer">
-        <form className="resumeForm" action={sendMailResume}>
-          <label className="a" for="nombreR">
+        <form className="resumeForm" onSubmit={handleOnSubmit}>
+          <label className="a" htmlFor="nombreR">
             <input
               type="name"
               id="nombreR"
               placeholder="NOMBRE"
               autoComplete="given-name"
+              onChange={handleOnChange}
             />
           </label>
 
-          <label className="b" for="mailR">
-            <input type="mail" id="mailR" placeholder="EMAIL" />
+          <label className="b" htmlFor="mailR">
+            <input
+              type="mail"
+              id="mailR"
+              placeholder="EMAIL"
+              onChange={handleOnChange}
+            />
           </label>
 
-          <label className="c" for="telefono">
-            <input type="tel" id="telefono" placeholder="TELEFONO" />
+          <label className="c" htmlFor="telefono">
+            <input
+              type="tel"
+              id="telefono"
+              placeholder="TELEFONO"
+              onChange={handleOnChange}
+            />
           </label>
 
-          <label className="d" for="ciudad">
-            <input type="text" id="ciudad" placeholder="CIUDAD" />
+          <label className="d" htmlFor="ciudad">
+            <input
+              type="text"
+              id="ciudad"
+              placeholder="CIUDAD"
+              onChange={handleOnChange}
+            />
           </label>
 
-          <label className="e" for="mensajeR">
+          <label className="e" htmlFor="mensajeR">
             <textarea
               id="mensajeR"
               rows="3"
               col="50"
               placeholder="MENSAJE"
+              onChange={handleOnChange}
             ></textarea>
           </label>
 
-          <label className="f" for="resume">
+          <label className="f" htmlFor="resume">
             <p>SUBE TU CV AQUI</p>
             <img src={download} alt="subir" />
             <div id="auxContainer">
-              <input id="resume" type="file" accept=".pdf" />
+              <input
+                id="resume"
+                type="file"
+                accept=".pdf"
+                onChange={handleFileUpload}
+              />
             </div>
           </label>
           <div className="g submitArea">
